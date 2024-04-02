@@ -2,8 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-// import file from "/audios/3dbackgroundmusic.mp3";
-// import file from "../../../public/audios/3dbackgroundmusic.mp3";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -30,38 +28,38 @@ const AirpodsAnimation = ({ loadImage }) => {
       const windowHeight = window.innerHeight;
 
       if (windowWidth >= 1700) {
-        canvas.width = 2000; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1800;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1600) {
-        canvas.width = 1600; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1600;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1599) {
-        canvas.width = 1600; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1600;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1200) {
-        canvas.width = 1600; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1600;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1024) {
-        canvas.width = 1200; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1200;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
-        canvas.width = 1200; 
+        canvas.width = 1200;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 430) {
-        canvas.width = 1100; 
+        canvas.width = 1100;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1100; 
+        canvas.width = 1100;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1000; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1000;
+        canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1000; 
-        canvas.height = windowHeight * 1; 
+        canvas.width = 1000;
+        canvas.height = windowHeight * 1;
       } else {
-        canvas.width = 400; 
-        canvas.height = windowHeight * 0.6; 
+        canvas.width = 400;
+        canvas.height = windowHeight * 0.6;
       }
 
       ScrollTrigger.update();
@@ -72,9 +70,7 @@ const AirpodsAnimation = ({ loadImage }) => {
 
     const frameCount = 250;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/model/${(
-        index + 1
-      )
+      `https://interiormaata.humbeestudio.xyz/assets/frames/model/${(index + 1)
         .toString()
         .padStart(4, "0")}.webp`;
     let imgL = [];
