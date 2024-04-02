@@ -69,9 +69,9 @@ const AirpodsAnimation = ({ loadImage }) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 300;
+    const frameCount = 250;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/heroframes/${(
+      `https://interiormaata.humbeestudio.xyz/assets/frames/model/${(
         index + 1
       )
         .toString()

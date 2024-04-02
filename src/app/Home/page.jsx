@@ -37,6 +37,4 @@ const Page = () => {
       </Stairs>
   );
 };
-
 export default Page;
-
