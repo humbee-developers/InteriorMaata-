@@ -11,7 +11,7 @@ import AboutUsInfo from "@/Components/AboutUsInfo/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import Form from "@/Common/Form/page";
 import Footer from "@/Common/Footer/page";
-import BackgroundImage from "@/images/textureImage.png"
+import BackgroundImage from "@/images/textureImage.png";
 const Page = () => {
   useEffect(() => {
     (async () => {
@@ -22,8 +22,15 @@ const Page = () => {
 
   return (
     <Stairs>
-        <HomeBanner />
-    <div style={{backgroundImage: `url(${BackgroundImage.src})`, backgroundRepeat:"no-repeat",backgroundSize: "cover",backgroundPosition:"center"}} >
+      <HomeBanner />
+      <div
+        style={{
+          backgroundImage: `url(${BackgroundImage.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <AboutUs_header />
         <AboutUs_threeCards />
         <Marquee />
@@ -33,8 +40,8 @@ const Page = () => {
         <AboutUs_ourDesign />
         <Form />
         <Footer />
-    </div>
-      </Stairs>
+      </div>
+    </Stairs>
   );
 };
 export default Page;

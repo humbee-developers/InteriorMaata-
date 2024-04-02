@@ -130,7 +130,7 @@ const AirpodsAnimation = ({ loadImage }) => {
           ref={canvasRef}
         ></canvas>
       </section>
-      <MusicPlayer  />
+      <MusicPlayer />
     </section>
   );
 };
