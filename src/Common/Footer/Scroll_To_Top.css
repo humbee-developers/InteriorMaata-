@@ -1,0 +1,18 @@
+.scroll-to-top {
+    background-color: transparent !important;
+    border-radius: 50% !important;
+    border: 1px solid #CC7D45 !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: none !important;
+    border: none;
+}
+svg{
+    fill: #CC7D45 !important;
+    width: 23px !important;
+}

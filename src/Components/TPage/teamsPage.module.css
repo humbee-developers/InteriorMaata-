@@ -1,0 +1,512 @@
+.TeamPage_Section {
+  padding: 0 4rem;
+  padding-top: 10rem;
+}
+.teamPage_content1 {
+  width: 93%;
+  color: #7f7047;
+  text-align: center;
+  font-family: "Roseritta";
+  font-size:8vw;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 auto 1rem;
+}
+.teamPage_content2 {
+  color: #000;
+  text-align: center;
+  font-family: "NeueMontreal-Regular";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.marquee_section {
+  padding: 0 1rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.marquee_imageSection {
+  margin: 0 0.5rem;
+}
+.slider_img{
+  max-width: 100%;
+  height: auto;
+}
+.marquee_imageSection img {
+  max-width: 100%;
+  /* width: 100%; */
+  height: auto;
+}
+.teamPage_content3 {
+  /* padding: 0 11rem; */
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.teamPage_content3_Text {
+  width: 90%;
+  color: #cc7d45;
+  text-align: center;
+  font-family: "Roseritta";
+  /* font-size: 58px; */
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.teamPage_content4 {
+  padding: 0 7rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.teamPage_content4_Text {
+  width: 45%;
+  color: #000;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15.616px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.teamPage_content4_Text p {
+  padding: 8px 0;
+}
+.image_content5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.image_content5 img {
+  max-width: 100%;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .teamPage_content1 {
+    width: 83%;
+    color: #7f7047;
+    text-align: center;
+    font-family: "Roseritta";
+    /* font-size: 140.669px; */
+    font-size:8vw;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 auto 1rem;
+  }
+
+  .teamPage_content3_Text {
+    width: 80%;
+    color: #cc7d45;
+    text-align: center;
+    font-family: "Roseritta";
+    /* font-size: 66px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .teamPage_content4_Text {
+    width: 45%;
+    color: #000;
+    font-family: "NeueMontreal-Regular";
+    font-size: 17.616px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .teamPage_content4 {
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .teamPage_content1 {
+    width: 93%;
+    color: #7f7047;
+    text-align: center;
+    font-family: "Roseritta";
+    /* font-size: 120.669px; */
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0 auto 1rem;
+  }
+
+
+  .TeamPage_Section {
+    padding: 0 3rem;
+    padding-top: 10rem;
+  }
+
+  .teamPage_content1 {
+    /* font-size: 98px; */
+    width: 93%;
+    margin: 0 auto 1rem;
+  }
+  .teamPage_content2 {
+    font-size: 20px;
+  }
+  .marquee_section {
+    padding: 0 0em;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .marquee_imageSection {
+    margin: 0 0.8rem;
+  }
+  .marquee_imageSection img {
+    max-width: 100%;
+    /* width: 90%; */
+    height: auto;
+  }
+  .teamPage_content3 {
+    /* padding: 0 8rem; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .teamPage_content3_Text {
+    width: 100%;
+    /* font-size: 46px; */
+  }
+  .teamPage_content4 {
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .teamPage_content4_Text {
+    width: 40%;
+    font-size: 13.5px;
+  }
+  .teamPage_content4_Text p {
+    padding: 6px 0;
+  }
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .image_content5 img {
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+}
+
+
+
+
+/* -----------------------------------991------------------------------------ */
+@media screen and (max-width: 991px) {
+  .TeamPage_Section {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+
+  .teamPage_content1 {
+    /* font-size: 75px; */
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+  .teamPage_content2 {
+    font-size: 17px;
+  }
+  .marquee_section {
+    padding: 0 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .marquee_imageSection {
+    margin: 0.5rem;
+  }
+  .marquee_imageSection img {
+    max-width: 100%;
+    /* width: 80%; */
+    height: auto;
+  }
+  .teamPage_content3 {
+    /* padding: 0 8rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .teamPage_content3_Text {
+    width: 100%;
+    /* font-size: 36px; */
+  }
+  .teamPage_content4 {
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .teamPage_content4_Text {
+    width: 50%;
+    font-size: 12.5px;
+  }
+  .teamPage_content4_Text p {
+    padding: 4px 0;
+  }
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0.1.1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .image_content5 img {
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+}
+/* ---------------------------------------------768----------------------------------- */
+@media screen and (max-width: 768px) {
+  .TeamPage_Section {
+    padding: 0 1.5rem;
+    padding-top: 10rem;
+  }
+
+  .teamPage_content1 {
+    /* font-size: 62px; */
+    width: 96%;
+    margin: 0 auto 1rem;
+  }
+  .teamPage_content2 {
+    font-size: 15px;
+  }
+  .marquee_section {
+    padding: 0 0.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .marquee_imageSection {
+    margin: 0.5rem;
+  }
+  .marquee_imageSection img {
+    /* width: 70%; */
+    height: auto;
+  }
+  .teamPage_content3 {
+    /* padding: 0 8rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .teamPage_content3_Text {
+    width: 100%;
+    /* font-size: 28px; */
+  }
+  .teamPage_content4 {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .teamPage_content4_Text {
+    width: 55%;
+    font-size: 11px;
+  }
+  .teamPage_content4_Text p {
+    padding: 4px 0;
+  }
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .image_content5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* ---------------------------575------------------------------- */
+@media screen and (max-width: 575px) {
+  .TeamPage_Section {
+    padding: 0 1.5rem;
+    padding-top: 8rem;
+  }
+
+  .teamPage_content1 {
+    /* font-size: 44px; */
+    font-size: 10vw;
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+  .teamPage_content2 {
+    font-size: 15px;
+  }
+  .marquee_section {
+    padding: 0 0.3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .marquee_imageSection {
+    margin: 0.5rem;
+  }
+  .marquee_imageSection img {
+    /* width: 70%; */
+    height: auto;
+  }
+  .teamPage_content3 {
+    /* padding: 0 8rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .teamPage_content3_Text {
+    width: 100%;
+    font-size: 5.4vw;
+  }
+  .teamPage_content4 {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .teamPage_content4_Text {
+    width: 70%;
+    font-size: 11px;
+  }
+  .teamPage_content4_Text p {
+    padding: 4px 0;
+  }
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0.7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .image_content5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* ------------------------425px-------------------------- */
+@media screen and (max-width: 430px) {
+  .TeamPage_Section {
+    padding: 0;
+    padding-top: 8rem;
+  }
+ 
+  .teamPage_content1 {
+    width: 85%;
+    margin: 0 auto 1rem;
+  }
+  .teamPage_content2 {
+    font-size: 12px;
+  }
+  .marquee_section {
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .marquee_imageSection {
+    margin: 0.5rem;
+  }
+  .marquee_imageSection img {
+    /* width: 60%; */
+    height: auto;
+  }
+  .teamPage_content3 {
+    /* padding: 0 8rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .teamPage_content3_Text {
+    width: 100%;
+    padding: 0 1rem;
+    /* font-size: 18px; */
+  }
+  .teamPage_content4 {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .teamPage_content4_Text {
+    width: 85%;
+    font-size: 13px;
+  }
+  .teamPage_content4_Text p {
+    padding: 2px 0;
+  }
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .image_content5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 324px) {
+  .teamPage_content1 {
+    /* font-size: 32px; */
+    width: 90%;
+    margin: 0 auto 1rem;
+  }
+
+  .teamPage_content3_Text {
+    width: 100%;
+    padding: 0 1rem;
+    /* font-size: 15px; */
+  }
+
+
+  .image_content5 {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+
+  .teamPage_content4_Text {
+    width: 86%;
+    font-size: 13px;
+  }
+
+
+}

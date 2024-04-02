@@ -1,0 +1,98 @@
+.Contact_Us_outer {
+  position: relative;
+}
+.Contact_us_overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Contact_us_overlay_text {
+  color: #7f7047;
+  width: 100%;
+  font-family: Roseritta;
+  font-size: 4.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Contact_Us_img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 70vh;
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .Contact_Us_img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    /* height: 70vh; */
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .Contact_us_overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Contact_Us_img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Contact_us_overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Contact_Us_img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Contact_us_overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+
+
+  .Contact_us_overlay_text {
+    font-size: 7.5vw;
+    width: 100%;
+  }
+  .Contact_Us_img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+  .Contact_us_overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

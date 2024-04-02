@@ -1,0 +1,25 @@
+.playPause {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  cursor: pointer;
+  border: 1px solid #cc7d45;
+  background: transparent;
+  outline: none;
+  width: 45px;
+  z-index: 1;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.waves {
+  width: 100%;
+}
+/* .playPause {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.playPause.playing {
+  opacity: 1; 
+} */

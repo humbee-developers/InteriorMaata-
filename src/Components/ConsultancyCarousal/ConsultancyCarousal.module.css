@@ -1,0 +1,102 @@
+/* .swiper {
+  width: 100%;
+  height: 100%;
+} */
+
+.swiper-slide {
+  text-align: center;
+}
+
+.third_section_image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.swiper-button-prev {
+  color: #fff;
+}
+.swiper-button-next {
+  color: #fff;
+}
+
+.third_section_content {
+  position: relative;
+}
+
+.third_section_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.third_section_overlay_text {
+  color: #fff;
+  text-align: center;
+  font-family: "NeueMontreal-Regular";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.third_section_overlay_span {
+  color: #fff;
+  font-family: Roseritta;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 1024px) {
+  .third_section_overlay_text,
+  .third_section_overlay_span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .third_section_overlay_text,
+  .third_section_overlay_span {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .third_section_image{
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+@media(max-width:501px){
+  .third_section_overlay_text,
+  .third_section_overlay_span {
+    font-size: 14px;
+    transform: translate(0rem, 7rem);
+    margin: 0 auto;
+  
+  }
+}
+
+@media (max-width: 425px) {
+  .third_section_overlay_text,
+  .third_section_overlay_span {
+    font-size: 14px;
+    transform: translate(0rem, 7rem);
+    margin: 0 auto;
+  
+  }
+}
+
+@media (max-width: 320px) {
+  .third_section_overlay_text,
+  .third_section_overlay_span {
+    font-size: 12px;
+    
+  }
+}
+
+

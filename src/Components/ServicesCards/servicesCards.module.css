@@ -1,0 +1,182 @@
+.Services_Header_Outer {
+  display: flex;
+  /* padding-top: 10rem; */
+  justify-content: center;
+  align-items: stretch;
+  gap: 8rem;
+  padding-bottom: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.Services_header_card {
+  position: relative;
+}
+.Services_header_img_outer {
+  display: flex;
+  flex-direction: column;
+}
+.Services_header_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.Services_header_overlay_text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Services_header_info_text {
+  width: 100%;
+}
+.Services_header_info__range {
+  margin-top: auto;
+}
+.service_silver_text {
+  color: #fff;
+  text-align: center;
+  font-family: "NeueMontreal-Regular";
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.service_Package_text {
+  color: #fff;
+  font-family: Roseritta;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Services_header_img1_description {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 248px;
+  height: 100%;
+}
+.Services_header_info {
+  color: #000;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Services_header_price_range {
+  padding-top: 1rem;
+  color: #cc7d45;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Services_header_price {
+  padding-top: 1rem;
+  color: #cc7d45;
+  font-family: "NeueMontreal-Regular";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Service_header_button_outer {
+  margin-top: 2rem;
+}
+.Service_header_button {
+  background: #7f7047;
+  outline: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "NeueMontreal-Regular";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .Services_Header_Outer {
+    display: flex;
+    /* padding-top: 15rem; */
+    justify-content: center;
+    align-items: stretch;
+    gap: 8rem;
+    padding-bottom: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Services_Header_Outer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Services_Header_Outer {
+    gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Services_header_img_outer {
+    align-items: center;
+  }
+  .Services_Header_Outer {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+  }
+  .Services_header_price_range {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Services_Header_Outer,
+  .Services_header_img1_description {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    gap: 1rem;
+  }
+
+  .Services_Header_Outer {
+    padding-top: 8rem;
+
+    padding-bottom: 4rem;
+  }
+  .Services_Header_Outer {
+    gap: 3.5rem;
+  }
+  .Services_header_price_range {
+    padding-top: 0rem;
+  }
+  .Service_header_button_outer {
+    margin-top: 0rem;
+  }
+  .Services_header_price {
+    padding-top: 0.3rem;
+  }
+}

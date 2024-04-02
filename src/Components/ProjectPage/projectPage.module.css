@@ -1,0 +1,343 @@
+.ProjectSection_header {
+  font-family: "Roseritta", sans-serif;
+  /* background-color: #c2af1d; */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ProjectSection_headerText {
+  display: flex;
+  color: #d9d9d9;
+  font-size: 58px;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+}
+
+.tabItem {
+  color: #d9d9d9;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.active {
+  color: #7f7047;
+}
+
+.svg {
+  fill: #d9d9d9;
+  transition: fill 0.3s ease;
+  /* padding: 9px 15px; */
+}
+.active .svg {
+  fill: #7f7047;
+}
+
+.ProjectSection_Content {
+  padding: 0 5rem;
+  margin-bottom: -2rem;
+}
+.ProjectSection_image {
+  background-color: beige;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 2;
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+.ProjectSection_textContent {
+  display: flex;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  color: #b3b3b3;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0 5rem 0;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.ProjectSection_textContent span {
+  color: black;
+}
+
+.section_3 {
+  text-transform: none;
+}
+
+.year span {
+  color: #b3b3b3;
+}
+
+.section_1 div,
+.section_2 div,
+.section_3 div {
+  padding: 2px 0;
+}
+
+/* -----------------Pagination-------------- */
+
+.projects_pagination {
+  display: flex;
+  justify-content: center;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  padding: 3rem 0;
+}
+/* -------------------------------media-1600------------------------------- */
+@media screen and (min-width: 1600px) {
+  .ProjectSection_header {
+    padding: 1rem;
+    margin: 10rem 0 5rem 0;
+  }
+
+  .ProjectSection_headerText {
+    display: flex;
+    justify-content: center;
+    padding: 0 11rem;
+    font-size: 58px;
+    font-weight: 400;
+  }
+
+  .svg {
+    padding: 0 1rem;
+  }
+
+  .ProjectSection_Content {
+    padding: 0 5rem;
+    margin-bottom: -2rem;
+  }
+  .ProjectSection_image {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+  }
+
+  .ProjectSection_textContent {
+    padding: 2.5rem 0 5rem 0;
+    font-family: "NeueMontreal-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .section_1 div,
+  .section_2 div,
+  .section_3 div {
+    padding: 2px 0;
+  }
+}
+
+/* ------------------------------1024----------------------------- */
+@media screen and (max-width: 1230px) {
+  .ProjectSection_header {
+    /* background-color: rgb(43, 62, 62); */
+    padding: 0;
+    margin: 10rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svg {
+    padding: 0 0.5rem;
+    width: 25px;
+    height: 25px;
+  }
+
+  .ProjectSection_Content {
+    padding: 0 4.5rem;
+    margin-bottom: -2rem;
+  }
+  .ProjectSection_image {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+  }
+
+  .ProjectSection_textContent {
+    padding: 2.5rem 0 5rem 0;
+    font-family: "NeueMontreal-Regular", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .section_1 div,
+  .section_2 div,
+  .section_3 div {
+    padding: 2px 0;
+  }
+}
+
+/* ---------------------------768-------------------- */
+@media screen and (max-width: 800px) {
+  .ProjectSection_header {
+    padding: 0;
+    margin: 10rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svg {
+    padding: 0 0.5rem;
+    width: 18px;
+    height: 18px;
+  }
+
+  .ProjectSection_Content {
+    padding: 0 4rem;
+    margin-bottom: -2rem;
+  }
+  .ProjectSection_image {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+  }
+
+  .ProjectSection_textContent {
+    padding: 2.5rem 0 5rem 0;
+    font-family: "NeueMontreal-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .section_1 div,
+  .section_2 div,
+  .section_3 div {
+    padding: 2px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 5vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* ---------------------------575-------------------- */
+@media screen and (max-width: 575px) {
+  .ProjectSection_header {
+    padding: 0;
+    margin: 10rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 5vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svg {
+    padding: 0 0.3rem;
+    width: 14px;
+    height: 14px;
+  }
+
+  .ProjectSection_Content {
+    padding: 0 1.4rem;
+    margin-bottom: 0rem;
+  }
+
+  .ProjectSection_textContent {
+    align-items: start;
+    padding: 2rem 0 3rem 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .section_1 div,
+  .section_2 div,
+  .section_3 div {
+    padding: 2px 0;
+    text-align: start;
+  }
+}
+
+/* ---------------------------425-------------------- */
+@media screen and (max-width: 425px) {
+  .ProjectSection_header {
+    padding: 0;
+    margin: 7rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 5vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  .svg {
+    padding: 0 0.3rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .ProjectSection_Content {
+    padding: 0 1.5rem;
+    margin-bottom: 0rem;
+  }
+  .ProjectSection_image {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+  }
+
+  .ProjectSection_textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 0 1rem 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .section_1 div,
+  .section_2 div,
+  .section_3 div {
+    padding: 2px 0;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 280px) {
+  .ProjectSection_headerText {
+    padding: 0;
+    font-size: 5vw;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+}

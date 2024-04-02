@@ -1,0 +1,82 @@
+/* 
+.sliderArrow{
+  position: relative;
+}
+
+
+.sliderArrow_next{
+  position: absolute;
+    top: -23rem;
+    cursor: pointer;
+    left: 96%;
+    z-index: 9;
+}
+
+.sliderArrow_prev{
+  position: absolute;
+  top: -23rem;
+  cursor: pointer;
+  left: 4%;
+  rotate: 190deg;
+  z-index: 9;
+}
+
+
+@media (min-width:1600px){
+  .sliderArrow_next{
+    position: absolute;
+      top: -28rem;
+      left: 96%;
+      z-index: 9;
+  }
+  
+  .sliderArrow_prev{
+    position: absolute;
+    top: -28rem;
+    left: 4%;
+    rotate: 190deg;
+    z-index: 9;
+  }
+} */
+
+.swiper-button-prev{
+  color: white !important;
+  padding-left: 2rem;
+}
+
+.swiper-button-next{
+  color: white !important;
+  padding-right: 2rem;
+}
+@media (max-width:768px){
+  .swiper-button-prev{
+    color: white;
+    padding-left: 1rem;
+  }
+  .swiper-button-prev::after{
+    font-size: 30px;
+  }
+  
+  .swiper-button-next{
+    color: white;
+    padding-right: 1rem;
+  }
+  .swiper-button-next::after{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:425px){
+  .swiper-button-next{
+    padding-right: 0rem;
+  }
+  .swiper-button-prev{
+    padding-left: 0rem;
+  }
+  .swiper-button-prev::after{
+    font-size: 20px;
+  }
+  .swiper-button-next::after{
+    font-size: 20px;
+  }
+}

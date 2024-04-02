@@ -1,0 +1,62 @@
+/* YourCustomStyles.module.css */
+
+.customNextArrow {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 13%;
+}
+
+.customPrevArrow {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 10%;
+}
+
+.PrevArrowText {
+  font-family: 'NeueMontreal-Regular';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.NextArrowText {
+  font-family: "NeueMontreal-Regular";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.customPrevArrow:hover,
+.customNextArrow:hover {
+  cursor: pointer;
+}
+
+.arrowIcon {
+  fill: #fff;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .customNextArrow {
+    top: 50%;
+    right: 9%;
+  }
+
+  .customPrevArrow {
+    top: 50%;
+    left: 8%;
+  }
+}

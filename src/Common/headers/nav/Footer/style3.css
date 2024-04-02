@@ -1,0 +1,52 @@
+.footer_navbar {
+  font-size: 12px;
+  margin-top: .5rem;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "NeueMontreal-Regular";
+}
+.ul {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+}
+.footer_link1{
+text-align: end;
+}
+
+.footer_link2{
+  text-align: start;
+}
+.ul li {
+  color: #ffffff;
+  font-size: 20px;
+  width: 50%;
+  font-family: "NeueMontreal-Regular";
+}
+
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+
+
+  .ul {
+    width: 100%;
+    margin-top: 2rem;
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+  }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .footer_navbar {
+    font-size: 12px;
+    margin-top: 3rem;
+  }
+}

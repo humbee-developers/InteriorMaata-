@@ -1,0 +1,419 @@
+.onlineConsultancy{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.onlineConsultancy_Innersection {
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10rem 0; */
+}
+
+.mainsection {
+  width: 62%;
+}
+
+.onlineConsultancy_section {
+  background-color: #d4d4d4;
+  border-radius: 25px;
+  /* width: 100%; */
+}
+
+.topButtons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+ 
+  /* margin: 0 5rem; */
+}
+
+.btn1 {
+  background-color: #cc7d45;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  font-family: "NeueMontreal-Regular";
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 0.44px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  width: 242px;
+  height: 54px;
+}
+
+.btn2 {
+  background-color: #7f7047;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  font-size: 22px;
+  font-family: "NeueMontreal-Regular";
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 0.44px;
+  width: 242px;
+  height: 54px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.btn3 {
+  background-color: #cc7d45;
+  border: none;
+  border-radius: 48px;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "NeueMontreal-Regular";
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  width: 242px;
+  height: 54px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+
+.contentSection {
+  padding: 2rem 4rem 6rem;
+  display: flex;
+  font-family: "NeueMontreal-Regular";
+  justify-content: space-around;
+}
+
+.textSection {
+  width: 50%;
+}
+
+.onlineConsultancy_section_title {
+  font-size: 54px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1.08px;
+  word-wrap: break-word;
+}
+
+.onlineConsultancy_section_text {
+  width: 330px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "NeueMontreal-Light";
+  /* text-transform: capitalize; */
+  letter-spacing: 0.48px;
+  word-wrap: break-word;
+  margin: 2rem 0;
+}
+
+.title {
+  margin: 0;
+}
+
+.onlineConsultancy_section_btn {
+  background-color: transparent;
+  width: fit-content;
+  font-family: "NeueMontreal-Regular";
+  font-size: 12px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+  padding: 0.7rem 2.6rem;
+  margin: 2rem 0;
+}
+
+.imageSection {
+  border-radius: 50px;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageSection img {
+  /* max-width: 100%;
+  width: 100%; */
+  border-radius: 30px;
+  height: auto;
+  object-fit: contain;
+}
+.accordian_section {
+  display: none;
+}
+
+@media screen and (min-width:1500px)
+{
+  .onlineConsultancy_section_btn{
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------------------------------------------- */
+/* @media (min-width: 1440px) {
+  .accordian_section {
+    display: none;
+  }
+} */
+
+/* ------------------------1440px------------------------------ */
+@media (max-width: 1440px) {
+  .onlineConsultancy_Innersection {
+    padding: 0rem;
+  }
+
+  .mainsection {
+    width: 65%;
+  }
+
+  .onlineConsultancy_section {
+    background-color: #d4d4d4;
+    border-radius: 25px;
+    /* width: 100%; */
+  }
+
+  .topButtons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3.5rem 1rem;
+    /* margin: 0 5rem; */
+  }
+
+  .btn1 {
+    border-radius: 48px;
+    font-size: 20px;
+    letter-spacing: 0.42px;
+    width: 200px;
+    height: 49px;
+  }
+
+  .btn2 {
+    border-radius: 48px;
+    font-size: 20px;
+    letter-spacing: 0.42px;
+    width: 200px;
+    height: 49px;
+  }
+  .btn3 {
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.42px;
+    width: 200px;
+    height: 49px;
+  }
+
+  .contentSection {
+    padding: 2rem 4rem 5rem;
+  }
+
+  .textSection {
+    /* background-color: aquamarine; */
+    width: 50%;
+  }
+
+  .onlineConsultancy_section_title {
+    font-size: 48px;
+    letter-spacing: 1.08px;
+  }
+
+  .onlineConsultancy_section_text {
+    width: 300px;
+    font-size: 21px;
+    letter-spacing: 0.44px;
+    margin: 2rem 0;
+  }
+
+  .onlineConsultancy_section_btn {
+    font-size: 20px;
+    padding: 0.7rem 2.6rem;
+    margin: 2rem 0;
+  }
+
+  .imageSection {
+    /* background-color: aquamarine; */
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imageSection img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -----------------------------1199px--------------------------------- */
+@media (max-width: 1199px) {
+  .onlineConsultancy_Innersection {
+    padding: 0rem;
+  }
+
+  .mainsection {
+    width: 65%;
+  }
+
+  .onlineConsultancy_section {
+    background-color: #d4d4d4;
+    border-radius: 25px;
+  }
+
+  .topButtons {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .btn1 {
+    border-radius: 48px;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    width: 170px;
+    height: 46px;
+  }
+
+  .btn2 {
+    border-radius: 48px;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    width: 170px;
+    height: 46px;
+  }
+  .btn3 {
+    border-radius: 48px;
+    font-size: 17px;
+    letter-spacing: 0.4px;
+    width: 170px;
+    height: 46px;
+  }
+
+  .contentSection {
+    padding: 1rem 2rem 5rem;
+  }
+
+  .onlineConsultancy_section_title {
+    font-size: 40px;
+    letter-spacing: 1.08px;
+  }
+
+  .onlineConsultancy_section_text {
+    width: 250px;
+    font-size: 18px;
+    letter-spacing: 0.44px;
+    margin: 1.5rem 0;
+  }
+
+  .onlineConsultancy_section_btn {
+    font-size: 11px;
+    padding: 0.6rem 2.2rem;
+    margin: 2rem 0;
+  }
+
+  .imageSection img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -----------------------------992px--------------------------------- */
+@media (max-width: 992px) {
+  .onlineConsultancy_Innersection {
+    padding: 0rem;
+  }
+
+  .mainsection {
+    width: 70%;
+  }
+
+  .onlineConsultancy_section {
+    background-color: #d4d4d4;
+    border-radius: 25px;
+  }
+
+  .topButtons {
+    padding: 2rem 0.4rem;
+  }
+
+  .btn1 {
+    border-radius: 48px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    width: 150px;
+    height: 39px;
+  }
+
+  .btn2 {
+    border-radius: 48px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    width: 150px;
+    height: 39px;
+  }
+  .btn3 {
+    border-radius: 48px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    width: 150px;
+    height: 39px;
+  }
+
+  .contentSection {
+    padding: 1rem 1.5rem 5rem;
+  }
+
+  .onlineConsultancy_section_title {
+    font-size: 34px;
+    letter-spacing: 1.08px;
+  }
+
+  .onlineConsultancy_section_text {
+    width: 200px;
+    font-size: 16px;
+    letter-spacing: 0.44px;
+    margin: 1rem 0;
+  }
+
+  .onlineConsultancy_section_btn {
+    font-size: 10px;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0;
+  }
+
+  .imageSection img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* -----------------------------768px--------------------------------- */
+@media (max-width: 768px) {
+  .onlineConsultancy{
+    padding-top: 6rem;
+    padding-bottom: 0rem;
+  }
+  .onlineConsultancy_Innersection {
+    display: none;
+    /* background-color: #D4D4D4; */
+  }
+
+  .accordian_section {
+    display: block;
+    padding: 2rem 4rem;
+    background-color: #d4d4d4;
+  }
+}
+
+
+@media(min-width:320px) and (max-width:500px){
+  .onlineConsultancy{
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+  }
+}

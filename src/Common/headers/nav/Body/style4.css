@@ -1,0 +1,151 @@
+.nav_body {
+  flex-wrap: wrap;
+}
+.nav_body a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+
+.coming-soon {
+  font-size: 12px;
+
+  font-family: "NeueMontreal-Regular";
+  margin-left: 5px; /* Adjust as needed */
+  /* color: rgb(0, 0, 0); Or any other color you prefer */
+}
+
+.nav_body p {
+  margin: 0px;
+  display: block;
+  font-family: Roseritta;
+  overflow: hidden;
+  font-size: 68px;
+  font-weight: 300;
+}
+.navOpenLogo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 40px;
+}
+.interiormaata_openMenu_Text {
+  font-size: 30px;
+  font-family: "NeueMontreal-Regular";
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .nav_body {
+    flex-wrap: wrap;
+  }
+  .nav_body a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav_body p {
+    margin: 0px;
+    display: block;
+    font-family: Roseritta;
+    overflow: hidden;
+    font-size: 85px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 768px) {
+  .nav_body p 
+  {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 500px) {
+  .nav_body p {
+    margin: 0px;
+    display: block;
+    font-family: Roseritta;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .navOpenLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 25px;
+  }
+
+  .nav_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+}
+
+
+@media (min-width: 360px) and (max-width: 424px) {
+  .nav_body p {
+    margin: 0px;
+    display: block;
+    font-family: Roseritta;
+    overflow: hidden;
+    font-size: 37px;
+    font-weight: 300;
+  }
+
+  .navOpenLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 25px;
+  }
+
+  .nav_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 360px) {
+  .nav_body p {
+    margin: 0px;
+    display: block;
+    font-family: Roseritta;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .navOpenLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 25px;
+  }
+
+  .nav_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+

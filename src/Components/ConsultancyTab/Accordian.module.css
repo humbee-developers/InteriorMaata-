@@ -1,0 +1,167 @@
+.customAccordion {
+  background-color: #d4d4d4;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.customAccordionSummary {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  text-transform: capitalize;
+  font-family: "NeueMontreal-Regular", sans-serif;
+  padding: 15px;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordian_title {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 46.018px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.accordian_text {
+  font-family: "NeueMontreal-Regular", sans-serif;
+  font-size: 23.675px;
+  font-weight: 300;
+  letter-spacing: 0.373px;
+  text-transform: capitalize;
+  margin: 1.4rem 0;
+}
+
+.accordian_btn {
+  width: 174px;
+  height: 38.276px;
+  font-size: 18px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-family: "NeueMontreal-Regular", sans-serif;
+}
+
+.customAccordionDetails {
+  padding: 2rem 4rem;
+  border-top: 1px solid #e4e4e4;
+  display: none;
+  overflow: hidden;
+  background-color: #e4e4e4;
+  /* transition: max-height 0.2s ease-out; */
+}
+
+.customAccordionDetails.open {
+  display: block;
+}
+
+/* ------------------------------------------- */
+@media (max-width: 570px) {
+  .customAccordion {
+    background-color: #d4d4d4;
+    padding: 1rem 1rem;
+  }
+
+  .customAccordionSummary {
+    padding: 15px;
+    font-size: 24px;
+    transition: 0.4s;
+  }
+
+  .accordian_title {
+    font-size: 44.018px;
+    margin: 0.9rem 0;
+  }
+
+  .accordian_text {
+    font-size: 20.675px;
+    margin: 1.2rem 0.5rem;
+  }
+
+  .accordian_btn {
+    width: 158px;
+    height: 36.276px;
+    font-size: 16px;
+    margin: 1.5rem 0;
+  }
+
+  .customAccordionDetails {
+    padding: 2rem 2rem;
+  }
+}
+
+/* ---------------------480---------------------- */
+@media (max-width: 480px) {
+  .customAccordion {
+    background-color: #d4d4d4;
+    padding: 1rem 0rem;
+  }
+
+  .customAccordionSummary {
+    padding: 13px;
+    font-size: 22px;
+    transition: 0.4s;
+  }
+
+  .accordian_title {
+    font-size: 42.018px;
+    margin: 0.8rem 0;
+  }
+
+  .accordian_text {
+    font-size: 18.675px;
+    margin: 0.8rem 0;
+  }
+
+  .accordian_btn {
+    width: 144px;
+    height: 32.276px;
+    font-size: 14px;
+    margin: 1rem 0;
+  }
+
+  .customAccordionDetails {
+    padding: 1rem 2.5rem;
+  }
+}
+
+/* ---------------------375---------------------- */
+@media (max-width: 375px) {
+  .customAccordion {
+    background-color: #d4d4d4;
+    padding: 1rem 0rem;
+  }
+
+  .customAccordionSummary {
+    padding: 10px;
+    font-size: 19px;
+    transition: 0.4s;
+  }
+
+  .accordian_title {
+    font-size: 26.018px;
+    margin: 0.4rem 0;
+  }
+
+  .accordian_text {
+    font-size: 15.675px;
+    margin: 1rem 0;
+  }
+
+  .accordian_btn {
+    width: 124px;
+    height: 28.276px;
+    font-size: 11px;
+    margin: 1.2rem 0;
+  }
+
+  .customAccordionDetails {
+    padding: 2rem 1.5rem;
+  }
+}

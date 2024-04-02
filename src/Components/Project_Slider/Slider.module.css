@@ -1,0 +1,106 @@
+.Carousel_Slider_container {
+    padding-bottom: 0rem;
+    padding-top: 5rem;
+    width: 280px;
+ 
+  }
+  .Carousel_Slider_container2 {
+    width: 500px;
+  }
+  .abc {
+    display: flex;
+    padding-left: 10rem;
+    overflow-x: hidden;
+    padding-right: 10rem;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .mySwiper {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .mySwiper2 {
+    text-align: center;
+    margin: 0 auto;
+ 
+  }
+  .swiper-slide {
+    text-align: center;
+  }
+  .third_section_content {
+    text-align: center;
+    position: relative;
+  }
+  .swiper2,
+  .swiper3 {
+    display: flex;
+    gap: 2rem;
+  }
+ 
+  
+  .third_section_overlay_text {
+    color: black;
+    text-align: center;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .third_section_overlay_span {
+    color: #fff;
+    font-family: Roseritta;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .Carousel_text_maincontent::before {
+    position: absolute;
+    content: url(../../svgs/dot1.svg);
+    left: 0%;
+    top: 32%;
+  }
+  .Carousel_text_maincontent::after {
+    position: absolute;
+    content: url(../../svgs/dot.svg);
+    bottom: 23%;
+    right: 8%;
+  }
+  .Carousel_text_maincontent {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    text-align: center;
+    padding-bottom: 6rem;
+  }
+  .carousel_text_Content {
+    color: #7f7047;
+    text-align: center;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 15px;
+    width: 75%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  @media (max-width: 500px) {
+    .carousel_text_Content {
+      width: 50%;
+    }
+    .Carousel_text_maincontent::before {
+      left: 20%;
+      top: 15%;
+    }
+    .Carousel_text_maincontent::after {
+      bottom: 15%;
+      right: 26%;
+    }
+  }
+  

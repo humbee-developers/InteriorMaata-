@@ -1,0 +1,21 @@
+<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="148"
+              height="149"
+              viewBox="0 0 148 149"
+              fill="none"
+            >
+              <circle
+                cx="74"
+                cy="74.0156"
+                r="72.5"
+                stroke="white"
+                stroke-opacity="0.4"
+                stroke-width="3"
+              />
+              <path
+                d="M116.756 74.8379L53.8556 111.153L53.8556 38.5225L116.756 74.8379Z"
+                fill="white"
+                fill-opacity="0.4"
+              />
+            </svg>

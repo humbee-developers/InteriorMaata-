@@ -1,0 +1,97 @@
+.happy_container {
+  background: #cc7d45;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.happy_title {
+  margin: 0 auto;
+  width: 50%;
+}
+.happy_text {
+  color: #fff;
+  text-align: center;
+  font-family: Roseritta;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_text {
+    font-size: 5vw;
+  }
+  .happy_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_text {
+    font-size: 5vw;
+  }
+  .happy_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ 
+}
+
+
+
+@media (min-width: 425px) and (max-width: 575px) {
+  .happy_title {
+    width: 100%;
+  }
+  .happy_container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+@media (min-width: 200px) and (max-width: 424px) {
+
+  .happy_container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .happy_title {
+    width: 100%;
+  }
+}

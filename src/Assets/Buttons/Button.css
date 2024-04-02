@@ -1,0 +1,398 @@
+
+
+
+.button-48 {
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #7F7047;
+  border: 1px solid #7F7047;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.1em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  /* text-transform: uppercase; */
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  /* z-index: 1; */
+  position: relative;
+}
+
+
+
+
+/* button 2 */
+
+
+
+
+.button2 {
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: white;
+  border: 1px solid #EBEBEB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.1em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button2:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button2:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+}
+
+.button2:after {
+  background-color: #FFFFFF;
+}
+
+.button2 span {
+  /* z-index: 1; */
+  position: relative;
+}
+
+.button2 span:before{
+  color: black;
+}
+
+.button2:hover{
+  color: black;
+}
+
+
+
+/* button 3 */
+
+
+
+
+.button3 {
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  border: 1px solid #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.1em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button3:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button3:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+}
+
+.button3:after {
+  background-color: #FFFFFF;
+}
+
+.button3 span {
+  /* z-index: 1; */
+  position: relative;
+}
+
+.button3 span:before{
+  color: black;
+}
+
+.button3:hover{
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+
+
+
+/* button 4 */
+
+
+.button4 {
+  appearance: none;
+  background: #C0C2AA;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  float: left;
+  line-height: 1em;
+  border-radius: 5px                                                ;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 5.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button4:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #ebebeb56;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button4:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+}
+
+.button4:after {
+  background-color: #FFFFFF;
+}
+
+.button4 span {
+  /* z-index: 1; */
+  position: relative;
+}
+
+.button4 span:before{
+  color: black;
+}
+
+.button4:hover{
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width:500px){
+  .button4{
+    padding: 1.3rem 4rem;
+  }
+}
+
+
+
+
+/* button 5 */
+
+
+
+.button5 {
+  appearance: none;
+  background-color:#7F7047;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button5:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button5:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+
+}
+
+.button5:after {
+  background-color: #FFFFFF;
+}
+
+.button5 span {
+  /* z-index: 1; */
+  position: relative;
+}
+
+.button5 span:before{
+  color: black;
+}
+
+.button5:hover{
+  color: rgb(0, 0, 0);
+  /* border: 1px solid white; */
+}
+
+
+
+@media (max-width:768px){
+  .button3{
+    padding: 18px 18px;
+    font-size: 15px;
+  }
+  .button2{
+    padding: 18px 18px;
+    font-size: 15px;
+  }
+}
+@media (max-width:425px){
+  .button3{
+    padding: 13px 16px;
+    font-size: 15px;
+  }
+  .button2{
+    padding: 13px 16px;
+    font-size: 15px;
+  }
+}
