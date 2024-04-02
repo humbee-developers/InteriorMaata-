@@ -1,10 +1,32 @@
-.canvas_factory_settings{
+.canvas_factory_settings {
   height: 100vh;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
+.interiormaata{
+  position: absolute;
+  font-size: 80px;
+  left: 6rem;
+  color: #791125;
+  bottom: 25rem;
+}
 
+.text1{
+  position: absolute;
+  font-size: 80px;
+  left: 6rem;
+      line-height: 90px;
+  font-weight: 600;
+  color: white;
+  bottom: 8rem;
+}
+.scroll_text {
+  position: absolute;
+  font-size: 100px;
+  left: 2rem;
+  bottom: 2rem;
+}
 
 .main {
   display: flex;
@@ -60,8 +82,6 @@
   }
 }
 
-
-
 @media (min-width: 1600px) and (max-width: 1920px) {
   .main {
     display: flex;
@@ -72,7 +92,6 @@
     margin-top: -1080vh;
   }
 }
-
 
 @media (max-width: 1440px) {
   .main {
@@ -92,14 +111,12 @@
   }
 }
 
-
 @media (max-width: 1024px) {
   .main {
     margin-bottom: 720rem !important;
     margin-top: -1155vh !important;
   }
 }
-
 
 @media (max-height: 1000px) {
   .main {
@@ -111,8 +128,6 @@
     margin-top: -1080vh;
   }
 }
-
-
 
 @media (max-height: 920px) {
   .main {
@@ -136,28 +151,12 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
   .main {
     margin-bottom: 750rem !important;
     margin-top: -1085vh !important;
   }
 }
-
-
-
-
-
-
-
 
 /* @media (max-width: 1340px) {
   .main {
