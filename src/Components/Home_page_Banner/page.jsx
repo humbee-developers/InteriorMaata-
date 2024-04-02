@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 // import file from "@/audio/3dbackgroundmusic.mp3";
-// import MusicPlayer from "@/Components/musicPlayer/page";
+import MusicPlayer from "@/Components/musicPlayer/page";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -130,7 +130,7 @@ const AirpodsAnimation = ({ loadImage }) => {
           ref={canvasRef}
         ></canvas>
       </section>
-      {/* <MusicPlayer audioFile={file} /> */}
+      <MusicPlayer  />
     </section>
   );
 };

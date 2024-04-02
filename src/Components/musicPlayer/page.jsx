@@ -5,7 +5,7 @@ import styles from "@/Components/musicPlayer/music.module.css"
 
 const MusicPlayer = ({ audioFile }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isVisible, setIsVisible] = useState(true); // Added state for button visibility
+  const [isVisible, setIsVisible] = useState(true);
   const audioRef = useRef(null);
 
   const togglePlay = () => {
@@ -51,7 +51,7 @@ const MusicPlayer = ({ audioFile }) => {
 
   return (
     <div>
-      <audio loop ref={audioRef} src={audioFile} />
+      {/* <audio loop ref={audioRef} src={audioFile} /> */}
       {isVisible && ( // Render button based on visibility state
         <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
           <Image className={styles.waves} src={playPause} alt="playPause"   />
