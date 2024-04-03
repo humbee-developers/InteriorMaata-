@@ -49,16 +49,16 @@ const Animation = ({ loadImage }) => {
         canvas.width = 1200;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 500) {
-        canvas.width = 1400;
+        canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1400;
+        canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1400;
+        canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1400;
+        canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else {
         canvas.width = 400;
