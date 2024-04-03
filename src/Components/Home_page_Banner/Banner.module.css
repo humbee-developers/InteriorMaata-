@@ -140,4 +140,29 @@
     object-fit: cover;
     object-position: center;
   }
+  .interiormaata {
+display: none;
+  }
+  
+  .LivingRoom{
+    display: none;
+  }
+  
+  .paragraph{
+    display: none;
+  }
+  
+  .bedRoom{
+    display: none;
+  }
+  .paragraph1{
+    display: none;
+  }
+  .outDoor{
+    display: none;
+  }
+  
+  .text1 {
+    display: none;
+  }
 }
