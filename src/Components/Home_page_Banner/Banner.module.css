@@ -1,7 +1,6 @@
 .canvas_factory_settings {
   height: 100vh;
   width: 100%;
-  object-fit: cover;
   object-position: center;
 }
 .interiormaata {
@@ -17,14 +16,14 @@
   position:absolute;
   font-size: 60px;
   font-family: "Roseritta";
-  color: #ffffff;
+  color: #CC7D45;
   left: 5rem;
   bottom: -137rem;
 }
 
 .paragraph{
   position: absolute;
-    width: 22%;
+    width: 25%;
     font-size: 21px;
     font-family: "NeueMontreal-Regular";
     color: #ffffff;
@@ -36,26 +35,26 @@
   position:absolute;
   font-size: 60px;
   font-family: "Roseritta";
-  color: #ffffff;
+  color: #CC7D45;
   right: 10rem;
-  bottom: -404rem;
+  bottom: -315rem;
 }
 .paragraph1{
   position: absolute;
-  width: 22%;
+  width: 25%;
   font-size: 21px;
   font-family: "NeueMontreal-Regular";
   color: #ffffff;
  left:5rem;
-  bottom: -447rem;
+  bottom: -341rem;
 }
 .outDoor{
   position:absolute;
   font-size: 60px;
   font-family: "Roseritta";
-  color: #ffffff;
+  color: #CC7D45;
   left:5rem;
-  bottom: -620rem;
+  bottom: -548rem;
 }
 
 .text1 {
@@ -63,15 +62,19 @@
   font-size: 4.5vw;
   left: 5rem;
   font-family: "Roseritta";
-  color: white;
+  color: #ffffff;
   bottom: 10rem;
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
+
+
+  .canvas_factory_settings {
+    object-fit: cover;
+  }
   .interiormaata {
     position: absolute;
     left: 6rem;
-    color: #791125;
     bottom: 10rem;
   }
 
@@ -79,16 +82,16 @@
     position:absolute;
     font-size: 70px;
     font-family: "Roseritta";
-    color: #ffffff;
+
     left: 5rem;
     bottom: -137rem;
   }
   .paragraph{
     position: absolute;
-    width: 22%;
+    width: 25%;
     font-size: 21px;
     font-family: "NeueMontreal-Regular";
-    color: #ffffff;
+   
     right: 6rem;
     bottom: -169rem;
   }
@@ -96,17 +99,17 @@
     position:absolute;
     font-size: 70px;
     font-family: "Roseritta";
-    color: #ffffff;
+   
     right: 10rem;
     bottom: -404rem;
   }
 
   .paragraph1{
     position: absolute;
-    width: 22%;
+    width: 25%;
     font-size: 21px;
     font-family: "NeueMontreal-Regular";
-    color: #ffffff;
+  
    left:5rem;
     bottom: -447rem;
   }
@@ -115,7 +118,7 @@
     position:absolute; 
     font-size: 60px;
     font-family: "Roseritta";
-    color: #ffffff;
+
     left:5rem;
     bottom: -620rem;
   }
@@ -125,7 +128,16 @@
     left: 6rem;
     line-height: 90px;
     font-family: "Roseritta";
-    color: white;
     bottom: 15rem;
+  }
+}
+
+
+@media(min-width:500px) and (max-width:200px){
+  .canvas_factory_settings {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }

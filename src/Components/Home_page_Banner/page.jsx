@@ -279,7 +279,7 @@ const Animation = ({ loadImage }) => {
             justifyContent={"center"}
           />
           <HeadingTextAnimation
-            heading={"&Each design is a thoughtful composition of harmony and visions of tomorrow."}
+            heading={"& Each design is a thoughtful composition of harmony and visions of tomorrow."}
             justifyContent={"left"}
           />
 
