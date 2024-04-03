@@ -21,7 +21,6 @@ const Page = () => {
     toast.success("Form Submitted Successfully...");
   };
 
-
   const sendMail = async (e) => {
     e.preventDefault();
 
@@ -51,6 +50,7 @@ const Page = () => {
         submitMessage()
         console.log(await response.json());
     } catch (error) {
+      toast.error("Error Submitting Form");
         console.error("Error:", error);
     }
 };
@@ -168,7 +168,6 @@ const validatePhone = (Phonedata) => {
             <div className={styles.field}>
               <div className={styles.Submit_button_outer}>
                 <Button button_text="Submit" />
-                {/* {formResponse.text === "OK" && ( */}
                   <ToastContainer
                     position="top-right"
                     autoClose={3000}
@@ -179,11 +178,10 @@ const validatePhone = (Phonedata) => {
                     pauseOnFocusLoss={false}
                     draggable={false}
                     pauseOnHover={true}
-                    theme="light"
+                    theme="light" 
                     transition={Slide}
                     className={"contactFormNotification"}
                   />
-                {/* )} */}
               </div>
             </div>
           </form>

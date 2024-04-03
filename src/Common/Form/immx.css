@@ -105,3 +105,12 @@ input:-webkit-autofill:active {
   padding: 10px 12px !important;
 }
 } */
+.contactFormNotification{
+  color: white !important;
+  padding-left: 2rem;
+  font-family: "NeueMontreal-Regular" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

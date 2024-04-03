@@ -129,7 +129,7 @@
   }
 
   .Landing_image1:hover {
-    display: none;
+    display: block;
   }
   .Landing_image2 {
     position: relative;
@@ -139,7 +139,7 @@
   }
 
   .Landing_image2:hover {
-    display: none;
+    display: block;
   }
 
   .Landing_image3 {
@@ -150,7 +150,7 @@
   }
 
   .Landing_image3:hover {
-    display: none;
+    display: block;
    
   }
 }
