@@ -3,6 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
+import { motion, useAnimation } from "framer-motion";
+import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
+import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +18,7 @@ const AirpodsAnimation = ({ loadImage }) => {
   const airpodsRef = useRef({ frame: 0 });
   const [loading, setLoading] = useState(true);
   console.log("factory loading", loading);
+  
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -45,17 +49,17 @@ const AirpodsAnimation = ({ loadImage }) => {
       } else if (windowWidth >= 768) {
         canvas.width = 1200;
         canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 430) {
-        canvas.width = 1100;
+      } else if (windowWidth >= 500) {
+        canvas.width = 1400;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1100;
+        canvas.width = 1400;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1000;
+        canvas.width = 1400;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1000;
+        canvas.width = 1400;
         canvas.height = windowHeight * 1;
       } else {
         canvas.width = 400;
@@ -119,6 +123,19 @@ const AirpodsAnimation = ({ loadImage }) => {
     };
   }, []);
 
+
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section>
       <section ref={sectionRef}>
@@ -126,7 +143,40 @@ const AirpodsAnimation = ({ loadImage }) => {
           className={styles.canvas_factory_settings}
           ref={canvasRef}
         ></canvas>
+     
       </section>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ duration: 0.9 }}
+        className={styles.interiormaata}
+         >
+        <HeadingTextAnimation
+          heading={"interiorमाता"}
+          
+          justifyContent={"center"}
+        />
+        </motion.div>
+
+        <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ duration: 0.9 }}
+        className={styles.text1}
+         >
+        <HeadingTextAnimation
+          heading={"Where Tradition find"}
+          
+          justifyContent={"center"}
+        />
+         <HeadingTextAnimation
+          heading={" it’s modern muse"}
+          
+          justifyContent={"left"}
+        />
+        </motion.div>
       <MusicPlayer />
     </section>
   );
