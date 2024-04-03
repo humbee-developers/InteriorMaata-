@@ -14,7 +14,7 @@ export async function POST(request) {
         pass: "wecdoqzwxfcifkss",
       },
     });
-    const logoPath = path.resolve(__dirname, 'interiormaata_logo.png');
+    const logoPath = path.resolve('public', 'interiormaata_logo.png');
     console.log("Logo Path:", logoPath);
 
     const mailOption = {
