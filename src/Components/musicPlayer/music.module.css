@@ -14,12 +14,14 @@
 
 .waves {
   width: 100%;
+  height: 100%;
 }
-/* .playPause {
+.playPause {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
 .playPause.playing {
   opacity: 1; 
-} */
+  filter: drop-shadow(2px 3px 5px black);
+}
