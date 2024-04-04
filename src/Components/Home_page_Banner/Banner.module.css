@@ -3,6 +3,14 @@
   width: 100%;
   object-position: center;
 }
+
+.heroLogo{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+}
+
 .interiormaata {
   position: absolute;
   font-size: 3.5vw;

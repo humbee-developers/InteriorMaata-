@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
-import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
+import FramesTextAnimation from "@/Common/FramesTextAnimation/FramesTextAnimation";
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -199,7 +199,6 @@ const Animation = ({ loadImage }) => {
       const totalScroll = documentHeight - windowHeight;
       const currentScrollPercentage = (scrollPosition / totalScroll) * 100;
       setScrollPercentage(currentScrollPercentage);
-      console.log("Scroll Percentage:", currentScrollPercentage);
     };
 
     window.addEventListener("scroll", updateScrollPercentage);
@@ -224,11 +223,11 @@ const Animation = ({ loadImage }) => {
         transition={{ duration: 0.9 }}
         className={styles.text1}
       >
-        <HeadingTextAnimation
+        <FramesTextAnimation
           heading={"Where Tradition find"}
           justifyContent={"center"}
         />
-        <HeadingTextAnimation
+        <FramesTextAnimation
           heading={" it’s modern muse"}
           justifyContent={"left"}
         />
@@ -241,7 +240,7 @@ const Animation = ({ loadImage }) => {
         transition={{ duration: 0.9 }}
         className={styles.interiormaata}
       >
-        <HeadingTextAnimation
+      <FramesTextAnimation
           heading={"interiorमाता"}
           justifyContent={"center"}
         />
@@ -254,11 +253,11 @@ const Animation = ({ loadImage }) => {
           transition={{ duration: 0.9 }}
           className={styles.LivingRoom}
         >
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={" Seamlessly blending Tradition"}
             justifyContent={"center"}
           />
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"& Contemporary Flair"}
             justifyContent={"left"}
           />
@@ -274,20 +273,20 @@ const Animation = ({ loadImage }) => {
           transition={{ duration: 0.9 }}
           className={styles.paragraph}
         >
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"We fuse timeless elements with the sleek line of modern sensibilities. "}
             justifyContent={"center"}
           />
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"& Each design is a thoughtful composition of harmony and visions of tomorrow."}
             justifyContent={"left"}
           />
 
-           <HeadingTextAnimation
+           <FramesTextAnimation
             heading={"From classic elegance to innovative twists,"}
             justifyContent={"left"}
           />
-            <HeadingTextAnimation
+            <FramesTextAnimation
             heading={"we create spaces that honor history while embracing the spirit of progress. "}
             justifyContent={"left"}
           />
@@ -302,11 +301,11 @@ const Animation = ({ loadImage }) => {
           transition={{ duration: 0.9 }}
           className={styles.bedRoom}
         >
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"Crafting Timeless Spaces,"}
             justifyContent={"left"}
           />
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"where every corner speaks!"}
             justifyContent={"left"}
           />
@@ -323,20 +322,20 @@ const Animation = ({ loadImage }) => {
           transition={{ duration: 0.9 }}
           className={styles.paragraph1}
         >
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"We fuse timeless elements with the sleek line of modern sensibilities. "}
             justifyContent={"center"}
           />
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"& Each design is a thoughtful composition of harmony and visions of tomorrow."}
             justifyContent={"left"}
           />
 
-           <HeadingTextAnimation
+           <FramesTextAnimation
             heading={"From classic elegance to innovative twists,"}
             justifyContent={"left"}
           />
-            <HeadingTextAnimation
+            <FramesTextAnimation
             heading={"we create spaces that honor history while embracing the spirit of progress. "}
             justifyContent={"left"}
           />
@@ -352,11 +351,11 @@ const Animation = ({ loadImage }) => {
           transition={{ duration: 0.9 }}
           className={styles.outDoor}
         >
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={"Designing Dreams &"}
             justifyContent={"left"}
           />
-          <HeadingTextAnimation
+          <FramesTextAnimation
             heading={" Infusing Love"}
             justifyContent={"left"}
           />
