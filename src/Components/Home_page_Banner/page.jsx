@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
-import FramesTextAnimation from "@/Common/FramesTextAnimation/FramesTextAnimation";
+import FramesTextAnimation from "@/Common/framesTextAnimation/FramesTextAnimation";
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
