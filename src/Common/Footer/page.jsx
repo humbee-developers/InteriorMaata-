@@ -72,7 +72,7 @@ const Footer = () => {
           <div>
             <p>
               Copyright &copy; 2024 Interiormaata, All Right Reserved. Designed
-              & Developed by H/dS
+              & Developed by  <Link className={styles.adds} target="_blank" href="https://www.humbeestudio.com/">H/dS</Link>
             </p>
           </div>
           <div className={styles.footer_social_media}>

@@ -5,7 +5,11 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
-
+.adds{
+  color:#000000;
+  font-family: "NeueMontreal-Regular";
+  text-decoration: underline;
+}
 .footer_home {
   display: inline-block;
   padding-bottom: 0.3rem;

@@ -33,23 +33,18 @@
 }
 
 .table_Section {
-  /* max-width: 1440px; */
   padding: 0 116px;
-  /* margin: 0 auto; */
 }
 
 .table_content {
   display: flex;
-  /* padding-top: 1rem;
-  padding-bottom: 1rem; */
   padding: 20px 30px;
   align-items: center;
-  cursor: pointer;
+  cursor: default;
   position: relative;
 }
 
 .ourDesign_icons {
-  /* width: 10%; */
   height: auto;
   display: block;
 }

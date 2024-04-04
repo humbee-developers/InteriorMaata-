@@ -29,7 +29,7 @@ export default function NewNav() {
           alt="Description of the image"
           className="nav_logo"
         />
-        <span className="interiormaata">interiormaata</span>
+        {/* <span className="interiormaata">interiormaata</span> */}
       </div>
       <div className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}>
         <div className="bar">
