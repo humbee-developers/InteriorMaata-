@@ -152,6 +152,11 @@ const Animation = ({ loadImage }) => {
     threshold: 0.5, // Set threshold to 0.5 for ref1
   });
 
+  const [ref6, inView6] = useInView({
+    triggerOnce: false,
+    threshold: 0.5, // Set threshold to 0.5 for ref1
+  });
+
 
   const controls = useAnimation();
 
@@ -190,6 +195,12 @@ const Animation = ({ loadImage }) => {
       controls.start("visible");
     }
   }, [controls, inView5]);
+
+  useEffect(() => {
+    if (inView6) {
+      controls.start("visible");
+    }
+  }, [controls, inView6]);
 
   useEffect(() => {
     const updateScrollPercentage = () => {
@@ -274,20 +285,16 @@ const Animation = ({ loadImage }) => {
           className={styles.paragraph}
         >
           <FramesTextAnimation
-            heading={"We fuse timeless elements with the sleek line of modern sensibilities. "}
+            heading={"We create modern space infused with hints of heritage – it's like "}
             justifyContent={"center"}
           />
           <FramesTextAnimation
-            heading={"& Each design is a thoughtful composition of harmony and visions of tomorrow."}
+            heading={"stepping into a story where every corner whispers tales of tradition,"}
             justifyContent={"left"}
           />
 
            <FramesTextAnimation
-            heading={"From classic elegance to innovative twists,"}
-            justifyContent={"left"}
-          />
-            <FramesTextAnimation
-            heading={"we create spaces that honor history while embracing the spirit of progress. "}
+            heading={"while clean lines and modern touches bring it all together."}
             justifyContent={"left"}
           />
         </motion.div>
@@ -343,7 +350,7 @@ const Animation = ({ loadImage }) => {
         
       )}
 
-      {scrollPercentage >= 40 && (
+      {scrollPercentage >= 38 && (
         <motion.div
           ref={ref3}
           initial="hidden"
@@ -357,6 +364,35 @@ const Animation = ({ loadImage }) => {
           />
           <FramesTextAnimation
             heading={" Infusing Love"}
+            justifyContent={"left"}
+          />
+        </motion.div>
+      )}
+
+
+      {scrollPercentage >= 39 && (
+        <motion.div
+          ref={ref6}
+          initial="hidden"
+          animate={inView6 ? "visible" : "hidden"}
+          transition={{ duration: 0.9 }}
+          className={styles.paragraph2}
+        >
+          <FramesTextAnimation
+            heading={" we're all about Designing Dreams & Infusing Love into every space we touch."}
+            justifyContent={"left"}
+          />
+          <FramesTextAnimation
+            heading={"Picture walking into your home and feeling an instant connection – that's the magic we strive for."}
+            justifyContent={"left"}
+          />
+
+          <FramesTextAnimation
+            heading={"With a blend of modern flair and traditional charm,"}
+            justifyContent={"left"}
+          />
+          <FramesTextAnimation
+            heading={"we create havens that reflect your personality and aspirations"}
             justifyContent={"left"}
           />
         </motion.div>

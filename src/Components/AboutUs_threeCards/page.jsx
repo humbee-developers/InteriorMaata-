@@ -28,17 +28,22 @@ function Landing_page() {
           transition={{ duration: 0.9 }}
         >
           <HeadingTextAnimation
-            heading={"interiormaata: an estate agency"}
+            heading={"Interiormaata Studio : Step into a realm"}
             justifyContent={"center"}
             className={styles.landing_page_second_content_text}
           />
           <HeadingTextAnimation
-            heading={"with a conscience, selling beautiful"}
+            heading={"where tradition dance with modern"}
             justifyContent={"center"}
             className={styles.landing_page_second_content_text}
           />
           <HeadingTextAnimation
-            heading={"homes across vadodara & beyond..."}
+            heading={"minimalism, creating spaces that"}
+            justifyContent={"center"}
+            className={styles.landing_page_second_content_text}
+          />
+           <HeadingTextAnimation
+            heading={" resonate with soulful elegance"}
             justifyContent={"center"}
             className={styles.landing_page_second_content_text}
           />

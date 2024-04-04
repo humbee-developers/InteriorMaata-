@@ -19,7 +19,7 @@ const TextWord = ({ text, fontSize, justifyContent , className}) => {
         delay: 0.1,
         damping: 12,
         stiffness: 50,
-        duration: "0.5",
+        duration: "0.8",
       },
     },
     hidden: {

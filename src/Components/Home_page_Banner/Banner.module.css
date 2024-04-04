@@ -62,9 +62,19 @@
   font-family: "Roseritta";
   color: #CC7D45;
   left:5rem;
-  bottom: -548rem;
+  bottom: -538rem;
 }
 
+
+.paragraph2{
+  position: absolute;
+  width: 30%;
+  font-size: 21px;
+  font-family: "NeueMontreal-Regular";
+  color: #ffffff;
+ right:6rem;
+ bottom: -518rem;
+}
 .text1 {
   position: absolute;
   font-size: 4.5vw;
@@ -126,9 +136,18 @@
     position:absolute; 
     font-size: 60px;
     font-family: "Roseritta";
-
     left:5rem;
-    bottom: -620rem;
+    bottom: -610rem;
+  }
+
+  .paragraph2{
+    position: absolute;
+    width: 25%;
+    font-size: 21px;
+    font-family: "NeueMontreal-Regular";
+    color: #ffffff;
+   right:6rem;
+   bottom: -595rem;
   }
   
   .text1 {
