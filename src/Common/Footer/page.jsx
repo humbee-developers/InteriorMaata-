@@ -32,7 +32,7 @@ const Footer = () => {
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div>
-            <p className={styles.phone_no}>+917404040286</p>
+            <a href="tel:+917404040286" className={styles.phone_no}>+917404040286</a>
             <p className={styles.footer_address}>
               Karamdham Complex
               <br /> Near Akota Atithi Gruh,

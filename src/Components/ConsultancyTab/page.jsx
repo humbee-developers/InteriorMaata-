@@ -89,8 +89,7 @@ const onlineConsultancy = () => {
                     borderColor: headingColor,
                   }}
                 >
-                  {" "}
-                  Exclusive GST{" "}
+                 <span className={styles.text}>EXCLUSIVE GST</span>
                 </div>
               </div>
 
