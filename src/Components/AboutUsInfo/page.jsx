@@ -1,9 +1,9 @@
 import Project from "@/Components/AboutUsInfo/index"
-import img1 from "@/images/mambo_mambo.jpeg"
-import img2 from "@/images/jomor_design.jpeg"
-import img3 from "@/images/la_grange.jpeg"
-import img4 from "@/images/deux_huit_huit.jpeg"
-import img5 from "@/images/nothing_design_studio.png"
+import img1 from "@/images/la_grange 1.png"
+import img2 from "@/images/mambo_mambo 1.png"
+import img3 from "@/images/jomor_design 1.png"
+import img4 from "@/images/nothing_design_studio 1.png"
+import img5 from "@/images/mambo_mambo 2.png"
 import styles from "@/Components/AboutUsInfo/AboutUsInfo.module.css"
 export default function Home() {
 
