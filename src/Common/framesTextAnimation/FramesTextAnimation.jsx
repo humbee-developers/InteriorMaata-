@@ -1,4 +1,4 @@
-import FramesTextAnimation from "@/Common/FramesTextAnimation/Animation"
+import FramesTextAnimation from "@/Common/framesTextAnimation/Animation"
 
 const TextAnimation = ({ heading, fontSize, justifyContent , className }) => {
   return (
