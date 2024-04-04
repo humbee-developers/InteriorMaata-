@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import playPause from "@/svgs/waves.gif"
+import playPause from "@/svgs/tx.gif"
 import styles from "@/Components/musicPlayer/music.module.css"
 
 const MusicPlayer = ({ audioFile }) => {
