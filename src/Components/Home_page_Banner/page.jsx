@@ -9,6 +9,8 @@ import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Animation = ({ loadImage }) => {
+  const [info, setInfo] = useState(false);
+  const [animationEnded, setAnimationEnded] = useState(false);
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
   const textRef = useRef(null);
@@ -16,8 +18,9 @@ const Animation = ({ loadImage }) => {
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
   const [loading, setLoading] = useState(true);
+  const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  console.log("factory loading", loading);
+  console.log("FactoryWalk loading", loading);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -76,9 +79,9 @@ const Animation = ({ loadImage }) => {
       `https://interiormaata.humbeestudio.xyz/assets/frames/model/${(index + 1)
         .toString()
         .padStart(4, "0")}.webp`;
-    let imgL = [];
-    // https://interiormaata.humbeestudio.xyz/assets/frames/heroframes/0001.webp
 
+
+    let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
@@ -86,22 +89,48 @@ const Animation = ({ loadImage }) => {
       imgL.push(img.src);
     }
 
-    gsap
-      .timeline({
-        onUpdate: render,
-        scrollTrigger: {
-          trigger: section,
-          pin: true,
-          scrub: 1.5,
-          end: "+=1800%",
-        },
-      })
-      .to(airpodsRef.current, {
-        frame: frameCount - 1,
-        snap: "frame",
-        ease: "none",
-        duration: 1,
-      });
+    const loadImages = async () => {
+      try {
+        const loadImagePromises = imgL.map((imageUrl, index) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+              setLoadingCounter(index + 1);
+              resolve();
+            };
+          });
+        });
+
+        await Promise.all(loadImagePromises);
+
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        // Handle error loading images
+      }
+    };
+    loadImages();
+    console.log(imgL);
+    // const lCouner = Math.floor()
+    console.log("Counter", loadingCounter);
+    const animationTimeline = gsap.timeline({
+      onUpdate: render,
+      onComplete: () => setAnimationEnded(true), // Set animationEnded to true when animation completes
+      scrollTrigger: {
+        trigger: section,
+        pin: true,
+        scrub: 0.1,
+        end: "+=1800%",
+      },
+    });
+
+    animationTimeline.to(airpodsRef.current, {
+      frame: frameCount - 1,
+      snap: "frame",
+      ease: "none",
+      duration: 1,
+    });
 
     imagesRef.current[0].onload = render;
 
@@ -120,7 +149,9 @@ const Animation = ({ loadImage }) => {
       window.removeEventListener("resize", setCanvasSize);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [loadingCounter]);
+  console.log(loading ? "FactoryWalk Loading" : "FactoryWalk Complate");
+  console.log(loadImage(loading));
 
   const [ref, inView] = useInView({
     triggerOnce: false,

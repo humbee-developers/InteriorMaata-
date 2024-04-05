@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect , useState } from "react";
 import Stairs from "@/Animations/Stairs";
 import HomeBanner from "@/Components/Home_page_Banner/page";
 import AboutUs_header from "@/Components/AboutUs_header/page";
@@ -12,17 +12,24 @@ import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import Form from "@/Common/Form/page";
 import Footer from "@/Common/Footer/page";
 import BackgroundImage from "@/images/textureImage.png";
-const Page = () => {
+const Page = ({lData}) => {
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
+  function handleLoad(data) {
+    console.log("data",data);
+    setIsLoading(data);
+  }
 
   return (
-    <Stairs>
-      <HomeBanner />
+   <>
+    {isLoading && <Stairs />}
+    {/* {isLoading && <div>Loading</div>} */}
+      <HomeBanner loadImage={handleLoad} />
       <div
         style={{
           backgroundImage: `url(${BackgroundImage.src})`,
@@ -41,7 +48,8 @@ const Page = () => {
         <Form />
         <Footer />
       </div>
-    </Stairs>
+   </>
+    
   );
 };
 export default Page;

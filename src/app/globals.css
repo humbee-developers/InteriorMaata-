@@ -57,6 +57,11 @@ input[type="number"] {
 html,
 body {
   max-width: 100vw;
+  background-image: url("/textureImage.png"); 
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 a {

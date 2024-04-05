@@ -34,7 +34,7 @@
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color:#7F7047 ;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -55,25 +55,25 @@
   background-color: #FFFFFF;
 }
 
+.button-48:hover{
+  color: rgb(255, 255, 255);
+
+}
+
 .button-48 span {
-  /* z-index: 1; */
   position: relative;
 }
 
 
-
-
 /* button 2 */
-
-
 
 
 .button2 {
   appearance: none;
   background-color: transparent;
   box-sizing: border-box;
-  color: white;
-  border: 1px solid #EBEBEB;
+  color: #cc7d45;
+  border: 1px solid #cc7d45;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";
@@ -101,12 +101,12 @@
 .button2:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color: #cc7d45;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
   left: 0;
-  color: black;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   transform: translateZ(0);
@@ -134,7 +134,7 @@
 }
 
 .button2:hover{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -177,7 +177,7 @@
 .button3:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color: #000000;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -201,7 +201,6 @@
 }
 
 .button3 span {
-  /* z-index: 1; */
   position: relative;
 }
 
@@ -210,8 +209,8 @@
 }
 
 .button3:hover{
-  color: rgb(0, 0, 0);
-  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 
@@ -232,8 +231,7 @@
   font-weight: 500;
   letter-spacing: 0;
   float: left;
-  line-height: 1em;
-  border-radius: 5px                                                ;
+  line-height: 1em;                                             ;
   margin: 0;
   opacity: 1;
   outline: 0;
