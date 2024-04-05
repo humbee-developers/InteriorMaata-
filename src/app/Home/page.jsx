@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect , useState } from "react";
 import Stairs from "@/Animations/Stairs";
+import Preloader from "@/Animations/preloader/index"
+import { AnimatePresence } from "framer-motion";
 import HomeBanner from "@/Components/Home_page_Banner/page";
 import AboutUs_header from "@/Components/AboutUs_header/page";
 import AboutUs_threeCards from "@/Components/AboutUs_threeCards/page";
@@ -27,7 +29,10 @@ const Page = ({lData}) => {
 
   return (
    <>
-    {isLoading && <Stairs />}
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
+    {/* {isLoading && <Stairs />} */}
     {/* {isLoading && <div>Loading</div>} */}
       <HomeBanner loadImage={handleLoad} />
       <div
