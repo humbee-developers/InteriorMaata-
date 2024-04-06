@@ -3,6 +3,7 @@
 import Form from "@/Common/Form/page";
 import Headers from "@/Common/headers/index";
 import Footer from "@/Common/Footer/page";
+import Refresh from "@/Components/Refresh/page";
 // const inter = Inter({ subsets: ['latin'] })
 import { usePathname } from "next/navigation";
 import "./globals.css";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Headers />
+        <Refresh/>
         {children}
         {location != "/" && (
           <>
