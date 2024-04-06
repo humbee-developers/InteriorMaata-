@@ -78,7 +78,6 @@ const Projects = () => {
               onClick={() => handleClick(2)}
             >
               COMMERCIALS
-              {/* <Image src={StarSvg} alt='star' className={`${styles.svg} ${projectName === 2 && styles.active}`} /> */}
             </div>
           </div>
         </div>
