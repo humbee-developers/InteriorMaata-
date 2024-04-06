@@ -1,10 +1,10 @@
 'use client';
-import styles from './style.module.css';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anime';
 import Image from 'next/image'
 import logo from "@/svgs/logoloader.svg"
+import styles from './style.module.css';
 
 const words = ["interiorमाता"]
 
@@ -20,7 +20,7 @@ export default function Index() {
         if(index == words.length - 1) return;
         setTimeout( () => {
             setIndex(index + 1)
-        }, 50)
+        }, 10)
     }, [index])
 
     const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width/2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`
