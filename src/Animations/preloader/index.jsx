@@ -3,6 +3,8 @@ import styles from './style.module.css';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anime';
+import Image from 'next/image'
+import logo from "@/svgs/logoloader.svg"
 
 const words = ["interiorमाता"]
 
@@ -39,7 +41,7 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
-                <motion.p variants={opacity} initial="initial" animate="enter"><span></span>{words[index]}</motion.p>
+                <motion.div className={styles.text} variants={opacity} initial="initial" animate="enter"><Image src={logo} alt="image" />{words[index]}</motion.div>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
                 </svg>

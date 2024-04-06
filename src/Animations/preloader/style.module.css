@@ -17,21 +17,15 @@
   .introduction svg path {
     fill: #AE7B56;
   }
-  .introduction p {
+  .introduction .text {
     display: flex;
     color: white;
-    font-size: 7vw;
+    text-decoration: none;
+    font-size: 5.5vw;
+    gap: 1rem;
+    text-transform: uppercase;
     font-family: "NeueMontreal-Regular";
     align-items: center;
     position: absolute;
     z-index: 1;
   }
-  .introduction p span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  

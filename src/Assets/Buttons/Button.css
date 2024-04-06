@@ -216,14 +216,12 @@
 
 
 /* button 4 */
-
-
 .button4 {
   appearance: none;
-  background: #C0C2AA;
+  background: #d1d3c0;
   box-sizing: border-box;
   color: rgb(0, 0, 0);
-  border: none;
+  border:none;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";
@@ -235,7 +233,7 @@
   margin: 0;
   opacity: 1;
   outline: 0;
-  padding: 1.5em 5.2em;
+  padding: 1.4em 4.8em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -252,14 +250,14 @@
 .button4:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #ebebeb56;
+  background-color: #7f704778;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
   left: 0;
   color: black;
   position: absolute;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   top: 0;
   transform: translateZ(0);
   transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
@@ -286,7 +284,7 @@
 }
 
 .button4:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width:500px){
@@ -307,7 +305,7 @@
   background-color:#7F7047;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid #7F7047;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";

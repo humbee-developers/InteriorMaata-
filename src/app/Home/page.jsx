@@ -33,7 +33,7 @@ const Page = ({lData}) => {
         {isLoading && <Preloader />}
       </AnimatePresence>
     {/* {isLoading && <Stairs />} */}
-    {/* {isLoading && <div>Loading</div>} */}
+    
       <HomeBanner loadImage={handleLoad} />
       <div
         style={{

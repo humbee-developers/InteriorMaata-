@@ -10,6 +10,7 @@ export const opacity = {
 
 export const slideUp = {
     initial: {
+        
         top: 0
     },
     exit: {

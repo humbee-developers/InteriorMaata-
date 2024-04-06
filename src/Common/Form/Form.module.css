@@ -4,9 +4,13 @@
   width: 100%;
 }
 .contact_form_wrapper{
-  width: 63%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  width: 70%;
+}
+
+.formSpacing{
+display: flex;
+flex-direction: column;
+gap: 2rem;
 }
 .contact_form {
   width: 50%;
@@ -30,17 +34,11 @@
   width: 50%;
 }
 
-.form_group {
+.form_group , .form_group1 {
   position: relative;
-  padding-bottom: 10px;
-  height: 90px;
+
 }
 
-.form_group1 {
-  position: relative;
-  margin-bottom: 10px;
-  height: 150px;
-}
 
 .form_field {
   border: 1px solid white !important;
@@ -135,59 +133,6 @@
   top: -10px;
   transition: 0.2s;
 }
-.Submit_button_outer{
-  margin-top: -2rem;
-}
-/* .field {
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .field input {
-  background: transparent;
-  border: none;
-   font-family: "NeueMontreal-Regular" !important;
-  width: 100%;
-  height: 20px;
-  margin-bottom: 6px;
-  font-size: 18px;
-  color: white;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} */
-/* .field_Address {
-  padding-top: 0.3rem;
-  background-color: transparent;
-  font-size: 17px;
-  resize: none;
-  color: white;
-  outline: none;
-  border: none;
-} */
-/* .field input:focus {
-  outline: none;
-} */
-/* .dropdown_menu {
-  color: white;
-  font-size: 17px;
-  color: #fff;
-  font-family: "NeueMontreal-Regular";
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #D1D1D1;
-} */
-/* .p-dropdown-item {
-  color: white;
-  font-family: Neue Montreal;
-  padding: 8px;
-  background-color: #7F7047;
-  font-size: 17px;
-} */
 .error {
   color: red;
   font-family: "NeueMontreal-Regular" !important;
@@ -225,14 +170,13 @@
   padding: 20px 80px 20px 80px;
 }
 
+@media(min-width:1600px) and (max-width:1920px){
+  .contact_form_wrapper{
+    width: 75%;
+  }
+}
 
-/* @media (min-width: 1500px) {
-  .Contact_form_section{
-  }
-  .contact_img{
-  }
-  
-} */
+
 @media (max-width: 1024px) {
   .contact_form_wrapper{
     padding-top: 2rem;

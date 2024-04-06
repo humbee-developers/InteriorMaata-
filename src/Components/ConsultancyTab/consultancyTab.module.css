@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10rem 0; */
 }
 
 .mainsection {
@@ -17,22 +16,18 @@
 
 .onlineConsultancy_section {
   background-color: #d4d4d4;
-  border-radius: 25px;
-  /* width: 100%; */
 }
 
 .topButtons {
   display: flex;
   justify-content: space-evenly;
   padding: 4rem 1rem;
- 
-  /* margin: 0 5rem; */
+
 }
 
 .btn1 {
   background-color: #cc7d45;
   border: none;
-  border-radius: 48px;
   color: white;
   font-family: "NeueMontreal-Regular";
   font-size: 22px;
@@ -41,37 +36,32 @@
   letter-spacing: 0.44px;
   text-transform: capitalize;
   word-wrap: break-word;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
 }
 
 .btn2 {
   background-color: #7f7047;
   border: none;
-  border-radius: 48px;
   color: white;
   font-size: 22px;
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
   cursor: pointer;
   letter-spacing: 0.44px;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
 .btn3 {
-  background-color: #cc7d45;
+  background-color: #8d4c1e;
   border: none;
-  border-radius: 48px;
   color: white;
   cursor: pointer;
   font-size: 22px;
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
   letter-spacing: 0.44px;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
@@ -84,7 +74,7 @@
 }
 
 .textSection {
-  width: 50%;
+  width: 65%;
 }
 
 .onlineConsultancy_section_title {
@@ -184,9 +174,6 @@
 }
 
 .imageSection img {
-  /* max-width: 100%;
-  width: 100%; */
-  border-radius: 30px;
   height: auto;
   object-fit: contain;
 }
