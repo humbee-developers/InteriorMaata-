@@ -110,7 +110,7 @@
   }
 
   .accordian_title {
-    font-size: 42.018px;
+    font-size: 36px;
     margin: 0.8rem 0;
   }
 
@@ -127,7 +127,7 @@
   }
 
   .customAccordionDetails {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
   }
 }
 
