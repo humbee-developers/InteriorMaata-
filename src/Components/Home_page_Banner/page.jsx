@@ -256,8 +256,6 @@ const Animation = ({ loadImage }) => {
           ref={canvasRef}
         ></canvas>
       </section>
-     
-
       <motion.div
         ref={ref}
         initial="hidden"

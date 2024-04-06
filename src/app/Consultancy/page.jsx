@@ -14,14 +14,14 @@ const Page = () => {
   }, []);
 
   return (
-    <div>
-    <Stairs>
+    <>
+    <Stairs/>
       <ConsultancyHeader />
       <ConsultancyTextFlex /> 
       <ConsultancyTab/>
       <ConsultancyCarousal/>
-    </Stairs>
-    </div>
+   
+    </>
   );
 };
 

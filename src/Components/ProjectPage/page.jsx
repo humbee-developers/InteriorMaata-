@@ -37,7 +37,7 @@ const Projects = () => {
   const displayedData = currentData?.slice(firstIndex, lastIndex);
   const router = useRouter();
   return (
-    <div ref={projectsRef}>
+    <div ref={projectsRef} className={styles.projectPageOuter}>
       <div className={styles.ProjectSection_header}>
         <div>
           <div className={styles.ProjectSection_headerText}>

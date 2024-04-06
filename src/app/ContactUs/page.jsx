@@ -11,12 +11,12 @@ const Page = () => {
     })();
   }, []);
   return (
-    <div>
-      <Stairs>
+    <>
+      <Stairs/>
         <ContactUsHeader />
         <ContactUsImage />
-      </Stairs>
-    </div>
+     
+    </>
   )
 }
 

@@ -13,11 +13,10 @@ const Page = () => {
   }, []);
   return (
     <div>
-    <Stairs>
+    <Stairs/>
       <ProjectPage/>
       <Project_Flex />  
       <Project_Slider />
-    </Stairs>
     </div>
   )
 }
