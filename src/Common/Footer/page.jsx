@@ -28,7 +28,7 @@ const Footer = () => {
   }, [controls, inView]);
 
   return (
-    <div style={{backgroundImage: `url(${BackgroundImage.src})`, backgroundRepeat:"no-repeat",backgroundSize: "cover",backgroundPosition:"center"}}>
+    <div >
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div>
