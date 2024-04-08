@@ -7,12 +7,6 @@
   right: 200px;
 }
 
-
-.image{
-  height:100%;
-  width:80%
-}
-
 .slick-list {
   min-height:46rem
 }
@@ -37,10 +31,10 @@
   transform: scale(2.4);
 }
 @media(min-width:1600px) and (max-width:1920px){
-  .image{
+  /* .image{
     height:100%;
     width:100%
-  }
+  } */
 
   .slick-list {
     min-height:62rem
@@ -51,19 +45,16 @@
     max-width: 100%;
   } */
 
-  .image{
+  /* .image{
     height:100%;
     width:80%;
-  }
+  } */
   
   .slick-list {
     min-height:47rem;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* .slick-slide img {
-    max-width: 100%;
-  } */
 
   .image{
     height:100%;
@@ -75,11 +66,6 @@
   }
 }
 @media screen and (max-width: 1199px) {
-  .slick-slide img {
-    max-width: 100%;
-    width: 75%;
-    height: auto;
-  }
   .slick-slide{
     margin-left: 3.5rem;
   }
@@ -93,11 +79,6 @@
   }
 }
 @media screen and (max-width: 769px) {
-  .slick-slide img {
-    max-width: 100%;
-    width: 75%;
-    height: auto;
-  }
   .slick-dots {
     bottom: -30px;
     padding: 1.5rem 0;
@@ -114,11 +95,6 @@
   }
 }
 @media screen and (max-width: 700px) {
-  .slick-slide img {
-    max-width: 100%;
-    width: 75%;
-    height: auto;
-  }
   .slick-list{
     min-height: 42rem;
   }
@@ -128,22 +104,12 @@
   
 }
 @media screen and (max-width: 600px) {
-  .slick-slide img {
-    max-width: 100%;
-    width: 75%;
-    height: auto;
-  }
   .slick-list{
     min-height: 42rem;
   }
  
 }
 @media screen and (max-width: 500px) {
-  .slick-slide img {
-    max-width: 100%;
-    width: 65%;
-    height: auto;
-  }
   .slick-list{
     margin-left: -8rem !important;
     min-height: 37rem;
