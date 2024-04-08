@@ -2,7 +2,9 @@
   left: 200px;
   z-index: 99;
 }
-
+.slick-track{
+  margin-top: 3rem;
+}
 .slick-next {
   right: 200px;
 }

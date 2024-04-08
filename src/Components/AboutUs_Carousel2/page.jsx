@@ -18,10 +18,10 @@ import slide1_src9 from "@/images/Ellipse 12.png";
 import slide1_src10 from "@/images/Ellipse 13.png";
 import slide1_src11 from "@/images/Ellipse 14.png";
 
-import slide2_src1 from "@/images/moodboardImage2.png";
-import slide3_src1 from "@/images/moodboardImage3.png";
-import slide4_src1 from "@/images/moodboardImage4.png";
-import slide5_src1 from "@/images/moodboardImage5.png";
+import slide2_src1 from "@/images/i1.png";
+import slide3_src1 from "@/images/i2.png";
+import slide4_src1 from "@/images/i3.png";
+import slide5_src1 from "@/images/i4.png";
 import "@/Components/AboutUs_Carousel2/Inbuilt.css";
 import styles from "@/Components/AboutUs_Carousel2/AboutUS_Carousel2.module.css";
 
