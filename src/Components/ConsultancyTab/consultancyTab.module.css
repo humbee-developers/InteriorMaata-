@@ -216,7 +216,7 @@
 
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
 
   .topButtons {
@@ -226,27 +226,27 @@
   }
 
   .btn1 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 20px;
     letter-spacing: 0.42px;
-    width: 200px;
-    height: 49px;
+    /* width: 200px;
+    height: 49px; */
   }
 
   .btn2 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 20px;
     letter-spacing: 0.42px;
-    width: 200px;
-    height: 49px;
+    /* width: 200px;
+    height: 49px; */
   }
   .btn3 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.42px;
-    width: 200px;
-    height: 49px;
+    /* width: 200px;
+    height: 49px; */
   }
 
   .contentSection {
@@ -277,7 +277,7 @@
 
   .imageSection {
     width: 50%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -303,7 +303,7 @@
 
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
 
   .topButtons {
@@ -311,26 +311,26 @@
   }
 
   .btn1 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    width: 170px;
-    height: 46px;
+    /* width: 170px;
+    height: 46px; */
   }
 
   .btn2 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    width: 170px;
-    height: 46px;
+    /* width: 170px;
+    height: 46px; */
   }
   .btn3 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    width: 170px;
-    height: 46px;
+    /* width: 170px;
+    height: 46px; */
   }
 
   .contentSection {
@@ -374,7 +374,7 @@
 
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    border-radius: 25px;
+    /* border-radius: 25px; */
   }
 
   .topButtons {
@@ -382,26 +382,26 @@
   }
 
   .btn1 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 14px;
     letter-spacing: 0.4px;
-    width: 150px;
-    height: 39px;
+    /* width: 150px;
+    height: 39px; */
   }
 
   .btn2 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 14px;
     letter-spacing: 0.4px;
-    width: 150px;
-    height: 39px;
+    /* width: 150px;
+    height: 39px; */
   }
   .btn3 {
-    border-radius: 48px;
+    /* border-radius: 48px; */
     font-size: 14px;
     letter-spacing: 0.4px;
-    width: 150px;
-    height: 39px;
+    /* width: 150px;
+    height: 39px; */
   }
 
   .contentSection {
