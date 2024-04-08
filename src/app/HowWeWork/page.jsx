@@ -14,15 +14,15 @@ const Page = () => {
     })();
   }, []);
   return (
-    <div>
-      <Stairs>
+    <>
+      <Stairs/>
         <HowWeWorkHeader />
         <HowWeWorkTimeline />
         <ServicesCards />
         <Services_Slider/>
         <HowWeWorkText />
-      </Stairs>
-    </div>
+      
+    </>
   );
 };
 

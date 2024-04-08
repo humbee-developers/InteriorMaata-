@@ -10,9 +10,11 @@ const Page = () => {
     })();
   }, []);
   return (
-      <Stairs>
+    <>
+      <Stairs/>
         <TeamsPage />
-      </Stairs>
+    </>
+     
   );
 };
 

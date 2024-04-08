@@ -34,7 +34,7 @@
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color:#7F7047 ;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -55,25 +55,25 @@
   background-color: #FFFFFF;
 }
 
+.button-48:hover{
+  color: rgb(255, 255, 255);
+
+}
+
 .button-48 span {
-  /* z-index: 1; */
   position: relative;
 }
 
 
-
-
 /* button 2 */
-
-
 
 
 .button2 {
   appearance: none;
   background-color: transparent;
   box-sizing: border-box;
-  color: white;
-  border: 1px solid #EBEBEB;
+  color: #cc7d45;
+  border: 1px solid #cc7d45;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";
@@ -101,12 +101,12 @@
 .button2:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color: #cc7d45;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
   left: 0;
-  color: black;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   transform: translateZ(0);
@@ -134,7 +134,7 @@
 }
 
 .button2:hover{
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -177,7 +177,7 @@
 .button3:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #EBEBEB;
+  background-color: #000000;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -201,7 +201,6 @@
 }
 
 .button3 span {
-  /* z-index: 1; */
   position: relative;
 }
 
@@ -210,21 +209,19 @@
 }
 
 .button3:hover{
-  color: rgb(0, 0, 0);
-  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 
 
 /* button 4 */
-
-
 .button4 {
   appearance: none;
-  background: #C0C2AA;
+  background: #d1d3c0;
   box-sizing: border-box;
   color: rgb(0, 0, 0);
-  border: none;
+  border:none;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";
@@ -232,12 +229,11 @@
   font-weight: 500;
   letter-spacing: 0;
   float: left;
-  line-height: 1em;
-  border-radius: 5px                                                ;
+  line-height: 1em;                                             ;
   margin: 0;
   opacity: 1;
   outline: 0;
-  padding: 1.5em 5.2em;
+  padding: 1.4em 4.8em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -254,14 +250,14 @@
 .button4:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #ebebeb56;
+  background-color: #7f704778;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
   left: 0;
   color: black;
   position: absolute;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   top: 0;
   transform: translateZ(0);
   transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
@@ -288,7 +284,7 @@
 }
 
 .button4:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width:500px){
@@ -309,7 +305,7 @@
   background-color:#7F7047;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid #7F7047;
   cursor: pointer;
   display: inline-block;
   font-family: "NeueMontreal-Regular";

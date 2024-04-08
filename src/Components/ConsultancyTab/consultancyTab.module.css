@@ -1,4 +1,4 @@
-.onlineConsultancy{
+.onlineConsultancy {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10rem 0; */
 }
 
 .mainsection {
@@ -17,22 +16,17 @@
 
 .onlineConsultancy_section {
   background-color: #d4d4d4;
-  border-radius: 25px;
-  /* width: 100%; */
 }
 
 .topButtons {
   display: flex;
   justify-content: space-evenly;
-  padding: 4rem 1rem;
- 
-  /* margin: 0 5rem; */
+  padding: 3rem 1rem;
 }
 
 .btn1 {
   background-color: #cc7d45;
   border: none;
-  border-radius: 48px;
   color: white;
   font-family: "NeueMontreal-Regular";
   font-size: 22px;
@@ -41,50 +35,45 @@
   letter-spacing: 0.44px;
   text-transform: capitalize;
   word-wrap: break-word;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
 }
 
 .btn2 {
   background-color: #7f7047;
   border: none;
-  border-radius: 48px;
   color: white;
   font-size: 22px;
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
   cursor: pointer;
   letter-spacing: 0.44px;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
 .btn3 {
-  background-color: #cc7d45;
+  background-color: #8d4c1e;
   border: none;
-  border-radius: 48px;
   color: white;
   cursor: pointer;
   font-size: 22px;
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
   letter-spacing: 0.44px;
-  width: 242px;
-  height: 54px;
+  padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
 
 .contentSection {
-  padding: 2rem 4rem 6rem;
+  padding: 2rem 4rem 4rem;
   display: flex;
   font-family: "NeueMontreal-Regular";
   justify-content: space-around;
 }
 
 .textSection {
-  width: 50%;
+  width: 65%;
 }
 
 .onlineConsultancy_section_title {
@@ -96,7 +85,7 @@
 }
 
 .onlineConsultancy_section_text {
-  width: 330px;
+  width: 80%;
   font-size: 24px;
   font-weight: 300;
   font-family: "NeueMontreal-Light";
@@ -123,14 +112,16 @@
   text-transform: capitalize;
   padding: 0.7rem 2.6rem;
   float: left;
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: inline-block;
   position: relative;
   text-align: center;
   text-decoration: none;
   text-rendering: geometricprecision;
   text-transform: uppercase;
-  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -138,7 +129,7 @@
   white-space: nowrap;
 }
 .onlineConsultancy_section_btn:before {
-  animation: opacityFallbackOut .5s step-end forwards;
+  animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
   background-color: #ebebeb56;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
@@ -147,35 +138,32 @@
   left: 0;
   color: black;
   position: absolute;
-  border-radius: 5px;
   top: 0;
   transform: translateZ(0);
-  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
 }
 .onlineConsultancy_section_btn:hover:before {
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-
 }
 .onlineConsultancy_section_btn:after {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .onlineConsultancy_section_btn span {
-  /* z-index: 1; */
   position: relative;
 }
 
-.onlineConsultancy_section_btn span:before{
+.onlineConsultancy_section_btn span:before {
   color: black;
 }
 
-.onlineConsultancy_section_btn:hover{
+.onlineConsultancy_section_btn:hover {
   color: rgb(0, 0, 0);
 }
 
 .imageSection {
-  border-radius: 50px;
   width: 50%;
   overflow: hidden;
   display: flex;
@@ -184,9 +172,6 @@
 }
 
 .imageSection img {
-  /* max-width: 100%;
-  width: 100%; */
-  border-radius: 30px;
   height: auto;
   object-fit: contain;
 }
@@ -194,21 +179,32 @@
   display: none;
 }
 
-@media screen and (min-width:1500px)
-{
-  .onlineConsultancy_section_btn{
+@media screen and (min-width: 1500px) {
+  .onlineConsultancy_section_btn {
     font-size: 20px;
   }
 }
 
-/* ------------------------------------------------------------------- */
-/* @media (min-width: 1440px) {
-  .accordian_section {
-    display: none;
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .contentSection {
+    padding: 2rem 4rem 6rem;
+    display: flex;
+    font-family: "NeueMontreal-Regular";
+    justify-content: space-around;
   }
-} */
 
-/* ------------------------1440px------------------------------ */
+  .topButtons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+  }
+
+  .onlineConsultancy_section_title {
+    font-size: 70px;
+
+  }
+}
+
 @media (max-width: 1440px) {
   .onlineConsultancy_Innersection {
     padding: 0rem;
@@ -221,14 +217,12 @@
   .onlineConsultancy_section {
     background-color: #d4d4d4;
     border-radius: 25px;
-    /* width: 100%; */
   }
 
   .topButtons {
     display: flex;
     justify-content: space-evenly;
     padding: 3.5rem 1rem;
-    /* margin: 0 5rem; */
   }
 
   .btn1 {
@@ -260,7 +254,6 @@
   }
 
   .textSection {
-    /* background-color: aquamarine; */
     width: 50%;
   }
 
@@ -283,7 +276,6 @@
   }
 
   .imageSection {
-    /* background-color: aquamarine; */
     width: 50%;
     border-radius: 50px;
     overflow: hidden;
@@ -443,7 +435,7 @@
 
 /* -----------------------------768px--------------------------------- */
 @media (max-width: 768px) {
-  .onlineConsultancy{
+  .onlineConsultancy {
     padding-top: 6rem;
     padding-bottom: 0rem;
   }
@@ -459,9 +451,8 @@
   }
 }
 
-
-@media(min-width:320px) and (max-width:500px){
-  .onlineConsultancy{
+@media (min-width: 320px) and (max-width: 500px) {
+  .onlineConsultancy {
     padding-top: 3rem;
     padding-bottom: 0rem;
   }

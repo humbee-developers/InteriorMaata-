@@ -26,10 +26,10 @@ const onlineConsultancy = () => {
       Color: "#7F7047", // Button 2 background color
     },
     {
-      title: "A to Z Design",
-      text: "Our team of talented designers will create a 3d + 2d (Autocad ) + Working design concept to help you design your Home.Save up to 20% of your total Interior cost. ",
+      title: "Full Design & Layout",
+      text: "Our team offers comprehensive design services combining 3D, 2D (AutoCAD), and working concepts to enhance your home design. Enjoy savings of up to 20% on your total interior costs. ",
       imageUrl: img3,
-      Color: "#cc7d45", // Button 3 background color
+      Color: "#8d4c1e", // Button 3 background color
     },
   ];
 
@@ -85,7 +85,7 @@ const onlineConsultancy = () => {
                   className={styles.onlineConsultancy_section_btn}
                   style={{
                     color: headingColor,
-                    border: "2px solid",
+                    border: "1px solid",
                     borderColor: headingColor,
                   }}
                 >

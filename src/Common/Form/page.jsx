@@ -1,12 +1,9 @@
 "use client";
-// import { useFormik } from "formik";
 import React, { useState } from "react";
-// import { ContactFormSchemas1 } from "../../schema/Contact_form_schema";
 import Image from "next/image";
 import From_image from "@/images/Form_image.png";
 import Button from "@/Assets/Buttons/button4";
 import styles from "@/Common/Form/Form.module.css";
-// import emailjs from "@emailjs/browser";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./immx.css";
@@ -69,7 +66,7 @@ const validatePhone = (Phonedata) => {
       <div className={styles.contact_form}>
         <div className={styles.contact_form_wrapper}>
           <h1 className={styles.contact_form_title}>Reach out to us</h1>
-          <form onSubmit={sendMail}>
+          <form onSubmit={sendMail} className={styles.formSpacing}>
             <div className={styles.form_group}>
               <input
                 type="text"

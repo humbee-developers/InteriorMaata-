@@ -10,8 +10,8 @@ const page = () => {
   }, []);
   return (
     <div>
-      <Stairs>
-      </Stairs>
+      <Stairs/>
+     
     </div>
   );
 };

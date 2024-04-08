@@ -80,6 +80,7 @@
 .c-image-contain {
   width: 100%;
   -o-object-fit: contain;
+      filter: grayscale(1);
   object-fit: contain;
 }
 

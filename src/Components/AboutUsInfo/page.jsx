@@ -12,27 +12,32 @@ export default function Home() {
     {
       title1: "Crafting dreamy Interiors",
       title2: "",
-      src: img1
+      src: img1,
+      url: "/Projects"
     },
     {
       title1: "that speak volumes,",
       title2: "merging style",
-      src: img2
+      src: img2,
+      url: "/Projects"
     },
     {
       title1: "",
       title2: "with soul to redefine your",
-      src: img3
+      src: img3,
+      url: "/Projects"
     },
     {
       title1: "living experience.",
       title2: "Elevate your",
-      src: img4
+      src: img4,
+      url: "/Projects"
     },
     {
       title1: "",
       title2: "space with us!",
-      src: img5
+      src: img5,
+      url: "/Projects"
     }
   ]
 

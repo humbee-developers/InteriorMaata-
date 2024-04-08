@@ -15,10 +15,8 @@ const page = () => {
   return (
     <div>
 
-    <Stairs>
+<Stairs/>
       <ServicesCards />
-      {/* <ServicesFlex /> */}
-      </Stairs>
     </div>
   );
 };

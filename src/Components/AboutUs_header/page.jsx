@@ -51,7 +51,7 @@ const Page = () => {
       y: 0,
       transition: {
         duration: 1.2,
-        delay: 1.6,
+        delay: 1.4,
         ease: "easeOut",
       },
     },
