@@ -25,10 +25,10 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} />
+      <HomeBanner loadImage={handleLoad} /> */}
     
         <AboutUs_header />
         <AboutUs_threeCards />

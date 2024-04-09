@@ -3,7 +3,7 @@
   z-index: 99;
 }
 .slick-track{
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .slick-next {
   right: 200px;
@@ -33,24 +33,12 @@
   transform: scale(2.4);
 }
 @media(min-width:1600px) and (max-width:1920px){
-  /* .image{
-    height:100%;
-    width:100%
-  } */
 
   .slick-list {
     min-height:62rem
   }
 }
 @media screen and (max-width: 1440px) {
-  /* .slick-slide img {
-    max-width: 100%;
-  } */
-
-  /* .image{
-    height:100%;
-    width:80%;
-  } */
   
   .slick-list {
     min-height:47rem;
