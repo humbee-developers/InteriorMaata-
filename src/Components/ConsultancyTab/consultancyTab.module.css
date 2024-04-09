@@ -16,6 +16,7 @@
 
 .onlineConsultancy_section {
   background-color: #d4d4d4;
+  height: auto;
 }
 
 .topButtons {
@@ -99,7 +100,9 @@
   margin: 0;
 }
 
-.onlineConsultancy_section_btn {
+/* .onlineConsultancy_section_btn {
+  border: 1px solid #cc7d45;
+  color: #cc7d45;
   background-color: transparent;
   width: fit-content;
   font-family: "NeueMontreal-Regular";
@@ -161,8 +164,206 @@
 
 .onlineConsultancy_section_btn:hover {
   color: rgb(0, 0, 0);
+} */
+/* btn1 */
+.exclusiveGstBtn1 {
+  border: 1px solid #cc7d45;
+  color: #cc7d45;
+  background-color: transparent;
+  width: fit-content;
+  font-family: "NeueMontreal-Regular";
+  font-size: 12px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+  padding: 0.7rem 2.6rem;
+  float: left;
+  margin: 1rem 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.exclusiveGstBtn1:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #cc7d45;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.exclusiveGstBtn1:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+.exclusiveGstBtn1:after {
+  background-color: #ffffff;
+}
+.exclusiveGstBtn1 span {
+  position: relative;
 }
 
+.exclusiveGstBtn1 span:before {
+  color: black;
+}
+
+.exclusiveGstBtn1:hover {
+  color: white;
+}
+
+/* btn2 */
+.exclusiveGstBtn2 {
+  border: 1px solid #7f7047;
+  color: #7f7047;
+  background-color: transparent;
+  width: fit-content;
+  font-family: "NeueMontreal-Regular";
+  font-size: 12px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+  padding: 0.7rem 2.6rem;
+  float: left;
+  margin: 1rem 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.exclusiveGstBtn2:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #7f7047;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.exclusiveGstBtn2:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+.exclusiveGstBtn2:after {
+  background-color: #ffffff;
+}
+.exclusiveGstBtn2 span {
+  position: relative;
+}
+
+.exclusiveGstBtn2 span:before {
+  color: black;
+}
+
+.exclusiveGstBtn2:hover {
+  color: white;
+}
+/* btn3 */
+.exclusiveGstBtn3 {
+  border: 1px solid #8d4c1e;
+  color: #8d4c1e;
+  background-color: transparent;
+  width: fit-content;
+  font-family: "NeueMontreal-Regular";
+  font-size: 12px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-transform: capitalize;
+  padding: 0.7rem 2.6rem;
+  float: left;
+  margin: 1rem 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.exclusiveGstBtn3:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #8d4c1e;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  color: black;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+.exclusiveGstBtn3:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+.exclusiveGstBtn3:after {
+  background-color: #ffffff;
+}
+.exclusiveGstBtn3 span {
+  position: relative;
+}
+
+.exclusiveGstBtn3 span:before {
+  color: black;
+}
+
+.exclusiveGstBtn3:hover {
+  color: white;
+}
 .imageSection {
   width: 50%;
   overflow: hidden;
@@ -183,6 +384,10 @@
   .onlineConsultancy_section_btn {
     font-size: 20px;
   }
+  .onlineConsultancy_section {
+    background-color: #d4d4d4;
+    height: 75vh;
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
@@ -201,7 +406,6 @@
 
   .onlineConsultancy_section_title {
     font-size: 70px;
-
   }
 }
 

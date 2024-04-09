@@ -18,18 +18,21 @@ const onlineConsultancy = () => {
       text: "Our team of excellent designers will help you build a design concept + furniture layout according to your need. ",
       imageUrl: img1,
       Color: "#cc7d45", // Button 1 background color
+      buttonClass: styles.exclusiveGstBtn1,
     },
     {
       title: "2D layout + 3D Design",
       text: "Virtual Design for your entire home, Our team of excellent designers and architects will help you design your home. ",
       imageUrl: img2,
       Color: "#7F7047", // Button 2 background color
+      buttonClass: styles.exclusiveGstBtn2,
     },
     {
       title: "Full Design & Layout",
       text: "Our team offers comprehensive design services combining 3D, 2D (AutoCAD), and working concepts to enhance your home design. Enjoy savings of up to 20% on your total interior costs. ",
       imageUrl: img3,
       Color: "#8d4c1e", // Button 3 background color
+      buttonClass: styles.exclusiveGstBtn3,
     },
   ];
 
@@ -82,6 +85,12 @@ const onlineConsultancy = () => {
                   <p>{content[activeTab - 1].text} </p>
                 </div>
                 <div
+                  className={`${styles.onlineConsultancy_section_btn} ${content[activeTab - 1].buttonClass}`}
+                >
+                  <span className={styles.text}>EXCLUSIVE GST</span>
+                </div>
+              </div>
+                {/* <div
                   className={styles.onlineConsultancy_section_btn}
                   style={{
                     color: headingColor,
@@ -91,7 +100,7 @@ const onlineConsultancy = () => {
                 >
                  <span className={styles.text}>EXCLUSIVE GST</span>
                 </div>
-              </div>
+              </div> */}
 
               <div className={styles.imageSection}>
                 <Image
