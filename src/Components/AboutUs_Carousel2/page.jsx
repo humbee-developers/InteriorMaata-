@@ -306,7 +306,7 @@ const Page = () => {
               >
                 <Image className="image" src={slide1_src1} alt="image" />
                 {/* <div className={styles.leftCenterText}>
-                  <p className={styles.CenterTextInner}>EARTH</p>
+                  <p className={styles.CenterTextInner}>EARTH</p> 
                 </div> */}
               </motion.div>
               <motion.div
