@@ -29,44 +29,78 @@
   border-radius: 50%;
   height: 40px;
   background-color: #ae7b56;
-  cursor: pointer;
+  transition: all 0.3s ease-out;
   width: 40px;
   border: 1px solid white;
 }
+.slideControlButton1:hover{
+  filter: drop-shadow(1px 1px 6px gray);
+  cursor: pointer;
+  background-color: #b6794d;
+  transform: scale(1.1);
+}
 .slideControlButton2 {
   border-radius: 50%;
+  transition: all 0.3s ease-out;
   height: 40px;
   width: 40px;
   background-color: #d18211;
-  cursor: pointer;
   border: 1px solid white;
+}
+
+.slideControlButton2:hover{
+  filter: drop-shadow(1px 1px 6px gray);
+  cursor: pointer;
+  background-color: #e68c0e;
+  transform: scale(1.1);
 }
 
 .slideControlButton3 {
   border-radius: 50%;
   height: 40px;
+  transition: all 0.3s ease-out;
   background-color: #677176;
-  cursor: pointer;
   width: 40px;
   border: 1px solid white;
+}
+
+.slideControlButton3:hover{
+  filter: drop-shadow(1px 1px 6px gray);
+  cursor: pointer;
+  background-color: #71818a;
+  transform: scale(1.1);
 }
 
 .slideControlButton4 {
   border-radius: 50%;
   height: 40px;
+  transition: all 0.3s ease-out;
   width: 40px;
   background-color: #a39280;
-  cursor: pointer;
   border: 1px solid white;
+}
+
+.slideControlButton4:hover{
+  filter: drop-shadow(1px 1px 6px gray);
+  cursor: pointer;
+  background-color: #af9981;
+  transform: scale(1.1);
 }
 
 .slideControlButton5 {
   border-radius: 50%;
   height: 40px;
-  cursor: pointer;
+  transition: all 0.3s ease-out;
   background-color: #a4a3a4;
   width: 40px;
   border: 1px solid white;
+}
+
+.slideControlButton5:hover{
+  filter: drop-shadow(1px 1px 6px gray);
+  cursor: pointer;
+  background-color: #928f92;
+  transform: scale(1.1);
 }
 
 .image1 {
