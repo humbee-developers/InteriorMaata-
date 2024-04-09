@@ -505,6 +505,9 @@ const Page = () => {
         </Slider>
       </div>
 
+
+
+
       <div className={styles.imageNumbering}>
         <div className={styles.number}>
           <span>0{currentSlide + 1}</span>/0{totalImages}

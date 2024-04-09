@@ -130,5 +130,6 @@
   }
   .aboutUs_banner_text_outer {
     width: 95%;
+    padding: 0 15px;
   }
 }
