@@ -8,6 +8,14 @@
     z-index: 99;
     background-color:#CC7D45;
   }
+
+  .progress{
+    color: red;
+    font-size: 100px;
+    z-index: 99;
+    opacity: 1;
+    
+  }
   .introduction svg {
     position: absolute;
     top: 0;

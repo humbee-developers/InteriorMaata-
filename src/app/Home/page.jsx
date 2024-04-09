@@ -12,6 +12,7 @@ import AboutUsInfo from "@/Components/AboutUsInfo/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = ({ lData }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isCounter,setCounter]= useState(0)
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -22,13 +23,23 @@ const Page = ({ lData }) => {
     console.log("data", data);
     setIsLoading(data);
   }
+  
+  function handleCounter(data) {
+    console.log("cc", data);
+    setCounter(data);
+  }
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(false); 
+    },5000)
+  },[isLoading])
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
+      <AnimatePresence mode="wait">
+        {isLoading  && <Preloader counter={isCounter} />}
       </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} /> */}
+      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
     
         <AboutUs_header />
         <AboutUs_threeCards />

@@ -11,6 +11,15 @@
   gap: 2rem;
 }
 
+.hh{
+position: absolute;
+z-index: 9;
+left: 2rem;
+color:red;
+font-size: 100px;
+bottom: 3rem;
+}
+
 .interiormaata {
   position: absolute;
   font-size: 3.5vw;

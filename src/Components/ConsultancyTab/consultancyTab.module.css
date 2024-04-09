@@ -90,7 +90,6 @@
   font-size: 24px;
   font-weight: 300;
   font-family: "NeueMontreal-Light";
-  /* text-transform: capitalize; */
   letter-spacing: 0.48px;
   word-wrap: break-word;
   margin: 2rem 0;
@@ -99,72 +98,6 @@
 .title {
   margin: 0;
 }
-
-/* .onlineConsultancy_section_btn {
-  border: 1px solid #cc7d45;
-  color: #cc7d45;
-  background-color: transparent;
-  width: fit-content;
-  font-family: "NeueMontreal-Regular";
-  font-size: 12px;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.24px;
-  text-transform: capitalize;
-  padding: 0.7rem 2.6rem;
-  float: left;
-  margin: 1rem 0;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-rendering: geometricprecision;
-  text-transform: uppercase;
-  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
-    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
-    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
-.onlineConsultancy_section_btn:before {
-  animation: opacityFallbackOut 0.5s step-end forwards;
-  backface-visibility: hidden;
-  background-color: #ebebeb56;
-  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
-  content: "";
-  height: 100%;
-  left: 0;
-  color: black;
-  position: absolute;
-  top: 0;
-  transform: translateZ(0);
-  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
-    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  width: 100%;
-}
-.onlineConsultancy_section_btn:hover:before {
-  animation: opacityFallbackIn 0s step-start forwards;
-  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
-}
-.onlineConsultancy_section_btn:after {
-  background-color: #ffffff;
-}
-.onlineConsultancy_section_btn span {
-  position: relative;
-}
-
-.onlineConsultancy_section_btn span:before {
-  color: black;
-}
-
-.onlineConsultancy_section_btn:hover {
-  color: rgb(0, 0, 0);
-} */
 /* btn1 */
 .exclusiveGstBtn1 {
   border: 1px solid #cc7d45;
@@ -420,7 +353,6 @@
 
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    /* border-radius: 25px; */
   }
 
   .topButtons {
@@ -430,27 +362,18 @@
   }
 
   .btn1 {
-    /* border-radius: 48px; */
     font-size: 20px;
     letter-spacing: 0.42px;
-    /* width: 200px;
-    height: 49px; */
   }
 
   .btn2 {
-    /* border-radius: 48px; */
     font-size: 20px;
     letter-spacing: 0.42px;
-    /* width: 200px;
-    height: 49px; */
   }
   .btn3 {
-    /* border-radius: 48px; */
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.42px;
-    /* width: 200px;
-    height: 49px; */
   }
 
   .contentSection {
@@ -481,7 +404,6 @@
 
   .imageSection {
     width: 50%;
-    /* border-radius: 50px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -505,36 +427,22 @@
     width: 65%;
   }
 
-  .onlineConsultancy_section {
-    background-color: #d4d4d4;
-    /* border-radius: 25px; */
-  }
-
   .topButtons {
     padding: 2.5rem 0.5rem;
   }
 
   .btn1 {
-    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    /* width: 170px;
-    height: 46px; */
   }
 
   .btn2 {
-    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    /* width: 170px;
-    height: 46px; */
   }
   .btn3 {
-    /* border-radius: 48px; */
     font-size: 17px;
     letter-spacing: 0.4px;
-    /* width: 170px;
-    height: 46px; */
   }
 
   .contentSection {
@@ -576,36 +484,20 @@
     width: 70%;
   }
 
-  .onlineConsultancy_section {
-    background-color: #d4d4d4;
-    /* border-radius: 25px; */
-  }
-
   .topButtons {
     padding: 2rem 0.4rem;
   }
 
   .btn1 {
-    /* border-radius: 48px; */
     font-size: 14px;
-    letter-spacing: 0.4px;
-    /* width: 150px;
-    height: 39px; */
   }
 
   .btn2 {
-    /* border-radius: 48px; */
     font-size: 14px;
-    letter-spacing: 0.4px;
-    /* width: 150px;
-    height: 39px; */
   }
   .btn3 {
-    /* border-radius: 48px; */
     font-size: 14px;
     letter-spacing: 0.4px;
-    /* width: 150px;
-    height: 39px; */
   }
 
   .contentSection {
@@ -645,7 +537,6 @@
   }
   .onlineConsultancy_Innersection {
     display: none;
-    /* background-color: #D4D4D4; */
   }
 
   .accordian_section {

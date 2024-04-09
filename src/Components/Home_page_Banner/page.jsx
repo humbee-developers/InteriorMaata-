@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const Animation = ({ loadImage }) => {
+const Animation = ({ loadImage, counter }) => {
   const [info, setInfo] = useState(false);
   const [animationEnded, setAnimationEnded] = useState(false);
   const sectionRef = useRef(null);
@@ -248,6 +248,9 @@ const Animation = ({ loadImage }) => {
     return () => window.removeEventListener("scroll", updateScrollPercentage);
   }, []);
 
+  const loadingProgress = (loadingCounter / 250) * 100;
+  console.log(counter(loadingProgress))
+
   return (
     <section>
       <section ref={sectionRef}>
@@ -428,6 +431,9 @@ const Animation = ({ loadImage }) => {
       )}
 
       <MusicPlayer />
+      {/* <div className={styles.hh}>
+      Loading progress: {Math.floor(loadingProgress)}%
+    </div> */}
     </section>
   );
 };
