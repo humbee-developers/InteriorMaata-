@@ -30,7 +30,7 @@ export default function Index({ }) {
       if (counter < 100) {
         setCounter(counter + 1);
       }
-    }, 2);
+    }, 25);
     return () => clearTimeout(timeout);
   }, [counter]);
 
