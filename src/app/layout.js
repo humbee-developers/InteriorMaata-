@@ -21,11 +21,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-
-// {location != "/" && (
-//   <>
-//     <Form />
-//     <Footer />
-//   </>
-// )}

@@ -20,7 +20,6 @@ const Animation = ({ loadImage, counter }) => {
   const [loading, setLoading] = useState(true);
   const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  console.log("FactoryWalk loading", loading);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -107,7 +106,6 @@ const Animation = ({ loadImage, counter }) => {
         setLoading(false);
       } catch (error) {
         console.error("Error loading images:", error);
-        // Handle error loading images
       }
     };
     loadImages();
@@ -150,7 +148,7 @@ const Animation = ({ loadImage, counter }) => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [loadingCounter]);
-  console.log(loading ? "FactoryWalk Loading" : "FactoryWalk Complate");
+
   console.log(loadImage(loading));
 
   const [ref, inView] = useInView({
@@ -431,9 +429,6 @@ const Animation = ({ loadImage, counter }) => {
       )}
 
       <MusicPlayer />
-      {/* <div className={styles.hh}>
-      Loading progress: {Math.floor(loadingProgress)}%
-    </div> */}
     </section>
   );
 };

@@ -65,19 +65,25 @@ export default function Index({ counter }) {
             <Image src={logo} alt="image" />
             {words[index]}
           </motion.div>
-          <svg>
+          <div>
             <motion.path
               variants={curve}
               initial="initial"
               exit="exit"
             ></motion.path>
-          </svg>
+          </div>
         </>
       )}
-      <div className={styles.hh}>Loading progress: {Math.floor(counter)}%</div>
+     <div className={styles.counterOuter}>
+     
       <div
-        style={{ width: `${counter}%`, backgroundColor: "red", height: "5px" }}
-      ></div>
+        style={{ width: `${counter}%`, backgroundColor: "red", height: "20px", position:"relative" }}
+      >
+        <div className={styles.percentageCounter}>{Math.floor(counter)}%</div>
+      </div>
+      {/* <div className={styles.vc} max={counter}></div> */}
+      
+     </div>
     </motion.div>
   );
 }
