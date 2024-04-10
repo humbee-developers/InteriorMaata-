@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anime";
@@ -8,24 +8,31 @@ import styles from "./style.module.css";
 
 const words = ["interiorमाता"];
 
-export default function Index({ counter }) {
+export default function Index({ }) {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
-  const [Counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
 
   useEffect(() => {
-    if (index == words.length - 1) return;
-    setTimeout(() => {
+    if (index === words.length - 1) return;
+    const interval = setInterval(() => {
       setIndex(index + 1);
-    }, 10);
+    }, 4000);
+    return () => clearInterval(interval);
   }, [index]);
 
-
-  console.log("ddd", counter);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (counter < 100) {
+        setCounter(counter + 1);
+      }
+    }, 2);
+    return () => clearTimeout(timeout);
+  }, [counter]);
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -74,16 +81,11 @@ export default function Index({ counter }) {
           </div>
         </>
       )}
-     <div className={styles.counterOuter}>
-     
-      <div
-        style={{ width: `${counter}%`, backgroundColor: "red", height: "20px", position:"relative" }}
-      >
-        <div className={styles.percentageCounter}>{Math.floor(counter)}%</div>
+      <div className={styles.counterOuter}>
+        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "red", height: "20px", position: "relative" }}>
+          <div className={styles.percentageCounter}>{counter}%</div>
+        </div>
       </div>
-      {/* <div className={styles.vc} max={counter}></div> */}
-      
-     </div>
     </motion.div>
   );
 }
