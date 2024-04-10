@@ -12,6 +12,8 @@ export default function Index({ }) {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [counter, setCounter] = useState(0);
+  const [displayText, setDisplayText] = useState("LOADING");
+  
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
@@ -33,6 +35,15 @@ export default function Index({ }) {
     }, 25);
     return () => clearTimeout(timeout);
   }, [counter]);
+
+
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDisplayText("LAUNCHING 3D");
+    }, 2800); // Change text to "Hello World" after 2 seconds
+    return () => clearTimeout(timeout);
+  }, []); // Run once after component mounts
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -82,10 +93,21 @@ export default function Index({ }) {
         </>
       )}
       <div className={styles.counterOuter}>
-        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "red", height: "20px", position: "relative" }}>
+        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "red", height: "16px", position: "relative" }}>
           <div className={styles.percentageCounter}>{counter}%</div>
         </div>
       </div>
+
+     <div className={styles.moment}>
+     <div className={styles.loading}>{displayText}</div>
+     <div className={styles.loader}>
+    <span className={styles.bar}></span>
+    <span className={styles.bar}></span>
+    <span className={styles.bar}></span>
+</div>
+     </div>
+
+
     </motion.div>
   );
 }
