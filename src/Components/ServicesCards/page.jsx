@@ -7,7 +7,7 @@ import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import ServiceCard_img1 from "@/images/serviceCard_silver.png";
 import ServiceCard_img2 from "@/images/serviceCard_gold.png";
 import ServiceCard_img3 from "@/images/serviceCard_platinum.png";
-import Button from  "@/Assets/Buttons/button5"
+import Button from  "@/Common/Buttons/button5"
 import styles from "@/Components/ServicesCards/servicesCards.module.css"
 const Services_Header = () => { 
 

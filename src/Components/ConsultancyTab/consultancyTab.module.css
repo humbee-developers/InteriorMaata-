@@ -319,7 +319,7 @@
   }
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    height: 75vh;
+    height: auto;
   }
 }
 
@@ -329,6 +329,12 @@
     display: flex;
     font-family: "NeueMontreal-Regular";
     justify-content: space-around;
+  }
+  .onlineConsultancy_Innersection {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .topButtons {
