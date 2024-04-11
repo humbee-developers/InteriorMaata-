@@ -1,9 +1,6 @@
 .introduction {
   height: 100vh;
   width: 100vw;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
   position: fixed;
   z-index: 99;
   background-color: #cc7d45;
@@ -16,7 +13,7 @@
 }
 
 .progress {
-  color: red;
+  color: #bbbcc0;
   font-size: 100px;
   z-index: 99;
   opacity: 1;

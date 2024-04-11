@@ -23,7 +23,7 @@ export default function Index({ }) {
     if (index === words.length - 1) return;
     const interval = setInterval(() => {
       setIndex(index + 1);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [index]);
 
@@ -41,9 +41,9 @@ export default function Index({ }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setDisplayText("LAUNCHING 3D");
-    }, 2800); // Change text to "Hello World" after 2 seconds
+    }, 2600); 
     return () => clearTimeout(timeout);
-  }, []); // Run once after component mounts
+  }, []); 
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -61,7 +61,7 @@ export default function Index({ }) {
     },
     exit: {
       d: targetPath,
-      transition: { duration: 1, ease: [0.76, 0, 0.24, 1], delay: 0.1 },
+      transition: { duration: 1.35, ease: [0.76, 0, 0.24, 1], delay: 2.95 },
     },
   };
 
@@ -93,7 +93,7 @@ export default function Index({ }) {
         </>
       )}
       <div className={styles.counterOuter}>
-        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "red", height: "16px", position: "relative" }}>
+        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "#bbbcc0", height: "15px", position: "relative" }}>
           <div className={styles.percentageCounter}>{counter}%</div>
         </div>
       </div>
