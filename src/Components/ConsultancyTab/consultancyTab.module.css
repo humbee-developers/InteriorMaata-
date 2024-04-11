@@ -319,7 +319,7 @@
   }
   .onlineConsultancy_section {
     background-color: #d4d4d4;
-    height: 75vh;
+    height: auto;
   }
 }
 
