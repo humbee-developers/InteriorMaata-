@@ -161,6 +161,13 @@ right:5rem;
     bottom: 15rem;
   }
 }
+@media(max-width:1441px){
+  .canvas_factory_settings{
+    object-fit: none;
+  }
+}
+
+
 
 
 @media(min-width:200px) and (max-width:500px){

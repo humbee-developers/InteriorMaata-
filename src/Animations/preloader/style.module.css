@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   background-color: #cc7d45;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .percentageCounter {
-  color: white;
+  color: #bbbcc0;
   font-family: "NeueMontreal-Regular";
   font-size: 9rem;
   position: absolute;
@@ -42,7 +42,7 @@
   align-items: flex-end;
 }
 
-.moment{
+.moment {
   display: flex;
   position: absolute;
   top: 1rem;
@@ -50,7 +50,7 @@
   right: 3rem;
 }
 
-.loading{
+.loading {
   display: flex;
   color: white;
   font-size: 50px;
@@ -58,8 +58,12 @@
   align-items: center;
 }
 
-
-
+.textInner {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
 
 .loader {
   display: flex;
@@ -70,7 +74,7 @@
   display: inline-block;
   width: 3px;
   height: 20px;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: #bbbcc0;
   border-radius: 10px;
   animation: scale-up4 1s linear infinite;
 }
@@ -78,11 +82,11 @@
 .bar:nth-child(2) {
   height: 35px;
   margin: 0 5px;
-  animation-delay: .25s;
+  animation-delay: 0.25s;
 }
 
 .bar:nth-child(3) {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 @keyframes scale-up4 {
@@ -96,22 +100,52 @@
   }
 }
 
-@media(min-width:1600px) and (max-width:1920px){
-  .moment{
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .moment {
     display: flex;
     position: absolute;
     top: 1rem;
     gap: 2rem;
     right: 7rem;
   }
-  
-  .loading{
+
+  .loading {
     display: flex;
     color: white;
     font-size: 50px;
     font-family: "NeueMontreal-Regular";
     align-items: center;
   }
+}
+
+
+@media(min-width:200px) and (max-width:520px){
+  .percentageCounter {
+    color: #bbbcc0;
+    font-family: "NeueMontreal-Regular";
+    font-size: 6rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+  }
+
+  .moment {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    gap: 2rem;
+    right: -4rem;
+  }
+
+  .loading {
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-family: "NeueMontreal-Regular";
+    align-items: center;
+  }
   
-  
+
 }

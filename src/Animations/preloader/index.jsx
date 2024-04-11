@@ -74,8 +74,9 @@ export default function Index({ }) {
     >
       {dimension.width > 0 && (
         <>
+          <div className={styles.text}>
           <motion.div
-            className={styles.text}
+            className={styles.textInner}
             variants={opacity}
             initial="initial"
             animate="enter"
@@ -83,6 +84,7 @@ export default function Index({ }) {
             <Image src={logo} alt="image" />
             {words[index]}
           </motion.div>
+          </div>
           <div>
             <motion.path
               variants={curve}
