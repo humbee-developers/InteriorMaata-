@@ -445,6 +445,14 @@
     right: 5.5rem;                   
   }
 }
+@media (max-height:1180px)
+{
+  .leftCenterText {
+    position: absolute;
+    top: 30rem;
+    right: 2.5rem;                   
+  }
+}
 @media (max-width:800px)
 {
   .imagex ,.imagex1 , .imagex2 , .imagex3{

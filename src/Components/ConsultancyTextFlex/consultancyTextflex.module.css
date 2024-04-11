@@ -1,5 +1,4 @@
 .Consultancy_page_second_container {
-  /* width: 100%; */
   height: 100%;
   padding-top: 10rem;
 }
@@ -151,20 +150,25 @@
 @media screen and (max-width: 765px) {
   .Services_Header_Outer {
     /* flex-direction: column; */
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 0rem;
+  }
+  .Services_header_img {
+    width: 100%;
   }
   .Services_header_img_outer {
     width: 50%;
     padding-bottom: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .Consultancy_page_second_content_text {
     font-size: 5vw;
   }
   .Main_Container {
-    padding-left: 8rem;
-    padding-right: -8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .Consultancy_page_second_content {
     padding-top: 3rem;
@@ -185,8 +189,8 @@
     font-size: 5vw;
   }
   .Main_Container {
-    padding-left: 5rem;
-    padding-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .online_consultancy_text {
     display: none;
@@ -199,12 +203,19 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .Main_Container {
+  /* .Main_Container {
     padding-left: 2rem;
     padding-right: 0rem;
-  }
+  } */
   .Consultancy_page_second_content_text {
     font-size: 5vw;
+  }
+}
+@media (max-width:500px)
+{
+  .Main_Container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -212,6 +223,9 @@
     flex-direction: column;
     align-items: center;
     gap: 0rem;
+  }
+  .Services_header_img_outer {
+    width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
