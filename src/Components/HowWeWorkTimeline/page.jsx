@@ -222,7 +222,7 @@ const Timeline = () => {
         <div className={styles.timeline_content1}>
           <div data-aos="zoom-in-up" className={styles.timeline_img_section}>
             <Image
-              src={timeline_img4}
+              src={timeline_img5}
               alt="none"
               className={styles.timeline1_image}
             />
