@@ -22,6 +22,7 @@ import slide2_src1 from "@/images/i1.png";
 import slide3_src1 from "@/images/i2.png";
 import slide4_src1 from "@/images/i3.png";
 import slide5_src1 from "@/images/i4.png";
+import slide51_src1 from "@/images/slider1img.png";
 import "@/Components/AboutUs_Carousel2/Inbuilt.css";
 import styles from "@/Components/AboutUs_Carousel2/AboutUS_Carousel2.module.css";
 
@@ -298,16 +299,14 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              <motion.div
+              {/* <motion.div
                 className={styles.image1}
                 variants={imageAnimations[0]}
                 initial="hidden"
                 animate={controls1}
               >
                 <Image className="image" src={slide1_src1} alt="image" />
-                {/* <div className={styles.leftCenterText}>
-                  <p className={styles.CenterTextInner}>EARTH</p>
-                </div> */}
+               
               </motion.div>
               <motion.div
                 className={styles.image2}
@@ -397,6 +396,9 @@ const Page = () => {
                 animate={controls1}
               >
                 <Image className="image" src={slide1_src11} alt="image" />
+              </motion.div> */}
+                <motion.div >
+                <Image className={styles.imagex} src={slide51_src1} alt="image" />
               </motion.div>
             </div>
           </div>

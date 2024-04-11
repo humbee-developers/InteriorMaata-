@@ -57,7 +57,7 @@
 }
 @media screen and (max-width: 1199px) {
   .slick-slide{
-    margin-left: 3.5rem;
+    margin-left: auto;
   }
   .slick-list{
     margin-left: -10rem !important;
@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 900px) {
   .slick-slide{
-    margin-left: 2rem;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 769px) {
@@ -81,7 +81,7 @@
     min-height: 42rem;
   }
   .slick-slide{
-    margin-left: 0rem;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 700px) {
@@ -89,7 +89,7 @@
     min-height: 42rem;
   }
   .slick-slide{
-    margin-left: 0rem;
+    margin-left: auto;
   }
   
 }
