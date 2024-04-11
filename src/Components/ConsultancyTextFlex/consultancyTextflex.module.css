@@ -204,10 +204,10 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .Main_Container {
+  /* .Main_Container {
     padding-left: 2rem;
     padding-right: 0rem;
-  }
+  } */
   .Consultancy_page_second_content_text {
     font-size: 5vw;
   }
