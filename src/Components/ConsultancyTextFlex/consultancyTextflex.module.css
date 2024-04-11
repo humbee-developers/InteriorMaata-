@@ -82,6 +82,13 @@
   .Consultancy_page_second_content_text {
     font-size: 3.4vw;
   }
+  .Services_Header_Outer {
+    display: flex;
+    padding-top: 3rem;
+    align-items: stretch;
+    gap: 9.9rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 1440px) {

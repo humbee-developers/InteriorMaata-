@@ -330,6 +330,12 @@
     font-family: "NeueMontreal-Regular";
     justify-content: space-around;
   }
+  .onlineConsultancy_Innersection {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .topButtons {
     display: flex;
