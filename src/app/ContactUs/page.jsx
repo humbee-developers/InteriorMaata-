@@ -1,7 +1,7 @@
 "use client"
 import React ,{useEffect} from 'react'
 import Stairs from "@/Animations/Stairs"
-import ContactUsHeader from "@/Components/ContactUs_Header/page"
+// import ContactUsHeader from "@/Components/ContactUs_Header/page"
 import ContactUsImage from "@/Components/ContactUs_Image/page"
 const Page = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Page = () => {
   return (
     <>
       <Stairs/>
-        <ContactUsHeader />
+        {/* <ContactUsHeader /> */}
         <ContactUsImage />
      
     </>

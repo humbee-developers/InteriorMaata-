@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
+import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import { useRouter } from 'next/navigation'
 import Contact_us_person_img from "@/images/contact_person1.png";
@@ -13,23 +14,37 @@ const Page = () => {
   });
   const controls1 = useAnimation();
 
-  const imageAnimations = [
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: -140,
-        transition: {
-          ease: "linear",
-          duration: 2,
-          delay: 1,
-          x: { duration: 2 },
-          type: "spring",
-          stiffness: 70,
-        },
-      },
-    },
-  ];
+  // const imageAnimations = [
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: -140,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2,
+  //         delay: 1,
+  //         x: { duration: 2 },
+  //         type: "spring",
+  //         stiffness: 70,
+  //       },
+  //     },
+  //   },
+  // ];
+
+
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
 
   useEffect(() => {
     if (inView1) {
@@ -51,9 +66,30 @@ const Page = () => {
   
 
   return (
-    <>
+    <div className={styles.contactUsPageOuter}>
+
+<div className={styles.Contact_us_overlay}>
+          <div className={styles.Contact_us_overlay_text}>
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"Transforming "}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"Spaces, Inspiring Lives"}
+                justifyContent={"center"}
+              />
+
+            </motion.div>
+          </div>
+        </div>
       <motion.div
-        variants={imageAnimations[0]}
+        variants=""
         initial="hidden"
         animate={controls1}
         className={styles.Contact_Us_img_outer}
@@ -79,7 +115,7 @@ const Page = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-    </>
+    </div>
   );
 };
 
