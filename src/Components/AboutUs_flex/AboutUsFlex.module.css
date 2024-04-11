@@ -85,10 +85,12 @@
 
 @media (max-width: 768px) {
   .forth_Section_container1{
-    flex-direction: column-reverse;
+    flex-direction: column;
+
   }
   .forth_Section_container{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
   }
 }
 
