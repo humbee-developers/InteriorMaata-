@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import third_Section_image1 from "@/images/AboutUs_flex_image1.jpg";
 import third_Section_image2 from "@/images/Aboutus_flex_image2.png";
-import Button from "@/Assets/Buttons/button6";
-import Button3 from "@/Assets/Buttons/button7";
+import Button from "@/Common/Buttons/button6";
+import Button3 from "@/Common/Buttons/button7";
 import styles from "@/Components/AboutUs_flex/AboutUsFlex.module.css";
 
 

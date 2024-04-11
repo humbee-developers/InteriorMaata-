@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import From_image from "@/images/Form_image.png";
-import Button from "@/Assets/Buttons/button4";
+import Button from "@/Common/Buttons/button4";
 import styles from "@/Common/Form/Form.module.css";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
