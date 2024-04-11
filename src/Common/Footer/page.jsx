@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer_copyright}>
-          <div>
+          <div className={styles.footerTagline}>
             <p>
               Copyright &copy; 2024 Interiormaata, All Right Reserved. Designed
               & Developed by  <Link className={styles.adds} target="_blank" href="https://www.humbeestudio.com/">H/dS</Link>

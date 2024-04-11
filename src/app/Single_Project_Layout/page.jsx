@@ -178,7 +178,7 @@ const Project_Header = () => {
         </div>
 
         <div className={styles.Interior_second_text_content}>
-          <p className={styles.Interior_second_text_content_first}>
+          <div className={styles.Interior_second_text_content_first}>
 
           <motion.div
                 ref={ref1}
@@ -199,11 +199,7 @@ const Project_Header = () => {
                   justifyContent={"center"}
                 />
               </motion.div>
-
-
-            {/* interiormaata: an estate agency with a conscience, selling beautiful
-            homes across vadodara & beyond... */}
-          </p>
+          </div>
         </div>
 
         <div className={styles.interior_last_room_Section}>
