@@ -42,14 +42,14 @@ const Animation = ({ loadImage, counter }) => {
         canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1200) {
-        canvas.width = 1800;
+        canvas.width = 1801;
         canvas.height = windowHeight * 1;
       }else if (windowWidth >= 1180) {
         canvas.width = 1703;
         canvas.height = windowHeight * 1;
       }
        else if (windowWidth >= 1024) {
-        canvas.width = 1801;
+        canvas.width = 2001;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
         canvas.width = 1802;
