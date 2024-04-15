@@ -77,9 +77,9 @@ const Animation = ({ loadImage, counter }) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 250;
+    const frameCount = 278;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/model/${(index + 1)
+      `https://interiormaata.humbeestudio.xyz/assets/frames/finalframes/${(index + 1)
         .toString()
         .padStart(4, "0")}.webp`;
 
