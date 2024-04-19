@@ -21,6 +21,8 @@ const Animation = ({ loadImage, counter }) => {
   const [loading, setLoading] = useState(true);
   const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [play,setPlay]= useState(false);
+  console.log(loadingCounter)
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -28,6 +30,7 @@ const Animation = ({ loadImage, counter }) => {
     const text = textRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
+
 
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
@@ -238,6 +241,12 @@ const Animation = ({ loadImage, counter }) => {
     }
   }, [controls, inView6]);
 
+  useEffect(()=>{
+    setTimeout(()=>{
+    setPlay(true)
+    },3000)
+  },[])
+
   useEffect(() => {
     const updateScrollPercentage = () => {
       const scrollPosition = window.scrollY;
@@ -435,7 +444,7 @@ const Animation = ({ loadImage, counter }) => {
         </motion.div>
       )} */}
 
-      <MusicPlayer />
+    {play  &&  <MusicPlayer />}
     </section>
   );
 };

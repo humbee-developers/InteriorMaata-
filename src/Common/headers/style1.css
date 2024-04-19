@@ -112,7 +112,7 @@
 .burger::after,
 .burger::before {
   content: "";
-  height: 2px;
+  height: 1px;
   width: 60%;
   background-color: #791125;
   position: relative;
