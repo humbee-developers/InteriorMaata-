@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import playPause from "@/svgs/tx.gif"
+import playPause from "@/svgs/tt.gif"
 import styles from "@/Components/musicPlayer/music.module.css"
 
 const MusicPlayer = ({ audioFile }) => {
@@ -51,7 +51,7 @@ const MusicPlayer = ({ audioFile }) => {
 
   return (
     <div>
-      <audio loop ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
+      <audio loop autoPlay ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
       {isVisible && ( // Render button based on visibility state
         <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
           <Image className={styles.waves} src={playPause} alt="playPause"   />

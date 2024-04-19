@@ -79,11 +79,11 @@ const Animation = ({ loadImage, counter }) => {
 
     const frameCount = 278;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/finalframes/${(index + 1)
+      `https://interiormaata.humbeestudio.xyz/assets/frames/new/${(index + 1)
         .toString()
-        .padStart(4, "0")}.webp`;
+        .padStart(4, "0")}.jpg`;
 
-
+        // https://interiormaata.humbeestudio.xyz/assets/frames/new/0001.jpg
     let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -122,7 +122,8 @@ const Animation = ({ loadImage, counter }) => {
       scrollTrigger: {
         trigger: section,
         pin: true,
-        scrub: 0.1,
+        scrub: true,
+        // smoothTouch: 0.1,
         end: "+=1800%",
       },
     });
@@ -290,7 +291,7 @@ const Animation = ({ loadImage, counter }) => {
           justifyContent={"center"}
         />
       </motion.div>
-      {scrollPercentage >= 10 && (
+      {/* {scrollPercentage >= 10 && (
         <motion.div
           ref={ref1}
           initial="hidden"
@@ -430,7 +431,7 @@ const Animation = ({ loadImage, counter }) => {
             justifyContent={"left"}
           />
         </motion.div>
-      )}
+      )} */}
 
       <MusicPlayer />
     </section>

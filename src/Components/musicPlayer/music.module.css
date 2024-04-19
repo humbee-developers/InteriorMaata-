@@ -3,7 +3,7 @@
   bottom: 1.5rem;
   left: 1.5rem;
   cursor: pointer;
-  border: 1px solid #cc7d45;
+  border: 1px solid #ffffff;
   background: transparent;
   outline: none;
   width: 45px;
@@ -23,5 +23,4 @@
 
 .playPause.playing {
   opacity: 1; 
-  filter: drop-shadow(2px 3px 5px black);
 }
