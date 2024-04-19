@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
 import FramesTextAnimation from "@/Common/framesTextAnimation/FramesTextAnimation";
+import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,17 +40,17 @@ const Animation = ({ loadImage, counter }) => {
         canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1599) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1200) {
-        canvas.width = 1801;
+        canvas.width = 1301;
         canvas.height = windowHeight * 1;
       }else if (windowWidth >= 1180) {
-        canvas.width = 1703;
+        canvas.width = 1303;
         canvas.height = windowHeight * 1;
       }
        else if (windowWidth >= 1024) {
-        canvas.width = 2001;
+        canvas.width = 1501;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
         canvas.width = 1802;
@@ -123,6 +124,7 @@ const Animation = ({ loadImage, counter }) => {
         trigger: section,
         pin: true,
         scrub: true,
+        smooth:2,
         // smoothTouch: 0.1,
         end: "+=1800%",
       },
@@ -269,11 +271,11 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.9 }}
         className={styles.text1}
       >
-        <FramesTextAnimation
+        <HeadingTextAnimation
           heading={"Where Tradition find"}
           justifyContent={"center"}
         />
-        <FramesTextAnimation
+        <HeadingTextAnimation
           heading={" it’s modern muse"}
           justifyContent={"left"}
         />
@@ -286,7 +288,7 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.9 }}
         className={styles.interiormaata}
       >
-      <FramesTextAnimation
+      <HeadingTextAnimation
           heading={"interiorमाता"}
           justifyContent={"center"}
         />

@@ -4,7 +4,7 @@ import playPause from "@/svgs/tt.gif"
 import styles from "@/Components/musicPlayer/music.module.css"
 
 const MusicPlayer = ({ audioFile }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [isVisible, setIsVisible] = useState(true);
   const audioRef = useRef(null);
 
@@ -34,8 +34,8 @@ const MusicPlayer = ({ audioFile }) => {
       if (currentScrollPercentage >= scrollPercentage) {
         setIsVisible(false);
         if (isPlaying) {
-          audioRef.current.pause(); // Pause the audio if it's playing
-          setIsPlaying(false); // Update playing state
+          audioRef.current.pause(); 
+          setIsPlaying(false); 
         }
       } else {
         setIsVisible(true);
@@ -49,10 +49,16 @@ const MusicPlayer = ({ audioFile }) => {
     };
   }, [isPlaying]);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.3;
+    }
+  }, []);
+
   return (
     <div>
       <audio loop autoPlay ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
-      {isVisible && ( // Render button based on visibility state
+      {isVisible && ( 
         <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
           <Image className={styles.waves} src={playPause} alt="playPause"   />
           {/* {isPlaying ? 'Pause' : 'Play'} */}

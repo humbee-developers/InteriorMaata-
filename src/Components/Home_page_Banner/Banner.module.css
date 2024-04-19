@@ -1,5 +1,6 @@
 .canvas_factory_settings {
   height: 100vh;
+  object-fit: cover;
   width: 100%;
   object-position: center;
 }
@@ -162,9 +163,9 @@ right:5rem;
   }
 }
 @media(max-width:1441px){
-  .canvas_factory_settings{
+  /* .canvas_factory_settings{
     object-fit: none;
-  }
+  } */
 }
 
 
