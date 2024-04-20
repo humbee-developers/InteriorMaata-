@@ -39,13 +39,13 @@ const Footer = () => {
               <br /> Akota, Vadodara
             </p>
           </div>
-          <div className={styles.footerImageOuter}>
+          {/* <div className={styles.footerImageOuter}>
           <Image
                   className={styles.FooterImage}
                   src={footerImage}
                   alt="none"
                 />
-          </div>
+          </div> */}
           
           <div className={styles.footer_Second}>
             <ul className={styles.footerUl}>

@@ -7,6 +7,7 @@ import FramesTextAnimation from "@/Common/framesTextAnimation/FramesTextAnimatio
 import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
+import "./scroll.css"
 gsap.registerPlugin(ScrollTrigger);
 
 const Animation = ({ loadImage, counter }) => {
@@ -21,7 +22,8 @@ const Animation = ({ loadImage, counter }) => {
   const [loading, setLoading] = useState(true);
   const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  const [play,setPlay]= useState(false);
+  const [isVisible, setIsVisible] = useState(true); 
+
   console.log(loadingCounter)
 
   useEffect(() => {
@@ -37,7 +39,7 @@ const Animation = ({ loadImage, counter }) => {
       const windowHeight = window.innerHeight;
 
       if (windowWidth >= 1700) {
-        canvas.width = 1800;
+        canvas.width = 1700;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1600) {
         canvas.width = 1600;
@@ -53,22 +55,22 @@ const Animation = ({ loadImage, counter }) => {
         canvas.height = windowHeight * 1;
       }
        else if (windowWidth >= 1024) {
-        canvas.width = 1501;
+        canvas.width = 1304;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
-        canvas.width = 1802;
+        canvas.width = 1305;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 500) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else {
         canvas.width = 400;
@@ -241,11 +243,10 @@ const Animation = ({ loadImage, counter }) => {
     }
   }, [controls, inView6]);
 
-  useEffect(()=>{
-    setTimeout(()=>{
-    setPlay(true)
-    },3000)
-  },[])
+
+
+
+ 
 
   useEffect(() => {
     const updateScrollPercentage = () => {
@@ -264,6 +265,50 @@ const Animation = ({ loadImage, counter }) => {
 
   const loadingProgress = (loadingCounter / 250) * 100;
   console.log(counter(loadingProgress))
+
+  const scrollDownByTenPercent = () => {
+    const tenPercentOfHeight = window.innerHeight * 2;
+    window.scrollBy({
+      top: tenPercentOfHeight, // move down by 10% of the viewport height
+      behavior: 'smooth' // smooth scroll
+    });
+    setIsVisible(false); // Hide the button after scrolling
+  };
+  
+
+
+  const [ref9, inView9] = useInView({
+    triggerOnce: false,
+  });
+
+ 
+  const controls9 = useAnimation();
+  const imageAnimations = [
+    {
+      hidden: { opacity: 0, y: 100 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          ease: "linear",
+          duration: 2,
+          delay: 20,
+          x: { duration: 2 },
+          type: "spring",
+          stiffness: 100,
+        },
+      },
+    },
+    // second slider animations
+  ];
+
+  useEffect(() => {
+    if (inView9) {
+      controls9.start("visible");
+    }
+  }, [controls9, inView9]);
+
+
 
   return (
     <section>
@@ -444,7 +489,23 @@ const Animation = ({ loadImage, counter }) => {
         </motion.div>
       )} */}
 
-    {play  &&  <MusicPlayer />}
+     <div class="scroll-down-wrap no-border">
+     {isVisible && <button
+      variants={imageAnimations[0]}
+                initial="hidden"
+                animate={controls9}
+     
+     
+      class="section-down-arrow " onClick={scrollDownByTenPercent} ref={ref9}>
+     <svg class="nectar-scroll-icon"  width={30}
+              height={30} viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+      </path>
+    </svg>
+     </button>}
+     </div>
+
+    <MusicPlayer />
     </section>
   );
 };

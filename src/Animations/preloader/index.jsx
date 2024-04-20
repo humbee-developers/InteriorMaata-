@@ -13,6 +13,7 @@ export default function Index({ }) {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const [counter, setCounter] = useState(0);
   const [displayText, setDisplayText] = useState("LOADING");
+    
   
 
   useEffect(() => {

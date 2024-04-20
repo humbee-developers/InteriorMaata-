@@ -27,7 +27,6 @@ const MusicPlayer = ({ audioFile }) => {
       } else {
         scrollPercentage = 92.5;
       }
-      
 
       const currentScrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
@@ -50,9 +49,11 @@ const MusicPlayer = ({ audioFile }) => {
   }, [isPlaying]);
 
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.volume = 0.2;
-    }
+    setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.play();
+      }
+    }, 3000);
   }, []);
 
   return (
@@ -60,8 +61,7 @@ const MusicPlayer = ({ audioFile }) => {
       <audio loop autoPlay ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
       {isVisible && ( 
         <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
-          <Image className={styles.waves} src={playPause} alt="playPause"   />
-          {/* {isPlaying ? 'Pause' : 'Play'} */}
+          <Image className={styles.waves} src={playPause} alt="playPause" />
         </button>
       )}
     </div>
