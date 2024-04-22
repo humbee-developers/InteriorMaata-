@@ -34,6 +34,24 @@ const Page = () => {
     triggerOnce: true,
   });
 
+
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+  });
+
+  const [ref3, inView3] = useInView({
+    triggerOnce: false,
+  });
+  const [ref4, inView4] = useInView({
+    triggerOnce: false,
+  });
+  const [ref5, inView5] = useInView({
+    triggerOnce: false,
+  });
+
+
+
+
   const controls = useAnimation();
 
   useEffect(() => {
@@ -46,182 +64,182 @@ const Page = () => {
   const controls1 = useAnimation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const imageAnimations = [
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2,
-          delay: 1,
-          x: { duration: 2 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  // const imageAnimations = [
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2,
+  //         delay: 1,
+  //         x: { duration: 2 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 1.5,
-          delay: 1.3,
-          x: { duration: 1.5 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 1.5,
+  //         delay: 1.3,
+  //         x: { duration: 1.5 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
 
-        transition: {
-          ease: "linear",
-          duration: 1,
-          delay: 0.8,
-          x: { duration: 0.8 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 1,
+  //         delay: 0.8,
+  //         x: { duration: 0.8 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: -100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2,
-          delay: 1.5,
-          x: { duration: 2 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: -100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2,
+  //         delay: 1.5,
+  //         x: { duration: 2 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0 },
-      visible: {
-        opacity: 1,
-        transition: {
-          duration: 2,
-          delay: 1.5,
-          ease: "easeOut",
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0 },
+  //     visible: {
+  //       opacity: 1,
+  //       transition: {
+  //         duration: 2,
+  //         delay: 1.5,
+  //         ease: "easeOut",
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2.5,
-          delay: 1.5,
-          x: { duration: 2.5 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2.5,
+  //         delay: 1.5,
+  //         x: { duration: 2.5 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2,
-          delay: 1.2,
-          x: { duration: 2 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2,
+  //         delay: 1.2,
+  //         x: { duration: 2 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2.2,
-          delay: 1.4,
-          x: { duration: 2.2 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2.2,
+  //         delay: 1.4,
+  //         x: { duration: 2.2 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2.4,
-          delay: 1.6,
-          x: { duration: 2.4 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2.4,
+  //         delay: 1.6,
+  //         x: { duration: 2.4 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2.6,
-          delay: 1.8,
-          x: { duration: 2.6 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2.6,
+  //         delay: 1.8,
+  //         x: { duration: 2.6 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2.8,
-          delay: 2,
-          x: { duration: 2.8 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
+  //   {
+  //     hidden: { opacity: 0, y: 100 },
+  //     visible: {
+  //       opacity: 1,
+  //       y: 0,
+  //       transition: {
+  //         ease: "linear",
+  //         duration: 2.8,
+  //         delay: 2,
+  //         x: { duration: 2.8 },
+  //         type: "spring",
+  //         stiffness: 100,
+  //       },
+  //     },
+  //   },
 
-    // second slider animations
-  ];
+  //   // second slider animations
+  // ];
 
   useEffect(() => {
     if (inView1) {
@@ -282,7 +300,7 @@ const Page = () => {
     <div className={styles.main_carousel}>
       <div className={styles.wrapper}>
         <Slider {...settings} ref={sliderRef}>
-          <div className={styles.slide1} ref={ref1}>
+          <div key={1}  className={styles.slide1} ref={ref1}>
             <div className={styles.slideContent}>
               <div>
                 <motion.div
@@ -405,7 +423,7 @@ const Page = () => {
 
           {/* slide 2 */}
 
-          <div className={styles.slid2}>
+          <div key={2}  className={styles.slid2} ref={ref2}>
             <div className={styles.slideContent}>
             <div>
                 <motion.div
@@ -431,7 +449,7 @@ const Page = () => {
 
           {/* slide 3 */}
 
-          <div className={styles.slid2}>
+          <div key={3}  className={styles.slid2} ref={ref3}>
             <div className={styles.slideContent}>
             <div>
                 <motion.div
@@ -457,7 +475,7 @@ const Page = () => {
 
           {/* slide 4 */}
 
-          <div className={styles.slid2}>
+          <div key={4}  className={styles.slid2} ref={ref4} >
             <div className={styles.slideContent}>
             <div>
                 <motion.div
@@ -482,7 +500,7 @@ const Page = () => {
 
           {/* slide 5 */}
 
-          <div className={styles.slid2}>
+          <div key={5}  className={styles.slid2} ref={ref5}>
             <div className={styles.slideContent}>
             <div>
                 <motion.div
