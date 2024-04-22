@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Image from 'next/image';
-import playPause from "@/svgs/tt.gif"
-import styles from "@/Components/musicPlayer/music.module.css"
+import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import playPause from "@/svgs/tt.gif";
+import styles from "@/Components/musicPlayer/music.module.css";
 
 const MusicPlayer = ({ audioFile }) => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -16,6 +16,11 @@ const MusicPlayer = ({ audioFile }) => {
     }
     setIsPlaying(!isPlaying);
   };
+  console.log("play", isPlaying);
+ 
+  useEffect(() => {
+    audioRef.current.play();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +33,10 @@ const MusicPlayer = ({ audioFile }) => {
         scrollPercentage = 92.5;
       }
 
-      const currentScrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      const currentScrollPercentage =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        100;
 
       if (currentScrollPercentage >= scrollPercentage) {
         setIsVisible(false);
@@ -38,13 +46,14 @@ const MusicPlayer = ({ audioFile }) => {
         }
       } else {
         setIsVisible(true);
+        audioRef.current.play();
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isPlaying]);
 
