@@ -3,9 +3,10 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
-import FramesTextAnimation from "@/Common/framesTextAnimation/FramesTextAnimation";
+import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
+import "./scroll.css"
 gsap.registerPlugin(ScrollTrigger);
 
 const Animation = ({ loadImage, counter }) => {
@@ -20,6 +21,9 @@ const Animation = ({ loadImage, counter }) => {
   const [loading, setLoading] = useState(true);
   const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [isVisible, setIsVisible] = useState(true); 
+
+  console.log(loadingCounter)
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -28,43 +32,44 @@ const Animation = ({ loadImage, counter }) => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
 
+
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
 
       if (windowWidth >= 1700) {
-        canvas.width = 1800;
+        canvas.width = 1700;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1600) {
         canvas.width = 1600;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1599) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 1200) {
-        canvas.width = 1801;
+        canvas.width = 1301;
         canvas.height = windowHeight * 1;
       }else if (windowWidth >= 1180) {
-        canvas.width = 1703;
+        canvas.width = 1303;
         canvas.height = windowHeight * 1;
       }
        else if (windowWidth >= 1024) {
-        canvas.width = 2001;
+        canvas.width = 1304;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
-        canvas.width = 1802;
+        canvas.width = 1305;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 500) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1600;
+        canvas.width = 1300;
         canvas.height = windowHeight * 1;
       } else {
         canvas.width = 400;
@@ -77,9 +82,9 @@ const Animation = ({ loadImage, counter }) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 278;
+    const frameCount = 280;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/new/${(index + 1)
+      `https://interiormaata.humbeestudio.xyz/assets/frames/newfinal/${(index + 1)
         .toString()
         .padStart(4, "0")}.jpg`;
 
@@ -123,6 +128,7 @@ const Animation = ({ loadImage, counter }) => {
         trigger: section,
         pin: true,
         scrub: true,
+        smooth:2,
         // smoothTouch: 0.1,
         end: "+=1800%",
       },
@@ -236,6 +242,11 @@ const Animation = ({ loadImage, counter }) => {
     }
   }, [controls, inView6]);
 
+
+
+
+ 
+
   useEffect(() => {
     const updateScrollPercentage = () => {
       const scrollPosition = window.scrollY;
@@ -254,6 +265,96 @@ const Animation = ({ loadImage, counter }) => {
   const loadingProgress = (loadingCounter / 250) * 100;
   console.log(counter(loadingProgress))
 
+  const scrollDownByTenPercent = () => {
+    const tenPercentOfHeight = window.innerHeight * 2;
+    window.scrollBy({
+      top: tenPercentOfHeight, // move down by 10% of the viewport height
+      behavior: 'smooth' // smooth scroll
+    });
+    setIsVisible(false); // Hide the button after scrolling
+  };
+  
+
+
+  const [ref9, inView9] = useInView({
+    triggerOnce: false,
+  });
+
+ 
+  const controls9 = useAnimation();
+  const imageAnimations = [
+    {
+      hidden: { opacity: 0, y: 100 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          ease: "linear",
+          duration: 2,
+          delay: 20,
+          x: { duration: 2 },
+          type: "spring",
+          stiffness: 100,
+        },
+      },
+    },
+    // second slider animations
+  ];
+
+  useEffect(() => {
+    if (inView9) {
+      controls9.start("visible");
+    }
+  }, [controls9, inView9]);
+
+
+  useEffect(() => {
+    // Function to handle scroll direction and video visibility
+    const handleScroll = () => {
+      const video = document.querySelector(`.${styles.videoBg}`);
+      if (window.scrollY > 0) { // Check if window has scrolled down
+        video.style.visibility = "hidden";
+      } else {
+        video.style.visibility = "visible";
+      }
+    };
+  
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+  
+    // Remove scroll event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
+
+
+  
+  const [refButton, inViewButton] = useInView({
+    triggerOnce: false,
+  });
+  const controlsx = useAnimation();
+
+  const variants = {
+    hidden: { opacity: 0, y: 5 }, // Move the button down initially
+    visible: { opacity: 1, y: -210 }, // Move the button up to its original position
+  };
+
+  useEffect(() => {
+    if (inViewButton) {
+      controlsx.start("visible");
+    }
+  }, [inViewButton, controlsx]);
+
+
+
+
+
+
+
   return (
     <section>
       <section ref={sectionRef}>
@@ -269,11 +370,11 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.9 }}
         className={styles.text1}
       >
-        <FramesTextAnimation
+        <HeadingTextAnimation
           heading={"Where Tradition find"}
           justifyContent={"center"}
         />
-        <FramesTextAnimation
+        <HeadingTextAnimation
           heading={" it’s modern muse"}
           justifyContent={"left"}
         />
@@ -286,7 +387,7 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.9 }}
         className={styles.interiormaata}
       >
-      <FramesTextAnimation
+      <HeadingTextAnimation
           heading={"interiorमाता"}
           justifyContent={"center"}
         />
@@ -433,7 +534,31 @@ const Animation = ({ loadImage, counter }) => {
         </motion.div>
       )} */}
 
-      <MusicPlayer />
+     <div class="scroll-down-wrap">
+     {isVisible && <div
+      class="section-down-arrow " onClick={scrollDownByTenPercent} ref={ref9}>Click here to dive
+     </div>}
+     </div>
+
+     
+     <video className={styles.videoBg}  width="750" height="500"  autoPlay loop muted>
+      <source src="./video/testing.mp4" type="video/mp4"/>
+     </video>
+
+    <MusicPlayer />
+
+    <motion.div
+        ref={refButton}
+        initial="hidden"
+        animate={inViewButton ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.6, delay: 0 }}
+        // className={styles.buttonOuter}
+      >
+        <button onClick={() => router.push("/Consultancy")} className={styles.buttonX} role="button">
+        <span className={styles.textX}>Contact Us | 123456789</span>
+      </button>
+      </motion.div>
     </section>
   );
 };

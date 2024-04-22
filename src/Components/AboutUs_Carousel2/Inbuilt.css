@@ -3,14 +3,14 @@
   z-index: 99;
 }
 .slick-track{
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .slick-next {
   right: 200px;
 }
 
 .slick-list {
-  min-height:46rem
+  min-height:35rem
 }
 .slick-dots {
   bottom: -30px;
@@ -35,7 +35,7 @@
 @media(min-width:1600px) and (max-width:1920px){
 
   .slick-list {
-    min-height:62rem
+    min-height:58rem
   }
 }
 @media screen and (max-width: 1440px) {

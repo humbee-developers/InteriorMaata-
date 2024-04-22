@@ -41,8 +41,8 @@ const MusicPlayer = ({ audioFile }) => {
       if (currentScrollPercentage >= scrollPercentage) {
         setIsVisible(false);
         if (isPlaying) {
-          audioRef.current.pause(); // Pause the audio if it's playing
-          setIsPlaying(false); // Update playing state
+          audioRef.current.pause(); 
+          setIsPlaying(false); 
         }
       } else {
         setIsVisible(true);
@@ -57,24 +57,20 @@ const MusicPlayer = ({ audioFile }) => {
     };
   }, [isPlaying]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.play();
+      }
+    }, 3000);
+  }, []);
+
   return (
     <div>
-      <audio
-        loop
-        // autoPlay={true}
-        ref={audioRef}
-        src={
-          "https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"
-        }
-        type="audio/mp3"
-      />
-      {isVisible && ( // Render button based on visibility state
-        <button
-          className={`${styles.playPause} ${isPlaying ? styles.playing : ""}`}
-          onClick={togglePlay}
-        >
+      <audio loop autoPlay ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
+      {isVisible && ( 
+        <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
           <Image className={styles.waves} src={playPause} alt="playPause" />
-          {/* {isPlaying ? 'Pause' : 'Play'} */}
         </button>
       )}
     </div>
