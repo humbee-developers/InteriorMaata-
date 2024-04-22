@@ -199,14 +199,30 @@
    .scroll-down-wrap{
     position: absolute;
     z-index: 99;
-    top: 1rem;
-    left: 2rem;
+    top: 50%;
+    right: 22%;
    }
-
+@media(max-width:1399px){
+   .scroll-down-wrap{
+        right: 20%;
+    }
+}
+@media(max-width:1199px){
+   .scroll-down-wrap{
+        right: 10%;
+    }
+}
+@media(max-width:767px){
+   .scroll-down-wrap{
+        right: 10%;
+        display: none;
+    }
+}
 
    .section-down-arrow{
     color:#791125;
     text-decoration: underline;
+    
    }
 
 

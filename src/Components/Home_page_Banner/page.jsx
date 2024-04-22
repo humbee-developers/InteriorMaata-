@@ -536,7 +536,7 @@ const Animation = ({ loadImage, counter }) => {
 
      <div class="scroll-down-wrap">
      {isVisible && <div
-      class="section-down-arrow " onClick={scrollDownByTenPercent} ref={ref9}>Click here to dive
+      className="section-down-arrow " onClick={scrollDownByTenPercent} ref={ref9}>Click here to dive
      </div>}
      </div>
 
