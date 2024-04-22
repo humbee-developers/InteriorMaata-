@@ -12,6 +12,116 @@
     top: 90%;
 }
 
+
+.videoBg{
+  width: 100%;
+  position: fixed;
+      top: 0%;
+      left: 0%;
+      display: block;
+  height: 100%;
+  object-fit: cover;
+  
+  }
+
+
+
+
+
+
+
+
+
+/* button X */
+
+
+.buttonX {
+  appearance: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #000000;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeueMontreal-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 3em;
+  position: absolute;
+  left: 50%;
+    transform: translateX(-50%);
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  /* text-transform: uppercase; */
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.buttonX:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color:#ffffff;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.buttonX:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.buttonX:after {
+  background-color: #FFFFFF;
+}
+
+.buttonX:hover{
+  color:black;
+
+}
+
+.buttonX span {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+/* 
 .mouse {
   width: 35px;
     height: 54px;
@@ -44,7 +154,7 @@
       opacity: 0;
       top: 35px;
   }
-}
+} */
 
 
 .heroLogo{
@@ -66,6 +176,7 @@ bottom: 3rem;
 .interiormaata {
   position: absolute;
   font-size: 3.5vw;
+  z-index: 1;
   font-family: "Roseritta";
   left: 5rem;
   color: #791125;
@@ -131,6 +242,7 @@ right:5rem;
   position: absolute;
   font-size: 4.5vw;
   left: 5rem;
+  z-index: 1;
   font-family: "Roseritta";
   color: #ffffff;
   bottom: 10rem;
@@ -214,6 +326,15 @@ right:5rem;
 
 
 @media(min-width:200px) and (max-width:500px){
+
+
+
+.buttonX{
+  padding:1rem 2.5rem
+}
+
+
+
   .canvas_factory_settings {
     height: 100vh;
     width: 100%;

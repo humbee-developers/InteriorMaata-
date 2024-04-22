@@ -1,4 +1,4 @@
-
+/* 
 .scroll-down-wrap{
     transition:opacity 0.4s ease;
     -webkit-transition:opacity 0.4s ease;
@@ -193,4 +193,21 @@
   
   
   
-  
+   */
+
+
+   .scroll-down-wrap{
+    position: absolute;
+    z-index: 99;
+    top: 1rem;
+    left: 2rem;
+   }
+
+
+   .section-down-arrow{
+    color:#791125;
+    text-decoration: underline;
+   }
+
+
+

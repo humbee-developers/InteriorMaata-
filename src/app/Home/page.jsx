@@ -10,6 +10,7 @@ import AboutUs_Carousel2 from "@/Components/AboutUs_Carousel2/page";
 import AboutUs_flex from "@/Components/AboutUs_flex/page";
 import AboutUsInfo from "@/Components/AboutUsInfo/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
+import "./home.css"
 const Page = ({ lData }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter,setCounter]= useState  (0)
@@ -36,6 +37,7 @@ const Page = ({ lData }) => {
       </AnimatePresence>
       <HomeBanner loadImage={handleLoad} counter={handleCounter} />
     
+        <div className="bg">
         <AboutUs_header />
         <AboutUs_threeCards />
         <Marquee />
@@ -43,6 +45,7 @@ const Page = ({ lData }) => {
         <AboutUs_flex />
         <AboutUsInfo />
         <AboutUs_ourDesign />
+        </div>
     </>
   );
 };
