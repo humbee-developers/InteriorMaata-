@@ -46,7 +46,7 @@
   background-color: beige;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 2;
+  aspect-ratio: 5 / 2;
   object-fit: cover;
 
   cursor: pointer;
@@ -58,7 +58,7 @@
   color: #cc7d45;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 0 5rem 0;
+  padding: 2rem 0 5rem 0;
   font-size: 14px;
   font-style: normal;
   line-height: normal;
