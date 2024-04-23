@@ -46,27 +46,31 @@ const Animation = ({ loadImage, counter }) => {
       } else if (windowWidth >= 1599) {
         canvas.width = 1300;
         canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 1200) {
-        canvas.width = 1301;
+      } else if (windowWidth >= 1440) {
+        canvas.width = 1309;
         canvas.height = windowHeight * 1;
-      }else if (windowWidth >= 1180) {
-        canvas.width = 1303;
+      }else if (windowWidth >= 1200) {
+        canvas.width = 1509;
+        canvas.height = windowHeight * 1;
+      }
+      else if (windowWidth >= 1180) {
+        canvas.width = 1503;
         canvas.height = windowHeight * 1;
       }
        else if (windowWidth >= 1024) {
-        canvas.width = 1304;
+        canvas.width = 1504;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 768) {
-        canvas.width = 1305;
+        canvas.width = 1405;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 500) {
         canvas.width = 1401;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1402;
+        canvas.width = 1502;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1303;
+        canvas.width = 1403;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
         canvas.width = 1304;
@@ -266,12 +270,12 @@ const Animation = ({ loadImage, counter }) => {
   console.log(counter(loadingProgress))
 
   const scrollDownByTenPercent = () => {
-    const tenPercentOfHeight = window.innerHeight * 2;
+    const tenPercentOfHeight = window.innerHeight * 2.2;
     window.scrollBy({
       top: tenPercentOfHeight, // move down by 10% of the viewport height
       behavior: 'smooth' // smooth scroll
     });
-    setIsVisible(false); // Hide the button after scrolling
+    setIsVisible(true); // Hide the button after scrolling
   };
   
 

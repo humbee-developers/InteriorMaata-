@@ -5,35 +5,24 @@
   object-position: center;
 }
 
-.scrolll{
+.scrolll {
   position: absolute;
-    left: 50%;
-    cursor: pointer;
-    top: 90%;
+  left: 50%;
+  cursor: pointer;
+  top: 90%;
 }
 
-
-.videoBg{
+.videoBg {
   width: 100%;
   position: fixed;
-      top: 0%;
-      left: 0%;
-      display: block;
+  top: 0%;
+  left: 0%;
+  display: block;
   height: 100%;
   object-fit: cover;
-  
-  }
-
-
-
-
-
-
-
-
+}
 
 /* button X */
-
 
 .buttonX {
   appearance: none;
@@ -54,12 +43,14 @@
   padding: 1em 3em;
   position: absolute;
   left: 50%;
-    transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   text-decoration: none;
   text-rendering: geometricprecision;
   /* text-transform: uppercase; */
-  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -68,9 +59,9 @@
 }
 
 .buttonX:before {
-  animation: opacityFallbackOut .5s step-end forwards;
+  animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
-  background-color:#ffffff;
+  background-color: #ffffff;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -78,7 +69,8 @@
   position: absolute;
   top: 0;
   transform: translateZ(0);
-  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 100%;
 }
 
@@ -88,38 +80,16 @@
 }
 
 .buttonX:after {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.buttonX:hover{
-  color:black;
-
+.buttonX:hover {
+  color: black;
 }
 
 .buttonX a {
   position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
 
 /* 
 .mouse {
@@ -156,21 +126,20 @@
   }
 } */
 
-
-.heroLogo{
+.heroLogo {
   display: flex;
   justify-content: center;
   align-items: baseline;
   gap: 2rem;
 }
 
-.hh{
-position: absolute;
-z-index: 9;
-left: 2rem;
-color:red;
-font-size: 100px;
-bottom: 3rem;
+.hh {
+  position: absolute;
+  z-index: 9;
+  left: 2rem;
+  color: red;
+  font-size: 100px;
+  bottom: 3rem;
 }
 
 .interiormaata {
@@ -180,11 +149,11 @@ bottom: 3rem;
   font-family: "Roseritta";
   left: 5rem;
   color: #791125;
-  bottom: 6rem;
+  bottom: 11rem;
 }
 
-.LivingRoom{
-  position:absolute;
+.LivingRoom {
+  position: absolute;
   font-size: 60px;
   font-family: "NeueMontreal-Regular";
   color: #451721;
@@ -192,51 +161,50 @@ bottom: 3rem;
   bottom: -137rem;
 }
 
-.paragraph{
-  position: absolute;
-    width: 25%;
-    font-size: 21px;
-    font-family: "NeueMontreal-Regular";
-    color: #ffffff;
-    right: 6rem;
-    bottom: -163rem;
-}
-
-.bedRoom{
-  position:absolute;
-  font-size: 60px;
-  font-family: "NeueMontreal-Regular";
-  color: #451721;
- left: 5rem;
-  bottom: -322rem;
-}
-.paragraph1{
+.paragraph {
   position: absolute;
   width: 25%;
   font-size: 21px;
   font-family: "NeueMontreal-Regular";
   color: #ffffff;
-right:5rem;
-  bottom: -341rem;
+  right: 6rem;
+  bottom: -163rem;
 }
-.outDoor{
-  position:absolute;
+
+.bedRoom {
+  position: absolute;
   font-size: 60px;
   font-family: "NeueMontreal-Regular";
   color: #451721;
- right:5rem;
+  left: 5rem;
+  bottom: -322rem;
+}
+.paragraph1 {
+  position: absolute;
+  width: 25%;
+  font-size: 21px;
+  font-family: "NeueMontreal-Regular";
+  color: #ffffff;
+  right: 5rem;
+  bottom: -341rem;
+}
+.outDoor {
+  position: absolute;
+  font-size: 60px;
+  font-family: "NeueMontreal-Regular";
+  color: #451721;
+  right: 5rem;
   bottom: -538rem;
 }
 
-
-.paragraph2{
+.paragraph2 {
   position: absolute;
   width: 30%;
   font-size: 21px;
   font-family: "NeueMontreal-Regular";
   color: #ffffff;
- left:6rem;
- bottom: -518rem;
+  left: 6rem;
+  bottom: -518rem;
 }
 .text1 {
   position: absolute;
@@ -245,81 +213,154 @@ right:5rem;
   z-index: 1;
   font-family: "Roseritta";
   color: #ffffff;
-  bottom: 10rem;
+  bottom: 15rem;
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
-
-
   .canvas_factory_settings {
     object-fit: cover;
   }
   .interiormaata {
     position: absolute;
     left: 6rem;
-    bottom: 10rem;
+    bottom: 20rem;
   }
 
-  .LivingRoom{
-    position:absolute;
+  .LivingRoom {
+    position: absolute;
     font-size: 70px;
     /* font-family: "Roseritta"; */
 
     left: 5rem;
     bottom: -137rem;
   }
-  .paragraph{
+  .paragraph {
     position: absolute;
     width: 25%;
     font-size: 21px;
-   
+
     right: 6rem;
     bottom: -169rem;
   }
-  .bedRoom{
-    position:absolute;
+  .bedRoom {
+    position: absolute;
     font-size: 70px;
     right: 10rem;
     bottom: -404rem;
   }
 
-  .paragraph1{
+  .paragraph1 {
     position: absolute;
     width: 25%;
     font-size: 21px;
-  
-    right:5rem;
+
+    right: 5rem;
     bottom: -447rem;
   }
 
-  .outDoor{
-    position:absolute; 
+  .outDoor {
+    position: absolute;
     font-size: 60px;
-   right:13rem;
+    right: 13rem;
     bottom: -610rem;
   }
 
-  .paragraph2{
+  .paragraph2 {
     position: absolute;
     width: 25%;
     font-size: 21px;
     color: #ffffff;
-   right:6rem;
-   bottom: -595rem;
+    right: 6rem;
+    bottom: -595rem;
   }
-  
+
   .text1 {
     position: absolute;
     left: 6rem;
     line-height: 90px;
-    bottom: 15rem;
+    bottom: 25rem;
   }
 }
 
-@media(min-width:200px) and (max-width:500px){
-.buttonX{
-  padding:1rem 1.4rem
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .text1 {
+    position: absolute;
+    left: 6rem;
+    font-size: 5vw;
+    /* line-height: 90px; */
+    bottom: 20rem;
+  }
+
+  .interiormaata {
+    position: absolute;
+    left: 6rem;
+    font-size: 4.5vw;
+    bottom: 16rem;
+  }
 }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .text1 {
+    position: absolute;
+    left: 3rem;
+    font-size: 5.5vw;
+    /* line-height: 90px; */
+    bottom: 22rem;
+  }
+
+  .interiormaata {
+    position: absolute;
+    left: 3rem;
+    font-size: 5.5vw;
+    bottom: 18rem;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .text1 {
+    position: absolute;
+    left: 3rem;
+    font-size: 5.5vw;
+    bottom: 22rem;
+  }
+
+  .interiormaata {
+    position: absolute;
+    left: 3rem;
+    font-size: 5.5vw;
+    bottom: 19rem;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width: 499px) {
+  .text1 {
+    position: absolute;
+    left: 3rem;
+    font-size: 6.5vw;
+    bottom: 22rem;
+  }
+
+  .interiormaata {
+    position: absolute;
+    left: 3rem;
+    font-size: 6.5vw;
+    bottom: 20rem;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+  .buttonX {
+    padding: 1rem 1.4rem;
+  }
 
   .canvas_factory_settings {
     height: 100vh;
@@ -327,29 +368,23 @@ right:5rem;
     object-fit: cover;
     object-position: center;
   }
-  .interiormaata {
-display: none;
-  }
-  
-  .LivingRoom{
+
+  .LivingRoom {
     display: none;
   }
-  
-  .paragraph{
+
+  .paragraph {
     display: none;
   }
-  
-  .bedRoom{
+
+  .bedRoom {
     display: none;
   }
-  .paragraph1{
+  .paragraph1 {
     display: none;
   }
-  .outDoor{
+  .outDoor {
     display: none;
   }
-  
-  .text1 {
-    display: none;
-  }
+
 }
