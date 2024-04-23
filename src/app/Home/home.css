@@ -1,3 +1,33 @@
 .bg{
+    padding-top: 42rem;
     background-image: url("../../images/02-min.jpg"); 
+}
+
+
+@media(min-width:1600px) and (max-width:1920px){
+    .bg{
+        padding-top:62rem
+    }
+}
+
+@media(min-width:1024px) and (max-width:1440px){
+    
+    .bg{
+        padding-top:53rem
+    }
+}
+
+
+@media(min-width:768px) and (max-width:1023px){
+    
+    .bg{
+        padding-top:53rem
+    }
+}
+
+@media(min-width:200px) and (max-width:767px){
+    
+    .bg{
+        padding-top:53rem
+    }
 }

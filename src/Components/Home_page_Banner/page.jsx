@@ -33,55 +33,82 @@ const Animation = ({ loadImage, counter }) => {
     contextRef.current = context;
 
 
+    // const setCanvasSize = () => {
+    //   const windowWidth = window.innerWidth;
+    //   const windowHeight = window.innerHeight;
+
+    //   if (windowWidth >= 1700) {
+    //     canvas.width = 1700;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 1600) {
+    //     canvas.width = 1600;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 1599) {
+    //     canvas.width = 1300;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 1440) {
+    //     canvas.width = 1309;
+    //     canvas.height = windowHeight * 1;
+    //   }else if (windowWidth >= 1200) {
+    //     canvas.width = 1509;
+    //     canvas.height = windowHeight * 1;
+    //   }
+    //   else if (windowWidth >= 1180) {
+    //     canvas.width = 1503;
+    //     canvas.height = windowHeight * 1;
+    //   }
+    //    else if (windowWidth >= 1024) {
+    //     canvas.width = 1504;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 768) {
+    //     canvas.width = 1405;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 500) {
+    //     canvas.width = 1401;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 425) {
+    //     canvas.width = 1502;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 375) {
+    //     canvas.width = 1403;
+    //     canvas.height = windowHeight * 1;
+    //   } else if (windowWidth >= 320) {
+    //     canvas.width = 1304;
+    //     canvas.height = windowHeight * 1;
+    //   } else {
+    //     canvas.width = 400;
+    //     canvas.height = windowHeight * 0.6;
+    //   }
+
+    //   ScrollTrigger.update();
+    // };
+
+
+
     const setCanvasSize = () => {
-      const windowWidth = window.innerWidth;
-      const windowHeight = window.innerHeight;
+      const canvas = canvasRef.current;
+      const originalWidth = 1632;
+      const originalHeight = 918;
+      const aspectRatio = originalWidth / originalHeight;
 
-      if (windowWidth >= 1700) {
-        canvas.width = 1700;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 1600) {
-        canvas.width = 1600;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 1599) {
-        canvas.width = 1300;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 1440) {
-        canvas.width = 1309;
-        canvas.height = windowHeight * 1;
-      }else if (windowWidth >= 1200) {
-        canvas.width = 1509;
-        canvas.height = windowHeight * 1;
-      }
-      else if (windowWidth >= 1180) {
-        canvas.width = 1503;
-        canvas.height = windowHeight * 1;
-      }
-       else if (windowWidth >= 1024) {
-        canvas.width = 1504;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 768) {
-        canvas.width = 1405;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 500) {
-        canvas.width = 1401;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 425) {
-        canvas.width = 1502;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 375) {
-        canvas.width = 1403;
-        canvas.height = windowHeight * 1;
-      } else if (windowWidth >= 320) {
-        canvas.width = 1304;
-        canvas.height = windowHeight * 1;
+      const availableWidth = window.innerWidth;
+      const availableHeight = window.innerHeight;
+      const heightByWidth = availableWidth / aspectRatio;
+
+      if (availableWidth < 1024) {
+        // For screens below 1024px width
+        canvas.style.width = "1301px"; // Set canvas width to 1301px
+        canvas.style.height = "100vh"; // Set canvas height to window height
       } else {
-        canvas.width = 400;
-        canvas.height = windowHeight * 0.6;
+        // For screens 1024px width and above
+        canvas.width = originalWidth;
+        canvas.height = originalHeight;
+        canvas.style.width = "100%"; // Set canvas width to 100% of container
+        canvas.style.height = "100vh"; // Allow canvas to maintain aspect ratio
       }
-
-      ScrollTrigger.update();
     };
+
+
 
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
@@ -365,6 +392,10 @@ const Animation = ({ loadImage, counter }) => {
         <canvas
           className={styles.canvas_factory_settings}
           ref={canvasRef}
+          style={{
+            width: "100%", // Set canvas width to 100% initially
+            height: "100vh" // Allow canvas to maintain aspect ratio
+          }}
         ></canvas>
       </section>
       <motion.div
@@ -559,9 +590,9 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.6, delay: 0 }}
         // className={styles.buttonOuter}
       >
-        <button className={styles.buttonX} role="button">
+        {/* <button className={styles.buttonX} role="button">
         <a href="tel:+917404040286" className={styles.textX}>Contact Us | +917404040286</a>
-      </button>
+      </button> */}
       </motion.div>
     </section>
   );
