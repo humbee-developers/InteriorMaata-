@@ -556,7 +556,7 @@ const Animation = ({ loadImage, counter }) => {
         // className={styles.buttonOuter}
       >
         <button onClick={() => router.push("/Consultancy")} className={styles.buttonX} role="button">
-        <span className={styles.textX}>Contact Us | 123456789</span>
+        <span className={styles.textX}>Contact Us | 917404040286</span>
       </button>
       </motion.div>
     </section>
