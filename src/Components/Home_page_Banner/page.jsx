@@ -340,7 +340,7 @@ const Animation = ({ loadImage, counter }) => {
 
   const variants = {
     hidden: { opacity: 0, y: 5 }, // Move the button down initially
-    visible: { opacity: 1, y: -210 }, // Move the button up to its original position
+    visible: { opacity: 1, y: -130 }, // Move the button up to its original position
   };
 
   useEffect(() => {
@@ -556,7 +556,7 @@ const Animation = ({ loadImage, counter }) => {
         // className={styles.buttonOuter}
       >
         <button onClick={() => router.push("/Consultancy")} className={styles.buttonX} role="button">
-        <span className={styles.textX}>Contact Us | 917404040286</span>
+        <span className={styles.textX}>Contact Us | +917404040286</span>
       </button>
       </motion.div>
     </section>
