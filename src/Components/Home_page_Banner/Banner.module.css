@@ -96,7 +96,7 @@
 
 }
 
-.buttonX span {
+.buttonX a {
   position: relative;
 }
 
@@ -312,28 +312,14 @@ right:5rem;
     position: absolute;
     left: 6rem;
     line-height: 90px;
-    /* font-family: "Roseritta"; */
     bottom: 15rem;
   }
 }
-@media(max-width:1441px){
-  /* .canvas_factory_settings{
-    object-fit: none;
-  } */
-}
-
-
-
 
 @media(min-width:200px) and (max-width:500px){
-
-
-
 .buttonX{
-  padding:1rem 2.5rem
+  padding:1rem 1.4rem
 }
-
-
 
   .canvas_factory_settings {
     height: 100vh;

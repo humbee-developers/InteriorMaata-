@@ -60,16 +60,16 @@ const Animation = ({ loadImage, counter }) => {
         canvas.width = 1305;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 500) {
-        canvas.width = 1300;
+        canvas.width = 1401;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 425) {
-        canvas.width = 1300;
+        canvas.width = 1402;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 375) {
-        canvas.width = 1300;
+        canvas.width = 1303;
         canvas.height = windowHeight * 1;
       } else if (windowWidth >= 320) {
-        canvas.width = 1300;
+        canvas.width = 1304;
         canvas.height = windowHeight * 1;
       } else {
         canvas.width = 400;
@@ -555,8 +555,8 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.6, delay: 0 }}
         // className={styles.buttonOuter}
       >
-        <button onClick={() => router.push("/Consultancy")} className={styles.buttonX} role="button">
-        <span className={styles.textX}>Contact Us | +917404040286</span>
+        <button className={styles.buttonX} role="button">
+        <a href="tel:+917404040286" className={styles.textX}>Contact Us | +917404040286</a>
       </button>
       </motion.div>
     </section>
