@@ -32,59 +32,6 @@ const Animation = ({ loadImage, counter }) => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
 
-
-    // const setCanvasSize = () => {
-    //   const windowWidth = window.innerWidth;
-    //   const windowHeight = window.innerHeight;
-
-    //   if (windowWidth >= 1700) {
-    //     canvas.width = 1700;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 1600) {
-    //     canvas.width = 1600;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 1599) {
-    //     canvas.width = 1300;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 1440) {
-    //     canvas.width = 1309;
-    //     canvas.height = windowHeight * 1;
-    //   }else if (windowWidth >= 1200) {
-    //     canvas.width = 1509;
-    //     canvas.height = windowHeight * 1;
-    //   }
-    //   else if (windowWidth >= 1180) {
-    //     canvas.width = 1503;
-    //     canvas.height = windowHeight * 1;
-    //   }
-    //    else if (windowWidth >= 1024) {
-    //     canvas.width = 1504;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 768) {
-    //     canvas.width = 1405;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 500) {
-    //     canvas.width = 1401;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 425) {
-    //     canvas.width = 1502;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 375) {
-    //     canvas.width = 1403;
-    //     canvas.height = windowHeight * 1;
-    //   } else if (windowWidth >= 320) {
-    //     canvas.width = 1304;
-    //     canvas.height = windowHeight * 1;
-    //   } else {
-    //     canvas.width = 400;
-    //     canvas.height = windowHeight * 0.6;
-    //   }
-
-    //   ScrollTrigger.update();
-    // };
-
-
-
     const setCanvasSize = () => {
       const canvas = canvasRef.current;
       const originalWidth = 1632;
@@ -96,15 +43,13 @@ const Animation = ({ loadImage, counter }) => {
       const heightByWidth = availableWidth / aspectRatio;
 
       if (availableWidth < 1024) {
-        // For screens below 1024px width
-        canvas.style.width = "1301px"; // Set canvas width to 1301px
-        canvas.style.height = "100vh"; // Set canvas height to window height
+        canvas.style.width = "1301px"; // Set canvas width to 1301px width to be given according screen Sizes
+        canvas.style.height = "100vh"; // Set canvas height to window height or any height specified
       } else {
-        // For screens 1024px width and above
         canvas.width = originalWidth;
         canvas.height = originalHeight;
         canvas.style.width = "100%"; // Set canvas width to 100% of container
-        canvas.style.height = "100vh"; // Allow canvas to maintain aspect ratio
+        canvas.style.height = "100vh"; // this will  Allow canvas to maintain aspect ratio
       }
     };
 
@@ -161,7 +106,7 @@ const Animation = ({ loadImage, counter }) => {
         scrub: true,
         smooth:2,
         // smoothTouch: 0.1,
-        end: "+=1800%",
+        end: "+=1400%",
       },
     });
 
@@ -361,27 +306,20 @@ const Animation = ({ loadImage, counter }) => {
 
 
 
-
-
-  
-  const [refButton, inViewButton] = useInView({
-    triggerOnce: false,
-  });
-  const controlsx = useAnimation();
-
-  const variants = {
-    hidden: { opacity: 0, y: 5 }, // Move the button down initially
-    visible: { opacity: 1, y: -130 }, // Move the button up to its original position
-  };
-
   useEffect(() => {
-    if (inViewButton) {
-      controlsx.start("visible");
-    }
-  }, [inViewButton, controlsx]);
+    const updateScrollPercentage = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const totalScroll = documentHeight - windowHeight;
+      const currentScrollPercentage = (scrollPosition / totalScroll) * 100;
+      setScrollPercentage(currentScrollPercentage);
+    };
 
+    window.addEventListener("scroll", updateScrollPercentage);
 
-
+    return () => window.removeEventListener("scroll", updateScrollPercentage);
+  }, []);
 
 
 
@@ -582,18 +520,15 @@ const Animation = ({ loadImage, counter }) => {
 
     <MusicPlayer />
 
-    <motion.div
-        ref={refButton}
-        initial="hidden"
-        animate={inViewButton ? "visible" : "hidden"}
-        variants={variants}
-        transition={{ duration: 0.6, delay: 0 }}
-        // className={styles.buttonOuter}
+    {scrollPercentage >= 45 && (
+      <div
+        className={styles.buttonOuter}
       >
-        {/* <button className={styles.buttonX} role="button">
+        <button className={styles.buttonX} role="button">
         <a href="tel:+917404040286" className={styles.textX}>Contact Us | +917404040286</a>
-      </button> */}
-      </motion.div>
+      </button>
+      </div>
+      )}
     </section>
   );
 };

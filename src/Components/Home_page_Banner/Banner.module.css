@@ -29,6 +29,14 @@
 }
 
 /* button X */
+.buttonOuter{
+  position: sticky;
+  bottom: 8rem;
+
+}
+
+
+
 
 .buttonX {
   appearance: none;
@@ -354,6 +362,12 @@
     left: 3rem;
     font-size: 6.5vw;
     bottom: 20rem;
+  }
+
+  .buttonOuter{
+    position: sticky;
+    bottom: 12rem;
+  
   }
 }
 
