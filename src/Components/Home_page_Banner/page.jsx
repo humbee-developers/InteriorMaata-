@@ -142,38 +142,6 @@ const Animation = ({ loadImage, counter }) => {
     triggerOnce: false,
   });
 
-  const [ref1, inView1] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-  const [ref2, inView2] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-  const [ref3, inView3] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-
-  const [ref4, inView4] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-  const [ref5, inView5] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-  const [ref6, inView6] = useInView({
-    triggerOnce: false,
-    threshold: 0.5, // Set threshold to 0.5 for ref1
-  });
-
-
   const controls = useAnimation();
 
   useEffect(() => {
@@ -181,47 +149,6 @@ const Animation = ({ loadImage, counter }) => {
       controls.start("visible");
     }
   }, [controls, inView]);
-
-  useEffect(() => {
-    if (inView1) {
-      controls.start("visible");
-    }
-  }, [controls, inView1]);
-
-  useEffect(() => {
-    if (inView2) {
-      controls.start("visible");
-    }
-  }, [controls, inView2]);
-
-  useEffect(() => {
-    if (inView3) {
-      controls.start("visible");
-    }
-  }, [controls, inView3]);
-
-  useEffect(() => {
-    if (inView4) {
-      controls.start("visible");
-    }
-  }, [controls, inView4]);
-
-  useEffect(() => {
-    if (inView5) {
-      controls.start("visible");
-    }
-  }, [controls, inView5]);
-
-  useEffect(() => {
-    if (inView6) {
-      controls.start("visible");
-    }
-  }, [controls, inView6]);
-
-
-
-
- 
 
   useEffect(() => {
     const updateScrollPercentage = () => {
