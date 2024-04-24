@@ -242,7 +242,7 @@ const Animation = ({ loadImage, counter }) => {
   console.log(counter(loadingProgress))
 
   const scrollDownByTenPercent = () => {
-    const tenPercentOfHeight = window.innerHeight * 2.2;
+    const tenPercentOfHeight = window.innerHeight * 1.7;
     window.scrollBy({
       top: tenPercentOfHeight, // move down by 10% of the viewport height
       behavior: 'smooth' // smooth scroll
