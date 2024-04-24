@@ -507,9 +507,14 @@ const Animation = ({ loadImage, counter }) => {
         </motion.div>
       )} */}
 
-     <div class="scroll-down-wrap">
+     <div class="scroll-down-wrap no-border">
+     
      {isVisible && <div
-      className="section-down-arrow " onClick={scrollDownByTenPercent} ref={ref9}>Click here to dive
+      className="section-down-arrow" onClick={scrollDownByTenPercent} ref={ref9}>
+       <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
+      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
+      </path>
+    </svg>
      </div>}
      </div>
 

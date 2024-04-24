@@ -105,41 +105,6 @@
   position: relative;
 }
 
-/* 
-.mouse {
-  width: 35px;
-    height: 54px;
-    cursor: pointer;
-    background-color: transparent !important;
-  border: 1px solid #791125;
-  border-radius: 60px;
-}
-
-.mouse::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 30px;
-  background-color: #791125;  
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  opacity: 1;
-  animation: mouse 2s infinite;
-}
-
-@keyframes mouse {
-  from {
-      opacity: 1;
-      top: 8px;
-  }
-  to {
-      opacity: 0;
-      top: 35px;
-  }
-} */
-
 .heroLogo {
   display: flex;
   justify-content: center;
