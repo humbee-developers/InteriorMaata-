@@ -3,10 +3,10 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
-import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
+import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import styles from "@/Components/Home_page_Banner/Banner.module.css";
-import "./scroll.css"
+import "./scroll.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Animation = ({ loadImage, counter }) => {
@@ -21,10 +21,11 @@ const Animation = ({ loadImage, counter }) => {
   const [loading, setLoading] = useState(true);
   const [loadingCounter, setLoadingCounter] = useState(0);
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  const [isVisible, setIsVisible] = useState(true); 
+  const [isVisible, setIsVisible] = useState(true);
 
-  console.log(loadingCounter)
+  console.log(loadingCounter);
 
+//  code for frames responsiveness in all screenSizes
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -52,19 +53,20 @@ const Animation = ({ loadImage, counter }) => {
         canvas.style.height = "100vh"; // this will  Allow canvas to maintain aspect ratio
       }
     };
-
-
-
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
+
+// frames code
     const frameCount = 280;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/newfinal/${(index + 1)
+      `https://interiormaata.humbeestudio.xyz/assets/frames/newfinal/${(
+        index + 1
+      )
         .toString()
         .padStart(4, "0")}.jpg`;
 
-        // https://interiormaata.humbeestudio.xyz/assets/frames/new/0001.jpg
+    // https://interiormaata.humbeestudio.xyz/assets/frames/new/0001.jpg
     let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -95,7 +97,6 @@ const Animation = ({ loadImage, counter }) => {
     };
     loadImages();
     console.log(imgL);
-    // const lCouner = Math.floor()
     console.log("Counter", loadingCounter);
     const animationTimeline = gsap.timeline({
       onUpdate: render,
@@ -104,7 +105,7 @@ const Animation = ({ loadImage, counter }) => {
         trigger: section,
         pin: true,
         scrub: true,
-        smooth:2,
+        smooth: 2,
         // smoothTouch: 0.1,
         end: "+=1400%",
       },
@@ -135,13 +136,15 @@ const Animation = ({ loadImage, counter }) => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [loadingCounter]);
-
   console.log(loadImage(loading));
 
+
+
+
+  // code for first text show
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
-
   const controls = useAnimation();
 
   useEffect(() => {
@@ -150,6 +153,11 @@ const Animation = ({ loadImage, counter }) => {
     }
   }, [controls, inView]);
 
+
+
+
+
+  // code for scroll button (mouse)
   useEffect(() => {
     const updateScrollPercentage = () => {
       const scrollPosition = window.scrollY;
@@ -166,66 +174,28 @@ const Animation = ({ loadImage, counter }) => {
   }, []);
 
   const loadingProgress = (loadingCounter / 250) * 100;
-  console.log(counter(loadingProgress))
-
+  console.log(counter(loadingProgress));
   const scrollDownByTenPercent = () => {
     const tenPercentOfHeight = window.innerHeight * 1.7;
     window.scrollBy({
       top: tenPercentOfHeight, // move down by 10% of the viewport height
-      behavior: 'smooth' // smooth scroll
+      behavior: "smooth", // smooth scroll
     });
-    setIsVisible(true); // Hide the button after scrolling
+    setIsVisible(false); // Hide the button after scrolling
   };
-  
-
-
-  const [ref9, inView9] = useInView({
-    triggerOnce: false,
-  });
-
- 
-  const controls9 = useAnimation();
-  const imageAnimations = [
-    {
-      hidden: { opacity: 0, y: 100 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          ease: "linear",
-          duration: 2,
-          delay: 20,
-          x: { duration: 2 },
-          type: "spring",
-          stiffness: 100,
-        },
-      },
-    },
-    // second slider animations
-  ];
 
   useEffect(() => {
-    if (inView9) {
-      controls9.start("visible");
-    }
-  }, [controls9, inView9]);
-
-
-  useEffect(() => {
-    // Function to handle scroll direction and video visibility
     const handleScroll = () => {
-      const video = document.querySelector(`.${styles.videoBg}`);
-      if (window.scrollY > 0) { // Check if window has scrolled down
-        video.style.visibility = "hidden";
+      // Check if the current scroll position is greater than 0
+      if (window.scrollY > 0) {
+        setIsVisible(false); // Hide the button if scrolled down
       } else {
-        video.style.visibility = "visible";
+        setIsVisible(true); // Show the button if scrolled up to the top
       }
     };
   
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
   
-    // Remove scroll event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -233,23 +203,26 @@ const Animation = ({ loadImage, counter }) => {
 
 
 
+
+//  code for video show and hide 
   useEffect(() => {
-    const updateScrollPercentage = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const totalScroll = documentHeight - windowHeight;
-      const currentScrollPercentage = (scrollPosition / totalScroll) * 100;
-      setScrollPercentage(currentScrollPercentage);
+    // Function to handle scroll direction and video visibility
+    const handleScroll = () => {
+      const video = document.querySelector(`.${styles.videoBg}`);
+      if (window.scrollY > 0) {
+        // Check if window has scrolled down
+        video.style.visibility = "hidden";
+      } else {
+        video.style.visibility = "visible";
+      }
     };
 
-    window.addEventListener("scroll", updateScrollPercentage);
-
-    return () => window.removeEventListener("scroll", updateScrollPercentage);
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
-
-
 
   return (
     <section>
@@ -259,7 +232,7 @@ const Animation = ({ loadImage, counter }) => {
           ref={canvasRef}
           style={{
             width: "100%", // Set canvas width to 100% initially
-            height: "100vh" // Allow canvas to maintain aspect ratio
+            height: "100vh", // Allow canvas to maintain aspect ratio
           }}
         ></canvas>
       </section>
@@ -287,180 +260,58 @@ const Animation = ({ loadImage, counter }) => {
         transition={{ duration: 0.9 }}
         className={styles.interiormaata}
       >
-      <HeadingTextAnimation
+        <HeadingTextAnimation
           heading={"interiorमाता"}
           justifyContent={"center"}
         />
       </motion.div>
-      {/* {scrollPercentage >= 10 && (
-        <motion.div
-          ref={ref1}
-          initial="hidden"
-          animate={inView1 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.LivingRoom}
-        >
-          <FramesTextAnimation
-            heading={" Seamlessly blending Tradition"}
-            justifyContent={"center"}
-          />
-          <FramesTextAnimation
-            heading={"& Contemporary Flair"}
-            justifyContent={"left"}
-          />
-        </motion.div>
-      )}
 
-
-      {scrollPercentage >= 11 && (
-        <motion.div
-          ref={ref4}
-          initial="hidden"
-          animate={inView4 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.paragraph}
-        >
-          <FramesTextAnimation
-            heading={"We create modern space infused with hints of heritage – it's like "}
-            justifyContent={"center"}
-          />
-          <FramesTextAnimation
-            heading={"stepping into a story where every corner whispers tales of tradition,"}
-            justifyContent={"left"}
-          />
-
-           <FramesTextAnimation
-            heading={"while clean lines and modern touches bring it all together."}
-            justifyContent={"left"}
-          />
-        </motion.div>
-      )}
-
-      {scrollPercentage >= 27 && (
-        <motion.div
-          ref={ref2}
-          initial="hidden"
-          animate={inView2 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.bedRoom}
-        >
-          <FramesTextAnimation
-            heading={"Crafting Timeless Spaces,"}
-            justifyContent={"left"}
-          />
-          <FramesTextAnimation
-            heading={"where every corner speaks!"}
-            justifyContent={"left"}
-          />
-        </motion.div>
-      )}
-
-
-
-      {scrollPercentage >= 28 && (
-        <motion.div
-          ref={ref5}
-          initial="hidden"
-          animate={inView5 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.paragraph1}
-        >
-          <FramesTextAnimation
-            heading={"We fuse timeless elements with the sleek line of modern sensibilities. "}
-            justifyContent={"center"}
-          />
-          <FramesTextAnimation
-            heading={"& Each design is a thoughtful composition of harmony and visions of tomorrow."}
-            justifyContent={"left"}
-          />
-
-           <FramesTextAnimation
-            heading={"From classic elegance to innovative twists,"}
-            justifyContent={"left"}
-          />
-            <FramesTextAnimation
-            heading={"we create spaces that honor history while embracing the spirit of progress. "}
-            justifyContent={"left"}
-          />
-        </motion.div>
-        
-      )}
-
-      {scrollPercentage >= 38 && (
-        <motion.div
-          ref={ref3}
-          initial="hidden"
-          animate={inView3 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.outDoor}
-        >
-          <FramesTextAnimation
-            heading={"Designing Dreams &"}
-            justifyContent={"left"}
-          />
-          <FramesTextAnimation
-            heading={" Infusing Love"}
-            justifyContent={"left"}
-          />
-        </motion.div>
-      )}
-
-
-      {scrollPercentage >= 39 && (
-        <motion.div
-          ref={ref6}
-          initial="hidden"
-          animate={inView6 ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.paragraph2}
-        >
-          <FramesTextAnimation
-            heading={" we're all about Designing Dreams & Infusing Love into every space we touch."}
-            justifyContent={"left"}
-          />
-          <FramesTextAnimation
-            heading={"Picture walking into your home and feeling an instant connection – that's the magic we strive for."}
-            justifyContent={"left"}
-          />
-
-          <FramesTextAnimation
-            heading={"With a blend of modern flair and traditional charm,"}
-            justifyContent={"left"}
-          />
-          <FramesTextAnimation
-            heading={"we create havens that reflect your personality and aspirations"}
-            justifyContent={"left"}
-          />
-        </motion.div>
-      )} */}
-
-     <div class="scroll-down-wrap no-border">
-     
-     {isVisible && <div
-      className="section-down-arrow" onClick={scrollDownByTenPercent} ref={ref9}>
-       <svg class="nectar-scroll-icon" viewBox="0 0 30 45" enable-background="new 0 0 30 45">
-      <path class="nectar-scroll-icon-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z">
-      </path>
-    </svg>
-    <div className="scroll">Scroll to explore</div>
-     </div>}
-     </div>
-
-     
-     <video className={styles.videoBg}  width="750" height="500"  autoPlay loop muted>
-      <source src="./video/testing.mp4" type="video/mp4"/>
-     </video>
-
-    <MusicPlayer />
-
-    {scrollPercentage >= 45 && (
-      <div
-        className={styles.buttonOuter}
-      >
-        <button className={styles.buttonX} role="button">
-        <a href="tel:+917404040286" className={styles.textX}>Contact Us | +917404040286</a>
-      </button>
+      <div class="scroll-down-wrap no-border">
+        {isVisible && (
+          <div
+            className="section-down-arrow"
+            onClick={scrollDownByTenPercent}
+          >
+            <svg
+              class="nectar-scroll-icon"
+              viewBox="0 0 30 45"
+              enable-background="new 0 0 30 45"
+            >
+              <path
+                class="nectar-scroll-icon-path"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z"
+              ></path>
+            </svg>
+            <div className="scroll">Scroll to explore</div>
+          </div>
+        )}
       </div>
+
+      <video
+        className={styles.videoBg}
+        width="750"
+        height="500"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="./video/testing.mp4" type="video/mp4" />
+      </video>
+
+      <MusicPlayer />
+
+      {scrollPercentage >= 45 && (
+        <div className={styles.buttonOuter}>
+          <button className={styles.buttonX} role="button">
+            <a href="tel:+917404040286" className={styles.textX}>
+              Contact Us | +917404040286
+            </a>
+          </button>
+        </div>
       )}
     </section>
   );
