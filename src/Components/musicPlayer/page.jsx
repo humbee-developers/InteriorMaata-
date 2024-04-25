@@ -70,6 +70,7 @@ const MusicPlayer = ({ audioFile }) => {
           <Image className={styles.waves} src={playPause} alt="playPause" />
         </button>
       )}
+        <div className={styles.sound}>SOUND</div>
     </div>
   );
 };
