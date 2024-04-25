@@ -3,12 +3,12 @@
     border-radius: 50% !important;
     border: 1px solid #CC7D45 !important;
     right: 27px !important;
-    bottom: 27px !important;
+    bottom: 24px !important;
     position: fixed;
     z-index: 2;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     box-shadow: none !important;
     border: none;
 }

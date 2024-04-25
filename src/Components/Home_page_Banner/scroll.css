@@ -10,7 +10,7 @@
     left:50%;
     cursor: pointer;
     /* width:60px; */
-    margin-left:-30px;
+    margin-left:-66px;
     z-index:1;
   }
   .scroll-down-wrap.no-border,.scroll-down-wrap.no-border{
@@ -204,6 +204,13 @@
   
   
   
+
+  @media(min-width:200px) and (max-width:1920px){
+    .scroll-down-wrap,.scroll-down-wrap.no-border{
+      margin-left:-60px;
+
+    }
+  }
 
 
 
