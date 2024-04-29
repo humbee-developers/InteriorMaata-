@@ -16,7 +16,7 @@ const CustomizedAccordions = () => {
             heading: '75 Rs / Sqft',
             title: '2D layout + 3D Design',
             text: 'Virtual Design for your entire home, Our team of excellent designers and architects will help you design your home. ',
-            bgcolor: "#7F7047",
+            bgcolor: "#7F7047",                                                     
             textcolor: "white",
         },
         {

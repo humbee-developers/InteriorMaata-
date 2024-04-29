@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import img1 from "@/images/consultancy1.png";
 import img2 from "@/images/consultancy2.png";
@@ -15,7 +15,7 @@ const onlineConsultancy = () => {
   const content = [
     {
       title: "2D Furniture Layout",
-      text: "Our team of excellent designers will help you build a design concept + furniture layout according to your need. ",
+      text: "Our team of excellent designers will help you build a design concept + furniture layout according to your need.",
       imageUrl: img1,
       Color: "#cc7d45", // Button 1 background color
       buttonClass: styles.exclusiveGstBtn1,
@@ -36,6 +36,18 @@ const onlineConsultancy = () => {
     },
   ];
 
+  useEffect(() => {
+    // Function to open WhatsApp
+    const openWhatsApp = () => {
+      const phoneNumber = "+917404040286"; 
+      const message = "I'm interested in your consultancy services."; 
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    };
+
+    window.openWhatsApp = openWhatsApp;
+  }, []);
+
   const handleTabClick = (tabIndex, bgColor) => {
     setActiveTab(tabIndex);
     setHeadingColor(bgColor); // Set heading color based on button background color
@@ -49,7 +61,7 @@ const onlineConsultancy = () => {
             <div className={styles.topButtons}>
               <div>
                 <button
-                  className={styles.btn1}
+                 className={`${styles.btn1} ${activeTab === 1 ? styles.activeBtn : ''}`}
                   onClick={() => handleTabClick(1, content[0].Color)}
                 >
                   15 Rs / Sqft
@@ -57,7 +69,8 @@ const onlineConsultancy = () => {
               </div>
               <div>
                 <button
-                  className={styles.btn2}
+                 className={`${styles.btn2} ${activeTab === 2 ? styles.activeBtn : ''}`}
+                 
                   onClick={() => handleTabClick(2, content[1].Color)}
                 >
                   75 Rs / Sqft
@@ -65,7 +78,8 @@ const onlineConsultancy = () => {
               </div>
               <div>
                 <button
-                  className={styles.btn3}
+                 className={`${styles.btn3} ${activeTab === 3 ? styles.activeBtn : ''}`}
+                 
                   onClick={() => handleTabClick(3, content[2].Color)}
                 >
                   105 Rs / Sqft
@@ -86,8 +100,9 @@ const onlineConsultancy = () => {
                 </div>
                 <div
                   className={`${styles.onlineConsultancy_section_btn} ${content[activeTab - 1].buttonClass}`}
+                  onClick={() => window.openWhatsApp()}
                 >
-                  <span className={styles.text}>EXCLUSIVE GST</span>
+                  <span className={styles.text}>CONNECT NOW</span>
                 </div>
               </div>
                 {/* <div
