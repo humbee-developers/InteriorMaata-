@@ -90,7 +90,7 @@
   }
   .forth_Section_container{
     flex-direction: column-reverse;
-    padding-top: 5rem;
+    padding-top: 0rem;
   }
 }
 
