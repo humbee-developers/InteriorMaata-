@@ -49,7 +49,7 @@ const onlineConsultancy = () => {
             <div className={styles.topButtons}>
               <div>
                 <button
-                  className={styles.btn1}
+                 className={`${styles.btn1} ${activeTab === 1 ? styles.activeBtn : ''}`}
                   onClick={() => handleTabClick(1, content[0].Color)}
                 >
                   15 Rs / Sqft
@@ -57,7 +57,8 @@ const onlineConsultancy = () => {
               </div>
               <div>
                 <button
-                  className={styles.btn2}
+                 className={`${styles.btn2} ${activeTab === 2 ? styles.activeBtn : ''}`}
+                 
                   onClick={() => handleTabClick(2, content[1].Color)}
                 >
                   75 Rs / Sqft
@@ -65,7 +66,8 @@ const onlineConsultancy = () => {
               </div>
               <div>
                 <button
-                  className={styles.btn3}
+                 className={`${styles.btn3} ${activeTab === 3 ? styles.activeBtn : ''}`}
+                 
                   onClick={() => handleTabClick(3, content[2].Color)}
                 >
                   105 Rs / Sqft

@@ -26,9 +26,9 @@
 }
 
 .btn1 {
-  background-color: #cc7d45;
-  border: none;
-  color: white;
+  border: 1px solid #cc7d45;
+  background-color: transparent;
+  color: #cc7d45;
   font-family: "NeueMontreal-Regular";
   font-size: 22px;
   font-weight: 400;
@@ -36,34 +36,52 @@
   letter-spacing: 0.44px;
   text-transform: capitalize;
   word-wrap: break-word;
+  transition: all 0.3s ease-in-out;
   padding: 0.9rem 4rem;
+}
+.btn1.activeBtn{
+  background-color: #cc7d45;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn2 {
-  background-color: #7f7047;
-  border: none;
-  color: white;
+  border: 1px solid #7f7047;
+  background-color: transparent;
+  color: #7f7047;
   font-size: 22px;
   font-family: "NeueMontreal-Regular";
   font-weight: 400;
   cursor: pointer;
+  letter-spacing: 0.44px;
+  padding: 0.9rem 4rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+.btn2.activeBtn{
+  background-color: #7f7047;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.btn3 {
+  border: 1px solid #8d4c1e;
+  background-color: transparent;
+  color: #8d4c1e;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "NeueMontreal-Regular";
+  font-weight: 400;
   letter-spacing: 0.44px;
   padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
-.btn3 {
+.btn3.activeBtn{
   background-color: #8d4c1e;
-  border: none;
   color: white;
-  cursor: pointer;
-  font-size: 22px;
-  font-family: "NeueMontreal-Regular";
-  font-weight: 400;
-  letter-spacing: 0.44px;
-  padding: 0.9rem 4rem;
-  text-transform: capitalize;
-  word-wrap: break-word;
+  transition: all 0.3s ease-in-out;
 }
 
 .contentSection {
