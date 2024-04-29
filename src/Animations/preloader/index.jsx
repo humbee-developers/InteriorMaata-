@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anime";
 import Image from "next/image";
-import logo from "@/svgs/logoloader.svg";
+import logo from "@/images/preloaderLogo.png"
 import styles from "./style.module.css";
 
 const words = ["interiorमाता"];
@@ -82,8 +82,12 @@ export default function Index({ }) {
             initial="initial"
             animate="enter"
           >
-            <Image src={logo} alt="image" />
-            {words[index]}
+            <div className={styles.logoImageOuter}>
+            <Image className={styles.logoImage} src={logo} alt="image" />
+            </div>
+        <div>
+        {words[index]}
+        </div>
           </motion.div>
           </div>
           <div>

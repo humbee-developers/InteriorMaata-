@@ -8,7 +8,7 @@
 
 .counterOuter {
   display: flex;
-  height: 50%;
+  height: 47%;
   align-items: flex-end;
 }
 
@@ -22,7 +22,7 @@
 .percentageCounter {
   color: #bbbcc0;
   font-family: "NeueMontreal-Regular";
-  font-size: 9rem;
+  font-size: 7rem;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -32,7 +32,7 @@
 .introduction .text {
   display: flex;
   color: white;
-  height: 50%;
+  height: 53%;
   text-decoration: none;
   font-size: 5.5vw;
   gap: 1rem;
@@ -42,18 +42,32 @@
   align-items: flex-end;
 }
 
+.logoImageOuter{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.logoImage{
+  height: auto;
+  width:6vw
+}
+
+
+
+
 .moment {
   display: flex;
   position: absolute;
   top: 1rem;
   gap: 2rem;
-  right: 3rem;
+  right: 2rem;
 }
 
 .loading {
   display: flex;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "NeueMontreal-Regular";
   align-items: center;
 }
@@ -62,7 +76,13 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  width:100%;
   align-items: center;
+}
+
+.word{
+  display: flex;
+  align-items: flex-end;
 }
 
 .loader {
@@ -106,17 +126,33 @@
     position: absolute;
     top: 1rem;
     gap: 2rem;
-    right: 7rem;
+    right: 2rem;
   }
+
+  .logoImage{
+    height: auto;
+    width:6vw
+  }
+  
 
   .loading {
     display: flex;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "NeueMontreal-Regular";
     align-items: center;
   }
 }
+
+@media(min-width:521px) and (max-width:1024px){
+  .logoImage{
+    height: auto;
+    width:8.5vw
+  }
+}
+
+
+
 
 
 @media(min-width:200px) and (max-width:520px){
@@ -130,22 +166,39 @@
     text-align: end;
   }
 
+
+  .introduction .text {
+    font-size: 8.5vw;
+
+  }
+
+  .logoImage{
+    height: auto;
+    width:14vw
+  }
+  
+  
+
   .moment {
     display: flex;
     position: absolute;
     top: 1rem;
-    width: 100%;
-    gap: 2rem;
-    right: -4rem;
+    gap: 1rem;
+    right: 2rem;
   }
 
   .loading {
     display: flex;
     color: white;
-    font-size: 40px;
+    font-size: 28px;
     font-family: "NeueMontreal-Regular";
     align-items: center;
   }
   
+
+  .percentageCounter {
+    font-size: 5rem;
+
+  }
 
 }
