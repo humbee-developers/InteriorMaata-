@@ -224,14 +224,20 @@ const Animation = ({ loadImage, counter }) => {
     };
   }, []);
 
+
   const [buttonRef, buttonInView] = useInView();
 
   // Define animation variants for the button
   const buttonVariants = {
-    hidden: { opacity: 0, y: isVisible ? 0 : 120, transition: { duration: 1, ease: "easeInOut" } },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeInOut" } },
+    hidden: { opacity: 0, y: 120 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
-  
+
+
+
+
+
+
 
 
   return (
