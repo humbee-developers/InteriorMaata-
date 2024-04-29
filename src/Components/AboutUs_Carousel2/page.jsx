@@ -258,7 +258,7 @@ const Page = () => {
 
   var settings = {
     dots: false,
-    speed: 1500,
+    speed: 500,
     centerMode: true,
     centerPadding: "0px",
     fade: true,
