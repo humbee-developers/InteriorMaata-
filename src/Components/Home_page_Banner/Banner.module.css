@@ -31,7 +31,7 @@
 /* button X */
 .buttonOuter{
   position: sticky;
-  bottom: 8rem;
+  bottom: 10rem;
   display: flex;
   justify-content:center;
 
@@ -102,7 +102,7 @@
 
 .buttonX:hover {
   border:none;
-  color: black;
+  color: rgb(174, 123, 86);
 }
 
 .buttonX a {
