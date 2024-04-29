@@ -46,6 +46,7 @@
 
 .Landing_image1:hover {
   display: block;
+  overflow: hidden;
   background-image: url(../../images//AboutUs_Quality_image.png);
   background-repeat: no-repeat;
   transition: all 0.5s;
@@ -56,7 +57,7 @@
 
 .Landing_image2:hover {
   display: block;
-  background-image: url(../../images//AboutUs_Architectural\ _image.png);
+  background-image: url(../../images//about_us_quality_img1.png);
   background-repeat: no-repeat;
   transition: all 0.5s;
 }
