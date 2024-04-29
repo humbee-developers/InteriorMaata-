@@ -90,8 +90,16 @@
   }
   .forth_Section_container{
     flex-direction: column-reverse;
-    padding-top: 0rem;
+    padding-top: 3rem;
   }
+}
+
+@media(min-width:200px) and (max-width:600px){
+  .forth_Section_container{
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+
 }
 
 @media (max-width: 425px) {

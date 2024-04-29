@@ -224,6 +224,22 @@ const Animation = ({ loadImage, counter }) => {
     };
   }, []);
 
+
+  const [buttonRef, buttonInView] = useInView();
+
+  // Define animation variants for the button
+  const buttonVariants = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+
+
+
+
+
+
+
   return (
     <section>
       <section ref={sectionRef}>
@@ -305,12 +321,19 @@ const Animation = ({ loadImage, counter }) => {
       <MusicPlayer />
 
       {scrollPercentage >= 45 && (
-        <div className={styles.buttonOuter}>
-          <button className={styles.buttonX} role="button">
+        <div className={styles.buttonOuter} ref={buttonRef}>
+          {/* Apply animation variants to the button */}
+          <motion.button
+            className={styles.buttonX}
+            role="button"
+            initial="hidden"
+            animate={buttonInView ? "visible" : "hidden"}
+            variants={buttonVariants}
+          >
             <a href="tel:+917404040286" className={styles.textX}>
               Contact Us | +917404040286
             </a>
-          </button>
+          </motion.button>
         </div>
       )}
     </section>

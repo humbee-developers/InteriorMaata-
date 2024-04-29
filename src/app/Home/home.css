@@ -1,19 +1,19 @@
 .bg{
-    position:sticky;
-    /* padding-top: 42rem; */
+    /* position:sticky; */
+    /* padding-top: 44rem; */
     background-image: url("../../images/02-min.jpg"); 
 }
 
-@media(min-width:1600px) and (max-width:1920px){
+/* @media(min-width:1600px) and (max-width:1920px){
     .bg{
-        /* padding-top:62rem */
+        padding-top:62rem
     }
 }
 
 @media(min-width:1024px) and (max-width:1440px){
     
     .bg{
-        /* padding-top:53rem */
+        padding-top:40rem
     }
 }
 
@@ -21,13 +21,13 @@
 @media(min-width:768px) and (max-width:1023px){
     
     .bg{
-        /* padding-top:53rem */
+        padding-top:39rem
     }
 }
 
 @media(min-width:200px) and (max-width:767px){
     
     .bg{
-        /* padding-top:53rem */
+        padding-top:37rem
     }
-}
+} */
