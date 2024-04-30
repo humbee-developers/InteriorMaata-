@@ -231,8 +231,9 @@ const Animation = ({ loadImage, counter }) => {
   const buttonVariants = {
     hidden: { opacity: 0, y: 120 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    upsideDown: { opacity: 0, y: 180,  transition: { duration: 0.3 } }
   };
-
+  
 
 
 
@@ -319,75 +320,48 @@ const Animation = ({ loadImage, counter }) => {
       </video>
 
       <MusicPlayer />
-
       {scrollPercentage >= 45 && (
-  <>
-    {window.innerWidth < 769 && scrollPercentage < 60 && (
-      <div className={styles.buttonOuter} ref={buttonRef}>
-        {/* Apply animation variants to the button */}
-        <motion.button
-          className={styles.buttonX}
-          role="button"
-          initial="hidden"
-          animate={buttonInView ? "visible" : "hidden"}
-          variants={buttonVariants}
-        >
-          <a href="tel:+917404040286" className={styles.textX}>
-            Contact Us | +917404040286
-          </a>
-        </motion.button>
-      </div>
-    )}
-    {window.innerWidth >= 769 && window.innerWidth < 1400 && scrollPercentage < 64 && (
-      <div className={styles.buttonOuter} ref={buttonRef}>
-        {/* Apply animation variants to the button */}
-        <motion.button
-          className={styles.buttonX}
-          role="button"
-          initial="hidden"
-          animate={buttonInView ? "visible" : "hidden"}
-          variants={buttonVariants}
-        >
-          <a href="tel:+917404040286" className={styles.textX}>
-            Contact Us | +917404040286
-          </a>
-        </motion.button>
-      </div>
-    )}
-    {window.innerWidth >= 1400 && window.innerWidth < 1600 && scrollPercentage < 58 && (
-      <div className={styles.buttonOuter} ref={buttonRef}>
-        {/* Apply animation variants to the button */}
-        <motion.button
-          className={styles.buttonX}
-          role="button"
-          initial="hidden"
-          animate={buttonInView ? "visible" : "hidden"}
-          variants={buttonVariants}
-        >
-          <a href="tel:+917404040286" className={styles.textX}>
-            Contact Us | +917404040286
-          </a>
-        </motion.button>
-      </div>
-    )}
-    {window.innerWidth >= 1600 && scrollPercentage < 60 && (
-      <div className={styles.buttonOuter} ref={buttonRef}>
-        {/* Apply animation variants to the button */}
-        <motion.button
-          className={styles.buttonX}
-          role="button"
-          initial="hidden"
-          animate={buttonInView ? "visible" : "hidden"}
-          variants={buttonVariants}
-        >
-          <a href="tel:+917404040286" className={styles.textX}>
-            Contact Us | +917404040286
-          </a>
-        </motion.button>
-      </div>
-    )}
-  </>
+  <div className={styles.buttonOuter} ref={buttonRef}>
+    <motion.button
+      className={styles.buttonX}
+      role="button"
+      initial="hidden"
+      animate={
+        window.innerWidth < 768
+          ? scrollPercentage >= 55
+            ? "upsideDown"
+            : "visible"
+          : window.innerWidth < 1024
+          ? scrollPercentage >= 62
+            ? "upsideDown"
+            : "visible"
+          : window.innerWidth < 1400
+          ? scrollPercentage >= 65
+            ? "upsideDown"
+            : "visible"
+          : window.innerWidth < 500
+          ? scrollPercentage >= 58
+            ? "upsideDown"
+            : "visible"
+          : window.innerWidth < 1600
+          ? scrollPercentage >= 60
+            ? "upsideDown"
+            : "visible"
+          : scrollPercentage >= 63
+          ? "upsideDown"
+          : "visible"
+      }
+      variants={buttonVariants}
+    >
+      <a href="tel:+917404040286" className={styles.textX}>
+        Contact Us | +917404040286
+      </a>
+    </motion.button>
+  </div>
 )}
+
+
+
 
 
     </section>
