@@ -105,3 +105,18 @@ select:-webkit-autofill {
   src: local("Saturday Lovin"),
     url("../fonts/Saturday\ Lovin.otf") format("truetype");
 }
+
+
+@font-face {
+  font-family:"Dream Avenue";
+  src: local("Dream Avenue"),
+    url("../fonts/Dream\ Avenue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:"Dream Avenue";
+  src: local("Dream Avenue"),
+    url("../fonts/Dream\ Avenue\ .otf") format("truetype");
+}
+
+

@@ -114,9 +114,10 @@
 .footer_address {
   color: #7f7047;
   opacity: 0.8;
-  font-family: "NeueMontreal-Light";
+  /* font-family: "NeueMontreal-Light"; */
   font-size: 35.075px;
   font-style: normal;
+  font-family: var(--font-poppins);
   font-weight: 200;
   line-height: normal;
   text-transform: capitalize;
