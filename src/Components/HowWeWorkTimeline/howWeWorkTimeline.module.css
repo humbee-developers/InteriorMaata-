@@ -1,7 +1,7 @@
 .timeline_container {
   padding-left: 11rem;
-  padding-right: 10rem;
-  padding-bottom: 10rem;
+  padding-right: 7rem;
+  padding-bottom: 7rem;
 }
 .timeline_content1 {
   display: flex;
@@ -22,8 +22,8 @@
 }
 .timline1_meet_text {
   color: #CC7D45;
-  font-family: Roseritta;
-  font-size: 4vw;
+  font-family:"Dream Avenue";
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -31,8 +31,8 @@
 }
 .timline1_meet_text1 {
   color: #CC7D45;
-  font-family: Roseritta;
-  font-size: 3.7vw;
+  font-family:"Dream Avenue";
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -42,33 +42,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 .timeline1_innertext {
   padding-top: 1rem;
-  width: 70%;
+  width: 100%;
 }
 .timeline1_innertext2 {
   padding-top: 1rem;
-  width: 85%;
+  width: 100%;
 }
 .timeline1_innertext4 {
   padding-top: 1rem;
-  width: 82%;
+  width: 100%;
 }
 .timeline1_innertext5 {
   padding-top: 1rem;
-  width: 80%;
+  width: 100%;
 }
 .timeline1_innertext_design {
-  width: 41%;
+  width: 50%;
   padding-top: 1rem;
 }
 .timline1_meet_text_inner,
 .timline1_meet_text_inner2 {
   color: #000;
-  font-family: 'NeueMontreal-Regular';
-  font-size: 15.616px;
+  font-family: var(--font-poppins);
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -142,27 +141,31 @@
     padding-left: 20rem;
     padding-right: 20rem;
   }
+  .timline1_meet_text1 {
+    font-size: 3.2vw;
+
+  }
   .timline1_meet_text_content {
     width: 100%;
   }
   .timline1_meet_text {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
   .timeline1_innertext {
     padding-top: 1rem;
-    width: 87%;
+    width: 100%;
   }
   .timeline1_innertext2 {
     padding-top: 1rem;
-    width: 85%;
+    width: 100%;
   }
   .timeline1_innertext4 {
     padding-top: 1rem;
-    width: 96%;
+    width: 100%;
   }
   .timeline1_innertext5 {
     padding-top: 1rem;
-    width: 85%;
+    width: 100%;
   }
 }
 @media (max-width: 1400px)
@@ -172,9 +175,6 @@
     padding-right: 8rem;
     padding-bottom: 10rem;
   }
-  /* .timline1_meet_text{
-    font-size: 55px;
-  } */
 }
 @media (max-width: 1300px)
 {
@@ -183,9 +183,6 @@
     padding-right: 5rem;
     padding-bottom: 10rem;
   }
-  /* .timline1_meet_text{
-    font-size: 50px;
-  } */
 }
 @media (max-width: 1210px)
 {
@@ -194,14 +191,11 @@
     padding-right: 3rem;
     padding-bottom: 10rem;
   }
-  /* .timline1_meet_text{
-    font-size: 50px;
-  } */
 }
 @media (max-width: 1024px) and (min-width: 767px) {
   .timeline_container {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .timeline1_content,
   .timeline1_content1 {
@@ -214,14 +208,10 @@
     width: 70%;
   }
   .timline1_meet_text {
-    font-size: 4vw;
+    font-size: 3.3vw;
   }
   .timline1_meet_text1 {
     font-size: 3.6vw;
-  }
-  .timeline_content1,
-  .timeline_content2 {
-    /* padding-bottom: 2rem; */
   }
   .border_top{
     display: none;
@@ -233,16 +223,14 @@
 @media (max-width: 768px) {
   .timeline_container {
     padding-top: 4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 3rem;
   }
   .timeline_content1,
   .timeline_content2 {
     gap: 2rem;
     justify-content: center;
-    /* padding-bottom: 2rem; */
-    /* flex-direction: column; */
   }
   .timeline1_content,
   .timeline1_content1 {
@@ -252,10 +240,10 @@
     width: 100%;
   }
   .timline1_meet_text {
-    font-size: 5vw;
+    font-size: 4.8vw;
   }
   .timline1_meet_text1 {
-    font-size: 4.3vw;
+    font-size: 3.8vw;
   }
   .timline1_meet_text_content {
     width: 100%;
@@ -287,10 +275,10 @@
     padding-bottom: 0rem;
   }
   .timline1_meet_text {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .timline1_meet_text1 {
-    font-size: 7.8vw;
+    font-size: 5vw;
   }
   .timeline_content1,
   .timeline_content2 {
@@ -298,7 +286,5 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* padding-bottom: 2rem; */
-    /* flex-direction: column; */
   }
 }

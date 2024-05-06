@@ -17,7 +17,7 @@
 }
 .online_consultancy_text {
   color: #7f7047;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -27,7 +27,7 @@
 
 .Consultancy_page_second_content_text {
   color: #cc7d45;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 3.78vw;
   font-style: normal;
   font-weight: 400;
@@ -81,7 +81,7 @@ transition: all 0.3 ease-in-out;
 }
 .Services_header_info {
   color: #cc7d45;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

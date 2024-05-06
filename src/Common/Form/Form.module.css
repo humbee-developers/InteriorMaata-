@@ -21,7 +21,7 @@ gap: 2rem;
 }
 .contact_form_title {
   color: #fff;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   font-size: 35px;
   font-style: normal;
   font-weight: 500;
@@ -44,7 +44,7 @@ gap: 2rem;
   border: 1px solid white !important;
   box-sizing: border-box;
   color: white;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   height: 55px;
   background: transparent;
   width: 100%;
@@ -73,7 +73,7 @@ gap: 2rem;
   padding: 0px 10px;
   pointer-events: none;
   position: absolute;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   border-right: none;
   border-left: none;
   top: -10px;
@@ -101,7 +101,7 @@ gap: 2rem;
   color: white;
   background: transparent;
   width: 100%;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   padding: 17px 15px;
   font-size: 18px;
   resize: none;
@@ -135,14 +135,13 @@ gap: 2rem;
 }
 .error {
   color: red;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   font-size: 14px;
   margin-top: 0.2rem;
 }
 .error1 {
   color: red;
-  font-size: 14px;
-  font-family: "NeueMontreal-Regular" !important;
+  font-family: var(--font-poppins);
   margin-top: 0;
 }
 .contact_img {
@@ -157,7 +156,7 @@ gap: 2rem;
 .Submit_button {
   color: #000;
   background: #C0C2AA;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   outline: none;

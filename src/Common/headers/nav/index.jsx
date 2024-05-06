@@ -7,10 +7,10 @@ import Footer from './Footer';
 import "./style.css";
 
 const links = [
-  {
-    title: "HOME",
-    href: "/",
-  },
+  // {
+  //   title: "HOME",
+  //   href: "/",
+  // },
   {
     title: "Online Consultancy",
     href: "/Consultancy",

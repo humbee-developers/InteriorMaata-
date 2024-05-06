@@ -10,7 +10,7 @@
 
 .CenterTextInner {
   color: #cc7d45;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 6.5vw;
 }
 .slideControlButtons {
@@ -758,7 +758,7 @@
   position: absolute;
   top: 15%;
   right: 15%;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;

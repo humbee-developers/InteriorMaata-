@@ -6,7 +6,7 @@
   width: 100%;
 }
 .new_nav {
-  height: 100vh;
+  height: 50vh;
   position: fixed;
   left: 0;
   z-index: 99999;

@@ -6,6 +6,7 @@ import HowWeWorkTimeline from "@/Components/HowWeWorkTimeline/page";
 import HowWeWorkText from "@/Components/HowWeWorkText/page";
 import ServicesCards from "@/Components/ServicesCards/page";
 import Services_Slider from "@/Components/Service_Slider/page";
+import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = () => {
   useEffect(() => {
     (async () => {
@@ -18,6 +19,7 @@ const Page = () => {
       <Stairs/>
         <HowWeWorkHeader />
         <HowWeWorkTimeline />
+         <AboutUs_ourDesign />
         <ServicesCards />
         <Services_Slider/>
         <HowWeWorkText />

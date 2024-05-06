@@ -6,7 +6,7 @@
   width: 93%;
   color: #7f7047;
   text-align: center;
-  font-family: "Roseritta";
+  font-family:"Dream Avenue";
   font-size:8vw;
   font-weight: 400;
   line-height: normal;
@@ -16,7 +16,7 @@
 .teamPage_content2 {
   color: #000;
   text-align: center;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -37,11 +37,9 @@
 }
 .marquee_imageSection img {
   max-width: 100%;
-  /* width: 100%; */
   height: auto;
 }
 .teamPage_content3 {
-  /* padding: 0 11rem; */
   display: flex;
   justify-content: center;
   margin-top: 2rem;
@@ -51,9 +49,8 @@
   width: 90%;
   color: #cc7d45;
   text-align: center;
-  font-family: "Roseritta";
-  /* font-size: 58px; */
-  font-size: 4vw;
+  font-family:"Dream Avenue";
+  font-size: 4.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -64,15 +61,16 @@
   margin-bottom: 4rem;
   margin-top: 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .teamPage_content4_Text {
-  width: 45%;
+  width: 80%;
   color: #000;
-  font-family: "NeueMontreal-Regular";
-  font-size: 15.616px;
+   font-family: var(--font-poppins);
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
+  text-align:center;
   line-height: normal;
   text-transform: capitalize;
 }
@@ -97,7 +95,7 @@
     width: 83%;
     color: #7f7047;
     text-align: center;
-    font-family: "Roseritta";
+    font-family:"Dream Avenue";
     font-size:8vw;
     font-weight: 400;
     line-height: normal;
@@ -106,10 +104,10 @@
   }
 
   .teamPage_content3_Text {
-    width: 80%;
+    width: 90%;
     color: #cc7d45;
     text-align: center;
-    font-family: "Roseritta";
+    font-family:"Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -117,10 +115,10 @@
   }
 
   .teamPage_content4_Text {
-    width: 45%;
+    width: 60%;
     color: #000;
-    font-family: "NeueMontreal-Regular";
-    font-size: 17.616px;
+     font-family: var(--font-poppins);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -132,7 +130,7 @@
     margin-bottom: 4rem;
     margin-top: 3rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -141,8 +139,7 @@
     width: 93%;
     color: #7f7047;
     text-align: center;
-    font-family: "Roseritta";
-    /* font-size: 120.669px; */
+    font-family:"Dream Avenue";
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
@@ -156,7 +153,6 @@
   }
 
   .teamPage_content1 {
-    /* font-size: 98px; */
     width: 93%;
     margin: 0 auto 1rem;
   }
@@ -192,11 +188,11 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .teamPage_content4_Text {
-    width: 40%;
-    font-size: 13.5px;
+    width: 80%;
+    font-size: 13px;
   }
   .teamPage_content4_Text p {
     padding: 6px 0;
@@ -260,11 +256,11 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content:center;
   }
   .teamPage_content4_Text {
-    width: 50%;
-    font-size: 12.5px;
+    width: 80%;
+    font-size: 13px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;
@@ -327,8 +323,8 @@
     justify-content: center;
   }
   .teamPage_content4_Text {
-    width: 55%;
-    font-size: 11px;
+    width: 80%;
+    font-size: 13px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;
@@ -381,7 +377,7 @@
   }
   .teamPage_content3_Text {
     width: 100%;
-    font-size: 5.4vw;
+    font-size: 4.5vw;
   }
   .teamPage_content4 {
     padding: 0 1rem;
@@ -391,8 +387,8 @@
     justify-content: center;
   }
   .teamPage_content4_Text {
-    width: 70%;
-    font-size: 11px;
+    width: 80%;
+    font-size: 13px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;

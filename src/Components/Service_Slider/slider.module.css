@@ -22,7 +22,7 @@
 }
 .Services_Content_residential {
   color: #cc7d45;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 3.78vw;
   width: 82%;
   font-style: normal;
@@ -35,7 +35,7 @@
 .Services_Content_residential_desc {
   color: #000;
   width: 80%;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15.616px;
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@
 
 .Services_Content_residential_list_text {
   color: #000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15.616px;
   font-style: normal;
   font-weight: 400;
@@ -73,7 +73,7 @@
     padding-top: 0.5rem;
     color: #000;
     width: 100%;
-    font-family: "NeueMontreal-Regular";
+     font-family: var(--font-poppins);
     font-size: 15.616px;
     font-style: normal;
     font-weight: 400;
@@ -82,7 +82,7 @@
   }
   .Services_Content_residential {
     color: #cc7d45;
-    font-family: Roseritta;
+    font-family:"Dream Avenue";
     font-size: 4.5vw;
     width: 100%;
     font-style: normal;

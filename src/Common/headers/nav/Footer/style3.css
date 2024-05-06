@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   color: #ffffff;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 .ul {
   width: 100%;
@@ -25,7 +25,7 @@ text-align: end;
   color: #ffffff;
   font-size: 20px;
   width: 50%;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 
 

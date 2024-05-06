@@ -27,7 +27,7 @@
 }
 
 .forth_Section_execution {
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +39,7 @@
 .forth_section_first {
   text-align: center;
   font-size: 30px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

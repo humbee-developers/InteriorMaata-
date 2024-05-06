@@ -10,7 +10,7 @@
 }
 .Project_Flex_Desc_inner {
   color: #cc7d45;
-  font-family: 'NeueMontreal-Regular';
+  font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

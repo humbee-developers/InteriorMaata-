@@ -9,7 +9,7 @@ import Marquee from "@/Components/Marquee/page";
 import AboutUs_Carousel2 from "@/Components/AboutUs_Carousel2/page";
 import AboutUs_flex from "@/Components/AboutUs_flex/page";
 import AboutUsInfo from "@/Components/AboutUsInfo/page";
-import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
+// import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import "./home.css"
 const Page = ({ lData }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +44,7 @@ const Page = ({ lData }) => {
         <AboutUs_Carousel2 />
         <AboutUs_flex />
         <AboutUsInfo />
-        <AboutUs_ourDesign />
+        {/* <AboutUs_ourDesign /> */}
         </div>
     </>
   );

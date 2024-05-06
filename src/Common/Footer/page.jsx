@@ -153,7 +153,7 @@ const Footer = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"interiormaata"}
+                heading={"interiorमाता"}
                 // justifyContent={"left"}
               />
             </motion.div>

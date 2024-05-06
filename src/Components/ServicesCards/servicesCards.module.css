@@ -37,7 +37,7 @@
 .service_silver_text {
   color: #fff;
   text-align: center;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 31px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@
 }
 .service_Package_text {
   color: #fff;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 31px;
   font-style: normal;
   font-weight: 400;
@@ -63,7 +63,7 @@
 }
 .Services_header_info {
   color: #000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -73,7 +73,7 @@
 .Services_header_price_range {
   padding-top: 1rem;
   color: #cc7d45;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -83,7 +83,7 @@
 .Services_header_price {
   padding-top: 1rem;
   color: #cc7d45;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +100,7 @@
   border: none;
   cursor: pointer;
   color: #fff;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

@@ -11,10 +11,7 @@ import timeline_img2 from "@/images/design_thinking_img.png";
 import timeline_img3 from "@/images/meet_Again_img.png";
 import timeline_img4 from "@/images/execution_img.png";
 import timeline_img5 from "@/images/final_Reveal_img.png";
-// import border_line from "@/svgs/border.svg";
-// import border_line2 from "@/svgs/responsive_line.svg";
 import styles from "@/Components/HowWeWorkTimeline/howWeWorkTimeline.module.css";
-// import { gsap, Power3, Expo } from "gsap/all";
 import AOS from "aos";
 import "aos/dist/aos.css";
 gsap.registerPlugin(ScrollTrigger);
@@ -149,11 +146,11 @@ const Timeline = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"ME MEET AGAIN , NOW WE HAVE"}
+                heading={"WE MEET AGAIN , NOW WE HAVE"}
                 justifyContent={"left"}
               />
               <HeadingTextAnimation
-                heading={"THE DESIGN AND QUOTATION"}
+                heading={"THE DESIGN & QUOTATION"}
                 justifyContent={"left"}
               />
             </motion.div>

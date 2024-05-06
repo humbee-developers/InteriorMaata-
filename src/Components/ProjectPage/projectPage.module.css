@@ -1,5 +1,5 @@
 .ProjectSection_header {
-  font-family: "Roseritta", sans-serif;
+  font-family:"Dream Avenue";
   padding-bottom: 3rem;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@
 
 .ProjectSection_textContent {
   display: flex;
-  font-family: "NeueMontreal-Regular", sans-serif;
+  font-family: var(--font-poppins);
   color: #cc7d45;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +89,7 @@
 .projects_pagination {
   display: flex;
   justify-content: center;
-  font-family: "NeueMontreal-Regular", sans-serif;
+  font-family: var(--font-poppins);
   padding: 3rem 0;
 }
 /* -------------------------------media-1600------------------------------- */
@@ -118,7 +118,7 @@
 
   .ProjectSection_textContent {
     padding: 2.5rem 0 5rem 0;
-    font-family: "NeueMontreal-Regular", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 400;
   }
@@ -166,7 +166,7 @@
 
   .ProjectSection_textContent {
     padding: 2.5rem 0 5rem 0;
-    font-family: "NeueMontreal-Regular", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 13px;
     font-weight: 400;
   }
@@ -216,7 +216,7 @@
 
   .ProjectSection_textContent {
     padding: 2.5rem 0 5rem 0;
-    font-family: "NeueMontreal-Regular", sans-serif;
+    font-family: var(--font-poppins);
     font-size: 12px;
     font-weight: 400;
   }

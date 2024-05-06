@@ -49,7 +49,7 @@
   border: none;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
@@ -129,7 +129,9 @@
   position: absolute;
   font-size: 3.5vw;
   z-index: 1;
-  font-family: "Roseritta";
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  text-transform: capitalize;
   left: 5rem;
   color: #791125;
   bottom: 11rem;
@@ -138,7 +140,7 @@
 .LivingRoom {
   position: absolute;
   font-size: 60px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #451721;
   left: 5rem;
   bottom: -137rem;
@@ -148,7 +150,7 @@
   position: absolute;
   width: 25%;
   font-size: 21px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #ffffff;
   right: 6rem;
   bottom: -163rem;
@@ -157,7 +159,7 @@
 .bedRoom {
   position: absolute;
   font-size: 60px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #451721;
   left: 5rem;
   bottom: -322rem;
@@ -166,7 +168,7 @@
   position: absolute;
   width: 25%;
   font-size: 21px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #ffffff;
   right: 5rem;
   bottom: -341rem;
@@ -174,7 +176,7 @@
 .outDoor {
   position: absolute;
   font-size: 60px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #451721;
   right: 5rem;
   bottom: -538rem;
@@ -184,7 +186,7 @@
   position: absolute;
   width: 30%;
   font-size: 21px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   color: #ffffff;
   left: 6rem;
   bottom: -518rem;
@@ -193,8 +195,10 @@
   position: absolute;
   font-size: 4.5vw;
   left: 5rem;
+  line-height: 70px;
+  text-transform: capitalize;
   z-index: 1;
-  font-family: "Roseritta";
+  font-family:"Dream Avenue";
   color: #ffffff;
   bottom: 15rem;
 }
@@ -212,8 +216,6 @@
   .LivingRoom {
     position: absolute;
     font-size: 70px;
-    /* font-family: "Roseritta"; */
-
     left: 5rem;
     bottom: -137rem;
   }

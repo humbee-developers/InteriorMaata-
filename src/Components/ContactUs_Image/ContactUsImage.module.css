@@ -1,19 +1,19 @@
 .contactUsPageOuter {
   position: relative;
-  padding: 6rem 0rem 0rem 0rem;
+  padding: 5.5rem 0rem 0rem 0rem;
 }
 .Contact_Us_img_outer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
   flex-direction: column;
 }
 
 .Contact_us_overlay_text {
   color: #7f7047;
   width: 100%;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 4.5vw;
   font-style: normal;
   font-weight: 400;
@@ -26,7 +26,7 @@
   text-align: center;
   padding: 8px 12px;
   background: #cc7d45;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   cursor: pointer;
   font-weight: 400;
@@ -37,7 +37,7 @@
   text-align: center;
   padding: 8px 12px;
   background: #7f7047;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   cursor: pointer;
   font-weight: 400;
@@ -65,6 +65,9 @@
 
   .Contact_us_overlay_text {
     font-size: 5.5vw;
+  }
+  .Contact_Us_img_outer {
+    margin-top: 2rem;
   }
 }
 @media (max-width:1200px) and (min-height:1366px){

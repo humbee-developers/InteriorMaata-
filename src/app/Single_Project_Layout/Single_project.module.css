@@ -1,7 +1,7 @@
 .first_project_text_header {
   color: #7f7047;
   text-align: center;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   /* font-size: 120.669px; */
   font-size: 8vw;
   font-style: normal;
@@ -13,7 +13,7 @@
 .first_project_text_content {
   color: #cc7d45;
   text-align: right;
-  font-family: Neue Montreal;
+  font-family: var(--font-poppins);
   font-size: 15.616px;
   font-style: normal;
   font-weight: 400;
@@ -39,10 +39,12 @@
 .Single_project_image1 {
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
   padding-bottom: 2rem;
 }
 .First_project_layout_image2 {
   display: flex;
+ cursor:pointer;
   gap: 2rem;
 }
 .interior_material_outer {
@@ -57,6 +59,7 @@
 }
 .interior_material_img {
   max-width: 100%;
+  cursor:pointer;
   height: auto;
 }
 .interior_material_text {
@@ -73,7 +76,7 @@
 }
 .interior_material_overlay_text {
   color: #000;
-  font-family: Neue Montreal;
+  font-family: var(--font-poppins);
   font-size: 15.616px;
   font-style: normal;
   font-weight: 400;
@@ -88,7 +91,7 @@
 }
 .interior_material_specs_text {
   color: #cc7d45;
-  font-family: Neue Montreal;
+  font-family: var(--font-poppins);
   font-size: 15.616px;
   font-style: normal;
   font-weight: 400;
@@ -107,7 +110,7 @@
 .Interior_second_text_content_first {
   width: 66%;
   color: #7f7047;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   /* font-size: 58px; */
   font-size: 3.2vw;
   font-style: normal;
@@ -123,6 +126,7 @@
 }
 .interior_last_room_img {
   width: 100%;
+  cursor: pointer;
   height: 100%;
 }
 .interior_last_room_overlay {
@@ -140,6 +144,7 @@
 }
 .First_project_layout_image2_inner {
   width: 50%;
+  cursor: pointer;
 }
 @media (min-width: 1500px) {
   .interior_material_img {
@@ -171,8 +176,8 @@
   .Interior_second_text_content_first {
     width: 66%;
     color: #7f7047;
-    font-family: Roseritta;
-    font-size: 3.5vw;
+    font-family:"Dream Avenue";
+    font-size: 3vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -219,7 +224,7 @@
   .Interior_second_text_content_first {
     width: 66%;
     color: #7f7047;
-    font-family: Roseritta;
+    font-family:"Dream Avenue";
     /* font-size: 46px; */
     font-style: normal;
     font-weight: 400;
@@ -232,7 +237,7 @@
   .Interior_second_text_content_first {
     width: 66%;
     color: #7f7047;
-    font-family: Roseritta;
+    font-family:"Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -328,7 +333,7 @@
   .Interior_second_text_content_first {
     width: 80%;
     color: #7f7047;
-    font-family: Roseritta;
+    font-family:"Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;

@@ -5,6 +5,7 @@ import ConsultancyHeader from "@/Components/ConsultancyHeader/page";
 import ConsultancyTextFlex from "@/Components/ConsultancyTextFlex/page";
 import ConsultancyTab  from "@/Components/ConsultancyTab/page";
 import ConsultancyCarousal from "@/Components/ConsultancyCarousal/page"
+import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = () => {
   useEffect(() => {
     (async () => {
@@ -18,6 +19,7 @@ const Page = () => {
     <Stairs/>
       <ConsultancyHeader />
       <ConsultancyTextFlex /> 
+      <AboutUs_ourDesign />
       <ConsultancyTab/>
       <ConsultancyCarousal/>
    

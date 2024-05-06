@@ -12,7 +12,7 @@
 .landing_page_second_content_text {
   width: 100%;
   color: #7f7047;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 3.3vw;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +75,7 @@
 
 .overlay_text_content {
   color: #000;
-  font-family: "NeueMontreal-Light";
+  font-family: var(--font-poppins);
   font-size: 27px;
   font-style: normal;
   font-weight: 300;
@@ -85,7 +85,7 @@
 
 .overlay_text_content1 {
   color: #7f7047;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 27px;
   font-style: normal;
   font-weight: 400;

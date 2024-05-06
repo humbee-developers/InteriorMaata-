@@ -172,15 +172,6 @@ const TeamPage = () => {
                 heights of sophistication. With a blend of creativity and
                 technical expertise, we turn dreams into reality.{" "}
               </p>
-              <p>
-                Each team member brings a unique perspective, contributing to a
-                harmonious fusion of style and functionality. We believe in
-                collaborative synergy, ensuring that every project reflects our
-                client's vision. Meet the passionate individuals who breathe
-                life into spaces, as interiormaata continues to redefine the art
-                of interior design with innovation, precision, and a touch of
-                elegance.
-              </p>
       
           </div>
         </div>

@@ -9,7 +9,7 @@
   border: 1px solid #7F7047;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -76,7 +76,7 @@
   border: 1px solid #cc7d45;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -152,7 +152,7 @@
   border: 1px solid #000000;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -224,7 +224,7 @@
   border:none;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
@@ -308,7 +308,7 @@
   border: 1px solid #7F7047;
   cursor: pointer;
   display: inline-block;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;

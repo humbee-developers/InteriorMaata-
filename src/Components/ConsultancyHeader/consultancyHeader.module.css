@@ -19,7 +19,7 @@
     }
     .Consultancy_Banner_text {
       color: #7f7047;
-      font-family: Roseritta;
+      font-family:"Dream Avenue";
       font-size: 58px;
       font-style: normal;
       font-weight: 400;
@@ -93,8 +93,8 @@
 .work_text {
   color: #7f7047;
   text-align: center;
-  font-family: Roseritta;
-  font-size: 8vw;
+  font-family:"Dream Avenue";
+  font-size: 7vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -109,21 +109,21 @@
 .work_text1 {
   color: #000;
   text-align: center;
-  font-family: "NeueMontreal-Regular";
-  font-size: 15.616px;
+   font-family: var(--font-poppins);
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .work_title {
-    width: 90%;
+    width: 100%;
   }
   .work_title1 {
     width: 50%;
   }
   .work_text {
-    font-size: 8vw;
+    font-size: 7.5vw;
   }
   .work_text1 {
     font-size: 16px;
@@ -139,8 +139,8 @@
     width: 100%;
   }
   .work_container {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
   }

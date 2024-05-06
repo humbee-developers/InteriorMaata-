@@ -28,7 +28,7 @@
 }
 .adds {
   color: #000000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   text-decoration: underline;
 }
 .footer_home {
@@ -88,7 +88,7 @@
 }
 .phone_no {
   color: #cc7d45;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 35.075px;
   font-style: normal;
   font-weight: 400;
@@ -114,7 +114,6 @@
 .footer_address {
   color: #7f7047;
   opacity: 0.8;
-  /* font-family: "NeueMontreal-Light"; */
   font-size: 35.075px;
   font-style: normal;
   font-family: var(--font-poppins);
@@ -125,7 +124,7 @@
 .footer_website {
   padding-bottom: 1rem;
   color: #fff;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   text-decoration: none;
   font-size: 22px;
   font-style: normal;
@@ -137,7 +136,7 @@
 .footer_Search {
   padding-top: 0.7rem;
   color: #7f7047;
-  font-family: "NeueMontreal-Light";
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 200;
@@ -149,7 +148,7 @@
   display: flex;
   justify-content: space-between;
   color: #000000;
-  font-family: "NeueMontreal-Light";
+  font-family: var(--font-poppins);
   font-size: 18px;
   font-style: normal;
   align-items: center;
@@ -162,12 +161,12 @@
 }
 .footer_last_Section {
   color: #353434;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 181px;
   font-style: normal;
   font-weight: 400;
   width: 100%;
-  line-height: normal;
+  line-height: 18rem;
   text-transform: uppercase;
 }
 .footer_social_media {
@@ -184,12 +183,11 @@
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .footer_last_Section {
-    font-family: "NeueMontreal-Regular";
-    font-size: 231px;
+     font-family: var(--font-poppins);
     font-style: normal;
     font-weight: 400;
     width: 100%;
-    line-height: normal;
+    line-height: 19rem;
     text-transform: uppercase;
   }
 
@@ -209,7 +207,7 @@
     display: flex;
     justify-content: space-between;
     color: #000000;
-    font-family: "NeueMontreal-Light";
+    font-family: var(--font-poppins);
     font-size: 22px;
     font-style: normal;
     align-items: center;
@@ -248,7 +246,7 @@
     display: flex;
     justify-content: space-between;
     color: #000000;
-    font-family: "NeueMontreal-Light";
+    font-family: var(--font-poppins);
     font-size: 17px;
     font-style: normal;
     align-items: center;
@@ -285,13 +283,18 @@
 
 @media (min-width: 1601px) and (max-width: 1920px) {
   .footer_last_Section {
-    font-size: 12.4vw;
+    font-size: 15.7vw;
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .footer_last_Section {
+    line-height: 14rem;
+  }
+}
 @media (min-width: 1025px) and (max-width: 1600px) {
   .footer_last_Section {
-    font-size: 12.3vw;
+    font-size: 15.5vw;
   }
 
   .Footer_Section {
@@ -304,7 +307,8 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer_last_Section {
-    font-size: 12vw;
+    font-size: 15.3vw;
+    line-height: 12rem;
   }
 
   .Footer_Section {
@@ -387,7 +391,8 @@
 
 @media (min-width: 576px) and (max-width: 768px) {
   .footer_last_Section {
-    font-size: 11vw;
+    font-size: 14.5vw;
+    line-height: 6rem;
   }
 
   .Footer_Section {
@@ -402,7 +407,8 @@
     padding-right: 2rem;
   }
   .footer_last_Section {
-    font-size: 11vw;
+    font-size: 14vw;
+    line-height: 5rem;
   }
   .footer_Second {
     gap: 3rem;
@@ -425,7 +431,8 @@
     padding-right: 2rem;
   }
   .footer_last_Section {
-    font-size: 10vw;
+    font-size: 13.5vw;
+    line-height: 3rem;
     width: 100%;
     justify-content: flex-end;
     /* display: flex; */
@@ -442,7 +449,8 @@
     padding-right: 2rem;
   }
   .footer_last_Section {
-    font-size: 10vw;
+    font-size: 13vw;
+    line-height: 3rem;
     width: 100%;
     justify-content: end;
     /* display: flex; */
@@ -456,9 +464,9 @@
   .footer_Search {
     font-size: 15px;
   }
-  .footer_last_Section {
+  /* .footer_last_Section {
     font-size: 10vw;
-  }
+  } */
   .Footer_Content {
     gap: 2rem;
     padding-bottom: 2rem;

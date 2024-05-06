@@ -12,7 +12,7 @@
   box-sizing: border-box;
   padding: 15px;
   right: 0;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   z-index: 999999;
 }
 .background {
@@ -40,7 +40,7 @@
 .interiormaata {
   font-size: 20px;
  color: #7F7047;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   transition: all 0.5s;
 }
 .logoWhite .interiormaata {
@@ -54,17 +54,17 @@
   font-weight: 400;
   position: relative;
   align-items: center;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 .label p {
   margin: 0px;
   color: white;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 .bar a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 .shopContainer {
   display: flex;
@@ -90,7 +90,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
 }
 .label p:nth-of-type(2) {
   position: absolute;
@@ -143,7 +143,7 @@
 @media (min-width: 1600px) and (max-width: 1920px) {
   .interiormaata {
     font-size: 30px;
-    font-family: "NeueMontreal-Regular";
+     font-family: var(--font-poppins);
   }
 }
 @media only screen and (min-width: 600px) {

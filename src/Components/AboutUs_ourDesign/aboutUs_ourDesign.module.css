@@ -13,7 +13,7 @@
 .seventh_Section_content_text {
   color: #7f7047;
   width: 50%;
-  font-family: Roseritta;
+  font-family:"Dream Avenue";
   font-size: 58px;
   font-style: normal;
   font-weight: 400;
@@ -23,7 +23,7 @@
 
 .seventh_Section_content_text1 {
   color: #000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -76,7 +76,7 @@
 .table_Section_emphasis {
   color: #cc7d45;
   padding-bottom: 4px;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 27px;
   font-style: normal;
   font-weight: 400;
@@ -87,7 +87,7 @@
 
 .table_content_emphasis {
   color: #000000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@
 
 .Crafting_Section_Left {
   color: #000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 41px;
   font-style: normal;
   font-weight: 400;
@@ -137,7 +137,7 @@
 
 .Crafting_Section_Right {
   color: #000;
-  font-family: "NeueMontreal-Regular";
+   font-family: var(--font-poppins);
   font-size: 15px;
   font-style: italic;
   font-weight: 400;

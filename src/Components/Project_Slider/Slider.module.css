@@ -41,7 +41,7 @@
   .third_section_overlay_text {
     color: black;
     text-align: center;
-    font-family: 'NeueMontreal-Regular';
+    font-family: var(--font-poppins);
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,7 @@
   
   .third_section_overlay_span {
     color: #fff;
-    font-family: Roseritta;
+    font-family:"Dream Avenue";
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -82,7 +82,7 @@
   .carousel_text_Content {
     color: #7f7047;
     text-align: center;
-    font-family: 'NeueMontreal-Regular';
+    font-family: var(--font-poppins);
     font-size: 15px;
     width: 75%;
     font-style: normal;
