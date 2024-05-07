@@ -23,6 +23,7 @@
 
 .project p {
   font-size: 55px;
+  text-transform: capitalize;
   color: #7f7047;
 
   font-family:"Dream Avenue";
@@ -42,11 +43,16 @@
   width: 0;
 }
 .project img {
+  transition: transform .2s;
   object-fit: contain;
   width: 10vw;
 }
+.testingImage:hover{
+  transform: scale(1.5);
+}
 
 .testingImage {
+  transition: transform .2s;
   width: 9vw;
   height: 9vh;
 }

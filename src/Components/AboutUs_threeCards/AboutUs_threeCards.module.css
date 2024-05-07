@@ -41,6 +41,7 @@
 }
 
 .Landing_image1 {
+  transition: all 1s ease-out;
   position: relative;
 }
 

@@ -17,7 +17,7 @@ export const height = {
     height: 0,
   },
   enter: {
-    height: "100vh",
+    height: "auto",
     transition,
     background: "#AE7B56",
   },

@@ -10,14 +10,14 @@ import styles from "@/Components/AboutUs_header/AboutUs_header.module.css";
 
 const Page = () => {
   const text =
-    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home décor.";
+    "Trad-Mo embodies the harmonious fusion of Traditional Indian and Modern minimal Design . Its an idea of an open bright space with Complementary furniture but some Indian traditional elements were you have your roots hold , that’s when you know you are in the right space . This a sustainable style of design , more than that this is a way of life .If you think about the Practical side of the Style , Minimal maintenance required for Trad-Mo . Timeless , Sustainable , Close to your root , Maintenance free Life complementing today’s lifestyle . ";
 
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.4,
         staggerChildren: 0.008,
       },
     },
@@ -80,16 +80,16 @@ const Page = () => {
         transition={{ duration: 0.9 }}
          >
         <HeadingTextAnimation
-          heading={"ananya"}
+          heading={"TRAD-MO"}
           
           justifyContent={"center"}
           className={styles.ananya}
         />
         <HeadingTextAnimation
-          heading={"Bhattacharjee"}
+          heading={"DESIGN STYLE"}
           
           justifyContent={"center"}
-          className={styles.ananya}
+          className={styles.designStyle}
         />
         </motion.div>
           <div className={styles.aboutUs_flex_divider}>
@@ -128,7 +128,7 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-                <Button button_text="Read More" />
+                interiormaata
               </motion.div>
             </motion.div>
           </div>

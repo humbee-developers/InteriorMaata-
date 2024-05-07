@@ -10,7 +10,7 @@
 .formSpacing{
 display: flex;
 flex-direction: column;
-gap: 2rem;
+gap: 1.5rem;
 }
 .contact_form {
   width: 50%;
@@ -27,7 +27,7 @@ gap: 2rem;
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
 }
 
 .contact_us_image {
@@ -41,14 +41,14 @@ gap: 2rem;
 
 
 .form_field {
-  border: 1px solid white !important;
+  border-bottom: 1px solid white !important;
   box-sizing: border-box;
   color: white;
   font-family: var(--font-poppins);
   height: 55px;
   background: transparent;
   width: 100%;
-  padding: 0rem 15px;
+  padding: 0rem 0px;
   font-size: 18px;
   resize: none;
   outline: none;
@@ -69,8 +69,8 @@ gap: 2rem;
   color: white;
   display: block;
   font-size: 18px;
-  margin-left: 10px;
-  padding: 0px 10px;
+  margin-left: 0px;
+  padding: 0px 0px;
   pointer-events: none;
   position: absolute;
   font-family: var(--font-poppins);
@@ -81,7 +81,7 @@ gap: 2rem;
 }
 
 .form_field:focus {
-  border: 1px solid white !important;
+  border-bottom: 1px solid white !important;
   outline: none;
 }
 
@@ -89,20 +89,20 @@ gap: 2rem;
   background-color: #7f7047;
   color: white;
   font-size: 18px;
-  margin-left: 10px;
-  padding: 0px 10px;
+  margin-left: 0px;
+  padding: 0px 0px;
   position: absolute;
   top: -10px;
   transition: 0.2s;
 }
 /* address */
 .form_field_address {
-  border: 1px solid white !important;
+  border-bottom: 1px solid white !important;
   color: white;
   background: transparent;
   width: 100%;
   font-family: var(--font-poppins);
-  padding: 17px 15px;
+  padding: 12px 0px;
   font-size: 18px;
   resize: none;
   outline: none;
@@ -119,7 +119,7 @@ gap: 2rem;
 }
 
 .form_field_address:focus {
-  border: 1px solid white !important;
+  border-bottom: 1px solid white !important;
   outline: none;
 }
 
@@ -127,8 +127,8 @@ gap: 2rem;
   background-color: #7f7047;
   color: white;
   font-size: 18px;
-  margin-left: 10px;
-  padding: 0 10px;
+  margin-left: 0px;
+  padding: 0 0px;
   position: absolute;
   top: -10px;
   transition: 0.2s;
@@ -173,6 +173,19 @@ gap: 2rem;
   .contact_form_wrapper{
     width: 75%;
   }
+  .formSpacing{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    }
+
+    .form_field_address {
+      padding: 16px 0px;
+    }
+    .contact_form_title {
+      padding-bottom: 30px;
+    }
+    
 }
 
 

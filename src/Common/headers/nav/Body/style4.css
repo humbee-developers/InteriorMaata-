@@ -1,5 +1,7 @@
 .nav_body {
   flex-wrap: wrap;
+  display: flex;
+  max-width: 1400px;
 }
 .nav_body a {
   color: rgb(255, 255, 255);
@@ -12,10 +14,8 @@
 
 .coming-soon {
   font-size: 12px;
-
    font-family: var(--font-poppins);
   margin-left: 5px; /* Adjust as needed */
-  /* color: rgb(0, 0, 0); Or any other color you prefer */
 }
 
 .nav_body p {
@@ -23,7 +23,8 @@
   display: block;
   font-family:"Dream Avenue";
   overflow: hidden;
-  font-size: 68px;
+  font-size: 4vw;
+  margin-right: 2rem;
   font-weight: 300;
 }
 .navOpenLogo{
@@ -51,9 +52,9 @@
   .nav_body p {
     margin: 0px;
     display: block;
-    font-family:"Dream Avenue";
     overflow: hidden;
-    font-size: 85px;
+    margin-right:2rem;
+    font-size: 4vw;
     font-weight: 300;
   }
 }
@@ -68,7 +69,6 @@
   .nav_body p {
     margin: 0px;
     display: block;
-    font-family:"Dream Avenue";
     overflow: hidden;
     font-size: 40px;
     font-weight: 300;
@@ -96,7 +96,6 @@
   .nav_body p {
     margin: 0px;
     display: block;
-    font-family:"Dream Avenue";
     overflow: hidden;
     font-size: 37px;
     font-weight: 300;
@@ -126,7 +125,6 @@
   .nav_body p {
     margin: 0px;
     display: block;
-    font-family:"Dream Avenue";
     overflow: hidden;
     font-size: 25px;
     font-weight: 300;

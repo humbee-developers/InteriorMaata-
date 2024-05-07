@@ -12,17 +12,19 @@ const links = [
   //   href: "/",
   // },
   {
-    title: "Online Consultancy",
-    href: "/Consultancy",
+    title: "Know about us",
+    href: "/KnowAboutUs",
   },
+  {
+    title: "Services",
+    href: "/Services",
+  },
+  
   {
     title: "PROJECTS",
     href: "/Projects",
   },
-  {
-    title: "TEAM",
-    href: "/Team",
-  },
+  
   {
     title: "HOW WE WORK",
     href: "/HowWeWork",
@@ -30,11 +32,11 @@ const links = [
   {
     title: "SHOP",
     href: "",
-    comingSoon: true, // Add this flag to indicate it's coming soon
+    comingSoon: true, // this indicates the coming soon text
   },
   {
-    title: "CONTACT",
-    href: "/ContactUs",
+    title: "CONNECT",
+    href: "/Connect",
   },
 ];
 

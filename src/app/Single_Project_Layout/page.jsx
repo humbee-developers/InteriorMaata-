@@ -35,12 +35,12 @@ const Project_Header = () => {
     }
   }, [controls, inView]);
 
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   return (
     <Stairs>
@@ -65,21 +65,23 @@ const Project_Header = () => {
               </motion.div>
             </div>
           </div>
-          <div className={styles.first_project_text_firstcontent}>
-            <p className={styles.first_project_text_content}>
+          {/* <div className={styles.interior_material_specs_content}>
+            <p className={styles.interior_material_specs_text}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className={styles.First_project_layout_image}>
+          <div className={styles.First_project_layout_image2_innerX}>
           <Image
             src={Single_project_image1}
             alt="none"
             className={styles.Single_project_image1}
           />
+          </div>
           <div className={styles.First_project_layout_image2}>
             <div className={styles.First_project_layout_image2_inner}>
               <Image
@@ -96,11 +98,13 @@ const Project_Header = () => {
               />
             </div>
           </div>
+          <div className={styles.First_project_layout_image2_innerX}>
           <Image
             src={Single_project_image4}
             alt="none"
             className={styles.Single_project_image1}
           />
+          </div>
         </div>
         {/* 5 images */}
         <div className={styles.interior_material_outer}>

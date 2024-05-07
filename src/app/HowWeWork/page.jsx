@@ -8,12 +8,12 @@ import ServicesCards from "@/Components/ServicesCards/page";
 import Services_Slider from "@/Components/Service_Slider/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = () => {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
   return (
     <>
       <Stairs/>

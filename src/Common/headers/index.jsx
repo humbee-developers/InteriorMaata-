@@ -1,5 +1,4 @@
-"use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
@@ -10,12 +9,17 @@ import "./style1.css";
 export default function NewNav() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
-  const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    if (isActive) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isActive]);
+
   const handleNavLink = () => {
     setIsActive(!isActive);
-  };
-  const handleToggle = () => {
-    setToggle(!toggle);
   };
 
   return (
@@ -29,21 +33,18 @@ export default function NewNav() {
           alt="Description of the image"
           className="nav_logo"
         />
-        {/* <span className="interiormaata">interiormaata</span> */}
       </div>
       <div className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}>
         <div className="bar">
           <div
             onClick={() => {
               setIsActive(!isActive);
-              // handleToggle();
             }}
             className="new_header_el"
           >
             <div
               className={`${"burger"} ${isActive ? "burgerActive" : ""}`}
             ></div>
-         
           </div>
         </div>
         <AnimatePresence mode="wait">

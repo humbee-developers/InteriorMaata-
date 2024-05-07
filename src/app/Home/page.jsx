@@ -14,12 +14,12 @@ import "./home.css"
 const Page = ({ lData }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter,setCounter]= useState  (0)
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
   function handleLoad(data) {
     console.log("data", data);
     setIsLoading(data);
