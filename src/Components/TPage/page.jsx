@@ -134,9 +134,9 @@ const TeamPage = () => {
                 Share It, And They Get It. They’re In It With You, And It’s In
                 Them Too.
               </p>
-              <p>You Shared The Wonder.</p>
-              <p>You Know The Feeling?</p>
-              <p>That’s What We’re After, Every Time We Make A Film.</p>
+              <p>You Shared The Wonder You Know The Feeling? That’s What We’re After, Every Time We Make A Film.</p>
+              
+             
        
           </div>
         </div>

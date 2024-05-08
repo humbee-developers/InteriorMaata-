@@ -1,13 +1,15 @@
 .nav_body {
   flex-wrap: wrap;
   display: flex;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 .nav_body a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
-  width: fit-content;
+  margin-right: 2rem;
+  width:36%;
+  /* width: fit-content; */
   text-transform: uppercase;
 }
 
@@ -15,7 +17,7 @@
 .coming-soon {
   font-size: 12px;
    font-family: var(--font-poppins);
-  margin-left: 5px; /* Adjust as needed */
+  margin-left: 5px;
 }
 
 .nav_body p {
@@ -58,22 +60,52 @@
     font-weight: 300;
   }
 }
-@media (max-width: 768px) {
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav_body a {
+    width:44%;
+  }
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .nav_body a {
+    width:80%;
+    margin-right:0rem;
+  }
   .nav_body p 
   {
-    font-size: 45px;
+    margin-right:0rem;
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  .nav_body {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    /* max-width: 1400px; */
   }
 }
 
 @media (min-width: 425px) and (max-width: 500px) {
   .nav_body p {
     margin: 0px;
+    margin-right:0rem;
     display: block;
     overflow: hidden;
     font-size: 40px;
     font-weight: 300;
   }
-
+  .nav_body a {
+    margin-right:0rem;
+    width:100%;
+  }
   .navOpenLogo{
     display: flex;
     align-items: center;
@@ -93,6 +125,10 @@
 
 
 @media (min-width: 360px) and (max-width: 424px) {
+  .nav_body a {
+    margin-right:0rem;
+    width:100%;
+  }
   .nav_body p {
     margin: 0px;
     display: block;
@@ -122,6 +158,10 @@
 
 
 @media (min-width: 200px) and (max-width: 360px) {
+  .nav_body a {
+    margin-right:0rem;
+    width:100%;
+  }
   .nav_body p {
     margin: 0px;
     display: block;

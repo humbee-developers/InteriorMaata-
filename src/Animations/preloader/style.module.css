@@ -6,199 +6,37 @@
   background-color: #cc7d45;
 }
 
-.counterOuter {
-  display: flex;
-  height: 47%;
-  align-items: flex-end;
-}
-
-.progress {
-  color: #bbbcc0;
-  font-size: 100px;
-  z-index: 99;
-  opacity: 1;
-}
-
-.percentageCounter {
-  color: #bbbcc0;
-   font-family: var(--font-poppins);
-  font-size: 7rem;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  text-align: end;
-}
-
-.introduction .text {
-  display: flex;
-  color: white;
-  height: 53%;
-  text-decoration: none;
-  font-size: 5.5vw;
-  gap: 1rem;
-  justify-content: center;
-  text-transform: uppercase;
-   font-family: var(--font-poppins);
-  align-items: flex-end;
-}
-
 .logoImageOuter{
   display: flex;
-  max-width: 100%;
-  height: auto;
-}
-
-.logoImage{
-  height: auto;
-  width:6vw
-}
-
-
-
-
-.moment {
-  display: flex;
-  position: absolute;
-  top: 1rem;
-  gap: 2rem;
-  right: 2rem;
-}
-
-.loading {
-  display: flex;
-  color: white;
-  font-size: 40px;
-   font-family: var(--font-poppins);
-  align-items: center;
-}
-
-.textInner {
-  display: flex;
   justify-content: center;
-  gap: 1rem;
-  width:100%;
   align-items: center;
+  height: 100vh;
 }
 
-.word{
-  display: flex;
-  align-items: flex-end;
-}
-
-.loader {
-  display: flex;
-  align-items: center;
-}
-
-.bar {
-  display: inline-block;
-  width: 3px;
-  height: 20px;
-  background-color: #bbbcc0;
-  border-radius: 10px;
-  animation: scale-up4 1s linear infinite;
-}
-
-.bar:nth-child(2) {
-  height: 35px;
-  margin: 0 5px;
-  animation-delay: 0.25s;
-}
-
-.bar:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
-@keyframes scale-up4 {
-  20% {
-    background-color: #ffff;
-    transform: scaleY(1.5);
-  }
-
-  40% {
-    transform: scaleY(1);
-  }
+.logoImage {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  max-height: 100%;
+  height: auto;
+  /* width: 6vw; */
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
-  .moment {
-    display: flex;
-    position: absolute;
-    top: 1rem;
-    gap: 2rem;
-    right: 2rem;
-  }
-
-  .logoImage{
+  .logoImage {
     height: auto;
-    width:6vw
-  }
-  
-
-  .loading {
-    display: flex;
-    color: white;
-    font-size: 40px;
-     font-family: var(--font-poppins);
-    align-items: center;
+    /* width: 6vw; */
   }
 }
 
-@media(min-width:521px) and (max-width:1024px){
-  .logoImage{
+@media (min-width: 521px) and (max-width: 1024px) {
+  .logoImage {
     height: auto;
-    width:8.5vw
+    /* width: 8.5vw; */
   }
 }
 
-
-
-
-
-@media(min-width:200px) and (max-width:520px){
-  .percentageCounter {
-    color: #bbbcc0;
-     font-family: var(--font-poppins);
-    font-size: 6rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    text-align: end;
-  }
-
-
-  .introduction .text {
-    font-size: 8.5vw;
-
-  }
-
-  .logoImage{
+@media (min-width: 200px) and (max-width: 520px) {
+  .logoImage {
     height: auto;
-    width:14vw
+    /* width: 14vw; */
   }
-  
-  
-
-  .moment {
-    display: flex;
-    position: absolute;
-    top: 1rem;
-    gap: 1rem;
-    right: 2rem;
-  }
-
-  .loading {
-    display: flex;
-    color: white;
-    font-size: 28px;
-     font-family: var(--font-poppins);
-    align-items: center;
-  }
-  
-
-  .percentageCounter {
-    font-size: 5rem;
-
-  }
-
 }

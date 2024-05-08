@@ -195,7 +195,7 @@
   position: absolute;
   font-size: 4.5vw;
   left: 5rem;
-  line-height: 70px;
+  /* line-height: 70px; */
   text-transform: capitalize;
   z-index: 1;
   font-family:"Dream Avenue";

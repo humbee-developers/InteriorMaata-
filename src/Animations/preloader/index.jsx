@@ -1,50 +1,17 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anime";
 import Image from "next/image";
-import logo from "@/images/preloaderLogo.png"
+import logo from "@/images/preloaderLogo.png";
 import styles from "./style.module.css";
 
-const words = ["interiorमाता"];
-
-export default function Index({ }) {
-  const [index, setIndex] = useState(0);
+export default function Index({}) {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
-  const [counter, setCounter] = useState(0);
-  const [displayText, setDisplayText] = useState("LOADING");
-    
-  
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
-
-  useEffect(() => {
-    if (index === words.length - 1) return;
-    const interval = setInterval(() => {
-      setIndex(index + 1);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [index]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (counter < 100) {
-        setCounter(counter + 1);
-      }
-    }, 25);
-    return () => clearTimeout(timeout);
-  }, [counter]);
-
-
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setDisplayText("LAUNCHING 3D");
-    }, 2600); 
-    return () => clearTimeout(timeout);
-  }, []); 
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -73,48 +40,19 @@ export default function Index({ }) {
       exit="exit"
       className={styles.introduction}
     >
-      {dimension.width > 0 && (
-        <>
-          <div className={styles.text}>
-          <motion.div
-            className={styles.textInner}
-            variants={opacity}
-            initial="initial"
-            animate="enter"
-          >
-            <div className={styles.logoImageOuter}>
-            <Image className={styles.logoImage} src={logo} alt="image" />
-            </div>
-        <div>
-        {words[index]}
+      <motion.div variants={opacity} initial="initial" animate="enter">
+        <div className={styles.logoImageOuter}>
+          <Image className={styles.logoImage} src={logo} alt="image" />
         </div>
-          </motion.div>
-          </div>
-          <div>
-            <motion.path
-              variants={curve}
-              initial="initial"
-              exit="exit"
-            ></motion.path>
-          </div>
-        </>
-      )}
-      <div className={styles.counterOuter}>
-        <div className={styles.active} style={{ width: `${counter}%`, backgroundColor: "#bbbcc0", height: "15px", position: "relative" }}>
-          <div className={styles.percentageCounter}>{counter}%</div>
-        </div>
+      </motion.div>
+
+      <div>
+        <motion.path
+          variants={curve}
+          initial="initial"
+          exit="exit"
+        ></motion.path>
       </div>
-
-     <div className={styles.moment}>
-     <div className={styles.loading}>{displayText}</div>
-     <div className={styles.loader}>
-    <span className={styles.bar}></span>
-    <span className={styles.bar}></span>
-    <span className={styles.bar}></span>
-</div>
-     </div>
-
-
     </motion.div>
   );
 }

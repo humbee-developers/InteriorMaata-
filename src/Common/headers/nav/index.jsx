@@ -12,7 +12,7 @@ const links = [
   //   href: "/",
   // },
   {
-    title: "Know about us",
+    title: "About us",
     href: "/KnowAboutUs",
   },
   {

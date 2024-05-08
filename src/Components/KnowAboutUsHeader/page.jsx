@@ -5,13 +5,12 @@ import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
 // import Button from "@/Common/Buttons/button";
 import Image from "next/image";
-// import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
-import Cover_image from "@/images/newHome.png"
-import styles from "@/Components/AboutUs_header/AboutUs_header.module.css";
+import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
+import styles from "@/Components/KnowAboutUsHeader/knowAboutUs.module.css";
 
 const Page = () => {
   const text =
-    "Trad-Mo embodies the harmonious fusion of Traditional Indian and Modern minimal Design . Its an idea of an open bright space with Complementary furniture but some Indian traditional elements were you have your roots hold , that’s when you know you are in the right space . This a sustainable style of design , more than that this is a way of life .If you think about the Practical side of the Style , Minimal maintenance required for Trad-Mo . Timeless , Sustainable , Close to your root , Maintenance free Life complementing today’s lifestyle . ";
+    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.";
 
   const sentence = {
     hidden: { opacity: 0 },
@@ -81,16 +80,16 @@ const Page = () => {
         transition={{ duration: 0.9 }}
          >
         <HeadingTextAnimation
-          heading={"TRAD-MO"}
+          heading={"ananya"}
           
           justifyContent={"center"}
           className={styles.ananya}
         />
         <HeadingTextAnimation
-          heading={"DESIGN STYLE"}
+          heading={"Bhattacharjee"}
           
           justifyContent={"center"}
-          className={styles.designStyle}
+          className={styles.ananya}
         />
         </motion.div>
           <div className={styles.aboutUs_flex_divider}>

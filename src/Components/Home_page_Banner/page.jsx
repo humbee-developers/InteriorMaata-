@@ -52,7 +52,7 @@ const Animation = ({ loadImage, counter }) => {
         canvas.width = originalWidth;
         canvas.height = originalHeight;
         canvas.style.width = "100%"; // Set canvas width to 100% of container
-        canvas.style.height = "auto"; // this will  Allow canvas to maintain aspect ratio
+        canvas.style.height = "100vh"; // this will  Allow canvas to maintain aspect ratio
       }
     };
     setCanvasSize();
@@ -294,7 +294,7 @@ const Animation = ({ loadImage, counter }) => {
             <svg
               class="nectar-scroll-icon"
               viewBox="0 0 30 45"
-              enable-background="new 0 0 30 45"
+              enableBackground="new 0 0 30 45"
             >
               <path
                 class="nectar-scroll-icon-path"
