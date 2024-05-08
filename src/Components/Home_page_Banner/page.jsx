@@ -43,7 +43,7 @@ const Animation = ({ loadImage, counter }) => {
       const availableHeight = window.innerHeight;
       const heightByWidth = availableWidth / aspectRatio;
 
-      if (availableWidth < 1024) {
+      if (availableWidth < 200) {
         canvas.width = originalWidth / 2; // Adjust canvas width for mobile screens
         canvas.height = originalHeight / 2;
         canvas.style.width = "1301px"; // Set canvas width to 1301px width to be given according screen Sizes
