@@ -4,7 +4,6 @@
       z-index: 0 !important;
       display: flex;
       flex-direction: row;
-      /* border-top: 1px solid #cc7d45; */
       align-items: center;
       animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
       animation-play-state: var(--play);

@@ -6,17 +6,6 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import slide1_src1 from "@/images/AboutUs1.png";
-import slide1_src2 from "@/images/AboutUs2.png";
-import slide1_src3 from "@/images/AboutUs3.png";
-import slide1_src4 from "@/images/AboutUs4.png";
-import slide1_src5 from "@/images/AboutUs5.png";
-import slide1_src6 from "@/images/AboutUs6.png";
-import slide1_src7 from "@/images/Ellipse 10.png";
-import slide1_src8 from "@/images/Ellipse 11.png";
-import slide1_src9 from "@/images/Ellipse 12.png";
-import slide1_src10 from "@/images/Ellipse 13.png";
-import slide1_src11 from "@/images/Ellipse 14.png";
 
 import slide2_src1 from "@/images/i1.png";
 import slide3_src1 from "@/images/i2.png";
@@ -317,104 +306,6 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              {/* <motion.div
-                className={styles.image1}
-                variants={imageAnimations[0]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src1} alt="image" />
-               
-              </motion.div>
-              <motion.div
-                className={styles.image2}
-                variants={imageAnimations[1]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src2} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image3}
-                variants={imageAnimations[2]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src3} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image4}
-                variants={imageAnimations[3]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src4} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image5}
-                variants={imageAnimations[4]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src5} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image6}
-                variants={imageAnimations[5]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src6} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image7}
-                variants={imageAnimations[6]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src7} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image8}
-                variants={imageAnimations[7]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src8} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image9}
-                variants={imageAnimations[8]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src9} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image10}
-                variants={imageAnimations[9]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src10} alt="image" />
-              </motion.div>
-
-              <motion.div
-                className={styles.image11}
-                variants={imageAnimations[10]}
-                initial="hidden"
-                animate={controls1}
-              >
-                <Image className="image" src={slide1_src11} alt="image" />
-              </motion.div> */}
                 <motion.div >
                 <Image className={styles.imagex} src={slide51_src1} alt="image" />
               </motion.div>

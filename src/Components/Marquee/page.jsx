@@ -13,13 +13,13 @@ const Marquee1 = () => (
         </Marquee>
 
         <Marquee direction="left" speed={70} >
-            <div>
+           
                 <div className={styles.marquee_text}>
                   <p> interior moodboard - interior moodboard - interior moodboard - </p>
                 </div>
-            </div> 
+          
         </Marquee>
-    </>
+    </> 
 );
 
 export default Marquee1;

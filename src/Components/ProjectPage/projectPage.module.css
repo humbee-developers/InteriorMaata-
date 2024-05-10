@@ -42,13 +42,38 @@
   padding: 0 5rem;
   margin-bottom: -2rem;
 }
+
+.ProjectSection_imageContent{
+  position: relative;
+}
+
+
 .ProjectSection_image {
   background-color: beige;
   width: 100%;
   height: auto;
   aspect-ratio: 5 / 2;
   object-fit: cover;
+  cursor: pointer;
+}
 
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  right: 0;
+  height:auto;
+  aspect-ratio: 5 / 2;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.5);
+}
+
+.ProjectSection_imageContent:hover .overlay{
+  opacity: 1;
   cursor: pointer;
 }
 

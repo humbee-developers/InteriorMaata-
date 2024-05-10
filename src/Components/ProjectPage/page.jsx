@@ -95,6 +95,7 @@ const Projects = () => {
                   alt={data.title}
                   onClick={() => router.push("/Single_Project_Layout")}
                 />
+                <div onClick={() => router.push("/Single_Project_Layout")} className={styles.overlay}></div>
               </div>
 
               <div className={styles.ProjectSection_textContent}>
