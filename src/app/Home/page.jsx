@@ -8,6 +8,7 @@ import AboutUs_threeCards from "@/Components/AboutUs_threeCards/page";
 import Marquee from "@/Components/Marquee/page";
 import AboutUs_Carousel2 from "@/Components/AboutUs_Carousel2/page";
 import AboutUs_flex from "@/Components/AboutUs_flex/page";
+import MarqueeTest from "@/Components/MarqueeTest/page"
 import AboutUsInfo from "@/Components/AboutUsInfo/page";
 // import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import "./home.css"
@@ -32,15 +33,16 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
       </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
+      <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
     
         <div className="bg">
         <AboutUs_header />
         <AboutUs_threeCards />
-        <Marquee />
+        {/* <Marquee /> */}
+        <MarqueeTest/>
         <AboutUs_Carousel2 />
         <AboutUs_flex />
         <AboutUsInfo />

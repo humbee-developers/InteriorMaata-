@@ -26,14 +26,51 @@ const Project_Header = () => {
     triggerOnce: true,
   });
 
+  const [refX, inViewX] = useInView({
+    triggerOnce: true,
+  });
 
   const controls = useAnimation();
+  const controlsX = useAnimation();
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
     }
   }, [controls, inView]);
+
+
+  useEffect(() => {
+    if (inViewX) {
+      controlsX.start("visible");
+    }
+  }, [controlsX, inViewX]);
+
+
+  const text =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+  const sentence = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.4,
+        staggerChildren: 0.008,
+      },
+    },
+  };
+
+  const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
+
+
 
   useEffect(() => {
     (async () => {
@@ -172,13 +209,23 @@ const Project_Header = () => {
           </div>
         </div>
         {/* end */}
-        <div className={styles.interior_material_specs_content}>
-          <p className={styles.interior_material_specs_text}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
+        <div className={styles.interior_material_specs_content} ref={refX}>
+        <motion.div
+              className={styles.interior_material_specs_text}
+              variants={sentence}
+              initial="hidden"
+              animate={inViewX ? "visible" : "hidden"}
+            >
+              {text.split("").map((char, index) => (
+                <motion.span
+                  className={styles.interior_material_specs_text}
+                  key={char + "-" + index}
+                  variants={letter}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.div>
         </div>
 
         <div className={styles.Interior_second_text_content}>

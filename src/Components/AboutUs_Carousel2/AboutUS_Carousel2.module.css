@@ -13,28 +13,44 @@
   font-family:"Dream Avenue";
   font-size: 6.5vw;
 }
+
+.activeButton{
+  border:.225rem  solid rgb(255, 255, 255) !important;
+}
+
+
 .slideControlButtons {
   display: flex;
   gap: 1rem;
-  border-radius: 15px;
+
+  transition: width 0.3s ease; /* Smooth transition for width change */
+  width: 3.6rem !important; /* Initial width */
+  max-width: 17rem; 
+
+  border-radius: 44px;
   width: fit-content;
+  border: .125rem solid hsla(0, 0%, 100%, .2);
   transform: translate(5rem, -7rem);
-  background: #cc7d45;
   opacity: 1;
-  background: linear-gradient(to bottom right, #dc925d 6%, #e9dbd3 86%);
-  padding: 1rem 1rem;
+  background-color: hsla(0, 0%, 100%, .1);
+  padding: 0.6rem 0.6rem;
+}
+
+.slideControlButtons.expanded {
+  width: 17rem !important; /* Expanded width */
 }
 
 .slideControlButton1 {
   border-radius: 50%;
-  height: 40px;
+  height: 35px;
   background-color: #ae7b56;
   transition: all 0.3s ease-out;
-  width: 40px;
+  width: 35px;
   border: 1px solid white;
 }
 .slideControlButton1:hover{
-  filter: drop-shadow(1px 1px 6px gray);
+  /* border: .225rem solid white; */
+  /* filter: drop-shadow(1px 1px 6px gray); */
   cursor: pointer;
   background-color: #b6794d;
   transform: scale(1.1);
@@ -42,14 +58,14 @@
 .slideControlButton2 {
   border-radius: 50%;
   transition: all 0.3s ease-out;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background-color: #d18211;
   border: 1px solid white;
 }
 
 .slideControlButton2:hover{
-  filter: drop-shadow(1px 1px 6px gray);
+  /* filter: drop-shadow(1px 1px 6px gray); */
   cursor: pointer;
   background-color: #e68c0e;
   transform: scale(1.1);
@@ -57,15 +73,15 @@
 
 .slideControlButton3 {
   border-radius: 50%;
-  height: 40px;
+  height: 35px;
   transition: all 0.3s ease-out;
   background-color: #677176;
-  width: 40px;
+  width: 35px;
   border: 1px solid white;
 }
 
 .slideControlButton3:hover{
-  filter: drop-shadow(1px 1px 6px gray);
+  /* filter: drop-shadow(1px 1px 6px gray); */
   cursor: pointer;
   background-color: #71818a;
   transform: scale(1.1);
@@ -73,15 +89,15 @@
 
 .slideControlButton4 {
   border-radius: 50%;
-  height: 40px;
+  height: 35px;
   transition: all 0.3s ease-out;
-  width: 40px;
+  width: 35px;
   background-color: #a39280;
   border: 1px solid white;
 }
 
 .slideControlButton4:hover{
-  filter: drop-shadow(1px 1px 6px gray);
+  /* filter: drop-shadow(1px 1px 6px gray); */
   cursor: pointer;
   background-color: #af9981;
   transform: scale(1.1);
@@ -89,15 +105,15 @@
 
 .slideControlButton5 {
   border-radius: 50%;
-  height: 40px;
+  height: 35px;
   transition: all 0.3s ease-out;
   background-color: #a4a3a4;
-  width: 40px;
+  width: 35px;
   border: 1px solid white;
 }
 
 .slideControlButton5:hover{
-  filter: drop-shadow(1px 1px 6px gray);
+  /* filter: drop-shadow(1px 1px 6px gray); */
   cursor: pointer;
   background-color: #928f92;
   transform: scale(1.1);
@@ -196,10 +212,7 @@
     display: flex;
     gap: 1rem;
     transform: translate(5rem, -12rem);
-
-    background-color: #e8d8ce;
     width: fit-content;
-    padding: 1rem 1rem;
   }
 
 

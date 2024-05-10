@@ -16,6 +16,16 @@ import "@/Components/AboutUs_Carousel2/Inbuilt.css";
 import styles from "@/Components/AboutUs_Carousel2/AboutUS_Carousel2.module.css";
 
 const Page = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleWidth = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+
+
+
+
   const [ref1, inView1] = useInView({
     triggerOnce: false,
   });
@@ -37,8 +47,6 @@ const Page = () => {
   const [ref5, inView5] = useInView({
     triggerOnce: false,
   });
-
-
 
 
   const controls = useAnimation();
@@ -285,6 +293,8 @@ const Page = () => {
     ],
   };
 
+  const activeButtonClass = styles.activeButton;
+
   return (
     <div className={styles.main_carousel}>
       <div className={styles.wrapper}>
@@ -425,27 +435,33 @@ const Page = () => {
         </div>
       </div>
 
-      <div className={styles.slideControlButtons}>
-        <button
-          className={styles.slideControlButton1}
-          onClick={() => goToSlide(0)}
-        ></button>
-        <button
-          className={styles.slideControlButton2}
-          onClick={() => goToSlide(1)}
-        ></button>
-        <button
-          className={styles.slideControlButton3}
-          onClick={() => goToSlide(2)}
-        ></button>
-        <button
-          className={styles.slideControlButton4}
-          onClick={() => goToSlide(3)}
-        ></button>
-        <button
-          className={styles.slideControlButton5}
-          onClick={() => goToSlide(4)}
-        ></button>
+      <div className={`${styles.slideControlButtons} ${isExpanded ? styles.expanded : ''}`} onClick={toggleWidth}>
+      <button
+  className={`${styles.slideControlButton1} ${currentSlide === 0 ? activeButtonClass : ''}`}
+  onClick={() => goToSlide(0)}
+></button>
+{isExpanded &&(
+  
+
+<>
+<button
+  className={`${styles.slideControlButton2} ${currentSlide === 1 ? activeButtonClass : ''}`}
+  onClick={() => goToSlide(1)}
+></button>
+<button
+  className={`${styles.slideControlButton3} ${currentSlide === 2 ? activeButtonClass : ''}`}
+  onClick={() => goToSlide(2)}
+></button>
+<button
+  className={`${styles.slideControlButton4} ${currentSlide === 3 ? activeButtonClass : ''}`}
+  onClick={() => goToSlide(3)}
+></button>
+<button
+  className={`${styles.slideControlButton5} ${currentSlide === 4 ? activeButtonClass : ''}`}
+  onClick={() => goToSlide(4)}
+></button>
+</>
+)}
       </div>
     </div>
   );
