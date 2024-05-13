@@ -108,7 +108,7 @@
 
 @media (max-width:850px){
   .landing_page_second_content_text{
-    font-size: 4.9vw;
+    font-size: 4.3vw;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -120,7 +120,7 @@
 }
 @media (max-width: 600px) {
   .landing_page_second_content_text{
-    font-size: 4.7vw;
+    font-size: 4.3vw;
   }
 }
 @media (max-width: 500px) {
@@ -132,7 +132,7 @@
   }
 
   .landing_page_second_content_text{
-    font-size: 4.7vw;
+    font-size: 4vw;
   }
 
   .Landing_image1:hover {
@@ -167,22 +167,22 @@
     padding-bottom: 3rem;
   }
   .landing_page_second_content_text{
-    font-size:5vw;
+    font-size:3.8vw;
   }
-  .landing_page_second_content{
+  /* .landing_page_second_content{
     display: none;
-  }
+  } */
 }
 
 
 @media(min-width:375px) and (max-width:429px){
   .landing_page_second_content_text{
-    font-size:5vw;
+    font-size:3.8vw;
   }
 }
 
 @media(min-width:300px) and (max-width:374px){
   .landing_page_second_content_text{
-    font-size:4.9vw;
+    font-size:3.8vw;
   }
 }

@@ -1,4 +1,5 @@
 .wrapperRollingText {
+  overflow: hidden;
   white-space: nowrap;
   font-family:"Dream Avenue";
 }

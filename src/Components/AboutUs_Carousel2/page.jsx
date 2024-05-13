@@ -20,11 +20,8 @@ const Page = () => {
 
   const toggleWidth = () => {
     setIsExpanded(!isExpanded);
+    // setIsExpanded(true);
   };
-
-
-
-
 
   const [ref1, inView1] = useInView({
     triggerOnce: false,
@@ -32,7 +29,6 @@ const Page = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-
 
   const [ref2, inView2] = useInView({
     triggerOnce: false,
@@ -48,7 +44,6 @@ const Page = () => {
     triggerOnce: false,
   });
 
-
   const controls = useAnimation();
 
   useEffect(() => {
@@ -60,183 +55,6 @@ const Page = () => {
   // Separate animation controls for each slider
   const controls1 = useAnimation();
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  // const imageAnimations = [
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2,
-  //         delay: 1,
-  //         x: { duration: 2 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 1.5,
-  //         delay: 1.3,
-  //         x: { duration: 1.5 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 1,
-  //         delay: 0.8,
-  //         x: { duration: 0.8 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: -100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2,
-  //         delay: 1.5,
-  //         x: { duration: 2 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0 },
-  //     visible: {
-  //       opacity: 1,
-  //       transition: {
-  //         duration: 2,
-  //         delay: 1.5,
-  //         ease: "easeOut",
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2.5,
-  //         delay: 1.5,
-  //         x: { duration: 2.5 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2,
-  //         delay: 1.2,
-  //         x: { duration: 2 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2.2,
-  //         delay: 1.4,
-  //         x: { duration: 2.2 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2.4,
-  //         delay: 1.6,
-  //         x: { duration: 2.4 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2.6,
-  //         delay: 1.8,
-  //         x: { duration: 2.6 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   {
-  //     hidden: { opacity: 0, y: 100 },
-  //     visible: {
-  //       opacity: 1,
-  //       y: 0,
-  //       transition: {
-  //         ease: "linear",
-  //         duration: 2.8,
-  //         delay: 2,
-  //         x: { duration: 2.8 },
-  //         type: "spring",
-  //         stiffness: 100,
-  //       },
-  //     },
-  //   },
-
-  //   // second slider animations
-  // ];
 
   useEffect(() => {
     if (inView1) {
@@ -295,11 +113,23 @@ const Page = () => {
 
   const activeButtonClass = styles.activeButton;
 
+
+
+  const buttonColors = [
+    "#ae7b56", 
+    "#d18211", 
+    "#677176", 
+    "#a39280", 
+    "#a4a3a4" 
+  ];
+
+
+
   return (
     <div className={styles.main_carousel}>
       <div className={styles.wrapper}>
         <Slider {...settings} ref={sliderRef}>
-          <div key={1}  className={styles.slide1} ref={ref1}>
+          <div key={1} className={styles.slide1} ref={ref1}>
             <div className={styles.slideContent}>
               <div>
                 <motion.div
@@ -316,17 +146,21 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-                <motion.div >
-                <Image className={styles.imagex} src={slide51_src1} alt="image" />
+              <motion.div>
+                <Image
+                  className={styles.imagex}
+                  src={slide51_src1}
+                  alt="image"
+                />
               </motion.div>
             </div>
           </div>
 
           {/* slide 2 */}
 
-          <div key={2}  className={styles.slid2} ref={ref2}>
+          <div key={2} className={styles.slid2} ref={ref2}>
             <div className={styles.slideContent}>
-            <div>
+              <div>
                 <motion.div
                   className={styles.leftCenterText}
                   ref={ref}
@@ -341,18 +175,21 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              <motion.div >
-                <Image className={styles.imagex} src={slide2_src1} alt="image" />
+              <motion.div>
+                <Image
+                  className={styles.imagex}
+                  src={slide2_src1}
+                  alt="image"
+                />
               </motion.div>
-
             </div>
           </div>
 
           {/* slide 3 */}
 
-          <div key={3}  className={styles.slid2} ref={ref3}>
+          <div key={3} className={styles.slid2} ref={ref3}>
             <div className={styles.slideContent}>
-            <div>
+              <div>
                 <motion.div
                   className={styles.leftCenterText}
                   ref={ref}
@@ -367,18 +204,21 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              <motion.div >
-                <Image className={styles.imagex1} src={slide3_src1} alt="image" />
+              <motion.div>
+                <Image
+                  className={styles.imagex1}
+                  src={slide3_src1}
+                  alt="image"
+                />
               </motion.div>
-
             </div>
           </div>
 
           {/* slide 4 */}
 
-          <div key={4}  className={styles.slid2} ref={ref4} >
+          <div key={4} className={styles.slid2} ref={ref4}>
             <div className={styles.slideContent}>
-            <div>
+              <div>
                 <motion.div
                   className={styles.leftCenterText}
                   ref={ref}
@@ -393,17 +233,21 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              <motion.div >
-                <Image className={styles.imagex2} src={slide4_src1} alt="image" />
+              <motion.div>
+                <Image
+                  className={styles.imagex2}
+                  src={slide4_src1}
+                  alt="image"
+                />
               </motion.div>
             </div>
           </div>
 
           {/* slide 5 */}
 
-          <div key={5}  className={styles.slid2} ref={ref5}>
+          <div key={5} className={styles.slid2} ref={ref5}>
             <div className={styles.slideContent}>
-            <div>
+              <div>
                 <motion.div
                   className={styles.leftCenterText}
                   ref={ref}
@@ -418,16 +262,17 @@ const Page = () => {
                   />
                 </motion.div>
               </div>
-              <motion.div >
-                <Image className={styles.imagex3} src={slide5_src1} alt="image" />
+              <motion.div>
+                <Image
+                  className={styles.imagex3}
+                  src={slide5_src1}
+                  alt="image"
+                />
               </motion.div>
             </div>
           </div>
         </Slider>
       </div>
-
-
-
 
       <div className={styles.imageNumbering}>
         <div className={styles.number}>
@@ -435,34 +280,175 @@ const Page = () => {
         </div>
       </div>
 
-      <div className={`${styles.slideControlButtons} ${isExpanded ? styles.expanded : ''}`} onClick={toggleWidth}>
+      {/* <div
+  className={`${styles.slideControlButtons} ${
+    isExpanded ? styles.expanded : ""
+  }`}
+  onClick={toggleWidth}
+>
+  <button
+    className={`${styles.slideControlButton} ${
+      currentSlide === 0 ? activeButtonClass : ""
+    }`}
+    style={{ backgroundColor: buttonColors[0] }}
+    onClick={() => goToSlide(0)}
+  ></button>
+  {isExpanded && (
+    <>
       <button
-  className={`${styles.slideControlButton1} ${currentSlide === 0 ? activeButtonClass : ''}`}
-  onClick={() => goToSlide(0)}
-></button>
-{isExpanded &&(
-  
+        className={`${styles.slideControlButton} ${
+          currentSlide === 1 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[1] }}
+        onClick={() => goToSlide(1)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 2 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[2] }}
+        onClick={() => goToSlide(2)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 3 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[3] }}
+        onClick={() => goToSlide(3)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 4 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[4] }}
+        onClick={() => goToSlide(4)}
+      ></button>
+    </>
+  )}
+</div> */}
 
-<>
-<button
-  className={`${styles.slideControlButton2} ${currentSlide === 1 ? activeButtonClass : ''}`}
-  onClick={() => goToSlide(1)}
-></button>
-<button
-  className={`${styles.slideControlButton3} ${currentSlide === 2 ? activeButtonClass : ''}`}
-  onClick={() => goToSlide(2)}
-></button>
-<button
-  className={`${styles.slideControlButton4} ${currentSlide === 3 ? activeButtonClass : ''}`}
-  onClick={() => goToSlide(3)}
-></button>
-<button
-  className={`${styles.slideControlButton5} ${currentSlide === 4 ? activeButtonClass : ''}`}
-  onClick={() => goToSlide(4)}
-></button>
-</>
-)}
-      </div>
+
+{/* <div
+  className={`${styles.slideControlButtons} ${
+    isExpanded ? styles.expanded : ""
+  }`}
+  onClick={toggleWidth}
+>
+  {isExpanded ? (
+    <>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 0 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[0] }}
+        onClick={() => goToSlide(0)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 1 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[1] }}
+        onClick={() => goToSlide(1)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 2 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[2] }}
+        onClick={() => goToSlide(2)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 3 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[3] }}
+        onClick={() => goToSlide(3)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 4 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[4] }}
+        onClick={() => goToSlide(4)}
+      ></button>
+    </>
+  ) : (
+    <>
+      {Array.from({ length: totalImages }, (_, index) => {
+        const isActive = index === currentSlide;
+        return (
+          <button
+            key={index}
+            className={`${styles.slideControlButton} ${
+              isActive ? activeButtonClass : ""
+            }`}
+            style={{ backgroundColor: buttonColors[index] }}
+            onClick={() => goToSlide(index)}
+          ></button>
+        );
+      })}
+    </>
+  )}
+</div> */}
+
+<div
+  className={`${styles.slideControlButtons} ${
+    isExpanded ? styles.expanded : ""
+  }`}
+  onClick={toggleWidth}
+>
+  {isExpanded ? (
+    <>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 0 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[0] }}
+        onClick={() => goToSlide(0)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 1 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[1] }}
+        onClick={() => goToSlide(1)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 2 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[2] }}
+        onClick={() => goToSlide(2)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 3 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[3] }}
+        onClick={() => goToSlide(3)}
+      ></button>
+      <button
+        className={`${styles.slideControlButton} ${
+          currentSlide === 4 ? activeButtonClass : ""
+        }`}
+        style={{ backgroundColor: buttonColors[4] }}
+        onClick={() => goToSlide(4)}
+      ></button>
+    </>
+  ) : (
+    <button
+      className={`${styles.slideControlButton} ${
+        currentSlide === 0 ? activeButtonClass : ""
+      }`}
+      style={{ backgroundColor: buttonColors[currentSlide] }}
+      onClick={() => goToSlide(currentSlide)}
+    ></button>
+  )}
+</div>
+
+
+
+
     </div>
   );
 };

@@ -49,14 +49,14 @@ const Footer = () => {
           
           <div className={styles.footer_Second}>
             <ul className={styles.footerUl}>
-              <li className={styles.footer_home}>
+              {/* <li className={styles.footer_home}>
                 <Link href="/Home">Home</Link>
-              </li>
+              </li> */}
               <li className={styles.footer_Search}>
-                <Link href="/Team">Team</Link>
+                <Link href="/KnowAboutUs">About Us</Link>
               </li>
               <li className={styles.footer_home}>
-                <Link href="/Consultancy">Online Consultancy</Link>
+                <Link href="/Services">Services</Link>
               </li>
               <li className={styles.footer_Search}>
                 <Link href="/Projects">Projects</Link>
@@ -68,10 +68,10 @@ const Footer = () => {
                 <Link href="/HowWeWork">How we work</Link>
               </li>
               <li className={styles.footer_home}>
-                <Link href="/Shop">Shop</Link>
+                <Link href="">Shop</Link>
               </li>
               <li className={styles.footer_Search}>
-                <Link href="/ContactUs">Contact</Link>
+                <Link href="/Connect">Connect</Link>
               </li>
             </ul>
           </div>
