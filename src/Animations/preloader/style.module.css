@@ -13,6 +13,60 @@
   height: 100vh;
 }
 
+
+.loadingCounter{
+  z-index: 99;
+  color:red;
+  position: absolute;
+  top:2rem;
+  font-size:100px;
+}
+
+
+.border{
+  width:auto !important;
+}
+
+
+.circle {
+ 
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 6s ease-out forwards !important;
+  animation-delay: 3s !important;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+.circleCenter{
+  display: flex !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+    align-items: center !important;
+    height:100vh !important
+}
+
+
+
+
+
+
+
 .logoImage {
   max-width: 100%; /* Ensure image doesn't exceed container width */
   max-height: 100%;

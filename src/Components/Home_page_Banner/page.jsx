@@ -176,6 +176,7 @@ const Animation = ({ loadImage, counter }) => {
   }, []);
 
   const loadingProgress = (loadingCounter / 250) * 100;
+  // const loadingProgress = (loadingCounter / frameCount) * 100;
   console.log(counter(loadingProgress));
   const scrollDownByTenPercent = () => {
     const tenPercentOfHeight = window.innerHeight * 1.7;
