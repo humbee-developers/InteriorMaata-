@@ -39,7 +39,6 @@ export default function Preloader({ counter }) {
   };
 
   const circleStrokeLength = 2 * Math.PI * 95; // Circumference of the circle
-  
 
   return (
     <motion.div
@@ -49,15 +48,15 @@ export default function Preloader({ counter }) {
       className={styles.introduction}
     >
       <motion.div variants={opacity} initial="initial" animate="enter">
+      <div className={styles.loader}></div>
         <div className={styles.logoImageOuter}>
           <Image className={styles.logoImage} src={logo} alt="image" />
         </div>
-        {/* <div className={styles.loadingCounter}>
-          {loadedFrames}
-        </div> */}
+        
+        {/* <div className={styles.loadingCounter}>{loadedFrames}</div> */}
       </motion.div>
 
-      <div className={styles.circleCenter}>
+      {/* <div className={styles.circleCenter}>
         <svg className={styles.border} height="200" width="200">
           <circle
             className={styles.circle}
@@ -69,11 +68,9 @@ export default function Preloader({ counter }) {
             fillOpacity="0"
             strokeDasharray={circleStrokeLength}
             strokeDashoffset={circleStrokeLength * (loadedFrames / 100)}
-
           />
         </svg>
-      </div>
-
+      </div> */}
       <div>
         <motion.path
           variants={curve}
