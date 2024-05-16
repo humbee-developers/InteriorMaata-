@@ -67,6 +67,8 @@ function Landing_page() {
           </div>
         </motion.div>
 
+
+
         <motion.div
          ref={ref}
           initial={{ opacity: 0, y: 50 }}
