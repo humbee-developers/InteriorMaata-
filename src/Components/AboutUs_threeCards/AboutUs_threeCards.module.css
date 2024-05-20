@@ -12,7 +12,7 @@
 .landing_page_second_content_text {
   width: 100%;
   color: #7f7047;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   font-size: 3.3vw;
   font-style: normal;
   font-weight: 400;
@@ -30,7 +30,45 @@
   gap: 6rem;
   align-items: center;
 }
+/* .about_hover{
+  position: relative;
+} */
+.Landing_image1,
+.Landing_image2,
+.Landing_image3 {
+  position: relative;
+}
+.about_hover {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  height: 97%;
+  width: 99%;
+  transform: translate(-50%, -48%);
+  transition: opacity 0.7s ease-in-out;
+}
+.Landing_image1:hover .about_hover {
+  opacity: 1;
+}
+.Landing_image1:not(:hover) .about_hover {
+  opacity: 0;
+}
 
+.Landing_image2:hover .about_hover {
+  opacity: 1;
+}
+
+.Landing_image2:not(:hover) .about_hover {
+  opacity: 0;
+}
+
+.Landing_image3:hover .about_hover {
+  opacity: 1;
+}
+
+.Landing_image3:not(:hover) .about_hover {
+  opacity: 0;
+}
 .overlay_text {
   position: absolute;
   text-align: center;
@@ -40,7 +78,7 @@
   transform: translate(-50%, -50%);
 }
 
-.Landing_image1 {
+/* .Landing_image1 {
   transition: all 1s ease-out;
   position: relative;
 }
@@ -51,8 +89,8 @@
   background-image: url(../../images//AboutUs_Quality_image.png);
   background-repeat: no-repeat;
   transition: all 0.5s;
-}
-.Landing_image2 {
+} */
+/* .Landing_image2 {
   position: relative;
 }
 
@@ -61,9 +99,9 @@
   background-image: url(../../images//about_us_quality_img1.png);
   background-repeat: no-repeat;
   transition: all 0.5s;
-}
+} */
 
-.Landing_image3 {
+/* .Landing_image3 {
   position: relative;
 }
 
@@ -72,7 +110,7 @@
   background-image: url(../../images//AboutUs_Quality_image.png);
   background-repeat: no-repeat;
   transition: all 0.5s;
-}
+} */
 
 .overlay_text_content {
   color: #000;
@@ -86,7 +124,7 @@
 
 .overlay_text_content1 {
   color: #7f7047;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   font-size: 27px;
   font-style: normal;
   font-weight: 400;
@@ -105,9 +143,8 @@
   }
 }
 
-
-@media (max-width:850px){
-  .landing_page_second_content_text{
+@media (max-width: 850px) {
+  .landing_page_second_content_text {
     font-size: 4.3vw;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -119,7 +156,7 @@
   }
 }
 @media (max-width: 600px) {
-  .landing_page_second_content_text{
+  .landing_page_second_content_text {
     font-size: 4.3vw;
   }
 }
@@ -131,7 +168,7 @@
     transition: all 0.5s;
   }
 
-  .landing_page_second_content_text{
+  .landing_page_second_content_text {
     font-size: 4vw;
   }
 
@@ -158,7 +195,6 @@
 
   .Landing_image3:hover {
     display: block;
-   
   }
 }
 
@@ -166,23 +202,22 @@
   .landing_page_second_images {
     padding-bottom: 3rem;
   }
-  .landing_page_second_content_text{
-    font-size:3.8vw;
+  .landing_page_second_content_text {
+    font-size: 3.8vw;
   }
   /* .landing_page_second_content{
     display: none;
   } */
 }
 
-
-@media(min-width:375px) and (max-width:429px){
-  .landing_page_second_content_text{
-    font-size:3.8vw;
+@media (min-width: 375px) and (max-width: 429px) {
+  .landing_page_second_content_text {
+    font-size: 3.8vw;
   }
 }
 
-@media(min-width:300px) and (max-width:374px){
-  .landing_page_second_content_text{
-    font-size:3.8vw;
+@media (min-width: 300px) and (max-width: 374px) {
+  .landing_page_second_content_text {
+    font-size: 3.8vw;
   }
 }
