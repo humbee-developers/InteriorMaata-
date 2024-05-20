@@ -5,6 +5,7 @@ import ConsultancyHeader from "@/Components/ConsultancyHeader/page";
 import ConsultancyTextFlex from "@/Components/ConsultancyTextFlex/page";
 // import ConsultancyTab  from "@/Components/ConsultancyTab/page";
 // import ConsultancyCarousal from "@/Components/ConsultancyCarousal/page"
+// import TextRevel from "@/Animations/TextRevel/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = () => {
   useEffect(() => {
@@ -20,6 +21,8 @@ const Page = () => {
       <ConsultancyHeader />
       <ConsultancyTextFlex /> 
       <AboutUs_ourDesign />
+    {/* <TextRevel/> */}
+      
       {/* <ConsultancyTab/>
       <ConsultancyCarousal/> */}
    
