@@ -16,6 +16,15 @@
 {
   background-color:#cccccc!important;
 }
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+  left: 95%;
+}
+.swiper-pagination-bullet{
+  background-color: red !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #cc7d45 !important;
+}
 @media (max-width: 767px) {
   .productSlider .wrapper .productSliderCardItem {
     flex-direction: column-reverse;

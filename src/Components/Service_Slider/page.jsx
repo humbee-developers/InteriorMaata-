@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInView } from "react-intersection-observer";
-import { Navigation, EffectFade } from "swiper/modules";
+import { Navigation, EffectFade, Pagination } from "swiper/modules";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import Image from "next/image";
@@ -65,7 +65,11 @@ const Page = () => {
             prevEl: ".productSlider .left",
             // disabledClass: "swiper-button-disabled",
           }}
-          modules={[Navigation, EffectFade]}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          modules={[Navigation, EffectFade, Pagination]}
           loop={true}
           className="mySwiper"
         >
