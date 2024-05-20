@@ -101,11 +101,11 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-                <Image
+                {/* <Image
                   src={Cover_image}
                   alt="image"
                   className={styles.aboutUs_banner_image}
-                />
+                /> */}
               </motion.div>
             </div>
             <motion.div
