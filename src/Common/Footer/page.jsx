@@ -13,6 +13,7 @@ import footerImage from "@/images/footerImage.png";
 import ScrollToTop from "react-scroll-to-top";
 import styles from "@/Common/Footer/Footer.module.css";
 import "./Scroll_To_Top.css";
+import svg_icon from "@/images/icon_Svg.svg";
 
 const Footer = () => {
   const [ref, inView] = useInView({
@@ -42,7 +43,7 @@ const Footer = () => {
                 Karamdham Complex
                 <br /> Near Akota Atithi Gruh,
                 <br /> Akota, Vadodara
-                
+                  <Image src={svg_icon} alt="none" className={styles.footer_icon}/>
               </p>
             </Link>
           </div>
@@ -53,7 +54,7 @@ const Footer = () => {
                   alt="none"
                 />
           </div> */}
-          
+
           <div className={styles.footer_Second}>
             <ul className={styles.footerUl}>
               {/* <li className={styles.footer_home}>
@@ -87,7 +88,11 @@ const Footer = () => {
             <p>
               Copyright &copy; 2024 Interiormaata, All Right Reserved. Designed
               & Developed by{" "}
-              <Link className={styles.adds} target="_blank" href="https://www.humbeestudio.com/">
+              <Link
+                className={styles.adds}
+                target="_blank"
+                href="https://www.humbeestudio.com/"
+              >
                 H/dS
               </Link>
             </p>
