@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
@@ -9,6 +9,7 @@ import "./style1.css";
 export default function NewNav() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
+  const navRef = useRef();
 
   useEffect(() => {
     if (isActive) {
@@ -22,6 +23,19 @@ export default function NewNav() {
     setIsActive(!isActive);
   };
 
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsActive(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="headerMain">
       <div
@@ -34,7 +48,7 @@ export default function NewNav() {
           className="nav_logo"
         />
       </div>
-      <div className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}>
+      <div ref={navRef} className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}>
         <div className="bar">
           <div
             onClick={() => {

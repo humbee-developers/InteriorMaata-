@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
@@ -10,12 +9,13 @@ import Instagram_logo from "@/svgs/instagram.svg";
 import youtube_logo from "@/svgs/youtube.svg";
 import whatsapp_logo from "@/svgs/whatsapp.svg";
 import linkedin_logo from "@/svgs/linkedin.svg";
-import footerImage from "@/images/footerImage.png"
+import footerImage from "@/images/footerImage.png";
 import ScrollToTop from "react-scroll-to-top";
 import styles from "@/Common/Footer/Footer.module.css";
 import "./Scroll_To_Top.css";
-const Footer = () => {
+import svg_icon from "@/images/icon_Svg.svg";
 
+const Footer = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -28,16 +28,24 @@ const Footer = () => {
   }, [controls, inView]);
 
   return (
-    <div >
+    <div>
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div>
-            <a href="tel:+917404040286" className={styles.phone_no}>+917404040286</a>
-            <p className={styles.footer_address}>
-              Karamdham Complex
-              <br /> Near Akota Atithi Gruh,
-              <br /> Akota, Vadodara
-            </p>
+            <a href="tel:+917404040286" className={styles.phone_no}>
+              +917404040286
+            </a>
+            <Link
+              href="https://maps.app.goo.gl/jeRd13E7QPZQiKZi9"
+              target="_blank"
+            >
+              <p className={styles.footer_address}>
+                Karamdham Complex
+                <br /> Near Akota Atithi Gruh,
+                <br /> Akota, Vadodara
+                  <Image src={svg_icon} alt="none" className={styles.footer_icon}/>
+              </p>
+            </Link>
           </div>
           {/* <div className={styles.footerImageOuter}>
           <Image
@@ -46,7 +54,7 @@ const Footer = () => {
                   alt="none"
                 />
           </div> */}
-          
+
           <div className={styles.footer_Second}>
             <ul className={styles.footerUl}>
               {/* <li className={styles.footer_home}>
@@ -63,7 +71,6 @@ const Footer = () => {
               </li>
             </ul>
             <ul className={styles.footerUl}>
-
               <li className={styles.footer_Search}>
                 <Link href="/HowWeWork">How we work</Link>
               </li>
@@ -80,7 +87,14 @@ const Footer = () => {
           <div className={styles.footerTagline}>
             <p>
               Copyright &copy; 2024 Interiormaata, All Right Reserved. Designed
-              & Developed by  <Link className={styles.adds} target="_blank" href="https://www.humbeestudio.com/">H/dS</Link>
+              & Developed by{" "}
+              <Link
+                className={styles.adds}
+                target="_blank"
+                href="https://www.humbeestudio.com/"
+              >
+                H/dS
+              </Link>
             </p>
           </div>
           <div className={styles.footer_social_media}>
@@ -145,19 +159,14 @@ const Footer = () => {
         </div>
 
         <div className={styles.footer_last_Section}>
-        
-        <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"interiorमाता"}
-                // justifyContent={"left"}
-              />
-            </motion.div>
-
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.9 }}
+          >
+            <HeadingTextAnimation heading={"interiorमाता"} />
+          </motion.div>
         </div>
       </div>
       <div>
@@ -166,4 +175,5 @@ const Footer = () => {
     </div>
   );
 };
+
 export default Footer;

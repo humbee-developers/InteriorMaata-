@@ -3,21 +3,21 @@
   flex-wrap: nowrap;
   width: 100%;
 }
-.contact_form_wrapper{
+.contact_form_wrapper {
   width: 70%;
 }
 
-.formSpacing{
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
+.formSpacing {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .contact_form {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7F7047;
+  background: #7f7047;
 }
 .contact_form_title {
   color: #fff;
@@ -34,11 +34,10 @@ gap: 1.5rem;
   width: 50%;
 }
 
-.form_group , .form_group1 {
+.form_group,
+.form_group1 {
   position: relative;
-
 }
-
 
 .form_field {
   border-bottom: 1px solid white !important;
@@ -155,8 +154,8 @@ gap: 1.5rem;
 }
 .Submit_button {
   color: #000;
-  background: #C0C2AA;
-   font-family: var(--font-poppins);
+  background: #c0c2aa;
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   outline: none;
@@ -169,28 +168,26 @@ gap: 1.5rem;
   padding: 20px 80px 20px 80px;
 }
 
-@media(min-width:1600px) and (max-width:1920px){
-  .contact_form_wrapper{
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .contact_form_wrapper {
     width: 75%;
   }
-  .formSpacing{
+  .formSpacing {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    }
+  }
 
-    .form_field_address {
-      padding: 16px 0px;
-    }
-    .contact_form_title {
-      padding-bottom: 30px;
-    }
-    
+  .form_field_address {
+    padding: 16px 0px;
+  }
+  .contact_form_title {
+    padding-bottom: 30px;
+  }
 }
 
-
 @media (max-width: 1024px) {
-  .contact_form_wrapper{
+  .contact_form_wrapper {
     padding-top: 2rem;
   }
 }
@@ -199,7 +196,8 @@ gap: 1.5rem;
     flex-direction: column;
     height: auto;
   }
-  .contact_img{
+  .contact_img {
+    display: none;
     max-width: 100%;
     height: auto;
   }
@@ -207,7 +205,7 @@ gap: 1.5rem;
   .contact_us_image {
     width: 100%;
   }
-  .contact_form_wrapper{
+  .contact_form_wrapper {
     width: 70%;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -217,7 +215,7 @@ gap: 1.5rem;
   }
 }
 @media (max-width: 430px) {
-  .contact_form_wrapper{
+  .contact_form_wrapper {
     width: 80%;
     padding-top: 4rem;
     padding-bottom: 4rem;

@@ -72,12 +72,18 @@
   max-width: 100%;
   cursor:pointer;
   height: auto;
+  transition: 0.4s;
 }
 .interior_material_text {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.interior_material_img:hover{
+  transform: scale(1.05);
 }
 .interior_material_overlay {
   position: absolute;

@@ -1,10 +1,10 @@
 .footer_navbar {
   font-size: 12px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   text-align: center;
   align-items: center;
   color: #ffffff;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 .ul {
   width: 100%;
@@ -15,24 +15,41 @@
   gap: 2rem;
   list-style-type: none;
 }
-.footer_link1{
-text-align: end;
+.footer_link1 {
+  text-align: end;
 }
-
-.footer_link2{
+.header_link {
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+.header_link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+.header_link:hover:after {
+  width: 100%;
+  left: 0;
+}
+.footer_link2 {
   text-align: start;
 }
 .ul li {
   color: #ffffff;
   font-size: 20px;
   width: 50%;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 
-
 @media (min-width: 1600px) and (max-width: 1920px) {
-
-
   .ul {
     width: 100%;
     margin-top: 2rem;
@@ -41,11 +58,12 @@ text-align: end;
     gap: 2rem;
     list-style-type: none;
   }
-
 }
 
-
 @media (min-width: 320px) and (max-width: 500px) {
+  .ul{
+    margin-bottom: 1rem;
+  }
   .footer_navbar {
     font-size: 12px;
     margin-top: 3rem;

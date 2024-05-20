@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInView } from "react-intersection-observer";
-import { Navigation, EffectFade } from "swiper/modules";
+import { Navigation, EffectFade, Pagination } from "swiper/modules";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import Image from "next/image";
@@ -65,7 +65,11 @@ const Page = () => {
             prevEl: ".productSlider .left",
             // disabledClass: "swiper-button-disabled",
           }}
-          modules={[Navigation, EffectFade]}
+          pagination={{
+            dynamicBullets: true,
+            clickable: true,
+          }}
+          modules={[Navigation, EffectFade, Pagination]}
           loop={true}
           className="mySwiper"
         >
@@ -75,6 +79,14 @@ const Page = () => {
                 <Image src={Residential_Interior_Design} alt="none" className="imgg"></Image>
               </div>
               <div className="card1">
+              <div className="slider_btn">
+            <div className="left">
+              <Image src={arrow} alt="slider_arrow" />
+            </div>
+            <div className="right">
+              <Image src={arrow} alt="slider_arrow" />
+            </div>
+          </div>
                 {/* <HomePageCommonHeading heading={"Our Product"} /> */}
                 <div className={styles.Services_second_Content_inner}>
                   <motion.div ref={ref1}
@@ -319,14 +331,7 @@ const Page = () => {
               </div>
             </div>
           </SwiperSlide>
-          <div className="slider_btn">
-            <div className="left">
-              <Image src={arrow} alt="slider_arrow" />
-            </div>
-            <div className="right">
-              <Image src={arrow} alt="slider_arrow" />
-            </div>
-          </div>
+         
         </Swiper>
       </div>
     </div>

@@ -15,7 +15,7 @@
   object-position: bottom;
 }
 
-.footerTagline{
+.footerTagline {
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -28,7 +28,7 @@
 }
 .adds {
   color: #000000;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   text-decoration: underline;
 }
 .footer_home {
@@ -88,7 +88,7 @@
 }
 .phone_no {
   color: #cc7d45;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 35.075px;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +101,16 @@
   padding: 0;
   margin: 0;
 }
+.footer_icon {
+  margin-left: 1rem;
+}
+.footer_address .footer_icon {
+  transition: all 0.5s ease;
+}
 
+.footer_address:hover .footer_icon {
+  transform: rotate(45deg);
+}
 .footer_icons {
   transition: all 0.5s;
   cursor: pointer;
@@ -124,7 +133,7 @@
 .footer_website {
   padding-bottom: 1rem;
   color: #fff;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   text-decoration: none;
   font-size: 22px;
   font-style: normal;
@@ -139,7 +148,7 @@
   font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   cursor: pointer;
   line-height: normal;
   text-transform: capitalize;
@@ -161,7 +170,7 @@
 }
 .footer_last_Section {
   color: #353434;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 181px;
   font-style: normal;
   font-weight: 400;
@@ -183,7 +192,7 @@
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .footer_last_Section {
-     font-family: var(--font-poppins);
+    font-family: var(--font-poppins);
     font-style: normal;
     font-weight: 400;
     width: 100%;

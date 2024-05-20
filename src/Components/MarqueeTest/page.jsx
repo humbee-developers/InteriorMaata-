@@ -9,7 +9,7 @@ const Page = () => {
 
     let direction = 1; // 1 = forward, -1 = backward scroll
 
-    const roll1 = roll(".rollingText", { duration: 20 }),
+    const roll1 = roll(".rollingText", { duration: 90 }),
           scroll = ScrollTrigger.create({
             onUpdate(self) {
               if (self.direction !== direction) {
@@ -25,7 +25,7 @@ const Page = () => {
       const tl = gsap.timeline({
         repeat: -1,
         onReverseComplete() {
-          this.totalTime(this.rawTime() + this.duration() * 20);
+          this.totalTime(this.rawTime() + this.duration() * 90);
         }
       }),
         elements = gsap.utils.toArray(targets),
