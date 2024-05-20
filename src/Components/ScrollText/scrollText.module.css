@@ -1,6 +1,7 @@
 .Consultancy_page_second_container {
     height: 100%;
     padding-top: 0rem;
+    margin: 0 auto;
   }
   .Main_Container {
     padding-left: 15rem;
@@ -13,6 +14,7 @@
   .Consultancy_page_second_content {
     padding-bottom: 4rem;
     padding-top: 4rem;
+    margin: 0 auto;
     width: 100%;
   }
   .online_consultancy_text {

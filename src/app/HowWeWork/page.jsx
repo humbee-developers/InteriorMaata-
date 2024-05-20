@@ -5,6 +5,7 @@ import HowWeWorkHeader from "@/Components/HowWeWorkHeader/page";
 import HowWeWorkTimeline from "@/Components/HowWeWorkTimeline/page";
 import HowWeWorkText from "@/Components/HowWeWorkText/page";
 import ServicesCards from "@/Components/ServicesCards/page";
+// import ScrollText from "@/Components/ScrollText/page";
 import Services_Slider from "@/Components/Service_Slider/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 const Page = () => {
@@ -19,6 +20,7 @@ const Page = () => {
       <Stairs/>
         <HowWeWorkHeader />
         <HowWeWorkTimeline />
+        {/* <ScrollText/> */}
          <AboutUs_ourDesign />
         <ServicesCards />
         <Services_Slider/>
