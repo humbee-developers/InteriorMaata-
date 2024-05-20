@@ -1,6 +1,6 @@
 .Consultancy_page_second_container {
   height: 100%;
-  padding-top: 2rem;
+  padding-top: 0rem;
 }
 .Main_Container {
   padding-left: 15rem;
@@ -40,7 +40,6 @@
   padding-top: 3rem;
   align-items: stretch;
   gap: 7rem;
-  /* padding-bottom: 2rem; */
 }
 
 .Services_header_img_outer {
@@ -51,12 +50,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  /* transition: all 0.3 ease-in-out; */
 }
-/* .Services_header_img:hover{
-transition: all 0.3 ease-in-out;
-  transform: scale(1.1);
-} */
 .Services_header_img{
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -114,7 +108,19 @@ transition: all 0.3 ease-in-out;
     justify-content: center;
     align-items: center;
   }
+
 }
+
+
+@media (max-width: 1180px) {
+  .Services_Header_Outer {
+    gap: 4rem;
+  }
+}
+
+
+
+
 @media (max-width: 1161px) {
   .Consultancy_page_second_content_text {
     font-size: 3.5vw;
@@ -122,24 +128,28 @@ transition: all 0.3 ease-in-out;
   .Services_Header_Outer {
     gap: 4rem;
   }
-  .Consultancy_page_second_container {
-    padding-top: 2rem;
-  }
+
 }
 
 @media (max-width: 1024px) {
+
+  .Services_Header_Outer {
+    display: flex;
+    padding-top: 1rem;
+    align-items: stretch;
+    gap: 7rem;
+    /* padding-bottom: 2rem; */
+  }
   .Services_Header_Outer {
     gap: 4rem;
   }
   .Main_Container {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 6rem;
+    padding-top: 2rem;
+    padding-right: 6dvb;
   }
   .Consultancy_page_second_content_text {
     font-size: 3.5vw;
-  }
-  .Consultancy_page_second_container {
-    padding-top: 2rem;
   }
   .Services_Header_Outer {
     gap: 3rem;
@@ -153,6 +163,7 @@ transition: all 0.3 ease-in-out;
   }
   .Main_Container {
     padding-left: 5rem;
+    padding-top: 0;
     padding-right: 5rem;
   }
   .Consultancy_page_second_content {
