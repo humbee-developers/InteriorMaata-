@@ -48,6 +48,7 @@ export default function Index({navLinkHandler}) {
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" className="nav">
       <div className="wrapper">
         <div className="container">
+
           <Body links={links} selectedLink={selectedLink} setSelectedLink={setSelectedLink} handleNavLink={navLinkHandler} />
           <Footer />
         </div>  
