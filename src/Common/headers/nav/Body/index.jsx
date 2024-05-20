@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from "next/navigation";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import "./style4.css";
@@ -7,6 +8,7 @@ import nav_logo from "@/svgs/logo.svg";
 import Image from "next/image";
 
 export default function Body({ links, selectedLink, setSelectedLink, handleNavLink }) {
+  const router = useRouter();
   const getChars = (word) => {
     let chars = [];
     word.split("").forEach((char, i) => {
@@ -28,7 +30,9 @@ export default function Body({ links, selectedLink, setSelectedLink, handleNavLi
 
   return (
     <div className="nav_body">
-      <div className={`navOpenLogo`}>
+      <div className={`navOpenLogo`}
+       onClick={() => router.push("/")}
+      >
         <Image
           src={nav_logo}
           alt="Description of the image"
