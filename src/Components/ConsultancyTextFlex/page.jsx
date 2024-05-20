@@ -99,7 +99,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-   <motion.div
+   {/* <motion.div
           ref={ref}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -134,7 +134,7 @@ const Page = () => {
             justifyContent={"left"}
             className={styles.Consultancy_page_second_content_text}
           />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
