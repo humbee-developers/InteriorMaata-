@@ -270,15 +270,16 @@
   }
 
   .projectPageOuter{
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 
   .ProjectSection_headerText {
-    padding: 0;
-    font-size: 5vw;
+    padding: 0 24px;
+    font-size: 8vw;
     font-weight: 400;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .svg {
@@ -297,6 +298,9 @@
     padding: 2rem 0 3rem 0;
     font-size: 12px;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   .section_1 div,
@@ -316,8 +320,8 @@
   }
 
   .ProjectSection_headerText {
-    padding: 0;
-    font-size: 5vw;
+    padding: 0 20px;
+    font-size: 8vw;
     font-weight: 400;
     display: flex;
     justify-content: center;
@@ -357,8 +361,8 @@
 }
 @media screen and (max-width: 280px) {
   .ProjectSection_headerText {
-    padding: 0;
-    font-size: 5vw;
+    padding: 0 20px;
+    /* font-size: 5vw; */
     font-weight: 400;
     display: flex;
     justify-content: center;
