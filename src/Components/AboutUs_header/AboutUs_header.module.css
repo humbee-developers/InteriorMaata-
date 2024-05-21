@@ -81,8 +81,12 @@
 
 @media screen and (max-width: 1024px) {
   .ananya {
-    line-height: 80px;
+    line-height: 140px;
     width: 100%;
+    font-size: 8rem;
+  }
+  .designStyle{
+    font-size: 2rem;
   }
 
   .aboutUsHeader {
@@ -90,10 +94,13 @@
 }
 
   .aboutUs_banner_text{
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 28px;
+    line-height: 40px;
   }
-  
+  .aboutUs_buttonOuter{
+    font-size: 30px;
+    margin: 20px 0 0;
+  }
 
   .aboutUs_flex_divider {
     width: 100%;
@@ -105,22 +112,42 @@
 
   .aboutUs_banner_text_outer {
     margin: 0 auto;
+    
   }
 }
 
+@media(max-width:991px){
+  .ananya {
+    line-height: 120px;
+    width: 100%;
+    font-size: 6rem;
+  }
+  .designStyle{
+    font-size: 2rem;
+  }
 
+   .aboutUs_banner_text{
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .aboutUs_buttonOuter{
+    font-size: 26px;
+    margin: 20px 0 0;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .ananya {
     font-size: 11vw;
   }
   .aboutUs_banner_text{
-    font-size: 16px;
-  line-height: 22px;
+    font-size: 22px;
+  line-height: 32px;
   }
   .aboutUsHeader {
     width: 85%;
 }
+
 }
 
 
