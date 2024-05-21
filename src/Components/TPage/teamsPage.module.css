@@ -50,7 +50,7 @@
   color: #cc7d45;
   text-align: center;
   font-family:"Dream Avenue";
-  font-size: 4.5vw;
+  font-size: 5.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -67,7 +67,7 @@
   width: 85%;
   color: #000;
    font-family: var(--font-poppins);
-  font-size: 15px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   text-align:center;
@@ -118,7 +118,7 @@
     width: 60%;
     color: #000;
      font-family: var(--font-poppins);
-    font-size: 16px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -192,7 +192,7 @@
   }
   .teamPage_content4_Text {
     width: 80%;
-    font-size: 13px;
+    font-size: 22px;
   }
   .teamPage_content4_Text p {
     padding: 6px 0;
@@ -260,7 +260,7 @@
   }
   .teamPage_content4_Text {
     width: 80%;
-    font-size: 13px;
+    font-size: 20px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;
@@ -324,7 +324,7 @@
   }
   .teamPage_content4_Text {
     width: 80%;
-    font-size: 13px;
+    font-size: 20px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;
@@ -377,7 +377,7 @@
   }
   .teamPage_content3_Text {
     width: 100%;
-    font-size: 4.8vw;
+    font-size: 6vw;
   }
   .teamPage_content4 {
     padding: 0 1rem;
@@ -387,8 +387,8 @@
     justify-content: center;
   }
   .teamPage_content4_Text {
-    width: 80%;
-    font-size: 13px;
+    width: 100%;
+    font-size: 20px;
   }
   .teamPage_content4_Text p {
     padding: 4px 0;
@@ -440,6 +440,7 @@
   .teamPage_content3_Text {
     width: 100%;
     padding: 0 1rem;
+    font-size: 6vw;
     /* font-size: 18px; */
   }
   .teamPage_content4 {
@@ -451,7 +452,7 @@
   }
   .teamPage_content4_Text {
     width: 100%;
-    font-size: 13px;
+    font-size: 15px;
   }
   .teamPage_content4_Text p {
     padding: 2px 0;
@@ -487,7 +488,6 @@
     /* font-size: 15px; */
   }
 
-
   .image_content5 {
     display: flex;
     justify-content: center;
@@ -498,8 +498,8 @@
 
 
   .teamPage_content4_Text {
-    width: 90%;
-    font-size: 13px;
+    width: 100%;
+    font-size: 15px;
   }
 
 
