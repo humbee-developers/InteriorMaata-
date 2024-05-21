@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 10rem 5rem 10rem;
+  padding: 0rem 7rem 5rem 6rem;
   position: relative;
 }
 
@@ -148,7 +148,7 @@
 
 @media screen and (min-width: 1800px) {
   .seventh_Section_container {
-    padding: 0rem 10rem 5rem 10rem;
+    padding: 0rem 7rem 5rem 7rem;
   }
 }
 
