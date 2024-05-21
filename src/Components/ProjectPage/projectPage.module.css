@@ -265,8 +265,7 @@
 @media screen and (max-width: 575px) {
   .ProjectSection_header {
     padding-bottom: 2.5rem;
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
   .projectPageOuter{
@@ -315,8 +314,7 @@
 @media screen and (max-width: 425px) {
   .ProjectSection_header {
     padding-bottom: 2.5rem;
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
   .ProjectSection_headerText {
