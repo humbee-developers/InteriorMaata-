@@ -34,21 +34,19 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
       </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
+      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
     
         <div className="bg">
         <AboutUs_header />
         <TextRevel phrase={phrase} />
         <AboutUs_threeCards />
-        {/* <Marquee /> */}
         <MarqueeTest/>
         <AboutUs_Carousel2 />
         <AboutUs_flex />
         <AboutUsInfo />
-        {/* <AboutUs_ourDesign /> */}
         </div>
     </>
   );
