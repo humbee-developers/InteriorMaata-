@@ -268,7 +268,7 @@
     height: 20vh;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 575px) {
   .timeline_container {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -280,11 +280,14 @@
   .timline1_meet_text1 {
     font-size: 5vw;
   }
+  .timeline_content1{
+    flex-direction: column;
+  }
   .timeline_content1,
   .timeline_content2 {
     gap: 2rem;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 }
