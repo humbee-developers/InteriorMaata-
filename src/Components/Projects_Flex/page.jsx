@@ -65,7 +65,7 @@ const Page = () => {
             ))}
           </motion.div>
           <motion.div
-            className={styles.Project_Flex_Desc_inner}
+            className={styles.Project_Flex_Desc_inner2}
             variants={sentence}
             initial="hidden"
             animate={controls1}
