@@ -164,7 +164,7 @@ const validatePhone = (Phonedata) => {
 
             <div className={styles.field}>
               <div className={styles.Submit_button_outer}>
-                <Button button_text="Submit" />
+                <Button type="button" button_text="Submit" />
                   <ToastContainer
                     position="top-right"
                     autoClose={3000}

@@ -99,8 +99,11 @@
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
+  .contactUsPageOuter {
+    height:100vh;
+  }
   .Contact_us_overlay_text {
-    font-size: 7.5vw;
+    font-size: 8.5vw;
     width: 100%;
   }
 }

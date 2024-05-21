@@ -25,8 +25,7 @@
   font-size: 55px;
   text-transform: capitalize;
   color: #7f7047;
-
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   margin: 0px;
 }
 .project p:nth-of-type(1) {
@@ -43,16 +42,16 @@
   width: 0;
 }
 .project img {
-  transition: transform .2s;
+  transition: transform 0.2s;
   object-fit: contain;
   width: 10vw;
 }
-.testingImage:hover{
+.testingImage:hover {
   transform: scale(1.5);
 }
 
 .testingImage {
-  transition: transform .2s;
+  transition: transform 0.2s;
   width: 9vw;
   height: 9vh;
 }
@@ -64,23 +63,22 @@
   .project p {
     font-size: 50px;
     color: #7f7047;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     margin: 0px;
   }
 }
-@media(max-width: 1300px) {
+@media (max-width: 1300px) {
   .project p {
     font-size: 45px;
   }
 }
-@media(min-width:1025px) and  (max-width: 1199px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
   .project p {
     font-size: 39px;
   }
 }
 
-
-@media(min-width:769px) and  (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .project p {
     font-size: 5vw;
   }
@@ -117,7 +115,7 @@
   }
 }
 
-@media (min-width: 501px) and (max-width:767px) {
+@media (min-width: 501px) and (max-width: 767px) {
   .project p {
     font-size: 24px;
   }
@@ -130,7 +128,7 @@
     height: 6vh;
   }
   .main {
-    height:auto;
+    height: auto;
     margin: 5rem auto;
   }
 }
@@ -142,13 +140,12 @@
   .testingImage {
     width: 11vw;
     height: 3vh;
-  
   }
   .project img {
     width: 11vw;
   }
   .main {
-    height:auto;
+    height: auto;
     margin: 4rem auto;
   }
 }
@@ -166,7 +163,7 @@
     height: 3vh;
   }
   .main {
-    height:auto;
+    height: auto;
     margin: 4rem auto;
   }
 }
@@ -194,4 +191,3 @@
     width: 7vw;
   }
 }
-
