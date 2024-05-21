@@ -21,7 +21,7 @@ function Landing_page() {
 
   return (
     <div className={styles.landing_page_second_container}>
-      <div className={styles.landing_page_second_content}>
+      {/* <div className={styles.landing_page_second_content}>
         <motion.div
           ref={ref}
           initial="hidden"
@@ -49,7 +49,7 @@ function Landing_page() {
             className={styles.landing_page_second_content_text}
           />
         </motion.div>
-      </div>
+      </div> */}
 
       <div className={styles.landing_page_second_images}>
         <motion.div

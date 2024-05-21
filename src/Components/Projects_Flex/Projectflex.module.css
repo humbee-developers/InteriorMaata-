@@ -86,4 +86,7 @@
   .Project_Flex_Desc_inner_space {
     padding-top: 1rem;
   }
+  .Project_Flex_Desc_inner2{
+    display: none;
+  }
 }
