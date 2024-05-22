@@ -10,7 +10,7 @@
 
 .word {
   position: relative;
-  margin-right: 11px;
+  margin-right: 16px;
   margin-top: 12px;
 }
 
@@ -31,11 +31,17 @@
     font-size: 5vw;
     padding: 0rem 3rem;
   }
+  .word {
+    margin-right: 11px;
+  }
 }
 
 @media (min-width: 200px) and (max-width: 500px) {
   .paragraph {
     font-size: 8vw;
     padding: 0rem 1.6rem;
+  }
+  .word {
+    margin-right: 11px;
   }
 }
