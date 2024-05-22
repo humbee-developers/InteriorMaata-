@@ -36,10 +36,10 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
-      </AnimatePresence> */}
-      {/* <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
+      </AnimatePresence>
+      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
     
         <div className="bg">
         <AboutUs_header />
