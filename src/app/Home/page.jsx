@@ -24,6 +24,8 @@ const Page = ({ lData }) => {
     const lenis = new Lenis({
       duration: 1.5, // Duration of the scroll animation
       easing: (t) => 1 - Math.pow(1 - t, 3), 
+      // easing: (t) => 1 - Math.pow(1 - t, 4),
+
       // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
       smooth: true,
       direction: "vertical",
