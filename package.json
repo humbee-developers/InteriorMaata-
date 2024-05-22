@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@gsap/react": "^2.1.0",
     "@mui/material": "^5.15.5",
+    "@studio-freight/lenis": "^1.0.42",
     "aos": "^2.3.4",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.16",

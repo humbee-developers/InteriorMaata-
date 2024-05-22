@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Preloader from "@/Animations/preloader/index";
 import { AnimatePresence } from "framer-motion";
 import HomeBanner from "@/Components/Home_page_Banner/page";
@@ -13,15 +13,38 @@ import AboutUsInfo from "@/Components/AboutUsInfo/page";
 import NewRevel from "@/Animations/newRevel/page";
 // import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import "./home.css"
+import Lenis from "@studio-freight/lenis";
 const Page = ({ lData }) => {
   const paragraph = 'INTERIORMAATA STUDIO : STEP INTO A REALM WHERE TRADITION DANCE WITH MODERN MINIMALISM, CREATING SPACES THAT RESONATE WITH SOULFUL ELEGANCE';
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter,setCounter]= useState  (0)
+  const lenisRef = useRef(null);
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
+    // Initialize Lenis with options similar to Locomotive Scroll
+    const lenis = new Lenis({
+      duration: 1.5, // Duration of the scroll animation
+      easing: (t) => 1 - Math.pow(1 - t, 3), 
+      // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
+      smooth: true,
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smoothTouch: true,
+      touchMultiplier: 2, // Adjust the touch sensitivity
+    });
+
+    // Function to continuously update Lenis
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    lenisRef.current = lenis;
+
+    return () => {
+      lenis.destroy();
+    };
   }, []);
   function handleLoad(data) {
     console.log("data", data);
@@ -35,10 +58,10 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
       </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
+      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
     
         <div className="bg">
         <AboutUs_header />
