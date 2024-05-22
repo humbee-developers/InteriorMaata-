@@ -10,26 +10,30 @@ const TextRevel = ({ phrase }) => {
   const container = useRef(null);
 
   useEffect(() => {
+    const createAnimation = () => {
+      gsap.to(refs.current, {
+        scrollTrigger: {
+          trigger: container.current,
+          scrub: true,
+          start: 'top 70%',
+          end: 'bottom 70%',
+        },
+        opacity: 1,
+        ease: 'none',
+        stagger: 0.1,
+        color: '#7f7047',
+      });
+    };
+
     createAnimation();
-  }, []);
 
-  const createAnimation = () => {
-    gsap.to(refs.current, {
-      scrollTrigger: {
-        trigger: container.current,
-        scrub: true,
-        start: 'top 70%',
-        // end: `+=${window.innerHeight / 1.9}`,
-        end:"bottom 70%",
-      },
-      opacity: 1,
-      ease: 'none',
-      stagger: 0.1,
-      color: '#7f7047',
-    });
-  };
+    return () => {
+      // Clean up ScrollTrigger
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, [phrase]);
 
-  const splitWords = (phrase) => {
+  const splitWords = phrase => {
     return phrase.split(' ').map((word, i) => {
       const letters = splitLetters(word);
       return (
@@ -40,11 +44,11 @@ const TextRevel = ({ phrase }) => {
     });
   };
 
-  const splitLetters = (word) => {
+  const splitLetters = word => {
     return word.split('').map((letter, i) => (
       <span
         key={letter + '_' + i}
-        ref={(el) => {
+        ref={el => {
           refs.current.push(el);
         }}
       >

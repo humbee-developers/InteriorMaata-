@@ -10,10 +10,12 @@ import AboutUs_Carousel2 from "@/Components/AboutUs_Carousel2/page";
 import AboutUs_flex from "@/Components/AboutUs_flex/page";
 import MarqueeTest from "@/Components/MarqueeTest/page"
 import AboutUsInfo from "@/Components/AboutUsInfo/page";
+import NewRevel from "@/Animations/newRevel/page";
 // import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 import "./home.css"
 const Page = ({ lData }) => {
   const phrase = 'INTERIORMAATA STUDIO : STEP INTO A REALM WHERE TRADITION DANCE WITH MODERN MINIMALISM, CREATING SPACES THAT RESONATE WITH SOULFUL ELEGANCE';
+  const paragraph = 'INTERIORMAATA STUDIO : STEP INTO A REALM WHERE TRADITION DANCE WITH MODERN MINIMALISM, CREATING SPACES THAT RESONATE WITH SOULFUL ELEGANCE';
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter,setCounter]= useState  (0)
   useEffect(() => {
@@ -34,14 +36,15 @@ const Page = ({ lData }) => {
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader counter={isCounter} />}
-      </AnimatePresence>
-      <HomeBanner loadImage={handleLoad} counter={handleCounter} />
+      </AnimatePresence> */}
+      {/* <HomeBanner loadImage={handleLoad} counter={handleCounter} /> */}
     
         <div className="bg">
         <AboutUs_header />
-        <TextRevel phrase={phrase} />
+        {/* <TextRevel phrase={phrase} /> */}
+        <NewRevel paragraph={paragraph}/>
         <AboutUs_threeCards />
         <MarqueeTest/>
         <AboutUs_Carousel2 />
