@@ -107,8 +107,8 @@ const Animation = ({ loadImage, counter }) => {
         trigger: section,
         pin: true,
         scrub: true,
-        smooth: 2,
-        // smoothTouch: 0.1,
+        smooth: 1,
+        // smoothTouch: 100,
         end: "+=1400%",
       },
     });
