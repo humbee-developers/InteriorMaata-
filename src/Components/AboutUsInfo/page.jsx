@@ -4,11 +4,10 @@ import img2 from "@/images/mambo_mambo 1.png"
 import img3 from "@/images/jomor_design 1.png"
 import img4 from "@/images/nothing_design_studio 1.png"
 import img5 from "@/images/mambo_mambo 2.png"
-import TextRevel from "@/Animations/TextRevel/page";
+import NewRevel from "@/Animations/newRevel/page";
 import styles from "@/Components/AboutUsInfo/AboutUsInfo.module.css"
 export default function Home() {
-  const phrase = 'Crafting Dreamy Interiors That Speak Volumes,Merging Style With Soul To Redefine Your Living Experience. Elevate Your image Space With Us!';
-
+  const paragraph = 'Crafting Dreamy Interiors That Speak Volumes, Merging Style With Soul To Redefine Your Living Experience. Elevate Your image Space With Us!';
   const projects = [
     {
       title1: "Crafting dreamy Interiors",
@@ -54,7 +53,7 @@ export default function Home() {
       </div>
     </main>
       <div className={styles.outerClass}>
-      <TextRevel phrase={phrase} />
+      <NewRevel paragraph={paragraph}/>
       </div>
    </>
   )

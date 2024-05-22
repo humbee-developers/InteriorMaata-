@@ -1,11 +1,11 @@
 .ProjectSection_header {
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   padding-bottom: 3rem;
   display: flex;
   justify-content: center;
 }
 
-.projectPageOuter{
+.projectPageOuter {
   padding-top: 10rem;
 }
 
@@ -43,10 +43,9 @@
   margin-bottom: -2rem;
 }
 
-.ProjectSection_imageContent{
+.ProjectSection_imageContent {
   position: relative;
 }
-
 
 .ProjectSection_image {
   background-color: beige;
@@ -57,22 +56,22 @@
   cursor: pointer;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   cursor: pointer;
   right: 0;
-  height:auto;
+  height: auto;
   aspect-ratio: 5 / 2;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,.5);
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.ProjectSection_imageContent:hover .overlay{
+.ProjectSection_imageContent:hover .overlay {
   opacity: 1;
   cursor: pointer;
 }
@@ -162,7 +161,7 @@
     display: flex;
     justify-content: center;
   }
-  .projectPageOuter{
+  .projectPageOuter {
     padding-top: 8rem;
   }
   .ProjectSection_headerText {
@@ -211,7 +210,7 @@
     justify-content: center;
   }
 
-  .projectPageOuter{
+  .projectPageOuter {
     padding-top: 8rem;
   }
 
@@ -263,12 +262,20 @@
 }
 /* ---------------------------575-------------------- */
 @media screen and (max-width: 575px) {
+  .overlay {
+    aspect-ratio: 2 / 2;
+  }
+
+  .ProjectSection_image {
+    aspect-ratio: 2 / 2;
+  }
+
   .ProjectSection_header {
     padding-bottom: 2.5rem;
     display: block;
   }
 
-  .projectPageOuter{
+  .projectPageOuter {
     padding-top: 8rem;
   }
 
