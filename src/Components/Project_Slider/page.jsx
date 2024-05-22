@@ -1,28 +1,27 @@
 "use client";
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-// import { Navigation } from 'swiper/modules';
 import Image from "next/image";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
-// import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "./imx.css";
 import Project_Slider from "@/images/Project_Slider_img.png";
-import { FreeMode, Autoplay, Thumbs, Pagination } from "swiper/modules";
+import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
 import styles from "@/Components/Project_Slider/Slider.module.css";
 import Carousel_svg from "@/svgs/project_carousel_layout.svg";
-// import { EffectFade } from "swiper/modules";
+
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <>
       <div className={styles.abc}>
         <div className={styles.swiper2}>
-          <Image src={Carousel_svg} />
-          <Image src={Carousel_svg} />
+          <Image src={Carousel_svg} alt="carousel layout 1" />
+          <Image src={Carousel_svg} alt="carousel layout 2" />
         </div>
 
         <div className={styles.Carousel_Slider_container}>
@@ -33,19 +32,15 @@ export default function App() {
             autoplay={{
               delay: 2500,
             }}
-            // centeredSlides={true}
             loop={true}
             speed={1500}
-            // thumbs={{
-            //   swiper:
-            //     thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-            // }}
+            thumbs={{ swiper: thumbsSwiper }}
           >
             <SwiperSlide>
               <div className={styles.third_section_content}>
                 <Image
                   src={Project_Slider}
-                  alt="carousal_image"
+                  alt="carousel_image"
                   className={styles.third_section_image}
                 />
               </div>
@@ -54,7 +49,7 @@ export default function App() {
               <div className={styles.third_section_content}>
                 <Image
                   src={Project_Slider}
-                  alt="carousal_image"
+                  alt="carousel_image"
                   className={styles.third_section_image}
                 />
               </div>
@@ -63,7 +58,7 @@ export default function App() {
               <div className={styles.third_section_content}>
                 <Image
                   src={Project_Slider}
-                  alt="carousal_image"
+                  alt="carousel_image"
                   className={styles.third_section_image}
                 />
               </div>
@@ -72,7 +67,7 @@ export default function App() {
               <div className={styles.third_section_content}>
                 <Image
                   src={Project_Slider}
-                  alt="carousal_image"
+                  alt="carousel_image"
                   className={styles.third_section_image}
                 />
               </div>
@@ -80,15 +75,15 @@ export default function App() {
           </Swiper>
         </div>
         <div className={styles.swiper3}>
-          <Image src={Carousel_svg} />
-          <Image src={Carousel_svg} />
+          <Image src={Carousel_svg} alt="carousel layout 3" />
+          <Image src={Carousel_svg} alt="carousel layout 4" />
         </div>
       </div>
-      {/*  */}
+      
       <div className={styles.abc}>
         <div className={styles.Carousel_Slider_container2}>
           <Swiper
-           modules={[ Thumbs, Pagination, Autoplay]}
+            modules={[Thumbs, Pagination, Autoplay]}
             onSwiper={setThumbsSwiper}
             loop={true}
             autoplay={{
@@ -99,9 +94,7 @@ export default function App() {
             pagination={{
               dynamicBullets: true,
             }}
-            // watchSlidesProgress={false}
-            // freeMode={true}
-           
+            allowTouchMove={false}
             className="mySwiper2"
           >
             <SwiperSlide>
@@ -161,7 +154,6 @@ export default function App() {
           </Swiper>
         </div>
       </div>
-      {/*  */}
     </>
   );
 }
