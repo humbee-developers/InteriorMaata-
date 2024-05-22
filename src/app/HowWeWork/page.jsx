@@ -17,7 +17,7 @@ const Page = () => {
   useEffect(() => {
     // Initialize Lenis with options similar to Locomotive Scroll
     const lenis = new Lenis({
-      duration: 1.5, // Duration of the scroll animation
+      duration: 1.2, // Duration of the scroll animation
       easing: (t) => 1 - Math.pow(1 - t, 3), 
       // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
       smooth: true,

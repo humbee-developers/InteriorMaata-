@@ -22,16 +22,14 @@ const Page = ({ lData }) => {
   useEffect(() => {
     // Initialize Lenis with options similar to Locomotive Scroll
     const lenis = new Lenis({
-      duration: 1.5, // Duration of the scroll animation
+      duration: 1.2, // Duration of the scroll animation
       easing: (t) => 1 - Math.pow(1 - t, 3), 
-      // easing: (t) => 1 - Math.pow(1 - t, 4),
-
       // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
       smooth: true,
       direction: "vertical",
       gestureDirection: "vertical",
       smoothTouch: true,
-      touchMultiplier: 2, // Adjust the touch sensitivity
+      touchMultiplier: 2,  // Adjust the touch sensitivity
     });
 
     // Function to continuously update Lenis
@@ -48,6 +46,7 @@ const Page = ({ lData }) => {
       lenis.destroy();
     };
   }, []);
+  
   function handleLoad(data) {
     console.log("data", data);
     setIsLoading(data);
