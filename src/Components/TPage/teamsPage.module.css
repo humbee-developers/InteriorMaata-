@@ -6,8 +6,8 @@
   width: 93%;
   color: #cc7d45;
   text-align: center;
-  font-family:"Dream Avenue";
-  font-size:5vw;
+  font-family: "Dream Avenue";
+  font-size: 5vw;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
 .teamPage_content2 {
   color: #000;
   text-align: center;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -31,7 +31,7 @@
 .marquee_imageSection {
   margin: 0 0.5rem;
 }
-.slider_img{
+.slider_img {
   max-width: 100%;
   height: auto;
 }
@@ -41,6 +41,7 @@
 }
 .teamPage_content3 {
   display: flex;
+  visibility: visible;
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -49,8 +50,8 @@
   width: 95%;
   color: #cc7d45;
   text-align: center;
-  font-family:"Dream Avenue";
-  font-size:4.5vw;
+  font-family: "Dream Avenue";
+  font-size: 4.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -66,11 +67,11 @@
 .teamPage_content4_Text {
   width: 85%;
   color: #000;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  text-align:center;
+  text-align: center;
   line-height: normal;
   text-transform: capitalize;
 }
@@ -90,13 +91,13 @@
   object-fit: cover;
 }
 
-.teamPage_content3Second{
-  display: none;
+.teamPage_content3Second {
+ visibility: hidden;
 }
 
-.teamPage_content3First{
-  display: block;
-}
+/* .teamPage_content3First {
+  visibility: hidden;
+} */
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .teamPage_content1 {
@@ -108,7 +109,7 @@
     width: 95%;
     color: #cc7d45;
     text-align: center;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -118,7 +119,7 @@
   .teamPage_content4_Text {
     width: 60%;
     color: #000;
-     font-family: var(--font-poppins);
+    font-family: var(--font-poppins);
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -140,13 +141,12 @@
     width: 93%;
     color: #cc7d45;
     text-align: center;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     margin: 0 auto 1rem;
   }
-
 
   .TeamPage_Section {
     padding: 0 3rem;
@@ -212,9 +212,6 @@
   }
 }
 
-
-
-
 /* -----------------------------------991------------------------------------ */
 @media screen and (max-width: 991px) {
   .TeamPage_Section {
@@ -257,7 +254,7 @@
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
-    justify-content:center;
+    justify-content: center;
   }
   .teamPage_content4_Text {
     width: 80%;
@@ -284,7 +281,7 @@
 @media screen and (max-width: 768px) {
   .TeamPage_Section {
     padding: 0 1.5rem;
-    padding-top:0rem;
+    padding-top: 0rem;
   }
 
   .teamPage_content1 {
@@ -345,17 +342,17 @@
 }
 /* ---------------------------575------------------------------- */
 @media screen and (max-width: 575px) {
-.teamPage_content3Second{
-  display:block !important;
-}
-.teamPage_content4_Text {
-  text-align:left;
-}
+  .teamPage_content3Second {
+   visibility: visible !important;
+  }
+  .teamPage_content4_Text {
+    text-align: left;
+  }
 
-.teamPage_content3First{
-  font-size: 8vw !important;
-  display:none !important;
-}
+  .teamPage_content3First {
+    font-size: 8vw !important;
+    display: none !important;
+  }
 
   .TeamPage_Section {
     padding: 0 1.5rem;
@@ -385,7 +382,7 @@
   }
   .teamPage_content3 {
     /* padding: 0 8rem; */
-    margin-top: 1rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
   }
   .teamPage_content3_Text {
@@ -393,16 +390,18 @@
     font-size: 6vw;
   }
 
-.teamPage_content3_Text1{
-  color: #cc7d45;
-  font-family:"Dream Avenue";
-  font-size: 8vw;
-  
-}
+  .teamPage_content3_Text1 {
+    color: #cc7d45;
+    font-family: "Dream Avenue";
+    font-size: 8vw;
+  }
 
+  .teamPage_spacing2 {
+    margin-top: -5rem !important;
+  }
 
   .teamPage_content4 {
-    padding: 0 2rem;
+    padding: 0 0rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
@@ -418,7 +417,7 @@
   .image_content5 {
     display: flex;
     justify-content: center;
-    padding: 0 0.7rem;
+    padding: 0 1rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
   }
@@ -434,7 +433,7 @@
     padding: 0;
     padding-top: 1rem;
   }
- 
+
   .teamPage_content1 {
     width: 90%;
     margin: 0 auto 1rem;
@@ -456,7 +455,7 @@
   }
   .teamPage_content3 {
     /* padding: 0 8rem; */
-    margin-top: 1rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
   }
   .teamPage_content3_Text {
@@ -466,7 +465,7 @@
     /* font-size: 18px; */
   }
   .teamPage_content4 {
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
@@ -482,7 +481,7 @@
   .image_content5 {
     display: flex;
     justify-content: center;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
   }
@@ -492,10 +491,6 @@
     object-fit: cover;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 324px) {
   .teamPage_content1 {
@@ -518,11 +513,8 @@
     margin-bottom: 2.5rem;
   }
 
-
   .teamPage_content4_Text {
     width: 100%;
     font-size: 15px;
   }
-
-
 }

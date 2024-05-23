@@ -201,7 +201,7 @@ const TeamPage = () => {
         </div>
 
 
-        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}>
+        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}>
           <div className={styles.teamPage_content3_Text1}>
             <motion.div
               ref={ref2}
