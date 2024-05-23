@@ -7,7 +7,7 @@
   color: #cc7d45;
   text-align: center;
   font-family:"Dream Avenue";
-  font-size:6vw;
+  font-size:5vw;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
   color: #cc7d45;
   text-align: center;
   font-family:"Dream Avenue";
-  font-size: 5.5vw;
+  font-size:4.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -90,16 +90,17 @@
   object-fit: cover;
 }
 
+.teamPage_content3Second{
+  display: none;
+}
+
+.teamPage_content3First{
+  display: block;
+}
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .teamPage_content1 {
     width: 83%;
-    color: #cc7d45;
-    text-align: center;
-    font-family:"Dream Avenue";
-    font-size:6vw;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
     margin: 0 auto 1rem;
   }
 
@@ -344,6 +345,18 @@
 }
 /* ---------------------------575------------------------------- */
 @media screen and (max-width: 575px) {
+.teamPage_content3Second{
+  display:block !important;
+}
+.teamPage_content4_Text {
+  text-align:left;
+}
+
+.teamPage_content3First{
+  font-size: 8vw !important;
+  display:none !important;
+}
+
   .TeamPage_Section {
     padding: 0 1.5rem;
     padding-top: 1rem;
@@ -379,8 +392,17 @@
     width: 100%;
     font-size: 6vw;
   }
+
+.teamPage_content3_Text1{
+  color: #cc7d45;
+  font-family:"Dream Avenue";
+  font-size: 8vw;
+  
+}
+
+
   .teamPage_content4 {
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;
@@ -444,7 +466,7 @@
     /* font-size: 18px; */
   }
   .teamPage_content4 {
-    padding: 0 1rem;
+    padding: 0 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     display: flex;

@@ -99,7 +99,7 @@ const TeamPage = () => {
             ))}
           </Marquee>
         </div>
-        <div className={styles.teamPage_content3}>
+        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}>
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref1}
@@ -108,15 +108,50 @@ const TeamPage = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"United by Passion, Driven by"}
+                heading={"UNITED BY PASSION, DRIVEN BY"}
                 justifyContent={"center"}
               />
               <HeadingTextAnimation
-                heading={"Excellence: Get To Know The Faces"}
+                heading={"EXCELLENCE: GET TO KNOW"}
                 justifyContent={"center"}
               />
               <HeadingTextAnimation
-                heading={"Behind Our Success."}
+                heading={""}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"THE FACES BEHIND OUR SUCCESS"}
+                justifyContent={"center"}
+              />
+            </motion.div>
+          </div>
+        </div>
+        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}>
+          <div className={styles.teamPage_content3_Text1}>
+            <motion.div
+              ref={ref2}
+              initial="hidden"
+              animate={inView2 ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"UNITED BY PASSION,"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"DRIVEN BY THE"}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={" EXCELLENCE GET TO"}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={" KNOW HE FACES "}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={"BEHIND OUR SUCCESS"}
                 justifyContent={"center"}
               />
             </motion.div>
@@ -141,8 +176,7 @@ const TeamPage = () => {
           </div>
         </div>
         <TeamCards />
-        <div className={styles.card_stack_section}></div>
-        <div className={styles.teamPage_content3}>
+        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}>
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref2}
@@ -151,11 +185,44 @@ const TeamPage = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"WE BELIEVE WONDERFUL WORK COMES"}
+                heading={"WE BELIEVE IN WONDERFUL"}
                 justifyContent={"center"}
               />
               <HeadingTextAnimation
-                heading={"FROM CREATIVE GENEROSITY."}
+                heading={"WORK COMES FROM "}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={"CREATIVE GENEROSITY"}
+                justifyContent={"center"}
+              />
+            </motion.div>
+          </div>
+        </div>
+
+
+        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}>
+          <div className={styles.teamPage_content3_Text1}>
+            <motion.div
+              ref={ref2}
+              initial="hidden"
+              animate={inView2 ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"  WE BELIEVE IN"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"EXCEPTIONAL WORK"}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={"IS BORN FROM"}
+                justifyContent={"center"}
+              />
+               <HeadingTextAnimation
+                heading={"CREATIVE GENEROSITY"}
                 justifyContent={"center"}
               />
             </motion.div>
