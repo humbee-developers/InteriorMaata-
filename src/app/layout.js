@@ -5,6 +5,7 @@ import Footer from "@/Common/Footer/page";
 import { Poppins } from 'next/font/google';
 import Refresh from "@/Components/Refresh/page";
 import "./globals.css";
+import DisableZoom from "@/Components/DisableZoom/page";
 
 
 const poppins = Poppins({
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body>
         <Headers />
         <Refresh/>
+        <DisableZoom/>
         {children}
       
             <Form />

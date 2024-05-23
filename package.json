@@ -34,6 +34,7 @@
     "react-scroll-to-top": "^3.0.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^5.0.0-rc.4",
+    "react-use": "^17.5.0",
     "sharp": "^0.33.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
