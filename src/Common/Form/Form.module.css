@@ -44,10 +44,11 @@
   box-sizing: border-box;
   color: white;
   font-family: var(--font-poppins);
-  height: 55px;
+  /* height: 55px !important; */
   background: transparent;
   width: 100%;
-  padding: 0rem 0px;
+  padding: 15px 0px 2px 1px !important;
+
   font-size: 18px;
   resize: none;
   outline: none;
