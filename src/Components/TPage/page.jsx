@@ -84,7 +84,7 @@ const TeamPage = () => {
           </div>
         </div>
         <div className={styles.marquee_section}>
-          <Marquee velocity={20} >
+          <Marquee velocity={20}>
             {photos.map((photo, index) => (
               <div
                 key={`marquee-image-${index}`}
@@ -99,7 +99,11 @@ const TeamPage = () => {
             ))}
           </Marquee>
         </div>
-        <div className={styles.teamPage_content3}>
+
+        <div className={styles.first}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+        >
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref1}
@@ -108,41 +112,76 @@ const TeamPage = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"United by Passion, Driven by"}
+                heading={"UNITED BY PASSION, DRIVEN BY"}
                 justifyContent={"center"}
               />
               <HeadingTextAnimation
-                heading={"Excellence: Get To Know The Faces"}
+                heading={"EXCELLENCE: GET TO KNOW"}
                 justifyContent={"center"}
               />
+              <HeadingTextAnimation heading={""} justifyContent={"center"} />
               <HeadingTextAnimation
-                heading={"Behind Our Success."}
+                heading={"THE FACES BEHIND OUR SUCCESS"}
                 justifyContent={"center"}
               />
             </motion.div>
           </div>
         </div>
+        </div>
+
+        <div className={styles.first_first}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}
+        >
+          <div className={styles.teamPage_content3_Text1}>
+            <motion.div
+              ref={ref2}
+              initial="hidden"
+              animate={inView2 ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"UNITED BY PASSION,"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"DRIVEN BY THE"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={" EXCELLENCE GET TO"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={" KNOW HE FACES "}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"BEHIND OUR SUCCESS"}
+                justifyContent={"center"}
+              />
+            </motion.div>
+          </div>
+        </div>
+        </div>
+
         <div className={styles.teamPage_content4}>
           <div className={styles.teamPage_content4_Text}>
-       
-              <p>
-                And When It Stops, It’s Not Over - It’s In You Now, In Your
-                Head, Your Heart, And Spirit.
-              </p>
-              <p>
-                You Have To Tell Someone, Right Now, ‘you Must See This’. You
-                Share It, And They Get It. They’re In It With You, And It’s In
-                Them Too.
-              </p>
-              <p>You Shared The Wonder You Know The Feeling? That’s What We’re After, Every Time We Make A Film.</p>
-              
-             
-       
+            <p>
+              And When It Stops, It’s Not Over - It’s In You Now, In Your Head,
+              Your Heart, And Spirit. You Have To Tell Someone, Right Now, ‘you
+              Must See This’. You Share It, And They Get It. They’re In It With
+              You, And It’s In Them Too. You Shared The Wonder You Know 
+              Feeling? That’s What We’re After, Every Time We Make A Film.{""}The
+            </p>
           </div>
         </div>
         <TeamCards />
-        <div className={styles.card_stack_section}></div>
-        <div className={styles.teamPage_content3}>
+
+        <div className={styles.second}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+        >
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref2}
@@ -151,30 +190,66 @@ const TeamPage = () => {
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
-                heading={"WE BELIEVE WONDERFUL WORK COMES"}
+                heading={"WE BELIEVE IN WONDERFUL"}
                 justifyContent={"center"}
               />
               <HeadingTextAnimation
-                heading={"FROM CREATIVE GENEROSITY."}
+                heading={"WORK COMES FROM "}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"CREATIVE GENEROSITY"}
                 justifyContent={"center"}
               />
             </motion.div>
           </div>
         </div>
-   
-        <div className={styles.teamPage_content4}>
-          <div className={styles.teamPage_content4_Text}>
-           
-              <p>
-                Step into the world of interiormaata, where design meets
-                imagination. Our dedicated team of architects and designers is
-                driven by a shared commitment to elevate your spaces to new
-                heights of sophistication. With a blend of creativity and
-                technical expertise, we turn dreams into reality.{" "}
-              </p>
-      
+        </div>
+
+       <div className={styles.second_second}>
+       <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}
+        >
+          <div className={styles.teamPage_content3_Text1}>
+            <motion.div
+              ref={ref2}
+              initial="hidden"
+              animate={inView2 ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"  WE BELIEVE IN"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"EXCEPTIONAL WORK"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"IS BORN FROM"}
+                justifyContent={"center"}
+              />
+              <HeadingTextAnimation
+                heading={"CREATIVE GENEROSITY"}
+                justifyContent={"center"}
+              />
+            </motion.div>
           </div>
         </div>
+       </div>
+
+        <div className={styles.teamPage_content4}>
+          <div className={styles.teamPage_content4_Text}>
+            <p>
+              Step into the world of interiormaata, where design meets
+              imagination. Our dedicated team of architects and designers is
+              driven by a shared commitment to elevate your spaces to new
+              heights of sophistication. With a blend of creativity and
+              technical expertise, we turn dreams into reality.{" "}
+            </p>
+          </div>
+        </div>
+
         <div className={styles.image_content5}>
           <Image src={img7} alt={"img"} />
         </div>

@@ -95,14 +95,16 @@ const Projects = () => {
                   alt={data.title}
                   onClick={() => router.push("/Single_Project_Layout")}
                 />
-                <div onClick={() => router.push("/Single_Project_Layout")} className={styles.overlay}></div>
+                <div
+                  onClick={() => router.push("/Single_Project_Layout")}
+                  className={styles.overlay}
+                ></div>
               </div>
-
+              <div className={styles.project_heading}>
+                <span>{data.title}</span>
+              </div>
               <div className={styles.ProjectSection_textContent}>
                 <div className={styles.section_1}>
-                  <div>
-                    <span>{data.title}</span>
-                  </div>
                   <div className={styles.year}>
                     <span>{data.year}</span>
                   </div>
@@ -118,10 +120,10 @@ const Projects = () => {
                     <span>INTERIOR DESIGN | </span>
                     {data.interiordesign}
                   </div>
-                  <div>
+                  {/* <div>
                     <span>DEVELOPER | </span>
                     {data.developer}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className={styles.section_2}>

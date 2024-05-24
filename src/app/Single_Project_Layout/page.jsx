@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect , useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
@@ -16,8 +16,15 @@ import interior_material_img4 from "@/images/interior_material_img4.png";
 import interior_material_img5 from "@/images/interior_material_img5.png";
 import Interior_last_room from "@/images/Interior_last_room.png";
 import Interior_last_room_Svg from "@/svgs/Interior_Lastroom.svg";
+import Lenis from "@studio-freight/lenis";
 import styles from "@/app/Single_Project_Layout/Single_project.module.css";
 const Project_Header = () => {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -72,12 +79,35 @@ const Project_Header = () => {
 
 
 
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // const lenisRef = useRef(null);
+
+  // useEffect(() => {
+  //   // Initialize Lenis with options similar to Locomotive Scroll
+  //   const lenis = new Lenis({
+  //     duration: 1.2, // Duration of the scroll animation
+  //     easing: (t) => 1 - Math.pow(1 - t, 3), 
+  //     // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
+  //     smooth: true,
+  //     direction: "vertical",
+  //     gestureDirection: "vertical",
+  //     smoothTouch: true,
+  //     touchMultiplier: 2, // Adjust the touch sensitivity
+  //   });
+
+  //   // Function to continuously update Lenis
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+
+  //   requestAnimationFrame(raf);
+
+  //   lenisRef.current = lenis;
+
+  //   return () => {
+  //     lenis.destroy();
+  //   };
+  // }, []);
 
   return (
     <Stairs>

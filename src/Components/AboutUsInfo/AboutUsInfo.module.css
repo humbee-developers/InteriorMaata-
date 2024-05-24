@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 8rem auto;
+  padding: 8rem 0;
 }
 
 .gallery {
@@ -92,7 +92,7 @@
   }
   .main {
     height: auto;
-    margin: 6rem auto;
+   padding: 6rem 0;
   }
   .gallery {
     width: 100%;
@@ -115,7 +115,7 @@
     width: 100%;
   }
   .main {
-    margin: 4rem auto;
+ padding: 4rem 0;
   }
 }
 

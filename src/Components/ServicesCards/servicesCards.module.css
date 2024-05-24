@@ -153,6 +153,18 @@
 }
 
 @media screen and (max-width: 425px) {
+
+  .Services_header_info__range {
+    margin-top: auto;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+  }
+
+
+
+
+
   .Services_Header_Outer,
   .Services_header_img1_description {
     padding-left: 0rem;
@@ -174,6 +186,9 @@
   }
   .Service_header_button_outer {
     margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    
   }
   .Services_header_price {
     padding-top: 0.3rem;
