@@ -263,12 +263,16 @@
     object-fit: cover;
     /* padding: 50px 0; */
   }
+  .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    bottom: 40px;
+    left: 90%;
+  }
 }
 
 .productSlider .wrapper .slider_btn {
   position: absolute;
   top: 50% !important;
-  left: 0%;
+  left: 50% !important;
   transform: translate(-50%, -50%);
   z-index: 1;
   display: flex;
@@ -277,11 +281,14 @@
 
 @media (max-width: 768px) {
   .productSlider .wrapper .slider_btn {
-    top: 0% !important;
+    /* top: 0% !important; */
+    top: calc(50% - 54px) !important;
     left: 50% !important;
     /* transform: translate(0, 0); */
   }
 }
+
+
 
 .productSlider .wrapper .slider_btn .right {
   background-color: white;
@@ -306,7 +313,47 @@
 .productSlider .wrapper .slider_btn .left:hover {
   background-color: #E4DEDE;
 }
+@media (max-width: 700px) {
+  .productSlider .wrapper .slider_btn {
+      /* top: 0% !important; */
+      top: calc(50% - 50px) !important;
+      left: 50% !important;
+      /* transform: translate(0, 0); */
+  }
+}
 
+@media (max-width: 500px) {
+  .productSlider .wrapper .slider_btn {
+      /* top: 0% !important; */
+      top: calc(50% - 125px) !important;
+      left: 50% !important;
+      /* transform: translate(0, 0); */
+  }
+}
+@media (max-width: 424px) {
+  .productSlider .wrapper .slider_btn {
+      /* top: 0% !important; */
+      top: 349px !important;
+      left: 50% !important;
+      /* transform: translate(0, 0); */
+  }
+}
+@media (max-width: 375px) {
+  .productSlider .wrapper .slider_btn {
+      /* top: 0% !important; */
+      top: calc(50% - 150px) !important;
+      left: 50% !important;
+      /* transform: translate(0, 0); */
+  }
+}
+@media (max-width: 330px) {
+  .productSlider .wrapper .slider_btn {
+      /* top: 0% !important; */
+      top: calc(50% - 170px) !important;
+      left: 50% !important;
+      /* transform: translate(0, 0); */
+  }
+}
 @media (min-width:1024px) and (max-width:1300px) 
 {
   .productSlider .wrapper {
@@ -370,6 +417,7 @@
   padding-top: 25px;
   max-width: 100%;
   padding-right: 1rem;
+  padding-bottom: 2rem;
 }
 }
 
