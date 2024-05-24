@@ -52,7 +52,7 @@
   background-color: beige;
   width: 100%;
   height: auto;
-  aspect-ratio: 5 / 2;
+  aspect-ratio: 6 / 2;
   object-fit: cover;
   cursor: pointer;
 }
@@ -65,7 +65,7 @@
   cursor: pointer;
   right: 0;
   height: auto;
-  aspect-ratio: 5 / 2;
+  aspect-ratio: 6 / 2;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -83,7 +83,7 @@
   color: #cc7d45;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 5rem 0;
+  padding: 0rem 0 5rem 0;
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -115,7 +115,7 @@
   color: #000;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -141,6 +141,32 @@
     font-weight: 400;
   }
 
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    right: 0;
+    height: auto;
+    aspect-ratio: 5 / 2;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .ProjectSection_image {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 2;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+
   .svg {
     padding: 0 1rem;
   }
@@ -156,7 +182,7 @@
   }
 
   .ProjectSection_textContent {
-    padding: 1rem 0 5rem 0;
+    padding: 0rem 0 5rem 0;
     font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 400;

@@ -120,10 +120,10 @@ const Projects = () => {
                     <span>INTERIOR DESIGN | </span>
                     {data.interiordesign}
                   </div>
-                  <div>
+                  {/* <div>
                     <span>DEVELOPER | </span>
                     {data.developer}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className={styles.section_2}>

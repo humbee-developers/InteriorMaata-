@@ -20,6 +20,12 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+.ananya_said{
+  color: #cc7d45;
+}
+
+
 .work_title1 {
   width: 63%;
   margin: 0 auto;
@@ -81,12 +87,6 @@
   .work_title1 {
     width: 80%;
   }
-  .work_container {
-    /* padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem; */
-  }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
@@ -103,11 +103,11 @@
   .work_text1 {
     /* padding: 0 2rem; */
     text-align: left;
-    font-size: 15px;
+    font-size: 18px;
   }
   .work_container {
     gap: 1rem;
-    height: 64vh;
+    height: 78vh;
   }
 
   .work_title1 {

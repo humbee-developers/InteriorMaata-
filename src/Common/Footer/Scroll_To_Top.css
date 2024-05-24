@@ -16,3 +16,16 @@ svg{
     fill: #CC7D45 !important;
     width: 23px !important;
 }
+
+.scroll-to-top:hover {
+    background-color:#CC7D45 !important;
+}
+
+.scroll-to-top svg {
+    fill: #CC7D45 !important;
+    width: 23px !important;
+}
+
+.scroll-to-top:hover svg {
+    fill: #ffffff!important;
+}

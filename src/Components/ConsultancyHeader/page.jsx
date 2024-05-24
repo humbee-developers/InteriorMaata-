@@ -39,7 +39,7 @@ const Consultancy = () => {
       </div>
       <div className={styles.work_title1}>
         <p className={styles.work_text1}>
-          Ananya said, " Every project is like a baby, you take care of them
+        <span className={styles.ananya_said}>Ananya said,</span> Every project is like a baby, you take care of them
           with lots of love and care, pamper them till it's big enough to move
           into a new family with proper manners and culture ". We stand for
           sustainable design and apply design thinking on it, which means each

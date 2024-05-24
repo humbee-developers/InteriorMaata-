@@ -2,6 +2,23 @@
   padding: 0 4rem;
   padding-top: 2rem;
 }
+
+
+.first{
+  display:block;
+}
+.first_first{
+  display:none;
+}
+
+.second{
+  display:block;
+}
+
+.second_second{
+  display: none;
+}
+
 .teamPage_content1 {
   width: 93%;
   color: #cc7d45;
@@ -60,7 +77,7 @@
 .teamPage_content4 {
   padding: 0 7rem;
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
   display: flex;
   justify-content: center;
 }
@@ -91,9 +108,10 @@
   object-fit: cover;
 }
 
-.teamPage_content3Second {
+/* .teamPage_content3Second {
  visibility: hidden;
-}
+ height: 0%;
+} */
 
 /* .teamPage_content3First {
   visibility: hidden;
@@ -117,7 +135,7 @@
   }
 
   .teamPage_content4_Text {
-    width: 60%;
+    width: 65%;
     color: #000;
     font-family: var(--font-poppins);
     font-size: 28px;
@@ -130,7 +148,7 @@
   .teamPage_content4 {
     padding: 0 1rem;
     margin-bottom: 4rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
     display: flex;
     justify-content: center;
   }
@@ -342,9 +360,37 @@
 }
 /* ---------------------------575------------------------------- */
 @media screen and (max-width: 575px) {
-  .teamPage_content3Second {
+  /* .teamPage_content3Second {
    visibility: visible !important;
+   height:auto;
+  } */
+
+
+  .first{
+    display:none;
   }
+  .first_first{
+    display:block;
+  }
+  
+  .second{
+    display:none;
+  }
+  
+  .second_second{
+    display:block;
+  }
+
+
+
+
+
+
+
+
+
+
+
   .teamPage_content4_Text {
     text-align: left;
   }
@@ -431,7 +477,7 @@
 @media screen and (max-width: 430px) {
   .TeamPage_Section {
     padding: 0;
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 
   .teamPage_content1 {
@@ -439,7 +485,7 @@
     margin: 0 auto 1rem;
   }
   .teamPage_content2 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .marquee_section {
     padding: 0;
@@ -473,7 +519,7 @@
   }
   .teamPage_content4_Text {
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
   }
   .teamPage_content4_Text p {
     padding: 2px 0;
@@ -515,6 +561,6 @@
 
   .teamPage_content4_Text {
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
   }
 }

@@ -84,7 +84,7 @@ const TeamPage = () => {
           </div>
         </div>
         <div className={styles.marquee_section}>
-          <Marquee velocity={20} >
+          <Marquee velocity={20}>
             {photos.map((photo, index) => (
               <div
                 key={`marquee-image-${index}`}
@@ -99,7 +99,11 @@ const TeamPage = () => {
             ))}
           </Marquee>
         </div>
-        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}>
+
+        <div className={styles.first}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+        >
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref1}
@@ -115,10 +119,7 @@ const TeamPage = () => {
                 heading={"EXCELLENCE: GET TO KNOW"}
                 justifyContent={"center"}
               />
-              <HeadingTextAnimation
-                heading={""}
-                justifyContent={"center"}
-              />
+              <HeadingTextAnimation heading={""} justifyContent={"center"} />
               <HeadingTextAnimation
                 heading={"THE FACES BEHIND OUR SUCCESS"}
                 justifyContent={"center"}
@@ -126,7 +127,12 @@ const TeamPage = () => {
             </motion.div>
           </div>
         </div>
-        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}>
+        </div>
+
+        <div className={styles.first_first}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}
+        >
           <div className={styles.teamPage_content3_Text1}>
             <motion.div
               ref={ref2}
@@ -142,41 +148,40 @@ const TeamPage = () => {
                 heading={"DRIVEN BY THE"}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={" EXCELLENCE GET TO"}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={" KNOW HE FACES "}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={"BEHIND OUR SUCCESS"}
                 justifyContent={"center"}
               />
             </motion.div>
           </div>
         </div>
+        </div>
+
         <div className={styles.teamPage_content4}>
           <div className={styles.teamPage_content4_Text}>
-       
-              <p>
-                And When It Stops, It’s Not Over - It’s In You Now, In Your
-                Head, Your Heart, And Spirit.
-              </p>
-              <p>
-                You Have To Tell Someone, Right Now, ‘you Must See This’. You
-                Share It, And They Get It. They’re In It With You, And It’s In
-                Them Too.
-              </p>
-              <p>You Shared The Wonder You Know The Feeling? That’s What We’re After, Every Time We Make A Film.</p>
-              
-             
-       
+            <p>
+              And When It Stops, It’s Not Over - It’s In You Now, In Your Head,
+              Your Heart, And Spirit. You Have To Tell Someone, Right Now, ‘you
+              Must See This’. You Share It, And They Get It. They’re In It With
+              You, And It’s In Them Too. You Shared The Wonder You Know 
+              Feeling? That’s What We’re After, Every Time We Make A Film.{""}The
+            </p>
           </div>
         </div>
         <TeamCards />
-        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}>
+
+        <div className={styles.second}>
+        <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+        >
           <div className={styles.teamPage_content3_Text}>
             <motion.div
               ref={ref2}
@@ -192,16 +197,19 @@ const TeamPage = () => {
                 heading={"WORK COMES FROM "}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={"CREATIVE GENEROSITY"}
                 justifyContent={"center"}
               />
             </motion.div>
           </div>
         </div>
+        </div>
 
-
-        <div className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}>
+       <div className={styles.second_second}>
+       <div
+          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}
+        >
           <div className={styles.teamPage_content3_Text1}>
             <motion.div
               ref={ref2}
@@ -217,31 +225,31 @@ const TeamPage = () => {
                 heading={"EXCEPTIONAL WORK"}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={"IS BORN FROM"}
                 justifyContent={"center"}
               />
-               <HeadingTextAnimation
+              <HeadingTextAnimation
                 heading={"CREATIVE GENEROSITY"}
                 justifyContent={"center"}
               />
             </motion.div>
           </div>
         </div>
-   
+       </div>
+
         <div className={styles.teamPage_content4}>
           <div className={styles.teamPage_content4_Text}>
-           
-              <p>
-                Step into the world of interiormaata, where design meets
-                imagination. Our dedicated team of architects and designers is
-                driven by a shared commitment to elevate your spaces to new
-                heights of sophistication. With a blend of creativity and
-                technical expertise, we turn dreams into reality.{" "}
-              </p>
-      
+            <p>
+              Step into the world of interiormaata, where design meets
+              imagination. Our dedicated team of architects and designers is
+              driven by a shared commitment to elevate your spaces to new
+              heights of sophistication. With a blend of creativity and
+              technical expertise, we turn dreams into reality.{" "}
+            </p>
           </div>
         </div>
+
         <div className={styles.image_content5}>
           <Image src={img7} alt={"img"} />
         </div>
