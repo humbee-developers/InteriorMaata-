@@ -20,6 +20,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`} >
+    {/* <meta http-equiv="refresh" content="3"/>  to refresh the website in every 3 seconds just for learning  */}  
       <body>
         <Headers />
         <Refresh/>
