@@ -12,6 +12,8 @@ export async function POST(request) {
       selectedCategory,
       subSelectedCategory,
       TextName,
+      SqftName,
+      
     } = await request.json();
 
     const transporter = nodemailer.createTransport({
@@ -40,8 +42,9 @@ export async function POST(request) {
           <li><strong>Email:</strong> ${Emaildata}</li> <br /><br />
           <li><strong>Phone:</strong> ${Phonedata}</li> <br /><br />
           <li><strong>Category:</strong> ${selectedCategory ? selectedCategory.name : 'N/A'}</li> <br /><br />
-          <li><strong>Subcategory:</strong> ${subSelectedCategory ? subSelectedCategory.name : 'N/A'}</li> <br /><br />
-          ${selectedCategory && selectedCategory.code === 'Architecture' && TextName ? `<li><strong>Text:</strong> ${TextName}</li><br /><br />` : ''}
+          ${subSelectedCategory ? `<li><strong>Interior Selected Category:</strong> ${subSelectedCategory.name}</li> <br /><br />` : ''}
+          ${selectedCategory && selectedCategory.code === 'Architecture' && TextName ? `<li><strong>Architecture Area:</strong> ${TextName}</li><br /><br />` : ''}
+          ${selectedCategory && selectedCategory.code === 'Commercial' && SqftName ? `<li><strong>Commercial Area Sq.ft:</strong> ${SqftName}</li><br /><br />` : ''}
           <li><strong>Address:</strong> ${Addressdata}</li><br /><br /> 
           <li><strong>Description:</strong> ${Descriptiondata}</li> <br />
         </ul>

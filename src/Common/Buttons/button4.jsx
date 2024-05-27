@@ -6,12 +6,12 @@ const Button = (props) => {
   // const router = useRouter()
   return (
     <div>
-     <button  className="button4" role="button"><span className="text">{props.button_text}</span></button>
+     <button  className="button4" role="button" type="submit"><span className="text">{props.button_text}</span></button>
     </div>
   )
 }
 
-export default Button
+export default Button;
 
 
 
