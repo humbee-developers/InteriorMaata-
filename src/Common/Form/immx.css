@@ -127,11 +127,11 @@ input:-webkit-autofill:active {
   box-sizing: border-box;
   color: white;
   font-family: var(--font-poppins);
-  height: 45px;
+  height: 50px;
   background: transparent;
   /* font-weight: 200; */
   width: 100%;
-  padding: 0rem 0px;
+  padding: 10px 0px;
   font-size: 18px;
   resize: none;
   outline: none;
