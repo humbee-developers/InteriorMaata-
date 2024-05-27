@@ -13,6 +13,7 @@ export default function Body({
   selectedLink,
   setSelectedLink,
   handleNavLink,
+  popupHandler,
 }) {
   const [popup, setPopup] = useState(false);
   console.log("popup", popup);
@@ -63,7 +64,7 @@ export default function Body({
                   setSelectedLink({ isActive: false, index });
                 }}
                 variants={blur}
-                onClick={() => comingSoon && index === 4 && setPopup(true)}
+                onClick={index === 4 && popupHandler}
                 animate={
                   selectedLink.isActive && selectedLink.index !== index
                     ? "open"
@@ -80,7 +81,7 @@ export default function Body({
           );
         })}
       </div>
-      {popup && <Popup />}
+      {/* {popup && <Popup />} */}
     </>
   );
 }
