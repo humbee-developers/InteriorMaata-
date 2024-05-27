@@ -111,4 +111,10 @@
   .Contact_us_person_text {
     display: block;
   }
+  .Contact_us_person_details{
+    font-size: 14px;
+  }
+  .Contact_us_person_details_second{
+    font-size: 14px;
+  }
 }

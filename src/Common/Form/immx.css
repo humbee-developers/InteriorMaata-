@@ -81,8 +81,6 @@ input:-webkit-autofill:active {
   color: white !important;
 } */
 
-
-
 /* @media (max-width: 1199px){
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
   font: inherit;
@@ -105,7 +103,7 @@ input:-webkit-autofill:active {
   padding: 10px 12px !important;
 }
 } */
-.contactFormNotification{
+.contactFormNotification {
   color: white !important;
   padding-left: 2rem;
   font-family: "NeueMontreal-Regular" !important;
@@ -114,14 +112,13 @@ input:-webkit-autofill:active {
   font-weight: 500;
   line-height: normal;
 }
-.p-dropdown-trigger
-{
+.p-dropdown-trigger {
   border-bottom: 1px solid white;
 }
-.p-dropdown{
+.p-dropdown {
   width: 100%;
 }
-.p-dropdown-label{
+.p-dropdown-label {
   color: white !important;
   border-bottom: 1px solid white !important;
   box-sizing: border-box;
@@ -137,24 +134,32 @@ input:-webkit-autofill:active {
   outline: none;
   border: none;
 }
-svg{
+svg {
   color: white;
 }
-.p-dropdown-item{
+.p-dropdown-item {
   /* color: white; */
   padding-left: 8px;
   transition: all 0.2 ease;
   font-family: var(--font-poppins);
   font-size: 18px;
 }
-.p-dropdown-item:hover{
+.p-dropdown-item:hover {
   background-color: #7f7047;
   transition: all 0.2 ease;
   color: white;
 }
-.p-dropdown-items{
+.p-dropdown-items {
   border-radius: 0px;
   padding-top: 10px;
   padding-bottom: 8px;
   background-color: white;
+}
+@media (max-width: 430px) {
+  .p-dropdown-label {
+    font-size: 16px;
+  }
+  .p-dropdown-item{
+    font-size: 16px;
+  }
 }

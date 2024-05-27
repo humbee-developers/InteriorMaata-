@@ -13,18 +13,22 @@ import { Dropdown } from "primereact/dropdown";
 const Page = () => {
   const [fullName, setfullName] = useState("");
   const [TextName, setTextName] = useState("");
+  const [SqftName, setSqftName] = useState("");
   const [Emaildata, setEmaildata] = useState("");
   const [Phonedata, setPhonedata] = useState("");
   const [Addressdata, setAddressdata] = useState("");
   const [Descriptiondata, setDescriptiondata] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [subSelectedCategory, setSubSelectedCategory] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const submitMessage = () => {
     toast.success("Form Submitted Successfully...");
   };
 
   const sendMail = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return; // Prevent multiple submissions
+    setIsSubmitting(true);
 
     try {
       const response = await fetch("/api/sendEmail", {
@@ -41,6 +45,7 @@ const Page = () => {
           selectedCategory,
           subSelectedCategory,
           TextName,
+          SqftName,
         }),
       });
 
@@ -60,6 +65,9 @@ const Page = () => {
       toast.error("Error Submitting Form");
       console.error("Error:", error);
     }
+    finally {
+      setIsSubmitting(false);
+    }
   };
   // const validateEmail = (Emaildata) => {
   //   const re = /\S+@\S+\.\S+/;
@@ -78,21 +86,15 @@ const Page = () => {
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.value);
-    setSubSelectedCategory(null); 
+    setSubSelectedCategory(null);
   };
 
   const subCategories = {
     Residential: [
-      { name: "Living Room", code: "LR" },
-      { name: "Bedroom", code: "BR" },
-    ],
-    Architecture: [
-      { name: "Modern", code: "MOD" },
-      { name: "Classical", code: "CLA" },
-    ],
-    Commercial: [
-      { name: "Retail", code: "RET" },
-      { name: "Office", code: "OFF" },
+      { name: "1BHK", code: "1BHK" },
+      { name: "2BHK", code: "2BHK" },
+      { name: "3BHK", code: "3BHK" },
+      { name: "4BHK", code: "4BHK" },
     ],
   };
   return (
@@ -164,8 +166,8 @@ const Page = () => {
                 </div>
               </div>
 
-              <div>
-                <div>
+              <div className={styles.form_flex}>
+                <div className={styles.form_groupp}>
                   <Dropdown
                     value={selectedCategory}
                     onChange={handleCategoryChange}
@@ -179,46 +181,59 @@ const Page = () => {
                 </div>
                 {selectedCategory &&
                   selectedCategory.code === "Residential" && (
-                    <div>
+                    <div className={styles.form_groupp}>
                       <Dropdown
                         value={subSelectedCategory}
                         onChange={(e) => setSubSelectedCategory(e.value)}
                         options={subCategories[selectedCategory.code]}
                         optionLabel="name"
-                        placeholder="Select subcategory"
+                        placeholder="Select BHK"
                         className="dropdown_city half-width"
                       />
                     </div>
                   )}
                 {selectedCategory &&
                   selectedCategory.code === "Architecture" && (
-                    <div className={styles.form_group}>
+                    <div className={styles.form_group111}>
                       <input
                         type="text"
                         className={styles.form_field}
-                        placeholder="Enter text"
+                        placeholder="Enter Area"
                         name="Text"
                         id="Text"
                         value={TextName}
                         onChange={(e) => {
-                             setTextName(e.target.value);
-                           }}
+                          setTextName(e.target.value);
+                        }}
                         required
                       />
+                      <label htmlFor="Name" className={styles.form_label}>
+                        Enter Area
+                      </label>
                     </div>
                   )}
-                {selectedCategory && selectedCategory.code === "Commercial" && (
-                  <div>
-                    <Dropdown
-                      value={subSelectedCategory}
-                      onChange={(e) => setSubSelectedCategory(e.value)}
-                      options={subCategories[selectedCategory.code]}
-                      optionLabel="name"
-                      placeholder="Select subcategory"
-                      className="dropdown_city half-width"
-                    />
-                  </div>
-                )}
+
+                    {selectedCategory &&
+                  selectedCategory.code === "Commercial" && (
+                    <div className={styles.form_group111}>
+                      <input
+                        type="text"
+                        className={styles.form_field}
+                        placeholder="Enter Sq.ft"
+                        name="Text"
+                        id="Text"
+                        value={SqftName}
+                        onChange={(e) => {
+                          setSqftName(e.target.value);
+                        }}
+                        required
+                      />
+                      <label htmlFor="Name" className={styles.form_label}>
+                        Enter Sq.ft
+                      </label>
+                    </div>
+                  )}
+                
               </div>
 
               <div className={styles.form_group1}>
@@ -259,7 +274,7 @@ const Page = () => {
 
               <div className={styles.field}>
                 <div className={styles.Submit_button_outer}>
-                  <Button type="button" button_text="Submit" />
+                  <Button type="button" button_text="Submit" disabled={isSubmitting}  />
                   <ToastContainer
                     position="top-right"
                     autoClose={3000}
