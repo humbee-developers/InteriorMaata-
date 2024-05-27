@@ -64,8 +64,7 @@ const Page = () => {
     } catch (error) {
       toast.error("Error Submitting Form");
       console.error("Error:", error);
-    }
-    finally {
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -213,27 +212,25 @@ const Page = () => {
                     </div>
                   )}
 
-                    {selectedCategory &&
-                  selectedCategory.code === "Commercial" && (
-                    <div className={styles.form_group111}>
-                      <input
-                        type="text"
-                        className={styles.form_field}
-                        placeholder="Enter Sq.ft"
-                        name="Text"
-                        id="Text"
-                        value={SqftName}
-                        onChange={(e) => {
-                          setSqftName(e.target.value);
-                        }}
-                        required
-                      />
-                      <label htmlFor="Name" className={styles.form_label}>
-                        Enter Sq.ft
-                      </label>
-                    </div>
-                  )}
-                
+                {selectedCategory && selectedCategory.code === "Commercial" && (
+                  <div className={styles.form_group111}>
+                    <input
+                      type="text"
+                      className={styles.form_field}
+                      placeholder="Enter Sq.ft"
+                      name="Text"
+                      id="Text"
+                      value={SqftName}
+                      onChange={(e) => {
+                        setSqftName(e.target.value);
+                      }}
+                      required
+                    />
+                    <label htmlFor="Name" className={styles.form_label}>
+                      Enter Sq.ft
+                    </label>
+                  </div>
+                )}
               </div>
 
               <div className={styles.form_group1}>
@@ -274,7 +271,20 @@ const Page = () => {
 
               <div className={styles.field}>
                 <div className={styles.Submit_button_outer}>
-                  <Button type="button" button_text="Submit" disabled={isSubmitting}  />
+                  {isSubmitting ? (
+                    <Button
+                      type="button"
+                      button_text="Submitting..."
+                      disabled={true}
+                    />
+                  ) : (
+                    <Button
+                      type="button"
+                      button_text="Submit"
+                      disabled={isSubmitting}
+                      onClick={sendMail}
+                    />
+                  )}{" "}
                   <ToastContainer
                     position="top-right"
                     autoClose={3000}
