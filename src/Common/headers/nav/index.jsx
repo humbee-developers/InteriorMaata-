@@ -32,7 +32,7 @@ const links = [
   {
     title: "SHOP",
     href: "",
-    comingSoon: true, // this indicates the coming soon text
+    // comingSoon: true, // this indicates the coming soon text
   },
   {
     title: "CONNECT",
