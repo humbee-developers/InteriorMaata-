@@ -1,10 +1,10 @@
 .headerMain {
   display: flex;
-  position:absolute;
+  position: absolute;
   z-index: 10;
   top: 0;
   align-items: center;
-  padding: 40px 0 0 24px;
+  /* padding: 40px 0 0 24px; */
 }
 .header_sec {
   position: fixed;
@@ -12,7 +12,7 @@
   box-sizing: border-box;
   padding: 15px;
   right: 0;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   z-index: 999999;
 }
 .background {
@@ -24,7 +24,7 @@
   top: 100%;
 }
 .menuOpenName {
-  color: #CC7D45 !important;
+  color: #cc7d45 !important;
 }
 .menuCloseName {
   color: #fff !important;
@@ -32,15 +32,18 @@
 .nav_logo_outer {
   display: flex;
   align-items: center;
-  color: #7F7047;
+  color: #7f7047;
   cursor: pointer;
   text-transform: uppercase;
   gap: 1rem;
+  position: absolute;
+  top: 40px;
+  left: 48px;
 }
 .interiormaata {
   font-size: 20px;
- color: #7F7047;
-   font-family: var(--font-poppins);
+  color: #7f7047;
+  font-family: var(--font-poppins);
   transition: all 0.5s;
 }
 .logoWhite .interiormaata {
@@ -54,17 +57,17 @@
   font-weight: 400;
   position: relative;
   align-items: center;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 .label p {
   margin: 0px;
   color: white;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 .bar a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 .shopContainer {
   display: flex;
@@ -85,12 +88,13 @@
   position: fixed;
   right: 25px;
   z-index: 99999999;
+  top: 35px;
 }
 .label {
   position: relative;
   display: flex;
   align-items: center;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 .label p:nth-of-type(2) {
   position: absolute;
@@ -143,7 +147,7 @@
 @media (min-width: 1600px) and (max-width: 1920px) {
   .interiormaata {
     font-size: 30px;
-     font-family: var(--font-poppins);
+    font-family: var(--font-poppins);
   }
 }
 @media only screen and (min-width: 600px) {
@@ -167,16 +171,15 @@
   }
 }
 
-@media(max-width:500px){
+@media (max-width: 500px) {
   .headerMain {
     display: flex;
-    position:absolute;
+    position: absolute;
     z-index: 99999;
     align-items: center;
-    padding: 25px 0px 0px 25px;
+    /* padding: 25px 0px 0px 25px; */
   }
-  .interiormaata
-  {
-display: none;
+  .interiormaata {
+    display: none;
   }
 }

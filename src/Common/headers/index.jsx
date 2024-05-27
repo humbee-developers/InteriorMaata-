@@ -5,10 +5,12 @@ import { AnimatePresence } from "framer-motion";
 import NavSection from "./nav/index";
 import nav_logo from "@/svgs/logo.svg";
 import "./style1.css";
+import Popup from "@/Components/Popup/page";
 
 export default function NewNav() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
+  const [popup, setPopup] = useState(false);
   const navRef = useRef();
 
   useEffect(() => {
@@ -30,25 +32,34 @@ export default function NewNav() {
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
+  const handlePopup = () => {
+    setPopup(true);
+  };
+  const closePopup = () => {
+    setPopup(false);
+  };
+  console.log("child", popup);
+
   return (
     <div className="headerMain">
-      <div
-        className={`nav_logo_outer`}
-        onClick={() => router.push("/")}
-      >
+      {popup && <Popup close={closePopup} />}
+      <div className={`nav_logo_outer`} onClick={() => router.push("/")}>
         <Image
           src={nav_logo}
           alt="Description of the image"
           className="nav_logo"
         />
       </div>
-      <div ref={navRef} className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}>
+      <div
+        ref={navRef}
+        className={`header_sec ${isActive ? "menuOpen" : "menuClosed"}`}
+      >
         <div className="bar">
           <div
             onClick={() => {
@@ -62,7 +73,12 @@ export default function NewNav() {
           </div>
         </div>
         <AnimatePresence mode="wait">
-          {isActive && <NavSection navLinkHandler={handleNavLink} />}
+          {isActive && (
+            <NavSection
+              navLinkHandler={handleNavLink}
+              popupHandler={handlePopup}
+            />
+          )}
         </AnimatePresence>
       </div>
     </div>
