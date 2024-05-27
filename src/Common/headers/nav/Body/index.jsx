@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -6,18 +6,24 @@ import "./style4.css";
 import { blur, translate } from "../../anim";
 import nav_logo from "@/svgs/logo.svg";
 import Image from "next/image";
-import Popup from "@/Components/Popup/page";
+import AboutUsPopup from "@/Components/Aboutus_Popup/page";
+import ProjectsPopup from "@/Components/Projects_Popup/page";
 
 export default function Body({
   links,
   selectedLink,
   setSelectedLink,
   handleNavLink,
-  popupHandler,
+  hoverPopupHandler,
+  setHoverPopup,
+  hoverPopupContent,
+  hoverPopup,
+  hoverPopupIndex,
 }) {
-  const [popup, setPopup] = useState(false);
-  console.log("popup", popup);
   const router = useRouter();
+  const [isPopupHovered, setIsPopupHovered] = useState(false);
+  const popupHideTimeout = useRef(null); // Ref to store the timeout ID
+
   const getChars = (word) => {
     let chars = [];
     word.split("").forEach((char, i) => {
@@ -37,6 +43,29 @@ export default function Body({
     return chars;
   };
 
+  const handleMouseLeave = () => {
+    if (!isPopupHovered) {
+      // Set a timeout to hide the popup after a delay (e.g., 300ms)
+      popupHideTimeout.current = setTimeout(() => {
+        setSelectedLink({ isActive: false, index: null });
+        setHoverPopup(false);
+      }, 300);
+    }
+  };
+
+  const handleMouseEnterPopup = () => {
+    // If the mouse enters the popup during the delay, cancel the timeout
+    if (popupHideTimeout.current) {
+      clearTimeout(popupHideTimeout.current);
+    }
+    setIsPopupHovered(true);
+  };
+
+  const handleMouseLeavePopup = () => {
+    setIsPopupHovered(false);
+    handleMouseLeave();
+  };
+
   return (
     <>
       <div className="nav_body">
@@ -48,40 +77,56 @@ export default function Body({
           />
         </div>
         {links.map((link, index) => {
-          const { title, href, comingSoon } = link;
-          console.log("index: " + index);
+          const { title, href } = link;
+
           return (
             <Link
               key={`l_${index}`}
               href={href}
-              onClick={() => handleNavLink(handleNavLink)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavLink();
+                router.push(href);
+              }}
             >
               <motion.p
                 onMouseOver={() => {
                   setSelectedLink({ isActive: true, index });
+                  if (title === "About us" || title === "PROJECTS") {
+                    setHoverPopup(true);
+                    hoverPopupHandler(title);
+                  }
                 }}
-                onMouseLeave={() => {
-                  setSelectedLink({ isActive: false, index });
-                }}
+                onMouseLeave={handleMouseLeave}
                 variants={blur}
-                onClick={index === 4 && popupHandler}
                 animate={
                   selectedLink.isActive && selectedLink.index !== index
                     ? "open"
                     : "closed"
                 }
+                className={
+                  hoverPopup && hoverPopupIndex === index ? "blurred" : ""
+                }
               >
                 {getChars(title)}
-                {/* {index === 4 ? <p onClick={setPopup(true)}></p> : null} */}
-                {/* {comingSoon && (
-                  <span className="coming-soon">(Coming Soon)</span>
-                )} */}
               </motion.p>
             </Link>
           );
         })}
       </div>
-      {/* {popup && <Popup />} */}
+      {hoverPopup && (
+        <div
+          onMouseEnter={handleMouseEnterPopup}
+          onMouseLeave={handleMouseLeavePopup}
+        >
+          {selectedLink.index === links.findIndex(link => link.title === "About us") && (
+            <AboutUsPopup content={hoverPopupContent} />
+          )}
+          {selectedLink.index === links.findIndex(link => link.title === "PROJECTS") && (
+            <ProjectsPopup content={hoverPopupContent} />
+          )}
+        </div>
+      )}
     </>
   );
 }

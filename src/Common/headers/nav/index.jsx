@@ -1,17 +1,11 @@
-"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { height } from "../anim";
 import Body from "./Body";
 import Footer from "./Footer";
 import "./style.css";
-import Popup from "@/Components/Popup/page";
 
 const links = [
-  // {
-  //   title: "HOME",
-  //   href: "/",
-  // },
   {
     title: "About us",
     href: "/KnowAboutUs",
@@ -20,20 +14,17 @@ const links = [
     title: "Services",
     href: "/Services",
   },
-
   {
     title: "PROJECTS",
     href: "/Projects",
   },
-
   {
     title: "HOW WE WORK",
     href: "/HowWeWork",
   },
   {
     title: "SHOP",
-    href: "",
-    // comingSoon: true, // this indicates the coming soon text
+    href: "", // Updated with actual link
   },
   {
     title: "CONNECT",
@@ -46,6 +37,29 @@ export default function Index({ navLinkHandler, popupHandler }) {
     isActive: false,
     index: 0,
   });
+  const [hoverPopup, setHoverPopup] = useState(false);
+  const [hoverPopupContent, setHoverPopupContent] = useState(null);
+  const [hoverPopupIndex, setHoverPopupIndex] = useState(null);
+
+  const hoverPopupHandler = (title) => {
+    if (title === "About us") {
+      setHoverPopupContent([
+        { text: "How We Work", href: "/HowWeWork" },
+        { text: "About Ananya", href: "/KnowAboutUs" },
+        { text: "About Team", href: "/KnowAboutUs" },
+        { text: "Social Media", href: "/" },
+        { text: "Brands We Work", href: "/" },
+
+      ]);
+    } else if (title === "PROJECTS") {
+      setHoverPopupContent([
+        { text: "Interior", href: "/OngoingProjects" },
+        { text: "Architecture", href: "/CompletedProjects" },
+        { text: "Commercials", href: "/CompletedProjects" },
+      ]);
+    }
+    setHoverPopupIndex(links.findIndex((link) => link.title === title));
+  };
 
   return (
     <>
@@ -63,7 +77,12 @@ export default function Index({ navLinkHandler, popupHandler }) {
               selectedLink={selectedLink}
               setSelectedLink={setSelectedLink}
               handleNavLink={navLinkHandler}
+              hoverPopupHandler={hoverPopupHandler}
+              setHoverPopup={setHoverPopup}
               popupHandler={popupHandler}
+              hoverPopupContent={hoverPopupContent}
+              hoverPopup={hoverPopup}
+              hoverPopupIndex={hoverPopupIndex}
             />
             <Footer />
           </div>

@@ -13,13 +13,13 @@ export default function NewNav() {
   const [popup, setPopup] = useState(false);
   const navRef = useRef();
 
-  useEffect(() => {
-    if (isActive) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [isActive]);
+  // useEffect(() => {
+  //   if (isActive) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "unset";
+  //   }
+  // }, [isActive]);
 
   const handleNavLink = () => {
     setIsActive(!isActive);
