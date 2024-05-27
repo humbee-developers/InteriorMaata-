@@ -1,9 +1,18 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-import path from 'path'; 
+import path from "path";
 export async function POST(request) {
   try {
-    const { fullName, Emaildata, Phonedata, Addressdata, Descriptiondata } = await request.json();
+    const {
+      fullName,
+      Emaildata,
+      Phonedata,
+      Addressdata,
+      Descriptiondata,
+      selectedCategory,
+      subSelectedCategory,
+      TextName,
+    } = await request.json();
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -14,7 +23,7 @@ export async function POST(request) {
         pass: "wecdoqzwxfcifkss",
       },
     });
-    const logoPath = path.resolve('public', 'interiormaata_logo.png');
+    const logoPath = path.resolve("public", "interiormaata_logo.png");
     console.log("Logo Path:", logoPath);
 
     const mailOption = {
@@ -30,17 +39,22 @@ export async function POST(request) {
           <li><strong>Name:</strong> ${fullName}</li><br /><br />
           <li><strong>Email:</strong> ${Emaildata}</li> <br /><br />
           <li><strong>Phone:</strong> ${Phonedata}</li> <br /><br />
+          <li><strong>Category:</strong> ${selectedCategory ? selectedCategory.name : 'N/A'}</li> <br /><br />
+          <li><strong>Subcategory:</strong> ${subSelectedCategory ? subSelectedCategory.name : 'N/A'}</li> <br /><br />
+          ${selectedCategory && selectedCategory.code === 'Architecture' && TextName ? `<li><strong>Text:</strong> ${TextName}</li><br /><br />` : ''}
           <li><strong>Address:</strong> ${Addressdata}</li><br /><br /> 
           <li><strong>Description:</strong> ${Descriptiondata}</li> <br />
         </ul>
         </div>
       </div>
         `,
-        attachments: [{
-            filename: 'interiormaata_logo.png',
-            path: logoPath,
-            cid: 'logo'
-          }]
+      attachments: [
+        {
+          filename: "interiormaata_logo.png",
+          path: logoPath,
+          cid: "logo",
+        },
+      ],
     };
 
     await transporter.sendMail(mailOption);

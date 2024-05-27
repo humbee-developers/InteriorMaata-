@@ -12,11 +12,13 @@ import { Dropdown } from "primereact/dropdown";
 
 const Page = () => {
   const [fullName, setfullName] = useState("");
+  const [TextName, setTextName] = useState("");
   const [Emaildata, setEmaildata] = useState("");
   const [Phonedata, setPhonedata] = useState("");
   const [Addressdata, setAddressdata] = useState("");
   const [Descriptiondata, setDescriptiondata] = useState("");
-
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [subSelectedCategory, setSubSelectedCategory] = useState(null);
   const submitMessage = () => {
     toast.success("Form Submitted Successfully...");
   };
@@ -36,6 +38,9 @@ const Page = () => {
           Phonedata,
           Addressdata,
           Descriptiondata,
+          selectedCategory,
+          subSelectedCategory,
+          TextName,
         }),
       });
 
@@ -47,6 +52,8 @@ const Page = () => {
       setPhonedata("");
       setAddressdata("");
       setDescriptiondata("");
+      setSelectedCategory(null);
+      setSubSelectedCategory(null);
       submitMessage();
       console.log(await response.json());
     } catch (error) {
@@ -62,8 +69,6 @@ const Page = () => {
   const validatePhone = (Phonedata) => {
     return /^\d{10}$/.test(Phonedata);
   };
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [subSelectedCategory, setSubSelectedCategory] = useState(null);
 
   const categories = [
     { name: "Interior", code: "Residential" },
@@ -73,7 +78,7 @@ const Page = () => {
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.value);
-    setSubSelectedCategory(null); // Reset subcategory when main category changes
+    setSubSelectedCategory(null); 
   };
 
   const subCategories = {
@@ -89,7 +94,7 @@ const Page = () => {
       { name: "Retail", code: "RET" },
       { name: "Office", code: "OFF" },
     ],
-  }
+  };
   return (
     <>
       <div className={styles.Contact_form_section}>
@@ -160,67 +165,61 @@ const Page = () => {
               </div>
 
               <div>
-      <div>
-        <Dropdown
-          value={selectedCategory}
-          onChange={handleCategoryChange}
-          options={categories}
-          optionLabel="name"
-          placeholder="Select category"
-          className={`dropdown_city ${selectedCategory ? 'half-width' : ''}`}
-        />
-      </div>
-      {selectedCategory && selectedCategory.code === 'Residential' && (
-        <div>
-          <Dropdown
-            value={subSelectedCategory}
-            onChange={(e) => setSubSelectedCategory(e.value)}
-            options={subCategories[selectedCategory.code]}
-            optionLabel="name"
-            placeholder="Select subcategory"
-            className="dropdown_city half-width"
-          />
-        </div>
-      )}
-      {selectedCategory && selectedCategory.code === 'Architecture' && (
-           <div className={styles.form_group}>
-           <input
-             type="text"
-             className={styles.form_field}
-            //  className="" 
-             placeholder="Enter text"
-             name="Text"
-             id="Text"
-            //  value={fullName}
-            //  onChange={(e) => {
-            //    setfullName(e.target.value);
-            //  }}
-             required
-           />
-         </div>
-        // <div>
-        //   <input
-        //   type="text"
-        //     value={subSelectedCategory}
-        //     onChange={(e) => setSubSelectedCategory(e.target.value)}
-        //     placeholder="Enter text"
-        //     className="input_field half-width"
-        //   />
-        // </div>
-      )}
-      {selectedCategory && selectedCategory.code === 'Commercial' && (
-        <div>
-          <Dropdown
-            value={subSelectedCategory}
-            onChange={(e) => setSubSelectedCategory(e.value)}
-            options={subCategories[selectedCategory.code]}
-            optionLabel="name"
-            placeholder="Select subcategory"
-            className="dropdown_city half-width"
-          />
-        </div>
-      )}
-    </div>
+                <div>
+                  <Dropdown
+                    value={selectedCategory}
+                    onChange={handleCategoryChange}
+                    options={categories}
+                    optionLabel="name"
+                    placeholder="Select category"
+                    className={`dropdown_city ${
+                      selectedCategory ? "half-width" : ""
+                    }`}
+                  />
+                </div>
+                {selectedCategory &&
+                  selectedCategory.code === "Residential" && (
+                    <div>
+                      <Dropdown
+                        value={subSelectedCategory}
+                        onChange={(e) => setSubSelectedCategory(e.value)}
+                        options={subCategories[selectedCategory.code]}
+                        optionLabel="name"
+                        placeholder="Select subcategory"
+                        className="dropdown_city half-width"
+                      />
+                    </div>
+                  )}
+                {selectedCategory &&
+                  selectedCategory.code === "Architecture" && (
+                    <div className={styles.form_group}>
+                      <input
+                        type="text"
+                        className={styles.form_field}
+                        placeholder="Enter text"
+                        name="Text"
+                        id="Text"
+                        value={TextName}
+                        onChange={(e) => {
+                             setTextName(e.target.value);
+                           }}
+                        required
+                      />
+                    </div>
+                  )}
+                {selectedCategory && selectedCategory.code === "Commercial" && (
+                  <div>
+                    <Dropdown
+                      value={subSelectedCategory}
+                      onChange={(e) => setSubSelectedCategory(e.value)}
+                      options={subCategories[selectedCategory.code]}
+                      optionLabel="name"
+                      placeholder="Select subcategory"
+                      className="dropdown_city half-width"
+                    />
+                  </div>
+                )}
+              </div>
 
               <div className={styles.form_group1}>
                 <textarea
@@ -239,8 +238,6 @@ const Page = () => {
                   Address
                 </label>
               </div>
-
-             
 
               <div className={styles.form_group1}>
                 <textarea
