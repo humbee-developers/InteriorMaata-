@@ -15,10 +15,9 @@ const Popup = ({ close }) => {
             <Image src={popupImage} alt="PopuImage" />
           </div>
           <div className={styles.content}>
-            <h2>Thank you</h2>
+            <h2>Thank you for your interest!</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              voluptatibus.
+            We are creating something cool for you. Get ready to know about what's in store for you 😊
             </p>
             <Button button_text={"Connect"} onClick={close} />
           </div>
