@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect , useRef } from "react";
+import React, { useEffect , useRef ,useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
@@ -15,10 +15,34 @@ import interior_material_img3 from "@/images/interior_material_img3.png";
 import interior_material_img4 from "@/images/interior_material_img4.png";
 import interior_material_img5 from "@/images/interior_material_img5.png";
 import Interior_last_room from "@/images/Interior_last_room.png";
+import wrong_logo from "@/images/wrong_logo.png"
 import Interior_last_room_Svg from "@/svgs/Interior_Lastroom.svg";
-import Lenis from "@studio-freight/lenis";
 import styles from "@/app/Single_Project_Layout/Single_project.module.css";
 const Project_Header = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+
+  const handleImageClick = (imageSrc) => {
+    setCurrentImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setCurrentImage(null);
+  };
+  const handleModalClick = (e) => {
+    if (e.target === e.currentTarget) {
+      handleCloseModal();
+    }
+  };
+
+
+
+
+
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -76,39 +100,6 @@ const Project_Header = () => {
     },
   };
 
-
-
-
-  // const lenisRef = useRef(null);
-
-  // useEffect(() => {
-  //   // Initialize Lenis with options similar to Locomotive Scroll
-  //   const lenis = new Lenis({
-  //     duration: 1.2, // Duration of the scroll animation
-  //     easing: (t) => 1 - Math.pow(1 - t, 3), 
-  //     // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
-  //     smooth: true,
-  //     direction: "vertical",
-  //     gestureDirection: "vertical",
-  //     smoothTouch: true,
-  //     touchMultiplier: 2, // Adjust the touch sensitivity
-  //   });
-
-  //   // Function to continuously update Lenis
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   requestAnimationFrame(raf);
-
-  //   lenisRef.current = lenis;
-
-  //   return () => {
-  //     lenis.destroy();
-  //   };
-  // }, []);
-
   return (
     <Stairs>
       <div className={styles.First_project_layout_header}>
@@ -132,15 +123,8 @@ const Project_Header = () => {
               </motion.div>
             </div>
           </div>
-          {/* <div className={styles.interior_material_specs_content}>
-            <p className={styles.interior_material_specs_text}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div> */}
         </div>
+
         <div className={styles.First_project_layout_image}>
           <div className={styles.First_project_layout_image2_innerX}>
           <Image
@@ -173,71 +157,37 @@ const Project_Header = () => {
           />
           </div>
         </div>
+
         {/* 5 images */}
-        <div className={styles.interior_material_outer}>
-          <div className={styles.interior_material_content}>
-            <div className={styles.interior_material_text}>
-              <Image
-                src={interior_material_img1}
-                alt="none"
-                className={styles.interior_material_img}
-              />
-              <div className={styles.interior_material_overlay}>
-                <p className={styles.interior_material_overlay_text}>
-                  Interior Material
-                </p>
-              </div>
-            </div>
-            <div className={styles.interior_material_text}>
-              <Image
-                src={interior_material_img2}
-                alt="none"
-                className={styles.interior_material_img}
-              />
-              <div className={styles.interior_material_overlay}>
-                <p className={styles.interior_material_overlay_text}>
-                  Interior Material
-                </p>
-              </div>
-            </div>
-            <div className={styles.interior_material_text}>
-              <Image
-                src={interior_material_img3}
-                alt="none"
-                className={styles.interior_material_img}
-              />
-              <div className={styles.interior_material_overlay}>
-                <p className={styles.interior_material_overlay_text}>
-                  Interior Material
-                </p>
-              </div>
-            </div>
-            <div className={styles.interior_material_text}>
-              <Image
-                src={interior_material_img4}
-                alt="none"
-                className={styles.interior_material_img}
-              />
-              <div className={styles.interior_material_overlay}>
-                <p className={styles.interior_material_overlay_text}>
-                  Interior Material
-                </p>
-              </div>
-            </div>
-            <div className={styles.interior_material_text}>
-              <Image
-                src={interior_material_img5}
-                alt="none"
-                className={styles.interior_material_img}
-              />
-              <div className={styles.interior_material_overlay}>
-                <p className={styles.interior_material_overlay_text}>
-                  Interior Material
-                </p>
-              </div>
+
+    <div className={styles.interior_material_outer}>
+      <div className={styles.interior_material_content}>
+        {[interior_material_img1, interior_material_img2, interior_material_img3, interior_material_img4, interior_material_img5].map((imgSrc, index) => (
+          <div key={index} className={styles.interior_material_text} onClick={() => handleImageClick(imgSrc)}>
+            <Image
+              src={imgSrc}
+              alt="Interior Material"
+              className={styles.interior_material_img}
+            />
+            <div className={styles.interior_material_overlay}>
+              <p className={styles.interior_material_overlay_text}>Interior Material</p>
             </div>
           </div>
+        ))}
+      </div>
+
+      {isModalOpen && (
+        <div className={styles.modal} onClick={handleModalClick}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <span className={styles.close} onClick={handleCloseModal}>
+            <Image src={wrong_logo} alt="Interior Material" />
+            </span>
+            <Image src={currentImage} alt="Interior Material" className={styles.modalImage} />
+          </div>
         </div>
+      )}
+    </div>
+
         {/* end */}
         <div className={styles.interior_material_specs_content} ref={refX}>
         <motion.div

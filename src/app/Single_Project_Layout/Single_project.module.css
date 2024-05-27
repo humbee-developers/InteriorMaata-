@@ -1,7 +1,7 @@
 .first_project_text_header {
   color: #7f7047;
   text-align: center;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   /* font-size: 120.669px; */
   font-size: 8vw;
   font-style: normal;
@@ -36,7 +36,7 @@
 .First_project_layout_image {
   text-align: center;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   padding-left: 4rem;
   padding-right: 4rem;
 }
@@ -48,13 +48,13 @@
   cursor: pointer;
   /* padding-bottom: 2rem; */
 }
-.Single_project_image1:hover{
+.Single_project_image1:hover {
   transform: scale(1.05);
 }
 .First_project_layout_image2 {
   display: flex;
   margin-bottom: 2rem;
- cursor:pointer;
+  cursor: pointer;
   gap: 2rem;
 }
 
@@ -70,7 +70,7 @@
 }
 .interior_material_img {
   max-width: 100%;
-  cursor:pointer;
+  cursor: pointer;
   height: auto;
   transition: 0.4s;
 }
@@ -82,7 +82,7 @@
   transition: 0.4s;
   overflow: hidden;
 }
-.interior_material_img:hover{
+.interior_material_img:hover {
   transform: scale(1.05);
 }
 .interior_material_overlay {
@@ -127,7 +127,7 @@
 .Interior_second_text_content_first {
   width: 66%;
   color: #7f7047;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   /* font-size: 58px; */
   font-size: 3.2vw;
   font-style: normal;
@@ -144,7 +144,7 @@
 .interior_last_room_img {
   width: 100%;
   cursor: pointer;
-    height: revert-layer;
+  height: revert-layer;
 }
 .interior_last_room_overlay {
   position: absolute;
@@ -160,18 +160,65 @@
   height: auto;
 }
 
-.First_project_layout_image2_innerX{
-  overflow:hidden;
-  margin-bottom:1rem;
+.First_project_layout_image2_innerX {
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
-
-
 
 .First_project_layout_image2_inner {
   width: 50%;
   cursor: pointer;
   overflow: hidden;
 }
+
+/*  */
+
+.interior_material_text {
+  cursor: pointer;
+  position: relative;
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  position: relative;
+  width: 80%;
+  max-width: 350px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1500px) {
   .interior_material_img {
     width: 100%;
@@ -182,6 +229,11 @@
   }
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
+  .modalContent {
+    width: 80%;
+    max-width: 500px;
+  }
+
   .first_project_text_header {
     font-size: 8vw;
   }
@@ -202,7 +254,7 @@
   .Interior_second_text_content_first {
     width: 66%;
     color: #7f7047;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     font-size: 3vw;
     font-style: normal;
     font-weight: 400;
@@ -216,11 +268,11 @@
     font-size: 3.6vw;
   }
   .Single_project_image1 {
-    height:100%;
+    height: 100%;
   }
 
   .interior_last_room_img {
-      height: auto;
+    height: auto;
   }
 }
 
@@ -229,7 +281,7 @@
     font-size: 3.6vw;
   }
   .interior_last_room_img {
-      height: auto;
+    height: auto;
   }
 }
 
@@ -240,10 +292,9 @@
   .Interior_second_text_content_first {
     font-size: 4.5vw;
   }
-  .interior_last_room_img{
-    height:auto;
+  .interior_last_room_img {
+    height: auto;
   }
-  
 }
 
 @media (max-width: 1440px) {
@@ -260,7 +311,7 @@
   .Interior_second_text_content_first {
     width: 80%;
     color: #7f7047;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     /* font-size: 46px; */
     font-style: normal;
     font-weight: 400;
@@ -273,7 +324,7 @@
   .Interior_second_text_content_first {
     width: 80%;
     color: #7f7047;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -369,7 +420,7 @@
   .Interior_second_text_content_first {
     width: 85%;
     color: #7f7047;
-    font-family:"Dream Avenue";
+    font-family: "Dream Avenue";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -378,8 +429,6 @@
 }
 
 @media (max-width: 575px) {
-
-
   .First_project_layout_image {
     padding-left: 2.5rem;
     padding-right: 2.5rem;

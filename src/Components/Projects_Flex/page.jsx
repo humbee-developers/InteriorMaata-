@@ -30,8 +30,8 @@ const Page = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.3,
-        staggerChildren: 0.008,
+        delay: 0.2,
+        staggerChildren: 0.009,
       },
     },
   };
