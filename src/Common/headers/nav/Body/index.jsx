@@ -19,6 +19,7 @@ export default function Body({
   hoverPopupContent,
   hoverPopup,
   hoverPopupIndex,
+  popupHandler
 }) {
   const router = useRouter();
   const [isPopupHovered, setIsPopupHovered] = useState(false);
@@ -99,6 +100,7 @@ export default function Body({
                 }}
                 onMouseLeave={handleMouseLeave}
                 variants={blur}
+                // onClick={popupHandler}
                 animate={
                   selectedLink.isActive && selectedLink.index !== index
                     ? "open"
