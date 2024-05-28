@@ -6,9 +6,9 @@
 .nav_body a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  display: flex;
-  margin-right: 2rem;
-  width:36%;
+  /* display: flex; */
+  /* margin-right: 2rem; */
+  width:30%;
   /* width: fit-content; */
   text-transform: uppercase;
 }
@@ -64,9 +64,9 @@
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .nav_body a {
+  /* .nav_body a {
     width:44%;
-  }
+  } */
 }
 
 
@@ -134,7 +134,7 @@
     margin: 0px;
     display: block;
     overflow: hidden;
-    font-size: 37px;
+    font-size: 40px;
     font-weight: 300;
   }
 
@@ -167,7 +167,7 @@
     margin: 0px;
     display: block;
     overflow: hidden;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 300;
   }
 

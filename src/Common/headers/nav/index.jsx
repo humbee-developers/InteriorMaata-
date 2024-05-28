@@ -18,10 +18,10 @@ const links = [
     title: "PROJECTS",
     href: "/Projects",
   },
-  {
-    title: "HOW WE WORK",
-    href: "/HowWeWork",
-  },
+  // {
+  //   title: "HOW WE WORK",
+  //   href: "/HowWeWork",
+  // },
   {
     title: "SHOP",
     href: "", // Updated with actual link
@@ -84,9 +84,9 @@ export default function Index({ navLinkHandler, popupHandler }) {
               hoverPopup={hoverPopup}
               hoverPopupIndex={hoverPopupIndex}
             />
-            <Footer />
           </div>
         </div>
+            <Footer />
       </motion.div>
     </>
   );
