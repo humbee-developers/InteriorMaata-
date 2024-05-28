@@ -47,7 +47,7 @@ export default function Index({ navLinkHandler, popupHandler }) {
         { text: "How We Work", href: "/HowWeWork" },
         { text: "About Ananya", href: "/KnowAboutUs" },
         { text: "About Team", href: "/KnowAboutUs" },
-        { text: "Social Media", href: "/" },
+        { text: "Social Media", href: "/SocialMedia" },
         { text: "Brands We Work", href: "/" },
 
       ]);
