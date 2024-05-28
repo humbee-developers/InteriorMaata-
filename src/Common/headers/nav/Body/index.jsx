@@ -100,7 +100,7 @@ export default function Body({
                 }}
                 onMouseLeave={handleMouseLeave}
                 variants={blur}
-                // onClick={popupHandler}
+                onClick={index === 3 && popupHandler}
                 animate={
                   selectedLink.isActive && selectedLink.index !== index
                     ? "open"
