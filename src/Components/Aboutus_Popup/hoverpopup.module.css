@@ -8,7 +8,7 @@
   position: absolute;
   background: #86868645;
   left: 29%;
-  top: 44%;
+  top: 36%;
   padding: 10px;
   box-shadow: 0 0 10px rgb(86 86 86 / 43%);
   z-index: 1000;
@@ -32,7 +32,7 @@
     position: absolute;
     background: #86868645;
     left: 29%;
-    top: 46%;
+    top: 38%;
     padding: 10px;
     box-shadow: 0 0 10px rgb(86 86 86 / 43%);
     z-index: 1000;
