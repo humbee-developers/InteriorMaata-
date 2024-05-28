@@ -6,11 +6,11 @@
   
   .popup {
     position: absolute;
-    background: #ffffff26;
-    left: 23%;
-    top:40%;
+    background: #86868645;
+   left: 77%;
+    top: 44%;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgb(86 86 86 / 43%);
     z-index: 1000;
   }
   
@@ -21,9 +21,22 @@
   .link_text{
     color:rgb(255, 255, 255);
     font-size:30px;
+    border-bottom: 1px solid white;
   }
 
   .link_text:hover{
   color: #7f7047
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    .popup {
+      position: absolute;
+      background: #86868645;
+      left: 77%;
+      top: 46%;
+      padding: 10px;
+      box-shadow: 0 0 10px rgb(86 86 86 / 43%);
+      z-index: 1000;
+    }
   }
   
