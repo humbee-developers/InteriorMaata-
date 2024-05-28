@@ -26,7 +26,7 @@
   font-family:"Dream Avenue";
   overflow: hidden;
   font-size: 4vw;
-  margin-right: 2rem;
+  margin-right: 0rem;
   font-weight: 300;
 }
 .navOpenLogo{
@@ -56,7 +56,7 @@
     margin: 0px;
     display: block;
     overflow: hidden;
-    margin-right:2rem;
+    margin-right:0rem;
     font-size: 4vw;
     font-weight: 300;
   }
@@ -64,9 +64,9 @@
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* .nav_body a {
-    width:44%;
-  } */
+  .nav_body p {
+    font-size: 5vw;
+  }
 }
 
 
