@@ -112,18 +112,11 @@ const Projects = () => {
                     <span>PROJECT | </span>
                     {data.project}
                   </div>
-                  <div>
-                    <span>ARCHITECT | </span>
-                    {data.architect}
-                  </div>
+                 
                   <div>
                     <span>INTERIOR DESIGN | </span>
                     {data.interiordesign}
                   </div>
-                  {/* <div>
-                    <span>DEVELOPER | </span>
-                    {data.developer}
-                  </div> */}
                 </div>
 
                 <div className={styles.section_2}>
@@ -131,14 +124,14 @@ const Projects = () => {
                     <span>LOCATION | </span>
                     {data.location}
                   </div>
-                  <div>
+                  {/* <div>
                     <span>USAGE | </span>
                     {data.usage}
-                  </div>
-                  <div>
+                  </div> */}
+                  {/* <div>
                     <span>STUDIO | </span>
                     {data.studio}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className={styles.section_3}>
