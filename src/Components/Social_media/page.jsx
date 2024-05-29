@@ -121,6 +121,25 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.spacer}>
         <div className={styles.instagram}>INSTAGRAM</div>
+        <div className={styles.data}>
+          <div className={styles.dataOuter}>
+            <div className={styles.dataHeading}>602</div>
+            <div className={styles.dataName}>UPDATES</div>
+          </div>
+          <div className={styles.dataOuter}>
+          <div className={styles.dataHeading}>246K</div>
+            <div className={styles.dataName}>FOLLOWERS</div>
+          </div>
+          <div className={styles.dataOuter}>
+          <div className={styles.dataHeading}> 3K+</div>
+            <div className={styles.dataName}>AVG.LIKES</div>
+          </div>
+          <div className={styles.dataOuter}> 
+          <div className={styles.dataHeading}>492%</div>
+            <div className={styles.dataName}>AVG.ACTIVITY</div>
+          </div>
+        </div>
+       
       </div>
       <div ref={gallery1} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} videos={[videos[0], videos[1], videos[2]]} y={y1} />
@@ -128,8 +147,26 @@ export default function Home() {
         <Column images={[images[6], images[7], images[8]]} videos={[videos[6], videos[7], videos[8]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} videos={[videos[9], videos[10], videos[11]]} y={y4} />
       </div>
-      <div className={styles.spacer}>
+      <div className={styles.spacer1}>
         <div className={styles.instagram}>YOUTUBE</div>
+        <div className={styles.data}>
+          <div className={styles.dataOuter}>
+            <div className={styles.dataHeading}>226</div>
+            <div className={styles.dataName}>UPDATES</div>
+          </div>
+          <div className={styles.dataOuter}>
+          <div className={styles.dataHeading}>830K</div>
+            <div className={styles.dataName}>FOLLOWERS</div>
+          </div>
+          <div className={styles.dataOuter}>
+          <div className={styles.dataHeading}>73M</div>
+            <div className={styles.dataName}>AVG.LIKES</div>
+          </div>
+          <div className={styles.dataOuter}> 
+          <div className={styles.dataHeading}>156%</div>
+            <div className={styles.dataName}>AVG.ACTIVITY</div>
+          </div>
+        </div>
       </div>
       <div ref={gallery2} className={styles.gallery}>
         <Column images={[image[0], image[1], image[2]]} y={y1_2} links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2]]} />
@@ -139,6 +176,8 @@ export default function Home() {
       </div>
       <div className={styles.spacer}>
         <div className={styles.instagram}>THANK YOU!</div>
+        
+        
       </div>
     </main>
   </>
