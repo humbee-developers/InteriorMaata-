@@ -1,0 +1,68 @@
+.gallery {
+  height: 175vh;
+  background: rgb(45, 45, 45);
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.column {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.videoContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.video {
+  height: auto;
+  width: 100%;
+}
+.imageContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.IamImage {
+  object-fit: cover;
+}
+.gallery .column:nth-of-type(1) {
+  top: -45%;
+}
+.gallery .column:nth-of-type(2) {
+  top: -95%;
+}
+.gallery .column:nth-of-type(3) {
+  top: -45%;
+}
+.gallery .column:nth-of-type(4) {
+  top: -75%;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  color: #cc7d45;
+  font-family:"Dream Avenue";
+  align-items: center;
+  height: 100vh;
+}

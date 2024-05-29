@@ -40,3 +40,20 @@
     }
   }
   
+  @media (min-width:200px) and (max-width:500px) {
+    .popup {
+      position: absolute;
+      background: #86868645;
+      left: 39%;
+      top: 56%;
+      padding: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgb(86 86 86 / 43%);
+      z-index: 1000;
+    }
+    .link_text {
+      color: rgb(255, 255, 255);
+      font-size: 22px;
+      border-bottom: 1px solid white;
+    }
+  }
