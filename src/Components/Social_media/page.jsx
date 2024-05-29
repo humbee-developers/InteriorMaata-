@@ -19,9 +19,26 @@ const videos = [
   "video1.mp4",
   "video2.mp4",
   "video3.mp4",
+
 ];
 
 const images = [
+  "img1.jpg",
+  "img2.jpg",
+  "img3.jpg",
+  "img4.jpg",
+  "img5.jpg",
+  "img6.jpg",
+  "img7.jpg",
+  "img8.jpg",
+  "img9.jpg",
+  "img10.jpg",
+  "img11.jpg",
+
+];
+
+
+const image = [
   "1.jpg",
   "2.jpg",
   "3.jpg",
@@ -115,10 +132,10 @@ export default function Home() {
         <div className={styles.instagram}>YOUTUBE</div>
       </div>
       <div ref={gallery2} className={styles.gallery}>
-        <Column images={[images[0], images[1], images[2]]} y={y1_2} links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2]]} />
-        <Column images={[images[3], images[4], images[5]]} y={y2_2} links={[youtubeLinks[3], youtubeLinks[4], youtubeLinks[5]]} />
-        <Column images={[images[6], images[7], images[8]]} y={y3_2} links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8]]} />
-        <Column images={[images[9], images[10], images[11]]} y={y4_2} links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11]]} />
+        <Column images={[image[0], image[1], image[2]]} y={y1_2} links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2]]} />
+        <Column images={[image[3], image[4], image[5]]} y={y2_2} links={[youtubeLinks[3], youtubeLinks[4], youtubeLinks[5]]} />
+        <Column images={[image[6], image[7], image[8]]} y={y3_2} links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8]]} />
+        <Column images={[image[9], image[10], image[11]]} y={y4_2} links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11]]} />
       </div>
       <div className={styles.spacer}>
         <div className={styles.instagram}>THANK YOU!</div>
