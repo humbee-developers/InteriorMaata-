@@ -4,6 +4,10 @@ import styles from "@/Components/Social_media/social.module.css"
 import Lenis from '@studio-freight/lenis';
 import Image from 'next/image';
 import Stairs from "@/Animations/Stairs";
+import Button3 from "@/Common/Buttons/button9";
+import Button4 from "@/Common/Buttons/button10";
+
+
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const videos = [
@@ -175,9 +179,16 @@ export default function Home() {
         <Column images={[image[9], image[10], image[11]]} y={y4_2} links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11]]} />
       </div>
       <div className={styles.spacer}>
-        <div className={styles.instagram}>THANK YOU!</div>
-        
-        
+        <div className={styles.instagram}>
+          <p>THANK YOU!</p>
+          <div className={styles.thanks_post}>
+            <p className={styles.thanks_post_text}>stay social with us & get latest updates on interior trends and designs</p>
+           <div className={styles.thanks_instapost}>
+            <Button3 button_text="Follow on instagram" />
+            <Button4 button_text="subscribe on youtube" />
+            </div>
+          </div>
+          </div>
       </div>
     </main>
   </>
