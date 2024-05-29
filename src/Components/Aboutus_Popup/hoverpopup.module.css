@@ -47,6 +47,9 @@
     left: 33%;
     top: 30%;
     padding: 10px;
+    display: flex;
+    flex-direction:column;
+    gap:12px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(86 86 86 / 43%);
     z-index: 1000;
