@@ -142,10 +142,10 @@ export default function Home() {
        
       </div>
       <div ref={gallery1} className={styles.gallery}>
-        <Column images={[images[0], images[1], images[2]]} videos={[videos[0], videos[1], videos[2]]} y={y1} />
-        <Column images={[images[3], images[4], images[5]]} videos={[videos[3], videos[4], videos[5]]} y={y2} />
-        <Column images={[images[6], images[7], images[8]]} videos={[videos[6], videos[7], videos[8]]} y={y3} />
-        <Column images={[images[9], images[10], images[11]]} videos={[videos[9], videos[10], videos[11]]} y={y4} />
+        <Column images={[images[0], images[1], images[2]]}  y={y1} />
+        <Column  videos={[videos[3], videos[4], videos[5]]} y={y2} />
+        <Column images={[images[6], images[7], images[8]]}  y={y3} />
+        <Column  videos={[videos[9], videos[10], videos[11]]} y={y4} />
       </div>
       <div className={styles.spacer1}>
         <div className={styles.instagram}>YOUTUBE</div>
