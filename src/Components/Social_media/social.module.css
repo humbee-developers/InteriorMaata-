@@ -38,6 +38,7 @@
   overflow: hidden;
 }
 .IamImage {
+  cursor: pointer;
   object-fit: cover;
 }
 .gallery .column:nth-of-type(1) {

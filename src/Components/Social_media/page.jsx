@@ -36,6 +36,21 @@ const images = [
   "12.jpg",
 ];
 
+const youtubeLinks = [
+  "https://www.youtube.com/watch?v=OnPoeKh4fVI",
+  "https://www.youtube.com/watch?v=cqFI4btKywA",
+  "https://www.youtube.com/watch?v=r-5bEF8OO-0",
+  "https://www.youtube.com/watch?v=Bp0b5sRTYZ4",
+  "https://www.youtube.com/watch?v=HtA1pzYJlAM",
+  "https://www.youtube.com/watch?v=LEFk_6kdIck",
+  "https://www.youtube.com/watch?v=zdiOYYdyDLI",
+  "https://www.youtube.com/watch?v=12rE2Qjp3jY",
+  "https://www.youtube.com/watch?v=kpVrWzaChdc",
+  "https://www.youtube.com/watch?v=wXSCvooa7EA",
+  "https://www.youtube.com/watch?v=5-a_xNCk0fs",
+  "https://www.youtube.com/watch?v=yR2U8iaQ3cE",
+];
+
 export default function Home() {
   const gallery1 = useRef(null);
   const gallery2 = useRef(null);
@@ -88,7 +103,7 @@ export default function Home() {
       <Stairs/>
     <main className={styles.main}>
       <div className={styles.spacer}>
-        <div className={styles.instagram}>Instagram</div>
+        <div className={styles.instagram}>INSTAGRAM</div>
       </div>
       <div ref={gallery1} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} videos={[videos[0], videos[1], videos[2]]} y={y1} />
@@ -97,23 +112,23 @@ export default function Home() {
         <Column images={[images[9], images[10], images[11]]} videos={[videos[9], videos[10], videos[11]]} y={y4} />
       </div>
       <div className={styles.spacer}>
-        <div className={styles.instagram}>YouTube</div>
+        <div className={styles.instagram}>YOUTUBE</div>
       </div>
       <div ref={gallery2} className={styles.gallery}>
-        <Column images={[images[0], images[1], images[2]]} y={y1_2} />
-        <Column images={[images[3], images[4], images[5]]} y={y2_2} />
-        <Column images={[images[6], images[7], images[8]]} y={y3_2} />
-        <Column images={[images[9], images[10], images[11]]} y={y4_2} />
+        <Column images={[images[0], images[1], images[2]]} y={y1_2} links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2]]} />
+        <Column images={[images[3], images[4], images[5]]} y={y2_2} links={[youtubeLinks[3], youtubeLinks[4], youtubeLinks[5]]} />
+        <Column images={[images[6], images[7], images[8]]} y={y3_2} links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8]]} />
+        <Column images={[images[9], images[10], images[11]]} y={y4_2} links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11]]} />
       </div>
       <div className={styles.spacer}>
-        <div className={styles.instagram}>Thank you</div>
+        <div className={styles.instagram}>THANK YOU!</div>
       </div>
     </main>
   </>
   );
 }
 
-const Column = ({ images = [], videos = [], y }) => {
+const Column = ({ images = [], videos = [], links = [], y }) => {
   return (
     <motion.div 
       className={styles.column}
@@ -132,12 +147,23 @@ const Column = ({ images = [], videos = [], y }) => {
       ))}
       {images.map((src, i) => (
         <div key={i} className={styles.imageContainer}>
-          <Image 
-          className={styles.IamImage}
-            src={`/image/${src}`}
-            alt='image'
-            fill
-          />
+          {links[i] ? (
+            <a href={links[i]} target="_blank" rel="noopener noreferrer">
+              <Image 
+                className={styles.IamImage}
+                src={`/image/${src}`}
+                alt='image'
+                fill
+              />
+            </a>
+          ) : (
+            <Image 
+              className={styles.IamImage}
+              src={`/image/${src}`}
+              alt='image'
+              fill
+            />
+          )}
         </div>
       ))}
     </motion.div>
