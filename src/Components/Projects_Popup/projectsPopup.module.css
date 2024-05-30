@@ -21,11 +21,27 @@
 .link_text {
   color: rgb(255, 255, 255);
   font-size: 30px;
-  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  position: relative;
 }
 
-.link_text:hover {
-  color: #7f7047;
+
+.link_text:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+.link_text:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
