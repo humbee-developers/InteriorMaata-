@@ -8,7 +8,7 @@ import "./style.css";
 const links = [
   {
     title: "About us",
-    href: "/KnowAboutUs",
+    href: "",
   },
   {
     title: "Services",
@@ -16,7 +16,7 @@ const links = [
   },
   {
     title: "PROJECTS",
-    href: "/Projects",
+    href: "",
   },
   // {
   //   title: "HOW WE WORK",
