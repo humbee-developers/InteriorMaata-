@@ -204,7 +204,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
       {videos.length > 0 && videos.map((src, i) => (
         <div key={i} className={styles.videoContainer}>
           <video 
-            src={`/video/${src}`}
+            src={`./video/${src}`}
             autoPlay
             loop
             muted
