@@ -31,6 +31,7 @@ import i11 from "@/images/11.jpg";
 import i12 from "@/images/12.jpg";
 
 
+
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const videos = [
@@ -228,7 +229,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
       {videos.length > 0 && videos.map((src, i) => (
         <div key={i} className={styles.videoContainer}>
           <video 
-            src={`/video/${src}`}
+            src={`./video/${src}`}
             autoPlay
             loop
             muted
