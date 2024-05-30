@@ -204,7 +204,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
       {videos.length > 0 && videos.map((src, i) => (
         <div key={i} className={styles.videoContainer}>
           <video 
-            src={`./video/${src}`}
+            src={`/video/${src}`}
             autoPlay
             loop
             muted
@@ -216,7 +216,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
         <div key={i} className={styles.imageContainer}>
           {links[i] ? (
             <a href={links[i]} target="_blank" rel="noopener noreferrer">
-              <Image 
+              <img
                 className={styles.IamImage}
                 src={`/image/${src}`}
                 alt='image'
@@ -224,7 +224,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
               />
             </a>
           ) : (
-            <Image 
+            <img
               className={styles.IamImage}
               src={`/image/${src}`}
               alt='image'
