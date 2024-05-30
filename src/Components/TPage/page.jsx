@@ -34,6 +34,12 @@ const TeamPage = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true,
   });
+  const [ref3, inView3] = useInView({
+    triggerOnce: true,
+  });
+  const [ref4, inView4] = useInView({
+    triggerOnce: true,
+  });
 
   const controls = useAnimation();
 
@@ -184,9 +190,9 @@ const TeamPage = () => {
         >
           <div className={styles.teamPage_content3_Text}>
             <motion.div
-              ref={ref2}
+              ref={ref3}
               initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
+              animate={inView3 ? "visible" : "hidden"}
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
@@ -212,9 +218,9 @@ const TeamPage = () => {
         >
           <div className={styles.teamPage_content3_Text1}>
             <motion.div
-              ref={ref2}
+              ref={ref4}
               initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
+              animate={inView4 ? "visible" : "hidden"}
               transition={{ duration: 0.9 }}
             >
               <HeadingTextAnimation
