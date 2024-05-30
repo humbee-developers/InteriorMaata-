@@ -217,6 +217,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
           {links[i] ? (
             <a href={links[i]} target="_blank" rel="noopener noreferrer">
               <Image 
+              unoptimized
                 className={styles.IamImage}
                 src={`/image/${src}`}
                 alt='image'
@@ -226,6 +227,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
           ) : (
             <Image 
               className={styles.IamImage}
+              unoptimized
               src={`/image/${src}`}
               alt='image'
               fill
