@@ -6,6 +6,29 @@ import Image from 'next/image';
 import Stairs from "@/Animations/Stairs";
 import Button3 from "@/Common/Buttons/button9";
 import Button4 from "@/Common/Buttons/button10";
+import img1 from "@/images/img1.jpg";
+import img2 from "@/images/img2.jpg";
+import img3 from "@/images/img3.jpg";
+import img4 from "@/images/img4.jpg";
+import img5 from "@/images/img5.jpg";
+import img6 from "@/images/img6.jpg";
+import img7 from "@/images/img7.jpg";
+import img8 from "@/images/img8.jpg";
+import img9 from "@/images/img9.jpg";
+import img10 from "@/images/img10.jpg";
+import img11 from "@/images/img11.jpg";
+import i1 from "@/images/1.jpg";
+import i2 from "@/images/2.jpg";
+import i3 from "@/images/3.jpg";
+import i4 from "@/images/4.jpg";
+import i5 from "@/images/5.jpg";
+import i6 from "@/images/6.jpg";
+import i7 from "@/images/7.jpg";
+import i8 from "@/images/8.jpg";
+import i9 from "@/images/9.jpg";
+import i10 from "@/images/10.jpg";
+import i11 from "@/images/11.jpg";
+import i12 from "@/images/12.jpg";
 
 
 import { useTransform, useScroll, motion } from 'framer-motion';
@@ -27,34 +50,35 @@ const videos = [
 ];
 
 const images = [
-  "img1.jpg",
-  "img2.jpg",
-  "img3.jpg",
-  "img4.jpg",
-  "img5.jpg",
-  "img6.jpg",
-  "img7.jpg",
-  "img8.jpg",
-  "img9.jpg",
-  "img10.jpg",
-  "img11.jpg",
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img9,
+  img10,
+  img11,
 
 ];
 
 
 const image = [
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-  "8.jpg",
-  "9.jpg",
-  "10.jpg",
-  "11.jpg",
-  "12.jpg",
+  i1,
+  i2,
+  i3,
+  i4,
+  i5,
+  i6,
+  i7,
+  i8,
+  i9,
+  i10,
+  i11,
+  i12,
 ];
 
 const youtubeLinks = [
@@ -216,10 +240,17 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
         <div key={i} className={styles.imageContainer}>
           {links[i] ? (
             <a href={links[i]} target="_blank" rel="noopener noreferrer">
-              <Image 
+              {/* <Image 
            
                 className={styles.IamImage}
                 src={`/image/${src}`}
+                alt='image'
+                fill
+              /> */}
+              <Image 
+           
+                className={styles.IamImage}
+                src={src}
                 alt='image'
                 fill
               />
@@ -228,9 +259,9 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
             <Image 
               className={styles.IamImage}
              
-              src={`/image/${src}`}
+              src={src}
               alt='image'
-              fill
+              fill  
             />
           )}
         </div>
