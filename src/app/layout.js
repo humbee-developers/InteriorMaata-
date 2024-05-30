@@ -2,6 +2,7 @@
 import Form from "@/Common/Form/page";
 import Headers from "@/Common/headers/index";
 import Footer from "@/Common/Footer/page";
+import { usePathname } from 'next/navigation'
 import { Poppins } from 'next/font/google';
 import Refresh from "@/Components/Refresh/page";
 import "./globals.css";
@@ -18,6 +19,7 @@ const poppins = Poppins({
 
 
 export default function RootLayout({ children }) {
+  const location1 = usePathname()
   return (
     <html lang="en" className={`${poppins.variable}`} >
     {/* <meta http-equiv="refresh" content="3"/>  to refresh the website in every 3 seconds just for learning  */}  
@@ -27,7 +29,7 @@ export default function RootLayout({ children }) {
         <DisableZoom/>
         {children}
       
-            <Form />
+        {location1 !== '/SocialMedia' && <Form />}
             <Footer />
       
       </body>
