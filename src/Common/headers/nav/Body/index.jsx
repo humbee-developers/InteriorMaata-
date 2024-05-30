@@ -23,6 +23,7 @@ export default function Body({
 }) {
   const router = useRouter();
   const [isPopupHovered, setIsPopupHovered] = useState(false);
+  const [isLinkHovered, setIsLinkHovered] = useState(false); // State to track if the link is hovered
   const popupHideTimeout = useRef(null); // Ref to store the timeout ID
 
   const getChars = (word) => {
@@ -45,13 +46,24 @@ export default function Body({
   };
 
   const handleMouseLeave = () => {
-    if (!isPopupHovered) {
+    if (!isPopupHovered && !isLinkHovered) {
       // Set a timeout to hide the popup after a delay (e.g., 300ms)
       popupHideTimeout.current = setTimeout(() => {
         setSelectedLink({ isActive: false, index: null });
         setHoverPopup(false);
       }, 300);
     }
+  };
+
+  const handleMouseEnterLink = (index) => {
+    setSelectedLink({ isActive: true, index });
+    setIsLinkHovered(true); // Set link hover state to true
+    clearTimeout(popupHideTimeout.current); // Clear any existing timeout
+  };
+
+  const handleMouseLeaveLink = () => {
+    setIsLinkHovered(false); // Set link hover state to false
+    handleMouseLeave();
   };
 
   const handleMouseEnterPopup = () => {
@@ -92,13 +104,13 @@ export default function Body({
             >
               <motion.p
                 onMouseOver={() => {
-                  setSelectedLink({ isActive: true, index });
+                  handleMouseEnterLink(index);
                   if (title === "About us" || title === "PROJECTS") {
                     setHoverPopup(true);
                     hoverPopupHandler(title);
                   }
                 }}
-                onMouseLeave={handleMouseLeave}
+                onMouseLeave={handleMouseLeaveLink}
                 variants={blur}
                 onClick={index === 3 && popupHandler}
                 animate={
