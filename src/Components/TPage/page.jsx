@@ -60,7 +60,7 @@ const TeamPage = () => {
   ];
   return (
     <>
-      <div className={styles.TeamPage_Section}>
+      <div className={styles.TeamPage_Section} id="team">
         <div className={styles.Header}>
           <div className={styles.teamPage_content1}>
             <motion.div

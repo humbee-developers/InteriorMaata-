@@ -118,7 +118,7 @@ export default function Body({
       </div>
       {hoverPopup && (
         <div
-          onMouseEnter={handleMouseEnterPopup}
+          onMouseOver={handleMouseEnterPopup}
           onMouseLeave={handleMouseLeavePopup}
         >
           {selectedLink.index === links.findIndex(link => link.title === "About us") && (
