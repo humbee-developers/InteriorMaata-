@@ -169,6 +169,18 @@
   }
 }
 @media (max-width: 575px) {
+
+
+  .column {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 412px;
+
+    gap: 2vw;
+  }
+
+
   .instagram {
     display: flex;
     justify-content: center;
