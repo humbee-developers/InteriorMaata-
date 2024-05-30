@@ -216,7 +216,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
         <div key={i} className={styles.imageContainer}>
           {links[i] ? (
             <a href={links[i]} target="_blank" rel="noopener noreferrer">
-              <img
+              <Image 
                 className={styles.IamImage}
                 src={`/image/${src}`}
                 alt='image'
@@ -224,7 +224,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
               />
             </a>
           ) : (
-            <img
+            <Image 
               className={styles.IamImage}
               src={`/image/${src}`}
               alt='image'
