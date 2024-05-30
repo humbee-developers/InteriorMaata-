@@ -20,6 +20,7 @@
 .link_text {
   color: rgb(255, 255, 255);
   font-size: 30px;
+  text-transform: uppercase;
   display: inline-block;
   padding-bottom: 0.3rem;
   position: relative;
@@ -73,7 +74,6 @@
   }
   .link_text {
     color: rgb(255, 255, 255);
-    font-size: 22px;
-    border-bottom: 1px solid white;
+    font-size: 21px;
   }
 }
