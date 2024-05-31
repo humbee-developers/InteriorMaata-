@@ -8,7 +8,7 @@
   position: absolute;
   background: #86868645;
   left: 29%;
-  top: 36%;
+  top: 20%;
   padding: 10px;
   box-shadow: 0 0 10px rgb(86 86 86 / 43%);
   z-index: 1000;
@@ -49,8 +49,8 @@
   .popup {
     position: absolute;
     background: #86868645;
-    left: 29%;
-    top: 38%;
+    left: 28%;
+    top: 30%;
     padding: 10px;
     box-shadow: 0 0 10px rgb(86 86 86 / 43%);
     z-index: 1000;
@@ -62,8 +62,8 @@
   .popup {
     position: absolute;
     background: #86868645;
-    left: 33%;
-    top: 30%;
+    left: 34%;
+    top: 32%;
     padding: 10px;
     display: flex;
     flex-direction:column;
