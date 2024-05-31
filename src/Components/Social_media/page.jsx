@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from "@/Components/Social_media/social.module.css"
 import Lenis from '@studio-freight/lenis';
 import Image from 'next/image';
+import Link from 'next/link'
 import Stairs from "@/Animations/Stairs";
 import Button3 from "@/Common/Buttons/button9";
 import Button4 from "@/Common/Buttons/button10";
@@ -29,6 +30,7 @@ import i9 from "@/images/9.jpg";
 import i10 from "@/images/10.jpg";
 import i11 from "@/images/11.jpg";
 import i12 from "@/images/12.jpg";
+
 
 
 
@@ -100,6 +102,7 @@ const youtubeLinks = [
 export default function Home() {
   const gallery1 = useRef(null);
   const gallery2 = useRef(null);
+  const gallery3 = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
   const { scrollYProgress: scrollYProgress1 } = useScroll({
@@ -108,6 +111,10 @@ export default function Home() {
   });
   const { scrollYProgress: scrollYProgress2 } = useScroll({
     target: gallery2,
+    offset: ['start end', 'end start']
+  });
+  const { scrollYProgress: scrollYProgress3 } = useScroll({
+    target: gallery3,
     offset: ['start end', 'end start']
   });
 
@@ -123,6 +130,11 @@ export default function Home() {
   const y3_2 = useTransform(scrollYProgress2, [0, 1], [0, height * 1.25]);
   const y4_2 = useTransform(scrollYProgress2, [0, 1], [0, height * 3]);
 
+  const y5_2 = useTransform(scrollYProgress3, [0, 1], [0, height * 2]);
+  // const y6_2 = useTransform(scrollYProgress3, [0, 1], [0, height * 3.3]);
+  // const y7_2 = useTransform(scrollYProgress3, [0, 1], [0, height * 1.25]);
+  // const y8_2 = useTransform(scrollYProgress3, [0, 1], [0, height * 3]);
+  
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -170,12 +182,42 @@ export default function Home() {
         </div>
        
       </div>
+      <div className={styles.outerFirst}>
       <div ref={gallery1} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]}  y={y1} />
-        <Column  videos={[videos[3], videos[4], videos[5]]} y={y2} />
+        <Column  videos={[videos[0], videos[1], videos[2]]} y={y2} />
         <Column images={[images[6], images[7], images[8]]}  y={y3} />
-        <Column  videos={[videos[9], videos[10], videos[11]]} y={y4} />
+        <Column  videos={[videos[3], videos[4], videos[5]]} y={y4} />
       </div>
+      </div>
+
+      <div ref={gallery3} className={styles.outerSecond} y={y5_2}>
+        <div className={styles.cardsOuter}>
+          <div className={styles.card}>
+            <Image className={styles.cardImage} src={img1} alt="image"/>
+          </div>
+          <div className={styles.card}>
+            <Image className={styles.cardImage} src={img2} alt="image"/>
+          </div>
+          <div className={styles.card}>
+          <video
+        className={styles.cardImage}
+        autoPlay
+        loop
+        muted
+      >
+        <source src="./video/video1.mp4" type="video/mp4" />
+      </video>
+          </div>
+          <div className={styles.card}>
+            <Image className={styles.cardImage} src={img3} alt="image"/>
+          </div>
+          <div className={styles.card}>
+            <Image className={styles.cardImage} src={img4} alt="image"/>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.spacer1}>
         <div className={styles.instagram}>YOUTUBE</div>
         <div className={styles.data}>
@@ -197,12 +239,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+
+
+{/*  */}
+
+
+
+      <div className={styles.outerFirst}>
       <div ref={gallery2} className={styles.gallery}>
         <Column images={[image[0], image[1], image[2]]} y={y1_2} links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2]]} />
         <Column images={[image[3], image[4], image[5]]} y={y2_2} links={[youtubeLinks[3], youtubeLinks[4], youtubeLinks[5]]} />
         <Column images={[image[6], image[7], image[8]]} y={y3_2} links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8]]} />
         <Column images={[image[9], image[10], image[11]]} y={y4_2} links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11]]} />
       </div>
+      </div>
+
+      <div className={styles.outerSecond} y={y5_2}>
+        <div className={styles.cardsOuter}>
+          <div className={styles.card}>
+          <Link href="https://www.youtube.com/watch?v=OnPoeKh4fVI">
+
+            <Image className={styles.cardImage} src={i1} alt="image"/>
+          </Link>
+          </div>
+
+          <div className={styles.card}>
+          <Link href="https://www.youtube.com/watch?v=OnPoeKh4fVI">
+            <Image className={styles.cardImage} src={i2} alt="image"/>
+            </Link>
+          </div>
+          <div className={styles.card}>
+          <Link href="https://www.youtube.com/watch?v=r-5bEF8OO-0">
+            <Image className={styles.cardImage} src={i3} alt="image"/>
+            </Link>
+          </div>
+          <div className={styles.card}>
+          <Link href="https://www.youtube.com/watch?v=Bp0b5sRTYZ4">
+            <Image className={styles.cardImage} src={i4} alt="image"/>
+            </Link>
+          </div>
+          <div className={styles.card}>
+          <Link href="https://www.youtube.com/watch?v=HtA1pzYJlAM">
+            <Image className={styles.cardImage} src={i5} alt="image"/>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.spacer}>
         <div className={styles.instagram}>
           <p>THANK YOU!</p>
