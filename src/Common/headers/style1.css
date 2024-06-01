@@ -37,9 +37,10 @@
   text-transform: uppercase;
   gap: 1rem;
   position: absolute;
-  top: 40px;
-  left: 48px;
+  top: 35px;
+  left: 22px;
 }
+
 .interiormaata {
   font-size: 20px;
   color: #7f7047;
