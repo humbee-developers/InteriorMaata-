@@ -74,7 +74,7 @@ const Footer = () => {
             </ul>
             <ul className={styles.footerUl}>
               <li className={styles.footer_Search}>
-                <Link href="/HowWeWork">How we work</Link>
+                <Link href="/SocialMedia">Social Media</Link>
               </li>
               <li className={styles.footer_home}>
                 <Link href="">Shop</Link>
