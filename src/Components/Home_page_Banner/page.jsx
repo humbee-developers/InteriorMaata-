@@ -60,13 +60,13 @@ const Animation = ({ loadImage, counter }) => {
 
 
 // frames code
-    const frameCount = 280;
+    const frameCount = 290;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/newfinal/${(
+      `https://interiormaata.humbeestudio.xyz/assets/frames/newframes/${(
         index + 1
       )
         .toString()
-        .padStart(4, "0")}.jpg`;
+        .padStart(4, "0")}.webp`;
 
     // https://interiormaata.humbeestudio.xyz/assets/frames/new/0001.jpg
     let imgL = [];
@@ -301,8 +301,8 @@ const Animation = ({ loadImage, counter }) => {
                 class="nectar-scroll-icon-path"
                 fill="none"
                 stroke="#ffffff"
-                stroke-width="2"
-                stroke-miterlimit="10"
+                strokeWidth="2"
+                strokeMiterlimit="10"
                 d="M15,1.118c12.352,0,13.967,12.88,13.967,12.88v18.76  c0,0-1.514,11.204-13.967,11.204S0.931,32.966,0.931,32.966V14.05C0.931,14.05,2.648,1.118,15,1.118z"
               ></path>
             </svg>
@@ -311,7 +311,7 @@ const Animation = ({ loadImage, counter }) => {
         )}
       </div>
 
-      <video
+      {/* <video
         className={styles.videoBg}
         width="750"
         height="500"
@@ -320,7 +320,7 @@ const Animation = ({ loadImage, counter }) => {
         muted
       >
         <source src="./video/testing.mp4" type="video/mp4" />
-      </video>
+      </video> */}
 
       <MusicPlayer />
       {scrollPercentage >= 45 && (
