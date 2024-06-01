@@ -7,22 +7,25 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import StarSvg from "@/svgs/Star.svg";
 import { useRouter } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
+import Link from "next/link";
 const Projects = () => {
   const itemsPerPage = 4;
   const [projectName, setProjectName] = useState(0);
   const [currentData, setCurrentData] = useState();
   const [pageNumber, setPageNumber] = useState(1);
   const projectsRef = useRef(null);
+  const [fullUrl, setFullUrl] = useState("");
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [tabUrl, setTabUrl] = useState("");
+
 
   const handleClick = (e) => {
     setProjectName(e);
     setCurrentData(projectsData[e]);
     setPageNumber(1);
   };
-
-  useEffect(() => {
-    setCurrentData(projectsData[0]);
-  }, []);
 
   const handlePageChange = (event, value) => {
     setPageNumber(value);
@@ -36,6 +39,29 @@ const Projects = () => {
   const firstIndex = lastIndex - itemsPerPage;
   const displayedData = currentData?.slice(firstIndex, lastIndex);
   const router = useRouter();
+
+  useEffect(() => {
+    const hash = typeof window !== "undefined" ? window.location.hash : "";
+   
+
+    // setFullUrl(url);
+  
+    if (pathname + hash === "/Projects#interior") {
+      setCurrentData(projectsData[0]);
+    } else if (pathname + hash === "/Projects#architecture") {
+      setCurrentData(projectsData[1]);
+    } else {
+      setCurrentData(projectsData[2]);
+    }
+
+    setTabUrl(pathname + hash);
+  }, [pathname, searchParams]);
+
+  // useEffect(() => {
+  //   setCurrentData(projectsData[0]);
+  // }, []);
+
+
   return (
     <div ref={projectsRef} className={styles.projectPageOuter}>
       <div className={styles.ProjectSection_header}>
@@ -43,41 +69,44 @@ const Projects = () => {
           <div className={styles.ProjectSection_headerText}>
             <div
               className={`${styles.tabItem} ${
-                projectName === 0 && styles.active
+                tabUrl === "/Projects#interior" && styles.active
               }`}
-              onClick={() => handleClick(0)}
+              // onClick={() => handleClick(0)}
             >
-              INTERIOR
+              <Link href={"/Projects#interior"}>INTERIOR</Link>
               <Image
                 src={StarSvg}
                 alt="star"
                 className={`${styles.svg} ${
-                  projectName === 0 && styles.active
+                  // projectName === 0 ||
+                  tabUrl === "/Projects#interior" && styles.active
                 }`}
               />
             </div>
             <div
               className={`${styles.tabItem} ${
-                projectName === 1 && styles.active
+                tabUrl === "/Projects#architecture" && styles.active
               }`}
-              onClick={() => handleClick(1)}
+              // onClick={() => handleClick(1)}
             >
-              ARCHITECTURE
+              <Link href={"/Projects#architecture"}>ARCHITECTURE</Link>
               <Image
                 src={StarSvg}
                 alt="star"
                 className={`${styles.svg} ${
-                  projectName === 1 && styles.active
+                  // projectName === 1 ||
+                  tabUrl === "/Projects#architecture" && styles.active
                 }`}
               />
             </div>
             <div
               className={`${styles.tabItem} ${
-                projectName === 2 && styles.active
+                // projectName === 2 ||
+                tabUrl === "/Projects#commercials" && styles.active
               }`}
-              onClick={() => handleClick(2)}
+              // onClick={() => handleClick(2)}
             >
-              COMMERCIALS
+              <Link href={"/Projects#commercials"}>COMMERCIALS</Link>
             </div>
           </div>
         </div>
@@ -112,7 +141,7 @@ const Projects = () => {
                     <span>PROJECT | </span>
                     {data.project}
                   </div>
-                 
+
                   <div>
                     <span>INTERIOR DESIGN | </span>
                     {data.interiordesign}
