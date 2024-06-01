@@ -113,9 +113,9 @@ export default function Index({ navLinkHandler, popupHandler }) {
       ]);
     } else if (title === "PROJECTS") {
       setHoverPopupContent([
-        { text: "Interior", href: "/Projects" },
-        { text: "Architecture", href: "/Projects" },
-        { text: "Commercials", href: "/Projects" },
+        { text: "Interior", href: "/Projects#interior" },
+        { text: "Architecture", href: "/Projects#architecture" },
+        { text: "Commercials", href: "/Projects#commercials" },
       ]);
     }
     setHoverPopupIndex(links.findIndex((link) => link.title === title));
