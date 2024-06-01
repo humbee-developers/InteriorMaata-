@@ -131,7 +131,7 @@
 }
 
 .footer_icons:hover {
-  /* transform: translateY(-10px); */
+  transform: translateY(-10px);
 }
 .justRelative{
   position: relative;
