@@ -14,7 +14,7 @@ export default function ProjectsPopup({ content, handleNavLink }) {
     handleNavLink();
     setTimeout(() => {
       router.push(href); // Navigate without full page reload
-    }, 300); // Adjust the timeout to match the animation duration
+    }, 100); // Adjust the timeout to match the animation duration
   };
 
   return (

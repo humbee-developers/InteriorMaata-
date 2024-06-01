@@ -67,6 +67,9 @@
 
 /* button 2 */
 
+.zIndex{
+  z-index: 1;
+}
 
 .button2 {
   appearance: none;

@@ -13,7 +13,7 @@ import footerImage from "@/images/footerImage.png";
 import ScrollToTop from "react-scroll-to-top";
 import styles from "@/Common/Footer/Footer.module.css";
 import "./Scroll_To_Top.css";
-import svg_icon from "@/images/icon_Svg.svg";
+import svg_icon from "@/svgs/arrow_thin.svg";
 
 const Footer = () => {
   const [ref, inView] = useInView({
@@ -31,7 +31,7 @@ const Footer = () => {
     <div>
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
-          <div>
+          <div className={styles.justRelative}>
             <a href="tel:+917404040286" className={styles.phone_no}>
               +917404040286
             </a>
@@ -39,12 +39,14 @@ const Footer = () => {
               href="https://maps.app.goo.gl/jeRd13E7QPZQiKZi9"
               target="_blank"
             >
-              <p className={styles.footer_address}>
+              <div className={styles.footer_address}>
                 Karamdham Complex
                 <br /> Near Akota Atithi Gruh,
                 <br /> Akota, Vadodara
-                  <Image src={svg_icon} alt="none" className={styles.footer_icon}/>
-              </p>
+                 <div className={styles.justTesting}>
+                 <Image src={svg_icon} alt="none" className={styles.footer_icon}/>
+                 </div>
+              </div>
             </Link>
           </div>
           {/* <div className={styles.footerImageOuter}>

@@ -142,7 +142,7 @@
 .thanks_instapost {
   padding-top: 4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .thanks_instapost_text {
   font-size: 40px;

@@ -1,15 +1,21 @@
-'use client'
-import { useRouter } from 'next/navigation'
 import React from "react";
 import './button9.css'
 import Image from 'next/image';
 import instaSvg from "@/svgs/instasvg.svg";
+
 const Button = (props) => {
-  const router = useRouter()
+  const handleClick = () => {
+    window.open('https://www.instagram.com/interiormaata/', '_blank');
+  };
+
   return (
     <div>
-     <button onClick={()=>router.push("/")} className="button2" role="button"><Image src={instaSvg} alt='none' /><span className="text">{props.button_text}</span></button>
+       <button onClick={handleClick} className="button2" role="button">
+        <Image className='zIndex' src={instaSvg} alt='none' />
+        <span className="text">{props.button_text}</span>
+      </button>
     </div>
-  )
+  );
 }
-export default Button
+
+export default Button;
