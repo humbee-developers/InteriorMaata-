@@ -88,10 +88,13 @@
     width: 90%;
     padding: 40px 20px 20px;
   }
-  .close img{
+  .close img {
     right: -20px;
   }
-  .content p{
+  .image img {
+    height: 300px;
+  }
+  .content p {
     font-size: 18px;
     margin: 0 0 15px;
   }
