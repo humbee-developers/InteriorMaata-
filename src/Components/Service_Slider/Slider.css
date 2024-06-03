@@ -1,6 +1,8 @@
 .productSlider .wrapper {
   position: relative;
   padding: 4rem 11rem;
+  height: 100%;
+
 }
 
 .productSlider .wrapper .swiper-slide {
