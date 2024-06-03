@@ -306,6 +306,7 @@ display: block;
     font-family: "Dream Avenue";
     align-items: center;
     height: 100vh;
+    padding: 0 0 122px;
   }
   .data {
     position: absolute;
