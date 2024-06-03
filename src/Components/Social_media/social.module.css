@@ -338,7 +338,8 @@ display: block;
   flex-direction: column;
 }
 .instagram{
-  height: 75vh;
+  height: 100vh;
+  padding: 0 0 222px;
 }
 .dataOuter{
   border-right: none;
@@ -347,4 +348,5 @@ display: block;
 .dataOuter:nth-child(3){
   border-bottom: 1px solid #cc7d45;
 }
+
 }
