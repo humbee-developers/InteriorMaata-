@@ -99,12 +99,12 @@ export default function Body({
               href={href}
               onClick={(e) => {
                 e.preventDefault();
-                if (title !== "About us") {
+                if (title !== "About us" && title !== "PROJECTS") {
                   setNoExitAnimation(false); // Enable exit animation for other links
                   handleNavLink();
                   router.push(href);
                 } else {
-                  setNoExitAnimation(true); // Disable exit animation for "About us"
+                  setNoExitAnimation(true); // Disable exit animation for "About us" and "PROJECTS"
                   setHoverPopup(true);
                   hoverPopupHandler(title);
                 }
