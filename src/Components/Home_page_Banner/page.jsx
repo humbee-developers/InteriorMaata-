@@ -62,7 +62,7 @@ const Animation = ({ loadImage, counter }) => {
 // frames code
     const frameCount = 290;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/newframes/${(
+      `https://interiormaata.humbeestudio.xyz/assets/frames/newHomeFrames/${(
         index + 1
       )
         .toString()
