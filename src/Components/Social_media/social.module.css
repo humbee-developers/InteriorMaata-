@@ -1,19 +1,19 @@
 .gallery {
   height: 175vh;
-  background: rgb(45, 45, 45);
+  /* background: rgb(45, 45, 45); */
   position: relative;
   display: flex;
-  gap: 2vw;
+  gap: 1vw;
   padding: 2vw;
   box-sizing: border-box;
   overflow: hidden;
 }
 .gallery1 {
   height: 175vh;
-  background: rgb(45, 45, 45);
+  /* background: rgb(45, 45, 45); */
   position: relative;
   display: flex;
-  gap: 2vw;
+  gap: 1vw;
   padding: 2vw;
   box-sizing: border-box;
   overflow: hidden;
@@ -26,7 +26,7 @@
   min-width: 250px;
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  gap: 1.5vw;
 }
 
 .videoContainer {
@@ -47,6 +47,16 @@
   border-radius: 1vw;
   overflow: hidden;
 }
+
+.imageContainer2{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+
 .IamImage {
   cursor: pointer;
   object-fit: cover;
@@ -148,18 +158,6 @@
   font-size: 40px;
 }
 
-.outerFirst{
-  display: block;
-  }
-  
-  .outerSecond{
-  display: none;
-  }
-
-
-
-
-
 
 @media(max-width:1199px){
   .thanks_post{
@@ -211,20 +209,24 @@
 
 @media (max-width: 575px) {
 
+  .gallery .column:nth-of-type(1) {
+    top: -7%;
+  }
+  .gallery .column:nth-of-type(2) {
+    top: -9%;
+  }
+  .gallery .column:nth-of-type(3) {
+    top: -11%;
+  }
+  .gallery .column:nth-of-type(4) {
+    top: -13%;
+  }
+
 .cardsOuter{
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
-}
-
-
-.outerFirst{
-display: none;
-}
-
-.outerSecond{
-display: block;
 }
 
 .cardImage{
@@ -242,8 +244,20 @@ display: block;
     position: relative;
   }
   .gallery {
-    height: auto;
-    background: rgb(45, 45, 45);
+    height: 500vh;
+    /* background: rgb(45, 45, 45); */
+    position: relative;
+    display: flex;
+    gap: 7rem;
+    flex-direction: column;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .gallery1 {
+    height: 500vh;
+    /* background: rgb(45, 45, 45); */
     position: relative;
     display: flex;
     gap: 7rem;
@@ -261,22 +275,27 @@ display: block;
   }
   .video {
     height: auto;
+    object-fit: cover;
     width: 100%;
   }
   .imageContainer {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .imageContainer2{
     height: 100%;
     width: 100%;
     position: relative;
-    border-radius: 1vw;
+    border-radius: 20px;
     overflow: hidden;
-  }
-  .spacer1 {
-    height: 100%;
-    position: relative;
-  }
+}
+
   .gallery1 {
     height: 175vh;
-    background: rgb(45, 45, 45);
+    /* background: rgb(45, 45, 45); */
     position: relative;
     display: flex;
     gap: 7rem;
@@ -292,9 +311,8 @@ display: block;
     position: relative;
     height: 100%;
     width: 100%;
-    min-width: 412px;
-
-    gap: 2vw;
+    min-width: auto;
+    gap: 3vw;
   }
 
 
