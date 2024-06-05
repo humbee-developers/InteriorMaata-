@@ -20,7 +20,7 @@ function Landing_page() {
   }, [controls, inView]);
 
   return (
-    <div className={styles.landing_page_second_container}>
+    <div className={styles.landing_page_second_container} ref={ref}>
       {/* <div className={styles.landing_page_second_content}>
         <motion.div
           ref={ref}
@@ -53,7 +53,7 @@ function Landing_page() {
 
       <div className={styles.landing_page_second_images}>
         <motion.div
-          ref={ref}
+         
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.2 }}
@@ -73,7 +73,7 @@ function Landing_page() {
 
 
         <motion.div
-         ref={ref}
+        
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.3 }}
@@ -87,7 +87,7 @@ function Landing_page() {
         </motion.div>
 
         <motion.div
-         ref={ref}
+         
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.4 }}

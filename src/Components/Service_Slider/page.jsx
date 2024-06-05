@@ -58,7 +58,7 @@ const Page = () => {
           fadeEffect={{
             crossFade: true,
           }}
-          speed={1000}
+          speed={500}
           navigation={{
             nextEl: ".productSlider .right",
             prevEl: ".productSlider .left",

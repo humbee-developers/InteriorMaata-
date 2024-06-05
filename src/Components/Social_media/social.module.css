@@ -323,8 +323,8 @@
     color: #cc7d45;
     font-family: "Dream Avenue";
     align-items: center;
-    height: 100vh;
-    padding: 0 0 122px;
+    height: 80vh;
+    padding: 0 0 0px;
   }
   .data {
     position: absolute;

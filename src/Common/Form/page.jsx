@@ -107,7 +107,7 @@ const Page = () => {
                 <input
                   type="text"
                   className={styles.form_field}
-                  placeholder="Full Name"
+                  placeholder="Full Name*"
                   name="Name"
                   id="Name"
                   value={fullName}
@@ -117,7 +117,7 @@ const Page = () => {
                   required
                 />
                 <label htmlFor="Name" className={styles.form_label}>
-                  Full Name
+                  Full Name*
                 </label>
               </div>
               <div className={styles.form_flex}>
@@ -138,7 +138,7 @@ const Page = () => {
                   <span style={{ color: "red" }}>Invalid email address</span>
                 )} */}
                   <label htmlFor="Email" className={styles.form_label}>
-                    Email
+                    Email*
                   </label>
                 </div>
 
@@ -146,7 +146,7 @@ const Page = () => {
                   <input
                     type="number"
                     className={styles.form_field}
-                    placeholder="Phone No"
+                    placeholder="Phone No *"
                     name="Phone"
                     id="Phone"
                     value={Phonedata}
@@ -161,7 +161,7 @@ const Page = () => {
                     </span>
                   )}
                   <label htmlFor="Phone" className={styles.form_label}>
-                    Phone No
+                    Phone No*
                   </label>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const Page = () => {
                     onChange={handleCategoryChange}
                     options={categories}
                     optionLabel="name"
-                    placeholder="Select category"
+                    placeholder="Select category*"
                     className={`dropdown_city ${
                       selectedCategory ? "half-width" : ""
                     }`}
@@ -253,7 +253,7 @@ const Page = () => {
                   required
                 ></textarea>
                 <label htmlFor="Address" className={styles.form_label}>
-                  Address
+                  Address*
                 </label>
               </div>
 
@@ -261,7 +261,7 @@ const Page = () => {
                 <textarea
                   rows={2}
                   className={styles.form_field_address}
-                  placeholder="Brief description of your Project"
+                  placeholder="Brief description of your Project*"
                   name="Description"
                   id="Description"
                   value={Descriptiondata}
@@ -271,7 +271,7 @@ const Page = () => {
                   required
                 ></textarea>
                 <label htmlFor="Address" className={styles.form_label}>
-                  Brief description of your Project
+                  Brief description of your Project*
                 </label>
               </div>
 
