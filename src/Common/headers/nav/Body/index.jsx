@@ -19,7 +19,7 @@ export default function Body({
   hoverPopupContent,
   hoverPopup,
   hoverPopupIndex,
-  popupHandler
+  popupHandler,
 }) {
   const router = useRouter();
   const [isPopupHovered, setIsPopupHovered] = useState(false);
@@ -99,15 +99,18 @@ export default function Body({
               href={href}
               onClick={(e) => {
                 e.preventDefault();
-                if (title !== "About us") {
+                 index === 3 && popupHandler();
+                if (title !== "About us" && title !== "PROJECTS") {
                   setNoExitAnimation(false); // Enable exit animation for other links
                   handleNavLink();
                   router.push(href);
+                  popupHandler;
                 } else {
                   setNoExitAnimation(true); // Disable exit animation for "About us"
                   setHoverPopup(true);
                   hoverPopupHandler(title);
                 }
+              
               }}
             >
               <motion.p
@@ -140,16 +143,18 @@ export default function Body({
           onMouseOver={handleMouseEnterPopup}
           onMouseLeave={handleMouseLeavePopup}
         >
-          {selectedLink.index === links.findIndex(link => link.title === "About us") && (
-            <AboutUsPopup 
-              content={hoverPopupContent} 
-              handleNavLink={handleNavLink} 
+          {selectedLink.index ===
+            links.findIndex((link) => link.title === "About us") && (
+            <AboutUsPopup
+              content={hoverPopupContent}
+              handleNavLink={handleNavLink}
             />
           )}
-          {selectedLink.index === links.findIndex(link => link.title === "PROJECTS") && (
-            <ProjectsPopup 
-              content={hoverPopupContent} 
-              handleNavLink={handleNavLink} 
+          {selectedLink.index ===
+            links.findIndex((link) => link.title === "PROJECTS") && (
+            <ProjectsPopup
+              content={hoverPopupContent}
+              handleNavLink={handleNavLink}
             />
           )}
         </div>

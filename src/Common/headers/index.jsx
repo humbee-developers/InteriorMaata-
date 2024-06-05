@@ -12,6 +12,7 @@ export default function NewNav() {
   const [isActive, setIsActive] = useState(false);
   const [popup, setPopup] = useState(false);
   const navRef = useRef();
+  console.log("popup", popup);
 
   // useEffect(() => {
   //   if (isActive) {
