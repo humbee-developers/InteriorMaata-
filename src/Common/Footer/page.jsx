@@ -9,7 +9,6 @@ import Instagram_logo from "@/svgs/instagram.svg";
 import youtube_logo from "@/svgs/youtube.svg";
 import whatsapp_logo from "@/svgs/whatsapp.svg";
 import linkedin_logo from "@/svgs/linkedin.svg";
-import footerImage from "@/images/footerImage.png";
 import ScrollToTop from "react-scroll-to-top";
 import styles from "@/Common/Footer/Footer.module.css";
 import "./Scroll_To_Top.css";
@@ -49,19 +48,9 @@ const Footer = () => {
               </div>
             </Link>
           </div>
-          {/* <div className={styles.footerImageOuter}>
-          <Image
-                  className={styles.FooterImage}
-                  src={footerImage}
-                  alt="none"
-                />
-          </div> */}
 
           <div className={styles.footer_Second}>
             <ul className={styles.footerUl}>
-              {/* <li className={styles.footer_home}>
-                <Link href="/Home">Home</Link>
-              </li> */}
               <li className={styles.footer_Search}>
                 <Link href="/KnowAboutUs">About Us</Link>
               </li>
@@ -125,7 +114,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className={styles.footer_youtube}>
-              <Link href="" target="_blank">
+              <Link href="https://wa.me/7404040286 " target="_blank">
                 <Image
                   className={styles.footer_icons}
                   src={whatsapp_logo}
