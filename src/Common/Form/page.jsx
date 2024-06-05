@@ -153,6 +153,7 @@ const Page = () => {
                     onChange={(e) => {
                       setPhonedata(e.target.value);
                     }}
+                    required
                   />
                   {!validatePhone(Phonedata) && Phonedata.length > 0 && (
                     <span style={{ color: "red" }}>
@@ -176,6 +177,7 @@ const Page = () => {
                     className={`dropdown_city ${
                       selectedCategory ? "half-width" : ""
                     }`}
+                    
                   />
                 </div>
                 {selectedCategory &&
@@ -188,9 +190,13 @@ const Page = () => {
                         optionLabel="name"
                         placeholder="Select BHK"
                         className="dropdown_city half-width"
+                        // required
                       />
+                      
                     </div>
+                    
                   )}
+                  
                 {selectedCategory &&
                   selectedCategory.code === "Architecture" && (
                     <div className={styles.form_group111}>
