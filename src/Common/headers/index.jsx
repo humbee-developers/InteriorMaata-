@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
 import NavSection from "./nav/index";
-import nav_logo from "@/svgs/logo.svg";
+import nav_logo from "@/svgs/logo1.svg";
 import "./style1.css";
 import Popup from "@/Components/Popup/page";
 
