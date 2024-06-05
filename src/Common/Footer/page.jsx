@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
@@ -14,8 +14,10 @@ import ScrollToTop from "react-scroll-to-top";
 import styles from "@/Common/Footer/Footer.module.css";
 import "./Scroll_To_Top.css";
 import svg_icon from "@/svgs/arrow_thin.svg";
+import Popup from "@/Components/Popup/page";
 
 const Footer = () => {
+  const [popup, setPopup] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -26,9 +28,18 @@ const Footer = () => {
       controls.start("visible");
     }
   }, [controls, inView]);
+  const handlePopup = () => {
+    setPopup(true);
+  };
+  const handlePopupClose = () => {
+    setPopup(false);
+  };
 
   return (
-    <div>
+    <div className={styles.footerMain}>
+      <div className={styles.footerPopup}>
+        {popup && <Popup close={handlePopupClose} />}
+      </div>
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div className={styles.justRelative}>
@@ -43,9 +54,13 @@ const Footer = () => {
                 Karamdham Complex
                 <br /> Near Akota Atithi Gruh,
                 <br /> Akota, Vadodara
-                 <div className={styles.justTesting}>
-                 <Image src={svg_icon} alt="none" className={styles.footer_icon}/>
-                 </div>
+                <div className={styles.justTesting}>
+                  <Image
+                    src={svg_icon}
+                    alt="none"
+                    className={styles.footer_icon}
+                  />
+                </div>
               </div>
             </Link>
           </div>
@@ -77,7 +92,7 @@ const Footer = () => {
                 <Link href="/SocialMedia">Social Media</Link>
               </li>
               <li className={styles.footer_home}>
-                <Link href="">Shop</Link>
+                <div onClick={handlePopup}>Shop</div>
               </li>
               <li className={styles.footer_Search}>
                 <Link href="/Connect">Connect</Link>
