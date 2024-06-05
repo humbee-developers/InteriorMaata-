@@ -102,7 +102,7 @@ export default function Body({
 
                  index === 3 && popupHandler();
                 if (title !== "About us" && title !== "PROJECTS") {
-                  setNoExitAnimation(false); // Enable exit animation for other links
+                  setNoExitAnimation(false); // Enable exit animation for other links 
                   handleNavLink();
                   router.push(href);
                   popupHandler;
