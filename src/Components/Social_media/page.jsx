@@ -230,7 +230,6 @@ export default function Home() {
     </>
   );
 }
-
 const Column = ({ images = [], videos = [], links = [], y }) => {
   return (
     <motion.div className={styles.column} style={{ y }}>
