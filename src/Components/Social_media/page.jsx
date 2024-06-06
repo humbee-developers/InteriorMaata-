@@ -108,10 +108,10 @@ export default function Home() {
   const y4_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 3]);
 
   useEffect(() => {
-    const lenis = new Lenis();
+    // const lenis = new Lenis();
 
     const raf = (time) => {
-      lenis.raf(time);
+      // lenis.raf(time);
       requestAnimationFrame(raf);
     };
 
