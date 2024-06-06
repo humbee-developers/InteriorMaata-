@@ -108,10 +108,10 @@ export default function Home() {
   const y4_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 3]);
 
   useEffect(() => {
-    // const lenis = new Lenis();
+    const lenis = new Lenis();
 
     const raf = (time) => {
-      // lenis.raf(time);
+      lenis.raf(time);
       requestAnimationFrame(raf);
     };
 
@@ -202,11 +202,13 @@ export default function Home() {
               images={[image[6], image[7], image[8],image[0]]}
               y={y3_2}
               links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8],youtubeLinks[0]]}
+              className={width < 575 ? styles.hidden : ""}
             />
             <Column
-              images={[image[9], image[10], image[11],image[0]]}
+              images={[image[9], image[10], image[11], image[0]]}
               y={y4_2}
-              links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11],youtubeLinks[0]]}
+              links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11], youtubeLinks[0]]}
+              className={width < 575 ? styles.hidden : ""}
             />
           </div>
         </div>
