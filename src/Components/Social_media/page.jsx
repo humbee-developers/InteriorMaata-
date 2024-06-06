@@ -212,7 +212,7 @@ export default function Home() {
         </div>
 
         <div className={styles.spacer}>
-          <div className={styles.instagram}>
+          <div className={styles.instagram1}>
             <p>THANK YOU!</p>
             <div className={styles.thanks_post}>
               <p className={styles.thanks_post_text}>

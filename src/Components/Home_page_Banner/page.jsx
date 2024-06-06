@@ -25,41 +25,33 @@ const Animation = ({ loadImage, counter }) => {
 
   console.log(loadingCounter);
 
-//  code for frames responsiveness in all screenSizes
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
-    const text = textRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
 
     const setCanvasSize = () => {
-      const canvas = canvasRef.current;
-      const originalWidth = 1632; 
+      const originalWidth = 1632;
       const originalHeight = 918;
       const aspectRatio = originalWidth / originalHeight;
-
       const availableWidth = window.innerWidth;
-      const availableHeight = window.innerHeight;
-      const heightByWidth = availableWidth / aspectRatio;
 
       if (availableWidth < 200) {
-        canvas.width = originalWidth / 2; // Adjust canvas width for mobile screens
+        canvas.width = originalWidth / 2;
         canvas.height = originalHeight / 2;
-        canvas.style.width = "1301px"; // Set canvas width to 1301px width to be given according screen Sizes
-        canvas.style.height = "100vh"; // Set canvas height to window height or any height specified
+        canvas.style.width = "1301px";
+        canvas.style.height = "100vh";
       } else {
         canvas.width = originalWidth;
         canvas.height = originalHeight;
-        canvas.style.width = "100%"; // Set canvas width to 100% of container
-        canvas.style.height = "100vh"; // this will  Allow canvas to maintain aspect ratio
+        canvas.style.width = "100%";
+        canvas.style.height = "100vh";
       }
     };
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-
-// frames code
     const frameCount = 290;
     const currentFrame = (index) =>
       `https://interiormaata.humbeestudio.xyz/assets/frames/newHomeFrames/${(
@@ -68,7 +60,6 @@ const Animation = ({ loadImage, counter }) => {
         .toString()
         .padStart(4, "0")}.webp`;
 
-    // https://interiormaata.humbeestudio.xyz/assets/frames/new/0001.jpg
     let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -91,7 +82,6 @@ const Animation = ({ loadImage, counter }) => {
         });
 
         await Promise.all(loadImagePromises);
-
         setLoading(false);
       } catch (error) {
         console.error("Error loading images:", error);
@@ -100,15 +90,17 @@ const Animation = ({ loadImage, counter }) => {
     loadImages();
     console.log(imgL);
     console.log("Counter", loadingCounter);
+
     const animationTimeline = gsap.timeline({
       onUpdate: render,
-      onComplete: () => setAnimationEnded(true), // Set animationEnded to true when animation completes
+      onComplete: () => setAnimationEnded(true),
       scrollTrigger: {
         trigger: section,
         pin: true,
-        scrub: true,
-        smooth: 1,
-        // smoothTouch: 100,
+        scrub: true, // Increase scrub value for smoother transitions effect it will take 2 seconds to scroll use true for default effect
+  //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+  // effects: true, // looks for data-speed and data-lag attributes on elements
+  // smoothTouch: 100,
         end: "+=1400%",
       },
     });
@@ -138,12 +130,9 @@ const Animation = ({ loadImage, counter }) => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [loadingCounter]);
+
   console.log(loadImage(loading));
 
-
-
-
-  // code for first text show
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
@@ -155,11 +144,6 @@ const Animation = ({ loadImage, counter }) => {
     }
   }, [controls, inView]);
 
-
-
-
-
-  // code for scroll button (mouse)
   useEffect(() => {
     const updateScrollPercentage = () => {
       const scrollPosition = window.scrollY;
@@ -176,73 +160,39 @@ const Animation = ({ loadImage, counter }) => {
   }, []);
 
   const loadingProgress = (loadingCounter / 250) * 100;
-  // const loadingProgress = (loadingCounter / frameCount) * 100;
   console.log(counter(loadingProgress));
   const scrollDownByTenPercent = () => {
     const tenPercentOfHeight = window.innerHeight * 1.7;
     window.scrollBy({
-      top: tenPercentOfHeight, // move down by 10% of the viewport height
-      behavior: "smooth", // smooth scroll
+      top: tenPercentOfHeight,
+      behavior: "smooth",
     });
-    setIsVisible(false); // Hide the button after scrolling
+    setIsVisible(false);
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the current scroll position is greater than 0
       if (window.scrollY > 0) {
-        setIsVisible(false); // Hide the button if scrolled down
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // Show the button if scrolled up to the top
+        setIsVisible(true);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
-
-
-//  code for video show and hide 
-  // useEffect(() => {
-  //   // Function to handle scroll direction and video visibility
-  //   const handleScroll = () => {
-  //     const video = document.querySelector(`.${styles.videoBg}`);
-  //     if (window.scrollY > 0) {
-  //       // Check if window has scrolled down
-  //       video.style.visibility = "hidden";
-  //     } else {
-  //       video.style.visibility = "visible";
-  //     }
-  //   };
-
-  //   // Add scroll event listener
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-
   const [buttonRef, buttonInView] = useInView();
 
-  // Define animation variants for the button
   const buttonVariants = {
     hidden: { opacity: 0, y: 120 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-    upsideDown: { opacity: 0, y: 180,  transition: { duration: 0.3 } }
+    upsideDown: { opacity: 0, y: 180, transition: { duration: 0.3 } }
   };
-  
-
-
-
-
-
-
 
   return (
     <section>
@@ -251,8 +201,9 @@ const Animation = ({ loadImage, counter }) => {
           className={styles.canvas_factory_settings}
           ref={canvasRef}
           style={{
-            width: "100%", // Set canvas width to 100% initially
-            height: "100vh", // Allow canvas to maintain aspect ratio
+            width: "100%",
+            height: "100vh",
+            willChange: "transform", // Hint the browser for optimization
           }}
         ></canvas>
       </section>
@@ -311,62 +262,46 @@ const Animation = ({ loadImage, counter }) => {
         )}
       </div>
 
-      {/* <video
-        className={styles.videoBg}
-        width="750"
-        height="500"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="./video/testing.mp4" type="video/mp4" />
-      </video> */}
-
       <MusicPlayer />
       {scrollPercentage >= 45 && (
-  <div className={styles.buttonOuter} ref={buttonRef}>
-    <motion.button
-      className={styles.buttonX}
-      role="button"
-      initial="hidden"
-      animate={
-        window.innerWidth < 768
-          ? scrollPercentage >= 55
-            ? "upsideDown"
-            : "visible"
-          : window.innerWidth < 1024
-          ? scrollPercentage >= 62
-            ? "upsideDown"
-            : "visible"
-          : window.innerWidth < 1400
-          ? scrollPercentage >= 65
-            ? "upsideDown"
-            : "visible"
-          : window.innerWidth < 500
-          ? scrollPercentage >= 58
-            ? "upsideDown"
-            : "visible"
-          : window.innerWidth < 1600
-          ? scrollPercentage >= 60
-            ? "upsideDown"
-            : "visible"
-          : scrollPercentage >= 63
-          ? "upsideDown"
-          : "visible"
-      }
-      variants={buttonVariants}
-    >
-      <a href="tel:+917404040286" className={styles.textX}>
-        Contact Us | +917404040286
-      </a>
-    </motion.button>
-  </div>
-)}
-
-
-
-
-
+        <div className={styles.buttonOuter} ref={buttonRef}>
+          <motion.button
+            className={styles.buttonX}
+            role="button"
+            initial="hidden"
+            animate={
+              window.innerWidth < 768
+                ? scrollPercentage >= 55
+                  ? "upsideDown"
+                  : "visible"
+                : window.innerWidth < 1024
+                ? scrollPercentage >= 62
+                  ? "upsideDown"
+                  : "visible"
+                : window.innerWidth < 1400
+                ? scrollPercentage >= 65
+                  ? "upsideDown"
+                  : "visible"
+                : window.innerWidth < 500
+                ? scrollPercentage >= 58
+                  ? "upsideDown"
+                  : "visible"
+                : window.innerWidth < 1600
+                ? scrollPercentage >= 60
+                  ? "upsideDown"
+                  : "visible"
+                : scrollPercentage >= 63
+                ? "upsideDown"
+                : "visible"
+            }
+            variants={buttonVariants}
+          >
+            <a href="tel:+917404040286" className={styles.textX}>
+              Contact Us | +917404040286
+            </a>
+          </motion.button>
+        </div>
+      )}
     </section>
   );
 };

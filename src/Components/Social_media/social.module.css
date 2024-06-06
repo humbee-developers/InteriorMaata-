@@ -116,6 +116,25 @@
   height: 100vh;
 }
 
+
+.instagram1 {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  flex-direction: column;
+  color: #cc7d45;
+  font-family: "Dream Avenue";
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
 .data {
   position: absolute;
   top: 70%;
@@ -196,6 +215,12 @@
   .instagram {
     padding: 0 0 30px;
   }
+
+  .instagram1 {
+    padding: 0 0 30px;
+  }
+
+  
   .thanks_instapost{
     flex-direction: column;
     align-items: center;
@@ -323,6 +348,17 @@
     color: #cc7d45;
     font-family: "Dream Avenue";
     align-items: center;
+    height: 100vh;
+    padding: 0 0 0px;
+  }
+
+  .instagram1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #cc7d45;
+    font-family: "Dream Avenue";
+    align-items: center;
     height: 80vh;
     padding: 0 0 0px;
   }
@@ -356,6 +392,11 @@
   flex-direction: column;
 }
 .instagram{
+  height: 100vh;
+  padding: 0 0 222px;
+}
+
+.instagram1{
   height: 100vh;
   padding: 0 0 222px;
 }
