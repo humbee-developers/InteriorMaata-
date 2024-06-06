@@ -8,6 +8,13 @@
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.main{
+  background-image: url("../../images/02-min.jpg"); 
+}
+
+
+
 .gallery1 {
   height: 175vh;
   /* background: rgb(45, 45, 45); */
