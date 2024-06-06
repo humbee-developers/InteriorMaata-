@@ -240,6 +240,7 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
             <video
               src={`./video/${src}`}
               autoPlay
+              playsinline
               loop
               muted
               className={styles.video}

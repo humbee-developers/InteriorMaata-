@@ -32,6 +32,7 @@
 .videoContainer {
   /* height: 100%; */
   width: 100%;
+  pointer-events: none;
   position: relative;
   border-radius: 1vw;
   overflow: hidden;
