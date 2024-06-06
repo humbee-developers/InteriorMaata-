@@ -208,24 +208,24 @@ const Animation = ({ loadImage, counter }) => {
 
 
 //  code for video show and hide 
-  useEffect(() => {
-    // Function to handle scroll direction and video visibility
-    const handleScroll = () => {
-      const video = document.querySelector(`.${styles.videoBg}`);
-      if (window.scrollY > 0) {
-        // Check if window has scrolled down
-        video.style.visibility = "hidden";
-      } else {
-        video.style.visibility = "visible";
-      }
-    };
+  // useEffect(() => {
+  //   // Function to handle scroll direction and video visibility
+  //   const handleScroll = () => {
+  //     const video = document.querySelector(`.${styles.videoBg}`);
+  //     if (window.scrollY > 0) {
+  //       // Check if window has scrolled down
+  //       video.style.visibility = "hidden";
+  //     } else {
+  //       video.style.visibility = "visible";
+  //     }
+  //   };
 
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Add scroll event listener
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
 
   const [buttonRef, buttonInView] = useInView();
