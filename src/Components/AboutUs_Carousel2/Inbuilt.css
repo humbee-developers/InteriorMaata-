@@ -6,13 +6,14 @@
 
 .slick-track{
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .slick-next {
   right: 200px;
 }
 
 .slick-list {
-  min-height:35rem
+  /* min-height:35rem */
 }
 .slick-dots {
   bottom: -30px;
@@ -37,13 +38,13 @@
 @media(min-width:1600px) and (max-width:1920px){
 
   .slick-list {
-    min-height:58rem
+    /* min-height:58rem */
   }
 }
 @media screen and (max-width: 1440px) {
   
   .slick-list {
-    min-height:47rem;
+    /* min-height:47rem; */
   }
 }
 @media screen and (max-width: 1400px) {
@@ -54,7 +55,7 @@
   }
   
   .slick-list {
-    min-height:47rem;
+    /* min-height:47rem; */
   }
 }
 @media screen and (max-width: 1199px) {
@@ -80,7 +81,7 @@
   }
   .slick-list{
     margin-left: -10rem !important;
-    min-height: 42rem;
+    /* min-height: 42rem; */
   }
   .slick-slide{
     margin-left: auto;
@@ -88,7 +89,7 @@
 }
 @media screen and (max-width: 700px) {
   .slick-list{
-    min-height: 42rem;
+    /* min-height: 42rem; */
   }
   .slick-slide{
     margin-left: auto;
@@ -97,14 +98,14 @@
 }
 @media screen and (max-width: 600px) {
   .slick-list{
-    min-height: 42rem;
+    /* min-height: 42rem; */
   }
  
 }
 @media screen and (max-width: 500px) {
   .slick-list{
     margin-left: -8rem !important;
-    min-height: 37rem;
+    /* min-height: 28rem; */
   }
  
 }

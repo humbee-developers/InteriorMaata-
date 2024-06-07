@@ -412,6 +412,7 @@
 .data{
   flex-direction: column;
 }
+
 .instagram {
   display: flex;
   justify-content: center;

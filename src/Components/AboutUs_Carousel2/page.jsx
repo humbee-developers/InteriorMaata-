@@ -7,11 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import slide2_src1 from "@/images/i1.png";
-import slide3_src1 from "@/images/i2.png";
-import slide4_src1 from "@/images/i3.png";
-import slide5_src1 from "@/images/i4.png";
-import slide51_src1 from "@/images/slider1img.png";
+import fire from "@/images/fire_moodboard.webp";
+import air from "@/images/air_moodboard.webp";
+import water from "@/images/water_moodboard.webp";
+import space from "@/images/space_moodboard.webp";
+import earth from "@/images/earth_moodboard.webp";
 import "@/Components/AboutUs_Carousel2/Inbuilt.css";
 import styles from "@/Components/AboutUs_Carousel2/AboutUS_Carousel2.module.css";
 
@@ -149,7 +149,7 @@ const Page = () => {
               <motion.div>
                 <Image
                   className={styles.imagex}
-                  src={slide51_src1}
+                  src={earth}
                   alt="image"
                 />
               </motion.div>
@@ -178,7 +178,7 @@ const Page = () => {
               <motion.div>
                 <Image
                   className={styles.imagex}
-                  src={slide2_src1}
+                  src={fire}
                   alt="image"
                 />
               </motion.div>
@@ -207,7 +207,7 @@ const Page = () => {
               <motion.div>
                 <Image
                   className={styles.imagex1}
-                  src={slide3_src1}
+                  src={air}
                   alt="image"
                 />
               </motion.div>
@@ -236,7 +236,7 @@ const Page = () => {
               <motion.div>
                 <Image
                   className={styles.imagex2}
-                  src={slide4_src1}
+                  src={water}
                   alt="image"
                 />
               </motion.div>
@@ -265,7 +265,7 @@ const Page = () => {
               <motion.div>
                 <Image
                   className={styles.imagex3}
-                  src={slide5_src1}
+                  src={space}
                   alt="image"
                 />
               </motion.div>
