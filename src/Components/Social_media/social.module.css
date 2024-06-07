@@ -154,6 +154,7 @@
   width: 100%;
     max-width: 300px; /* Adjust this value to your desired max width */
     height: auto;
+    /* mix-blend-mode: darken; */
     object-fit: cover; 
 }
 .data {
