@@ -385,7 +385,7 @@
   }
   .data {
     position: absolute;
-    top: 70%;
+    top: 75%;
     width: 100%;
     /* justify-content: space-evenly; */
     align-items: center;
@@ -409,6 +409,17 @@
 }
 
 @media(max-width:365px){
+
+
+
+  .dataOuter {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #cc7d45;
+  }
+
+
 .data{
   flex-direction: column;
 }
