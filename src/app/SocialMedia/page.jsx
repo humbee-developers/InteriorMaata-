@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect} from "react";
 import SocialMedia from "@/Components/Social_media/page";
 const page = () => {
   

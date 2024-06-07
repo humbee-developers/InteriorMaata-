@@ -32,6 +32,20 @@ import i10 from "@/images/10.jpg";
 import i11 from "@/images/11.jpg";
 import i12 from "@/images/12.jpg";
 
+import logo1 from "@/svgs/westside.svg"
+import logo2 from "@/svgs/boredMonkey.svg"
+import logo3 from "@/svgs/borosil.svg"
+import logo4 from "@/svgs/flybed.svg"
+import logo5 from "@/svgs/pg.svg"
+import logo6 from "@/images/royaletouche.webp"
+import logo7 from "@/svgs/febindia.svg"
+import logo8 from "@/svgs/intel.svg"
+import logo9 from "@/svgs/pepperfry.svg"
+import logo10 from "@/svgs/ica.svg"
+
+
+
+
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const videos = [
@@ -213,8 +227,43 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.spacer}>
+        <div className={styles.spacerX}>
           <div className={styles.instagram1}>
+            <p>OUR BRANDS</p>
+<div className={styles.brands_outer}>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo1} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo2} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo3} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo4} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo5} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo6} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo7} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo8} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo9} alt=""/>
+  </div>
+  <div className={styles.brands_logo_outer}>
+    <Image className={styles.brand_logo} src={logo10} alt=""/>
+  </div>
+</div>
+
+
             <p>THANK YOU!</p>
             <div className={styles.thanks_post}>
               <p className={styles.thanks_post_text}>

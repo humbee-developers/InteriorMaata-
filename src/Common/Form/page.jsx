@@ -261,7 +261,7 @@ const Page = () => {
                 <textarea
                   rows={2}
                   className={styles.form_field_address}
-                  placeholder="Brief description of your Project*"
+                  placeholder="Brief description of your Project"
                   name="Description"
                   id="Description"
                   value={Descriptiondata}
@@ -271,7 +271,7 @@ const Page = () => {
                   required
                 ></textarea>
                 <label htmlFor="Address" className={styles.form_label}>
-                  Brief description of your Project*
+                  Brief description of your Project
                 </label>
               </div>
 
