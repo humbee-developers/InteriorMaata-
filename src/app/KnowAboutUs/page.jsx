@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Stairs from "@/Animations/Stairs";
 // import AboutusAnanya from "@/Components/AboutusAnanya/page"
+import AboutusAnanya from "@/Components/AboutusAnanya/page"
 import TeamsPage from "@/Components/TPage/page";
 const Page = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Page = () => {
     <>
       <Stairs/>
       {/* <AboutusAnanya/> */}
+      <AboutusAnanya/>
         <TeamsPage />
     </>
   );
