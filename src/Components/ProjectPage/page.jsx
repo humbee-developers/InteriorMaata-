@@ -73,7 +73,7 @@ const Projects = () => {
               }`}
               // onClick={() => handleClick(0)}
             >
-              <Link href={"/Projects#interior"}>INTERIOR</Link>
+              <Link href={"/Projects#interior"}>Residential</Link>
               <Image
                 src={StarSvg}
                 alt="star"

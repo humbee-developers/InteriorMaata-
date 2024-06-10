@@ -227,7 +227,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.spacerX}>
+        <div className={styles.spacerX} id="brands">
           <div className={styles.instagram1}>
             <p>OUR BRANDS</p>
 <div className={styles.brands_outer}>

@@ -44,7 +44,7 @@ export default function Index({ navLinkHandler, popupHandler }) {
         { text: "About Ananya", href: "/KnowAboutUs" },
         { text: "About Team", href: "/KnowAboutUs#team" },
         { text: "Social Media", href: "/SocialMedia" },
-        { text: "Brands We Work", href: "" },
+        { text: "Brands We Work", href: "/SocialMedia#brands" },
       ]);
     } else if (title === "PROJECTS") {
       setHoverPopupContent([
