@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 // import Button from "@/Common/Buttons/button";
 import Image from "next/image";
 import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
-import styles from "@/Components/AboutusAnanya/aboutusAnanya.module.css";
+import styles from "@/Components/Ananya/ananya.module.css"
 const Page = () => {
   const text =
     "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.";
