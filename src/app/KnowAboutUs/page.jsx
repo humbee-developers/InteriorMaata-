@@ -16,7 +16,6 @@ const Page = () => {
       <AboutusAnanya/>
         <TeamsPage />
     </>
-     
   );
 };
 
