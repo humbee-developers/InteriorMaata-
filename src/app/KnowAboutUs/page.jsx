@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Stairs from "@/Animations/Stairs";
-import KnowAboutUsHeader from "@/Components/KnowAboutUsHeader/page"
+import AboutusAnanya from "@/Components/AboutusAnanya/page"
 import TeamsPage from "@/Components/TPage/page";
 const Page = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Page = () => {
   return (
     <>
       <Stairs/>
-      <KnowAboutUsHeader/>
+      <AboutusAnanya/>
         <TeamsPage />
     </>
      

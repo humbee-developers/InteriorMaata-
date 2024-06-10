@@ -4,17 +4,15 @@ import { motion, useAnimation } from "framer-motion";
 import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import Button from "@/Common/Buttons/button";
+import Button6 from "@/Common/Buttons/button6";
 import Image from "next/image";
 import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
-import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
 import project1 from "@/images/project1.jpg"
 import project2 from "@/images/project2.jpg"
 import project3 from "@/images/project3.jpg"
 import project4 from "@/images/project4.jpg"
-import Button6 from "@/Common/Buttons/button6"
 import styles from "@/Components/KnowAboutUsHeader/knowAboutUs.module.css";
-import "./newslide.css";
+// import "./newslide.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
@@ -100,34 +98,18 @@ const Page = () => {
           justifyContent={"center"}
           className={styles.ananya}
         />
-        {/* <HeadingTextAnimation
-          heading={"Bhattacharjee"}
-          
-          justifyContent={"center"}
-          className={styles.ananya}
-        /> */}
+  
         </motion.div>
           <div className={styles.aboutUs_flex_divider}>
             <div className={styles.aboutUs_banner_image_outer}>
-              {/* <motion.div
-                className={styles.aboutUs_banner_image}
-                variants={imageAnimation}
-                initial="hidden"
-                animate={controls}
-              >
-                <Image
-                  src={Cover_image}
-                  alt="image"
-                  className={styles.aboutUs_banner_image}
-                />
-              </motion.div> */}
+              
 
               <Swiper
        modules={[FreeMode, Thumbs, Pagination, Autoplay]}
       spaceBetween={10}
       slidesPerView={1}
       autoplay={{
-              delay: 200000500,
+              delay: 2500,
             }}
             loop={true}
             speed={1000}
