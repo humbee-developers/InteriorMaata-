@@ -42,8 +42,8 @@ const Footer = () => {
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div className={styles.justRelative}>
-            <a href="tel:+917404040286" className={styles.phone_no}>
-              +917404040286
+            <a href="tel:+918866502675" className={styles.phone_no}>
+              +918866502675
             </a>
             <Link
               href="https://maps.app.goo.gl/jeRd13E7QPZQiKZi9"
@@ -129,7 +129,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className={styles.footer_youtube}>
-              <Link href="https://wa.me/7404040286 " target="_blank">
+              <Link href="https://wa.me/8866508378 " target="_blank">
                 <Image
                   className={styles.footer_icons}
                   src={whatsapp_logo}

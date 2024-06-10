@@ -20,11 +20,12 @@
 .link_text {
   color: rgb(255, 255, 255);
   font-size: 30px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: inline-block;
+  font-weight: 300;
   padding-bottom: 0.3rem;
+  font-family: var(--font-poppins);
   position: relative;
-  /* border-bottom: 1px solid white; */
 }
 
 

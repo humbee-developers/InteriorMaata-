@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Preloader from "@/Animations/preloader/index";
 import { AnimatePresence } from "framer-motion";
 // import HomeBanner from "@/Components/Home_page_Banner/page";
+import KnowAboutUsHeader from "@/Components/KnowAboutUsHeader/page"
 import AboutUs_header from "@/Components/AboutUs_header/page";
 import AboutUs_threeCards from "@/Components/AboutUs_threeCards/page";
 import AboutUs_Carousel2 from "@/Components/AboutUs_Carousel2/page";
@@ -77,6 +78,7 @@ const Page = ({ lData }) => {
     
         <div className="bg">
         <AboutUs_header />
+        <KnowAboutUsHeader/>
         <NewRevel paragraph={paragraph}/>
         <AboutUs_threeCards />
         <MarqueeTest/>
