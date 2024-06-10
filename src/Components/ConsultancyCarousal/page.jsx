@@ -118,24 +118,6 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-      {/* <div className={"sliderArrow"}>
-            <div className={"sliderArrow_next"} ref={arrowRef1}>
-            <Image
-            src={sliderArrow}
-            alt="arrow-btn"
-            
-          
-          />
-            </div>
-            <div className={"sliderArrow_prev"} ref={arrowRef2}>
-            <Image
-            src={sliderArrow}
-            alt="arrow-button"
-            
-           
-          />
-            </div>
-          </div> */}
     </>
   );
 }

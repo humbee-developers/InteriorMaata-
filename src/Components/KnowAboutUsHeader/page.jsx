@@ -3,10 +3,21 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import Button from "@/Common/Buttons/button";
 import Image from "next/image";
+import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
 import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
+import project1 from "@/images/project1.jpg"
+import project2 from "@/images/project2.jpg"
+import project3 from "@/images/project3.jpg"
+import project4 from "@/images/project4.jpg"
+import Button6 from "@/Common/Buttons/button6"
 import styles from "@/Components/KnowAboutUsHeader/knowAboutUs.module.css";
+import "./newslide.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 const Page = () => {
   const text =
@@ -70,6 +81,10 @@ const Page = () => {
   }, [controls, inView]);
 
   return (
+
+    <>
+        
+ 
     <div>
       <div className={styles.aboutUsHeader_outer}>
         <div className={styles.aboutUsHeader} ref={ref}>
@@ -94,7 +109,7 @@ const Page = () => {
         </motion.div>
           <div className={styles.aboutUs_flex_divider}>
             <div className={styles.aboutUs_banner_image_outer}>
-              <motion.div
+              {/* <motion.div
                 className={styles.aboutUs_banner_image}
                 variants={imageAnimation}
                 initial="hidden"
@@ -105,7 +120,79 @@ const Page = () => {
                   alt="image"
                   className={styles.aboutUs_banner_image}
                 />
-              </motion.div>
+              </motion.div> */}
+
+              <Swiper
+       modules={[FreeMode, Thumbs, Pagination, Autoplay]}
+      spaceBetween={10}
+      slidesPerView={1}
+      autoplay={{
+              delay: 200000500,
+            }}
+            loop={true}
+            speed={1000}
+      // navigation
+      // pagination={{ clickable: true }}
+      // scrollbar={{ draggable: true }}
+    >
+      <SwiperSlide>
+        <div
+                className={styles.aboutUs_banner_image}
+                // variants={imageAnimation}
+                // initial="hidden"
+                // animate={controls}
+              >
+                <Image
+                  src={project1}
+                  alt="image"
+                  className={styles.aboutUs_banner_image}
+                />
+              </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div
+                className={styles.aboutUs_banner_image}
+                // variants={imageAnimation}
+                // initial="hidden"
+                // animate={controls}
+              >
+                <Image
+                  src={project2}
+                  alt="image"
+                  className={styles.aboutUs_banner_image}
+                />
+              </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div
+                className={styles.aboutUs_banner_image}
+                // variants={imageAnimation}
+                // initial="hidden"
+                // animate={controls}
+              >
+                <Image
+                  src={project3}
+                  alt="image"
+                  className={styles.aboutUs_banner_image}
+                />
+              </div>
+      </SwiperSlide>
+      <SwiperSlide>
+      <div
+                className={styles.aboutUs_banner_image}
+                // variants={imageAnimation}
+                // initial="hidden"
+                // animate={controls}
+              >
+                <Image
+                  src={project4}
+                  alt="image"
+                  className={styles.aboutUs_banner_image}
+                />
+              </div>
+      </SwiperSlide>
+    </Swiper>
+
             </div>
             <motion.div
               className={styles.aboutUs_banner_text_outer}
@@ -128,13 +215,14 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-                interiormaata
+<Button6 button_text="Read More"/>
               </motion.div>
             </motion.div>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
