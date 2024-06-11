@@ -14,7 +14,6 @@ import tejas from "@/images/tejas.webp"
 import omkar from "@/images/omkar.webp"
 import karthik from "@/images/karthik.webp"
 import happy from "@/images/happy.webp"
-// import karthik from "@/images/karthik.webp"
 const projectsData = [
   // RESIDENTIAL_DATA
 

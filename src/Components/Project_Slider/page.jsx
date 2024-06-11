@@ -12,6 +12,7 @@ import Project_Slider from "@/images/Project_Slider_img.png";
 import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
 import styles from "@/Components/Project_Slider/Slider.module.css";
 import Carousel_svg from "@/svgs/project_carousel_layout.svg";
+import testimonial1 from "@/images/omkar.webp"
 
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -100,54 +101,43 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley
+                Team of Interior Maata is very good and dedicated to work .
+                I receive a very quick response from their side. I am totally satisfied with them. I highly recommend them.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  text ever since the 1500s, when an unknown printer took a
-                  galley
+                Extremely professional and helpful attitude. Especially Akhila is very good coordinator and helping nature with suggestions having with patience Now a days it is rare to find people with such dedication towards work
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley
+                I read a comment of Alpa thanki and understood that you are not very much suitable for a middle class person. You only prefer to work for a business person having  a hefty bank balance.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  text ever since the 1500s, when an unknown printer took a
-                  galley
+                One of the best in the market and people are way polite than any other association I have ever been to for my interior.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley
+                Interior Maata team understands design from the ground up and is extremely creative with space, fabric, furnishings, accessories, and I could go on.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                  text ever since the 1500s, when an unknown printer took a
-                  galley
+                Extremely professional and helpful attitude. Now a days it is rare to find people with such dedication towards work.
                 </p>
               </div>
             </SwiperSlide>
