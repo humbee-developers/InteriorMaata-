@@ -4,13 +4,23 @@ import img3 from "@/images/projectpageImage3.png";
 import img4 from "@/images/projectpageImage4.png";
 import img5 from "@/images/projectpageImage5.png";
 import img6 from "@/images/projectpageImage6.png";
-
+import nikita from "@/images/nikita.webp"
+import arched from "@/images/arched.jpg"
+import leena from "@/images/sabya.jpg"
+import ramakant from "@/images/ramakant.webp"
+import gopali from "@/images/gopali.webp"
+import maithali from "@/images/maithali.webp"
+import tejas from "@/images/tejas.webp"
+import omkar from "@/images/omkar.webp"
+import karthik from "@/images/karthik.webp"
+import happy from "@/images/happy.webp"
+// import karthik from "@/images/karthik.webp"
 const projectsData = [
   // RESIDENTIAL_DATA
 
   [
     {
-      image: img2,
+      image: nikita,
       title: "Fluid Project",
       year: "2023",
       project: "RESIDENTIAL",
@@ -22,7 +32,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img1,
+      image: ramakant,
       title: "A Pinch of Paradise",
       year: "2022",
       project: "RESIDENTIAL",
@@ -34,7 +44,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img3,
+      image: gopali,
       title: "One Influenced",
       year: "2022",
       project: "RESIDENTIAL",
@@ -46,7 +56,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img4,
+      image: maithali,
       title: "Time Travellers Home",
       year: "2022",
       project: "RESIDENTIAL",
@@ -59,7 +69,7 @@ const projectsData = [
     },
 
     {
-      image: img5,
+      image: leena,
       title: "The Sabya House",
       year: "2022",
       project: "RESIDENTIAL",
@@ -72,7 +82,7 @@ const projectsData = [
     },
 
     {
-      image: img6,
+      image: tejas,
       title: "Scandi Space",
       year: "2024",
       project: "RESIDENTIAL",
@@ -84,7 +94,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img6,
+      image: omkar,
       title: "The Rustic Residence",
       year: "2024",
       project: "RESIDENTIAL",
@@ -96,7 +106,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img6,
+      image: arched,
       title: "The Minimal Dream",
       year: "2022",
       project: "RESIDENTIAL",
@@ -108,7 +118,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img6,
+      image: happy,
       title: "Classical Chamber",
       year: "2021",
       project: "RESIDENTIAL",
@@ -120,7 +130,7 @@ const projectsData = [
       copyright: "@Copyright",
     },
     {
-      image: img6,
+      image: karthik,
       title: "The Arched Villa",
       year: "2022",
       project: "RESIDENTIAL",

@@ -48,7 +48,7 @@ export default function Index({ navLinkHandler, popupHandler }) {
       ]);
     } else if (title === "PROJECTS") {
       setHoverPopupContent([
-        { text: "Interior", href: "/Projects#interior" },
+        { text: "Residential", href: "/Projects#interior" },
         { text: "Architecture", href: "/Projects#architecture" },
         { text: "Commercials", href: "/Projects#commercials" },
       ]);
