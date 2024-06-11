@@ -38,11 +38,6 @@ const Project_Header = () => {
     }
   };
 
-
-
-
-
-
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;

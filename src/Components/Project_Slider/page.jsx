@@ -12,7 +12,10 @@ import Project_Slider from "@/images/Project_Slider_img.png";
 import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
 import styles from "@/Components/Project_Slider/Slider.module.css";
 import Carousel_svg from "@/svgs/project_carousel_layout.svg";
-import testimonial1 from "@/images/omkar.webp"
+import testimonial1 from "@/images/testimonial1.png"
+import testimonial2 from "@/images/testimonial2.png"
+import testimonial3 from "@/images/testimonial3.png"
+import testimonial4 from "@/images/testimonial4.png"
 
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -40,7 +43,7 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.third_section_content}>
                 <Image
-                  src={Project_Slider}
+                  src={testimonial1}
                   alt="carousel_image"
                   className={styles.third_section_image}
                 />
@@ -49,7 +52,7 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.third_section_content}>
                 <Image
-                  src={Project_Slider}
+                  src={testimonial2}
                   alt="carousel_image"
                   className={styles.third_section_image}
                 />
@@ -58,7 +61,7 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.third_section_content}>
                 <Image
-                  src={Project_Slider}
+                  src={testimonial3}
                   alt="carousel_image"
                   className={styles.third_section_image}
                 />
@@ -67,7 +70,7 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.third_section_content}>
                 <Image
-                  src={Project_Slider}
+                  src={testimonial4}
                   alt="carousel_image"
                   className={styles.third_section_image}
                 />

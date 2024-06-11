@@ -57,9 +57,6 @@ const Projects = () => {
     setTabUrl(pathname + hash);
   }, [pathname, searchParams]);
 
-  // useEffect(() => {
-  //   setCurrentData(projectsData[0]);
-  // }, []);
 
 
   return (
@@ -154,20 +151,9 @@ const Projects = () => {
                     <span>LOCATION | </span>
                     {data.location}
                   </div>
-                  {/* <div>
-                    <span>USAGE | </span>
-                    {data.usage}
-                  </div> */}
-                  {/* <div>
-                    <span>STUDIO | </span>
-                    {data.studio}
-                  </div> */}
                 </div>
 
                 <div className={styles.section_3}>
-                  {/* <div>
-                    <span>{data.copyright}</span>
-                  </div> */}
                 </div>
               </div>
             </div>
