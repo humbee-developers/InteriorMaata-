@@ -5,21 +5,13 @@ import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Stairs from "@/Animations/Stairs";
-import Single_project_image1 from "@/images/single_project_img1.png";
-import Single_project_image2 from "@/images/single_project_img2.png";
-import Single_project_image3 from "@/images/single_project_img3.png";
-import Single_project_image4 from "@/images/single_project_img4.png";
-import interior_material_img1 from "@/images/interior_material_img1.png";
-import interior_material_img2 from "@/images/interior_material_img2.png";
-import interior_material_img3 from "@/images/interior_material_img3.png";
-import interior_material_img4 from "@/images/interior_material_img4.png";
-import interior_material_img5 from "@/images/interior_material_img5.png";
-import Interior_last_room from "@/images/Interior_last_room.png";
 import wrong_logo from "@/images/wrong_logo.png";
+import Interior_last_room from "@/images/Interior_last_room.png";
 import Interior_last_room_Svg from "@/svgs/Interior_Lastroom.svg";
 import styles from "@/app/Single_Project_Layout/Single_project.module.css";
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
+
 const Project_Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
@@ -27,17 +19,13 @@ const Project_Header = () => {
   const [tabUrl, setTabUrl] = useState("");
   const searchParams = useSearchParams();
   const pathname = usePathname();
-  console.log("tab", tabUrl);
+
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash : "";
-
-    // setFullUrl(url);
     let hashUrl = hash.slice(1);
     setTabUrl(hashUrl);
     handleSingleProject(hashUrl);
   }, [pathname, searchParams]);
-  console.log("single", singleProject);
-  // const url = `https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts/${hashUrl}/`;
 
   const handleSingleProject = async (hashUrl) => {
     try {
@@ -51,8 +39,6 @@ const Project_Header = () => {
     }
   };
 
-  useEffect(() => {}, []);
-
   const handleImageClick = (imageSrc) => {
     setCurrentImage(imageSrc);
     setIsModalOpen(true);
@@ -62,6 +48,7 @@ const Project_Header = () => {
     setIsModalOpen(false);
     setCurrentImage(null);
   };
+
   const handleModalClick = (e) => {
     if (e.target === e.currentTarget) {
       handleCloseModal();
@@ -74,6 +61,7 @@ const Project_Header = () => {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
+
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -100,9 +88,6 @@ const Project_Header = () => {
       controlsX.start("visible");
     }
   }, [controlsX, inViewX]);
-
-  const text =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
 
   const sentence = {
     hidden: { opacity: 0 },
@@ -166,7 +151,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={500}
+                  height={700}
                 />
               </div>
               <div className={styles.First_project_layout_image2_inner}>
@@ -175,7 +160,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={500}
+                  height={700}
                 />
               </div>
             </div>
@@ -188,105 +173,67 @@ const Project_Header = () => {
                 height={800}
               />
             </div>
+            <div className={styles.First_project_layout_image2}>
+              <div className={styles.First_project_layout_image2_inner}>
+                <Image
+                  src={item.acf.image5}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={700}
+                />
+              </div>
+              <div className={styles.First_project_layout_image2_inner}>
+                <Image
+                  src={item.acf.image6}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={700}
+                />
+              </div>
+            </div>
+            <div className={styles.First_project_layout_image2_innerX}>
+              <Image
+                src={item.acf.image7}
+                alt="none"
+                className={styles.Single_project_image1}
+                width={1000}
+                height={800}
+              />
+            </div>
           </div>
 
           {/* 5 images */}
 
           <div className={styles.interior_material_outer}>
             <div className={styles.interior_material_content}>
-              {/* {[
-                interior_material_img1,
-                interior_material_img2,
-                interior_material_img3,
-                interior_material_img4,
-                interior_material_img5,
-              ].map((imgSrc, index) => ( */}
-              <div
-                className={styles.interior_material_text}
-                onClick={() => handleImageClick(imgSrc)}
-              >
-                <Image
-                  src={item.acf.image4}
-                  alt="Interior Material"
-                  className={styles.interior_material_img}
-                  width={1000}
-                  height={600}
-                />
-                <div className={styles.interior_material_overlay}>
-                  <p className={styles.interior_material_overlay_text}>
-                    {item.acf.material_name1}
-                  </p>
+              {[
+                { img: item.acf.image4, name: item.acf.material_name1 },
+                { img: item.acf.image4, name: item.acf.material_name2 },
+                { img: item.acf.image4, name: item.acf.material_name3 },
+                { img: item.acf.image4, name: item.acf.material_name4 },
+                { img: item.acf.image4, name: item.acf.material_name5 },
+              ].map((imgObj, index) => (
+                <div
+                  className={styles.interior_material_text}
+                  onClick={() => handleImageClick(imgObj.img)}
+                  key={index}
+                >
+                  <Image
+                    src={imgObj.img}
+                    alt="Interior Material"
+                    className={styles.interior_material_img}
+                    width={1000}
+                    height={600}
+                  />
+                  <div className={styles.interior_material_overlay}>
+                    <p className={styles.interior_material_overlay_text}>
+                      {imgObj.name}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div
-                className={styles.interior_material_text}
-                onClick={() => handleImageClick(imgSrc)}
-              >
-                <Image
-                  src={item.acf.image4}
-                  alt="Interior Material"
-                  className={styles.interior_material_img}
-                  width={1000}
-                  height={300}
-                />
-                <div className={styles.interior_material_overlay}>
-                  <p className={styles.interior_material_overlay_text}>
-                    {item.acf.material_name2}
-                  </p>
-                </div>
-              </div>
-              <div
-                className={styles.interior_material_text}
-                onClick={() => handleImageClick(imgSrc)}
-              >
-                <Image
-                  src={item.acf.image4}
-                  alt="Interior Material"
-                  className={styles.interior_material_img}
-                  width={1000}
-                  height={300}
-                />
-                <div className={styles.interior_material_overlay}>
-                  <p className={styles.interior_material_overlay_text}>
-                    {item.acf.material_name3}
-                  </p>
-                </div>
-              </div>
-              <div
-                className={styles.interior_material_text}
-                onClick={() => handleImageClick(imgSrc)}
-              >
-                <Image
-                  src={item.acf.image4}
-                  alt="Interior Material"
-                  className={styles.interior_material_img}
-                  width={1000}
-                  height={300}
-                />
-                <div className={styles.interior_material_overlay}>
-                  <p className={styles.interior_material_overlay_text}>
-                    {item.acf.material_name4}
-                  </p>
-                </div>
-              </div>
-              <div
-                className={styles.interior_material_text}
-                onClick={() => handleImageClick(imgSrc)}
-              >
-                <Image
-                  src={item.acf.image4}
-                  alt="Interior Material"
-                  className={styles.interior_material_img}
-                  width={1000}
-                  height={300}
-                />
-                <div className={styles.interior_material_overlay}>
-                  <p className={styles.interior_material_overlay_text}>
-                    {item.acf.material_name5}
-                  </p>
-                </div>
-              </div>
-              {/* ))} */}
+              ))}
             </div>
 
             {isModalOpen && (
@@ -296,12 +243,14 @@ const Project_Header = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <span className={styles.close} onClick={handleCloseModal}>
-                    <Image src={wrong_logo} alt="Interior Material" />
+                    <Image src={wrong_logo} alt="Close" />
                   </span>
                   <Image
                     src={currentImage}
                     alt="Interior Material"
                     className={styles.modalImage}
+                    width={1000}
+                    height={600}
                   />
                 </div>
               </div>
