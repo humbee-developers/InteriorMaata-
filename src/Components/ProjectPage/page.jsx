@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "@/Components/ProjectPage/projectPage.module.css";
-import projectsData from "./projectData";
+// import projectsData from "./projectData";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import StarSvg from "@/svgs/Star.svg";
@@ -19,7 +19,18 @@ const Projects = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [tabUrl, setTabUrl] = useState("");
+  const [projectsData, setProjectData] = useState([]);
+  const [headingImage, setHeadingImage] = useState("");
+  console.log("headingImage", headingImage);
 
+  //interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts
+
+  useEffect(() => {
+    fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts")
+      .then((res) => res.json())
+      .then((data) => setProjectData(data));
+  }, []);
+  console.log(projectsData);
 
   const handleClick = (e) => {
     setProjectName(e);
@@ -37,15 +48,14 @@ const Projects = () => {
   // console.log("current", currentData)
   const lastIndex = pageNumber * itemsPerPage;
   const firstIndex = lastIndex - itemsPerPage;
-  const displayedData = currentData?.slice(firstIndex, lastIndex);
+  // const displayedData = currentData?.slice(firstIndex, lastIndex);
   const router = useRouter();
 
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash : "";
-   
 
     // setFullUrl(url);
-  
+
     if (pathname + hash === "/Projects#interior") {
       setCurrentData(projectsData[0]);
     } else if (pathname + hash === "/Projects#architecture") {
@@ -56,8 +66,6 @@ const Projects = () => {
 
     setTabUrl(pathname + hash);
   }, [pathname, searchParams]);
-
-
 
   return (
     <div ref={projectsRef} className={styles.projectPageOuter}>
@@ -111,53 +119,60 @@ const Projects = () => {
 
       <div className={styles.ProjectSection_Content}>
         {/* mapping images and titles sequentially */}
-        {displayedData &&
-          displayedData.map((data, index) => (
-            <div key={index}>
-              <div className={styles.ProjectSection_imageContent}>
-                <Image
-                  className={styles.ProjectSection_image}
-                  src={data.image}
-                  alt={data.title}
-                  onClick={() => router.push("/Single_Project_Layout")}
-                />
-                <div
-                  onClick={() => router.push("/Single_Project_Layout")}
-                  className={styles.overlay}
-                ></div>
-              </div>
-              <div className={styles.project_heading}>
-                <span>{data.title}</span>
-              </div>
-              <div className={styles.ProjectSection_textContent}>
-                <div className={styles.section_1}>
-                  <div className={styles.year}>
-                    <span>{data.year}</span>
+        {projectsData &&
+          projectsData.map(
+            (data, index) =>
+              ((tabUrl === "/Projects#interior" &&
+                data.acf.select_category === "residential") ||
+                (tabUrl === "/Projects#architecture" &&
+                  data.acf.select_category === "architecture") ||
+                (tabUrl === "/Projects#commercials" &&
+                  data.acf.select_category === "commercial")) && (
+                <div key={index}>
+                  <div className={styles.ProjectSection_imageContent}>
+                    <Image
+                      className={styles.ProjectSection_image}
+                      alt={"image"}
+                      src={data.acf.heading_image}
+                      onClick={() => router.push(`/Single_Project_Layout#${data.id}`)}
+                      width={1000}
+                      height={200}
+                    />
+                    <div
+                      onClick={() => router.push(`/Single_Project_Layout#${data.id}`)}
+                      className={styles.overlay}
+                    ></div>
                   </div>
-                  <div>
-                    <span>CLIENT | </span>
-                    {data.client}
+                  <div className={styles.project_heading}>
+                    <span>{data.acf.project_name}</span>
                   </div>
-                  <div>
-                    <span>PROJECT | </span>
-                    {data.project}
-                  </div>
+                  <div className={styles.ProjectSection_textContent}>
+                    <div className={styles.section_1}>
+                      <div className={styles.year}>
+                        <span>{data.acf.year}</span>
+                      </div>
+                      <div>
+                        <span>CLIENT | </span>
+                        {data.acf.client_name}
+                      </div>
+                      <div>
+                        <span>PROJECT | </span>
+                        {data.acf.select_category}
+                      </div>
+                    </div>
 
-                  
-                </div>
+                    <div className={styles.section_2}>
+                      <div>
+                        <span>LOCATION | </span>
+                        {data.location}
+                      </div>
+                    </div>
 
-                <div className={styles.section_2}>
-                  <div>
-                    <span>LOCATION | </span>
-                    {data.location}
+                    <div className={styles.section_3}></div>
                   </div>
                 </div>
-
-                <div className={styles.section_3}>
-                </div>
-              </div>
-            </div>
-          ))}
+              )
+          )}
       </div>
 
       <div className={styles.projects_pagination}>

@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // output:"export"
-    
-}
+  // output:"export"
+  images: {
+    domains: ["interiormaataassets.humbeestudio.xyz"],
+  },
+};
 module.exports = nextConfig;
 
 // module.exports = {
@@ -16,4 +18,3 @@ module.exports = nextConfig;
 //     return config;
 //   },
 // };
-
