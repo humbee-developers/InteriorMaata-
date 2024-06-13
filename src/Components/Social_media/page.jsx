@@ -49,18 +49,18 @@ import logo10 from "@/svgs/ica.svg"
 import { useTransform, useScroll, motion } from "framer-motion";
 
 const videos = [
-  "video1.mp4",
+  "videonew10.mp4",
   "video2.mp4",
   "video3.mp4",
-  "video1.mp4",
-  "video2.mp4",
-  "video3.mp4",
-  "video1.mp4",
-  "video2.mp4",
-  "video3.mp4",
-  "video1.mp4",
-  "video2.mp4",
-  "video3.mp4",
+  "videonew1.mp4",
+  "videonew2.mp4",
+  "videonew3.mp4",
+  "videonew4.mp4",
+  "videonew5.mp4",
+  "videonew6.mp4",
+  "videonew7.mp4",
+  "videonew8.mp4",
+  "videonew9.mp4",
 ];
 
 const images = [
