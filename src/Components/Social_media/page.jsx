@@ -50,8 +50,8 @@ import { useTransform, useScroll, motion } from "framer-motion";
 
 const videos = [
   "videonew10.mp4",
-  "video2.mp4",
-  "video3.mp4",
+  "videonew11.mp4",
+  "videonew12.mp4",
   "videonew1.mp4",
   "videonew2.mp4",
   "videonew3.mp4",
