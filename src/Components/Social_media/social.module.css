@@ -127,7 +127,9 @@
   align-items: center;
   height: 100vh;
 }
-
+.center{
+  text-align:center;
+}
 .instagram1 {
   display: flex;
   justify-content: center;

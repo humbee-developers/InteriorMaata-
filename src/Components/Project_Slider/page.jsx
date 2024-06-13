@@ -112,14 +112,15 @@ export default function App() {
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                Extremely professional and helpful attitude. Especially Akhila is very good coordinator and helping nature with suggestions having with patience Now a days it is rare to find people with such dedication towards work
+                It was an absolute pleasure working with Interior Maata consultancy.
+                They provided me with such a detailed planning down to the very last detail that it was really easy for me to make the workers understand the vision.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.Carousel_text_maincontent}>
                 <p className={styles.carousel_text_Content}>
-                I read a comment of Alpa thanki and understood that you are not very much suitable for a middle class person. You only prefer to work for a business person having  a hefty bank balance.
+                she designed my home and its beyond my expectation, I loved her TRED-MO style. she did everything in my budget very happy with the services.
                 </p>
               </div>
             </SwiperSlide>

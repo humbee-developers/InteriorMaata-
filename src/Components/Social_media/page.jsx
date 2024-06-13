@@ -229,7 +229,7 @@ export default function Home() {
 
         <div className={styles.spacerX} id="brands">
           <div className={styles.instagram1}>
-            <p>OUR BRANDS</p>
+            <p className={styles.center}>BRANDS WE WORKED WITH</p>
 <div className={styles.brands_outer}>
   <div className={styles.brands_logo_outer}>
     <Image className={styles.brand_logo} src={logo1} alt=""/>

@@ -60,7 +60,7 @@ const Page = () => {
 
   const handleEmailClick1 = () => {
     if (typeof window !== 'undefined') {
-      router.push('mailto:Ananya@interiormaata.com');
+      router.push('mailto:business@interiormaata.com ');
     }
   };
   
@@ -103,7 +103,7 @@ const Page = () => {
             Consultancy@interiormaata.com
           </div>
           <div type="button" onClick={handleEmailClick1} className={styles.Contact_us_person_details_second}>
-            Ananya@interiormaata.com
+            Business@interiormaata.com 
           </div>
         </div>
       {/* <div className={styles.iframe_outer}>
