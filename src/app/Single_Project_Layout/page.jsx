@@ -141,7 +141,7 @@ const Project_Header = () => {
                 alt="none"
                 className={styles.Single_project_image1}
                 width={1000}
-                height={800}
+                height={700}
               />
             </div>
             <div className={styles.First_project_layout_image2}>
@@ -151,7 +151,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={600}
                 />
               </div>
               <div className={styles.First_project_layout_image2_inner}>
@@ -160,7 +160,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={600}
                 />
               </div>
             </div>
@@ -170,7 +170,7 @@ const Project_Header = () => {
                 alt="none"
                 className={styles.Single_project_image1}
                 width={1000}
-                height={800}
+                height={700}
               />
             </div>
             <div className={styles.First_project_layout_image2}>
@@ -180,7 +180,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={600}
                 />
               </div>
               <div className={styles.First_project_layout_image2_inner}>
@@ -189,7 +189,7 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={600}
                 />
               </div>
             </div>
@@ -199,7 +199,7 @@ const Project_Header = () => {
                 alt="none"
                 className={styles.Single_project_image1}
                 width={1000}
-                height={800}
+                height={700}
               />
             </div>
           </div>

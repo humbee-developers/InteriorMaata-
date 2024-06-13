@@ -71,7 +71,8 @@
 .interior_material_img {
   max-width: 100%;
   cursor: pointer;
-  height: auto;
+  object-fit:cover;
+  /* height: auto; */
   transition: 0.4s;
 }
 .interior_material_text {
@@ -216,13 +217,14 @@
 
 .modalImage {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  /* height: auto; */
 }
 
 @media (min-width: 1500px) {
   .interior_material_img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
   .interior_material_text {
     width: 20%;
