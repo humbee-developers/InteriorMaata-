@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Button6 from "@/Common/Buttons/button6";
 import Image from "next/image";
 import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
-import project1 from "@/images/project1.jpg"
+import project1 from "@/images/project1.webp"
 import project2 from "@/images/project2.jpg"
 import project3 from "@/images/project3.jpg"
-import project4 from "@/images/project4.jpg"
+import project4 from "@/images/project4.webp"
 import styles from "@/Components/KnowAboutUsHeader/knowAboutUs.module.css";
 // import "./newslide.css";
 import "swiper/css";
@@ -197,7 +197,7 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-<Button6 button_text="Read More"/>
+<Button6 button_text="KNOW MORE"/>
               </motion.div>
             </motion.div>
           </div>

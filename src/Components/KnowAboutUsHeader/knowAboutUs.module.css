@@ -47,7 +47,7 @@
   width: 60rem;
   gap: 2rem;
   margin: 0 auto;
-  padding-left: 15rem;
+  padding-left: 0rem;
 }
 
 .aboutUs_buttonOuter {
@@ -60,16 +60,17 @@
 }
 
 .aboutUs_banner_text_outer {
-  margin-top: 2rem;
+  margin-top: 0rem;
+  padding-right:2rem;
 }
 
 .aboutUs_banner_text {
   color: #cc7d45;
   font-family: var(--font-poppins);
-  font-size: 15px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 22px;
   text-transform: capitalize;
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
@@ -79,7 +80,17 @@
     line-height: 140px;
   }
   .aboutUs_flex_divider {
-    padding-left: 13rem;
+    padding-left: 0rem;
+    width: 80rem;
+  }
+  .aboutUs_banner_text_outer {
+    padding-right:7rem;
+  }
+  
+  .aboutUs_banner_text {
+    font-size: 19px;
+    line-height: 22px;
+
   }
 }
 
@@ -104,7 +115,38 @@
     width: 70%;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .aboutUs_flex_divider {
+    display: flex;
+    width: 50rem;
+    flex-direction:row;
+    gap: 2rem;
+    margin: 0 auto;
+    padding-left: 0rem;
+  }
+  .aboutUs_banner_text_outer {
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+    padding-right:0;
+  }
+  .aboutUs_banner_text {
+    font-size: 18px;
+    line-height: 22px;
+   
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .ananya {
+    font-size: 65px !important;
+    line-height: normal;
+    padding-bottom: 0rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
 .aboutUs_buttonOuter{
   display: flex;
   justify-content:center;
@@ -139,6 +181,7 @@
 
   .aboutUs_banner_text_outer {
     margin: 0 auto;
+    padding-right:0;
     text-align: left;
     font-size: 14px;
     width: 100%;
@@ -180,12 +223,20 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .aboutUsHeader {
+    height: 134vh;
+  }
+  .aboutUsHeader {
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+  }
+
   .ananya {
     font-size: 40px;
     line-height: normal;
   }
   .aboutUs_banner_text_outer {
-    width: 95%;
-    padding: 0 15px;
+    width: 100%;
+    padding: 0 0px;
   }
 }
