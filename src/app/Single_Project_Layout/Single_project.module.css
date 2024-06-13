@@ -89,8 +89,10 @@
 .interior_material_overlay {
   position: absolute;
   top: 50%;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .interior_material_overlay_text {
   color: #ffffff;
