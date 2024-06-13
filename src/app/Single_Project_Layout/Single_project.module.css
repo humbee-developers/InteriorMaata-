@@ -411,6 +411,7 @@
   }
   .interior_material_img {
     max-width: none;
+    width:100%
   }
   .interior_last_room_Section {
     padding-left: 3rem;
