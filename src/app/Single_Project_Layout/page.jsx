@@ -204,36 +204,37 @@ const Project_Header = () => {
             </div>
           </div>
 
-          {/* 5 images */}
-
           <div className={styles.interior_material_outer}>
             <div className={styles.interior_material_content}>
               {[
-                { img: item.acf.image4, name: item.acf.material_name1 },
-                { img: item.acf.image4, name: item.acf.material_name2 },
-                { img: item.acf.image4, name: item.acf.material_name3 },
-                { img: item.acf.image4, name: item.acf.material_name4 },
-                { img: item.acf.image4, name: item.acf.material_name5 },
-              ].map((imgObj, index) => (
-                <div
-                  className={styles.interior_material_text}
-                  onClick={() => handleImageClick(imgObj.img)}
-                  key={index}
-                >
-                  <Image
-                    src={imgObj.img}
-                    alt="Interior Material"
-                    className={styles.interior_material_img}
-                    width={1000}
-                    height={600}
-                  />
-                  <div className={styles.interior_material_overlay}>
-                    <p className={styles.interior_material_overlay_text}>
-                      {imgObj.name}
-                    </p>
+                { img: item.acf.material_image1, name: item.acf.material_name1 },
+                { img: item.acf.material_image2, name: item.acf.material_name2 },
+                { img: item.acf.material_image3, name: item.acf.material_name3 },
+                { img: item.acf.material_image4, name: item.acf.material_name4 },
+                { img: item.acf.material_image5, name: item.acf.material_name5 },
+                { img: item.acf.material_image6, name: item.acf.material_name6 },
+              ]
+                .filter((imgObj) => imgObj.img) // Filter out objects without an image
+                .map((imgObj, index) => (
+                  <div
+                    className={styles.interior_material_text}
+                    onClick={() => handleImageClick(imgObj.img)}
+                    key={index}
+                  >
+                    <Image
+                      src={imgObj.img}
+                      alt="Interior Material"
+                      className={styles.interior_material_img}
+                      width={1000}
+                      height={600}
+                    />
+                    <div className={styles.interior_material_overlay}>
+                      <p className={styles.interior_material_overlay_text}>
+                        {imgObj.name}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
 
             {isModalOpen && (
@@ -257,7 +258,6 @@ const Project_Header = () => {
             )}
           </div>
 
-          {/* end */}
           <div className={styles.interior_material_specs_content} ref={refX}>
             <motion.div
               className={styles.interior_material_specs_text}
