@@ -107,7 +107,7 @@ const Project_Header = () => {
       y: 0,
     },
   };
-
+  // client_name
   return (
     <Stairs>
       {singleProject?.map((item, index) => (
@@ -122,13 +122,13 @@ const Project_Header = () => {
                   transition={{ duration: 0.9 }}
                 >
                   <HeadingTextAnimation
-                    heading={item?.acf?.client_name}
+                    heading={item?.acf?.project_name}
                     justifyContent={"center"}
                   />
-                  <HeadingTextAnimation
+                  {/* <HeadingTextAnimation
                     heading={" dream home"}
                     justifyContent={"center"}
-                  />
+                  /> */}
                 </motion.div>
               </div>
             </div>
