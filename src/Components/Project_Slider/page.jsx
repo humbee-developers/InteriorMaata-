@@ -8,7 +8,6 @@ import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import "./imx.css";
-import Project_Slider from "@/images/Project_Slider_img.png";
 import { FreeMode, Thumbs, Pagination, Autoplay } from "swiper/modules";
 import styles from "@/Components/Project_Slider/Slider.module.css";
 import Carousel_svg from "@/svgs/project_carousel_layout.svg";
