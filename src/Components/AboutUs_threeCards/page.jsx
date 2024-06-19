@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Home_Layer from "@/svgs/AboutUs_border.svg";
+import Home_Layer from "@/images/home_layer.png";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import styles from "@/Components/AboutUs_threeCards/AboutUs_threeCards.module.css";
-import about_image1 from "@/images/AboutUs_Quality_image.png";
-import about_image2 from "@/images/about_us_quality_img1.png";
+import about_image1 from "@/images/IM-interior1.png";
+import about_image2 from  "@/images/IM-interior2.png";
+import about_image3 from "@/images/IM-interior3.png";
 function Landing_page() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -93,7 +94,7 @@ function Landing_page() {
           transition={{ duration: 0.45, delay: 0.4 }}
          className={styles.Landing_image3}>
           <Image src={Home_Layer} alt="none" />
-          <Image src={about_image1} alt="none" className={styles.about_hover}/>
+          <Image src={about_image3} alt="none" className={styles.about_hover}/>
           <div className={styles.overlay_text}>
             <p className={styles.overlay_text_content}>architectural</p>
             <p className={styles.overlay_text_content1}>design</p>

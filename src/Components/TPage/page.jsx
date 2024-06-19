@@ -257,7 +257,13 @@ const TeamPage = () => {
         </div>
 
         <div className={styles.image_content5}>
-          <Image src={img7} alt={"img"} />
+          {/* <Image src={img7} alt={"img"} /> */}
+          <video 
+          loop
+        autoPlay
+        muted>
+      <source src="./video/showreel.mp4" type="video/mp4" />
+    </video>
         </div>
       </div>
     </>
