@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
 
+
 const Projects = () => {
   const itemsPerPage = 4;
   const [projectName, setProjectName] = useState(0);
