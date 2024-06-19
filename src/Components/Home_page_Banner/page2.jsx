@@ -51,10 +51,10 @@ const Animation = ({ loadImage, counter }) => {
     };
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
-
+    // https://interiormaataassets.humbeestudio.xyz/mainsiteassets/mobile/0001.webp
     const frameCount = 290;
     const currentFrame = (index) =>
-      `https://interiormaata.humbeestudio.xyz/assets/frames/mobileframe/${(
+      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/mobile/${(
         index + 1
       )
         .toString()
