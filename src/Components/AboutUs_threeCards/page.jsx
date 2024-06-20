@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Home_Layer from "@/images/home_layer.png";
+import Home_Layer from "@/svgs/new_border.svg";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import styles from "@/Components/AboutUs_threeCards/AboutUs_threeCards.module.css";
-import about_image1 from "@/images/IM-interior1.png";
-import about_image2 from  "@/images/IM-interior2.png";
-import about_image3 from "@/images/IM-interior3.png";
+import about_image1 from "@/images/home_background1.png";
+import about_image2 from "@/images/home_background2.png";
+import about_image3 from "@/images/home_background3.png";
 function Landing_page() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -54,33 +54,27 @@ function Landing_page() {
 
       <div className={styles.landing_page_second_images}>
         <motion.div
-         
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.2 }}
           className={styles.Landing_image1}
         >
-          <Image src={Home_Layer} alt="none"/>
-          <Image src={about_image1} alt="none" className={styles.about_hover}/>
+          <Image src={Home_Layer} alt="none" />
+          <Image src={about_image1} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
             <p className={styles.overlay_text_content}>Interior</p>
             <p className={styles.overlay_text_content1}>Consultancy</p>
           </div>
         </motion.div>
 
-
-
-
-
-
         <motion.div
-        
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.3 }}
-         className={styles.Landing_image2}>
+          className={styles.Landing_image2}
+        >
           <Image src={Home_Layer} alt="none" />
-          <Image src={about_image2} alt="none" className={styles.about_hover}/>
+          <Image src={about_image2} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
             <p className={styles.overlay_text_content}>BEST IN</p>
             <p className={styles.overlay_text_content1}>CLASS QUALITY</p>
@@ -88,13 +82,13 @@ function Landing_page() {
         </motion.div>
 
         <motion.div
-         
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.45, delay: 0.4 }}
-         className={styles.Landing_image3}>
+          className={styles.Landing_image3}
+        >
           <Image src={Home_Layer} alt="none" />
-          <Image src={about_image3} alt="none" className={styles.about_hover}/>
+          <Image src={about_image3} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
             <p className={styles.overlay_text_content}>architectural</p>
             <p className={styles.overlay_text_content1}>design</p>
