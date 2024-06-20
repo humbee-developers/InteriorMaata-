@@ -1,19 +1,14 @@
-.slick-prev {
+/* .slick-prev {
   left: 200px;
   z-index: 99;
-}
+} */
 
-
-.slick-track{
+.slick-track {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
-.slick-next {
+/* .slick-next {
   right: 200px;
-}
-
-.slick-list {
-  /* min-height:35rem */
 }
 .slick-dots {
   bottom: -30px;
@@ -24,7 +19,7 @@
 
 .slick-dots li {
   margin: 0 5px;
-}
+} */
 
 .slick-dots li.slick-active button:before {
   color: rgba(204, 125, 69, 1);
@@ -35,89 +30,60 @@
   color: rgba(204, 125, 69, 0.642);
   transform: scale(2.4);
 }
-@media(min-width:1600px) and (max-width:1920px){
 
-  .slick-list {
-    /* min-height:58rem */
-  }
-}
-@media screen and (max-width: 1440px) {
-  
-  .slick-list {
-    /* min-height:47rem; */
-  }
-}
 @media screen and (max-width: 1400px) {
-
-  .image{
-    height:100%;
-    width:80%;
-  }
-  
-  .slick-list {
-    /* min-height:47rem; */
+  .image {
+    height: 100%;
+    width: 80%;
   }
 }
 @media screen and (max-width: 1199px) {
-  .slick-slide{
+  /* .slick-slide {
     margin-left: auto;
   }
-  .slick-list{
+  .slick-list {
     margin-left: -10rem !important;
-  }
+  } */
 }
 @media screen and (max-width: 900px) {
-  .slick-slide{
+  /* .slick-slide {
     margin-left: auto;
-  }
+  } */
 }
 @media screen and (max-width: 769px) {
-  .slick-dots {
+  /* .slick-dots {
     bottom: -30px;
     padding: 1.5rem 0;
   }
   .slick-dots li {
     margin: 0 6px;
   }
-  .slick-list{
+  .slick-list {
     margin-left: -10rem !important;
-    /* min-height: 42rem; */
   }
-  .slick-slide{
+  .slick-slide {
     margin-left: auto;
-  }
+  } */
 }
 @media screen and (max-width: 700px) {
-  .slick-list{
-    /* min-height: 42rem; */
-  }
-  .slick-slide{
+  /* .slick-slide {
     margin-left: auto;
-  }
-  
-}
-@media screen and (max-width: 600px) {
-  .slick-list{
-    /* min-height: 42rem; */
-  }
- 
+  } */
 }
 @media screen and (max-width: 500px) {
-  .slick-list{
+  /* .slick-list {
     margin-left: -8rem !important;
-    /* min-height: 28rem; */
-  }
- 
+  } */
 }
 
 @media (max-width: 476px) {
-  .slick-dots li button:before {
+  /* .slick-dots li button:before {
     transform: scale(2);
   }
   .slick-dots li.slick-active button:before {
     transform: scale(2);
   }
-  
+
   .slick-dots {
     bottom: -22px;
     padding: 1.3rem 0;
@@ -125,5 +91,5 @@
 
   .slick-dots li {
     margin: 0 3px;
-  }
+  } */
 }

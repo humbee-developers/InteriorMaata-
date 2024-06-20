@@ -1,11 +1,22 @@
 .main_carousel {
   position: relative;
 }
+.moodboard_text {
+  width: 80%;
+  font-size: 20px;
+}
 
-.leftCenterText {
-  position: absolute;
-  top: 27rem;
-  right: 8rem;
+.slide1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.slide1_outer{
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+
+.slide2 {
 }
 
 .CenterTextInner {
@@ -38,721 +49,52 @@
   display: flex;
   gap: 1rem;
   transition: width 0.3s ease; /* Smooth transition for width change */
-  width: 3.6rem !important; 
+  width: 3.6rem !important;
   max-width: 16rem;
   border-radius: 44px;
   width: fit-content;
   border: 0.125rem solid hsla(0, 0%, 100%, 0.2);
-  transform: translate(5rem, -7rem);
+  /* transform: translate(8rem, -6rem); */
   opacity: 1;
   background-color: hsla(0, 0%, 100%, 0.1);
   padding: 0.6rem 0.6rem;
+}
+.slideControlButtons:nth-of-type(3) {
+  flex-grow: 2;
 }
 
 .slideControlButtons.expanded {
   width: 16rem !important; /* Expanded width */
 }
 
-
 .slideControlButtons {
   transition: all 0.3s ease-out;
-  /* border: 1px solid white; */
 }
 
-.image1 {
-  position: absolute;
-  left: 38%;
-  top: 3rem;
-  z-index: 1;
-}
-
-.image2 {
-  position: absolute;
-  left: 34.4%;
-  top: 22rem;
-  z-index: 2;
-}
-
-.image3 {
-  position: absolute;
-  position: absolute;
-  left: 43%;
-  top: 16rem;
-}
-
-.image4 {
-  position: absolute;
-  left: 52%;
-  top: 3rem;
-}
-
-.image5 {
-  position: absolute;
-  left: 38%;
-  top: 6rem;
-  z-index: 2;
-}
-
-.image6 {
-  position: absolute;
-  left: 42%;
-  top: 24rem;
-}
-
-.image7 {
-  position: absolute;
-  left: 58%;
-  top: 20rem;
-}
-
-.image8 {
-  position: absolute;
-  left: 58%;
-  top: 24rem;
-}
-
-.image9 {
-  position: absolute;
-  left: 58%;
-  top: 28rem;
-}
-
-.image10 {
-  position: absolute;
-  left: 58%;
-  top: 32rem;
-}
-
-.image11 {
-  position: absolute;
-  left: 58%;
-  top: 36rem;
-}
-
-.imagex,
-.imagex1,
-.imagex2,
-.imagex3 {
+.imagex {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 100%;
   height: 500px;
+  width: 100%;
   object-fit: contain;
 }
 
-@media (max-width: 1440px) {
-  .main_carousel {
-    position: relative;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1920px) {
-  .slideControlButtons {
-    display: flex;
-    gap: 1rem;
-    transform: translate(5rem, -12rem);
-    width: fit-content;
-  }
-
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: 700px;
-    object-fit: contain;
-  }
-
-  .leftCenterText {
-    position: absolute;
-    top: 34rem;
-    /* left: 92rem; */
-  }
-
-  .image1 {
-    position: absolute;
-    left: 38%;
-    top: 6rem;
-    z-index: 1;
-  }
-
-  .image2 {
-    position: absolute;
-    left: 34.4%;
-    top: 29rem;
-    z-index: 2;
-  }
-
-  .image3 {
-    position: absolute;
-    left: 43%;
-    top: 24rem;
-  }
-
-  .image4 {
-    position: absolute;
-    left: 51%;
-    top: 3rem;
-  }
-
-  .image5 {
-    position: absolute;
-    left: 38%;
-    top: 9rem;
-    z-index: 2;
-  }
-
-  .image6 {
-    position: absolute;
-    left: 42%;
-    top: 32rem;
-  }
-
-  .image7 {
-    position: absolute;
-    left: 58%;
-    top: 28rem;
-  }
-
-  .image8 {
-    position: absolute;
-    left: 58%;
-    top: 33rem;
-  }
-
-  .image9 {
-    position: absolute;
-    left: 58%;
-    top: 38rem;
-  }
-
-  .image10 {
-    position: absolute;
-    left: 58%;
-    top: 43rem;
-  }
-
-  .image11 {
-    position: absolute;
-    left: 58%;
-    top: 48rem;
-  }
-}
-
-@media (max-width: 1350px) {
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 62%;
-  }
-
-  .image4 {
-    left: 56%;
-  }
-}
-@media (max-width: 1200px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: auto;
-    margin-right: 5rem;
-    max-width: 100%;
-    height: 550px;
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(5rem, -1rem);
-  }
-}
-@media (max-width: 1100px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 6rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 550px;
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(5rem, 0rem);
-  }
-}
-@media (max-width: 1024px) {
-  .slideControlButtons.expanded {
-    width: 16rem !important; /* Expanded width */
-  }
-
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 7rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 500px;
-    object-fit: contain;
-  }
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .slideControlButtons {
-    transform: translate(3rem, 0rem);
-    /* padding: 0.8rem 0.8rem; */
-    gap: 0.8rem;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 67%;
-  }
-
-  .image4 {
-    left: 58%;
-  }
-  .image6 {
-    left: 45%;
-  }
-  .leftCenterText {
-    position: absolute;
-    top: 32rem;
-    right: 3.5rem;
-  }
-}
-
-@media (max-width: 940px) {
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 3rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 500px;
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(3rem, 1rem);
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 70%;
-  }
-  .image4 {
-    left: 58%;
-  }
-  .image6 {
-    left: 45%;
-  }
-  .image3 {
-    left: 46%;
-  }
-}
-
-@media (max-width: 900px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 480px;
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(3rem, 0rem);
-  }
-  .main_carousel {
-    position: relative;
-    height: auto;
-    max-width: 100%;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 70%;
-  }
-  .image4 {
-    left: 64%;
-  }
-  .image6 {
-    left: 45%;
-  }
-  .image3 {
-    left: 46%;
-  }
-  .leftCenterText {
-    position: absolute;
-    top: 30rem;
-    right: 5.5rem;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1920px) {
-  .leftCenterText {
-    position: absolute;
-    top: 37rem !important;
-    right: 2.5rem;
-  }
-}
-
-@media (max-height: 1180px) {
-  .leftCenterText {
-    position: absolute;
-    top: 23rem;
-    right: 1.5rem;
-  }
-}
-@media (max-width: 800px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 460px;
-
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(1rem, 0rem);
-  }
-}
-@media (max-width: 768px) {
-  .slideControlButtons {
-    transform: translate(2rem, 1rem);
-    /* padding: 0.8rem 0.8rem; */
-  }
-  .wrapper {
-    padding: 0rem;
-  }
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 5rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 480px;
-
-    object-fit: contain;
-  }
-  .leftCenterText {
-    position: absolute;
-    top: 33rem;
-    right: 3.3rem;
-  }
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 75%;
-  }
-  .image4 {
-    left: 64%;
-    top: 0;
-  }
-  .image6 {
-    left: 45%;
-  }
-  .image3 {
-    left: 48%;
-  }
-  .image6 {
-    left: 50%;
-    top: 21rem;
-  }
-  .image1 {
-    top: 0rem;
-  }
-  .image2 {
-    left: 35%;
-    top: 20rem;
-  }
-}
-@media (max-width: 760px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 5rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 480px;
-
-    object-fit: contain;
-  }
-}
-@media (max-width: 650px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 5rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 450px;
-    object-fit: contain;
-  }
-  .leftCenterText {
-    position: absolute;
-    top: 37rem;
-    right: 2rem;
-  }
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 80%;
-  }
-
-  .image4 {
-    left: 64%;
-    top: 0;
-  }
-  .image6 {
-    left: 45%;
-  }
-  .image3 {
-    left: 48%;
-  }
-  .image6 {
-    left: 50%;
-    top: 21rem;
-  }
-  .image1 {
-    top: 0rem;
-  }
-  .image2 {
-    left: 35%;
-    top: 20rem;
-  }
-  .leftCenterText {
-    display: none;
-  }
-}
-@media (max-width: 590px) {
-  .slideControlButtons.expanded {
-    width: 14.5rem !important; /* Expanded width */
-  }
-
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 5rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 400px;
-
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(2rem, 2rem);
-  }
-  .leftCenterText {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 380px;
-    object-fit: contain;
-  }
-  .slideControlButtons {
-    transform: translate(1rem, 1rem);
-    gap: 0.5rem;
-    padding: 0.6rem 0.6rem;
-  }
-
-  .main_carousel {
-    position: relative;
-    height: auto;
-  }
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 80%;
-  }
-  .image7 {
-    top: 14rem;
-  }
-  .image8 {
-    top: 18rem;
-  }
-  .image9 {
-    top: 22rem;
-  }
-  .image10 {
-    top: 26rem;
-  }
-  .image11 {
-    top: 30rem;
-  }
-  .image4 {
-    left: 64%;
-    top: 0;
-  }
-  .image6 {
-    left: 45%;
-    top: 18rem;
-  }
-  .image3 {
-    left: 48%;
-    top: 12rem;
-  }
-  .image6 {
-    left: 50%;
-    top: 18rem;
-  }
-  .image1 {
-    top: 0rem;
-  }
-  .image2 {
-    left: 32%;
-    top: 15rem;
-  }
-  .image5 {
-    width: 80% !important;
-    top: 3rem;
-  }
-}
-@media (max-width: 460px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 370px;
-    /* object-fit: contain; */
-  }
-}
-@media (max-width: 420px) {
-  .image7,
-  .image8,
-  .image9,
-  .image10,
-  .image11 {
-    left: 82%;
-  }
-  .image18,
-  .image19,
-  .image20,
-  .image21,
-  .image22 {
-    left: 85%;
-  }
-  .image7 {
-    top: 14rem;
-  }
-  .image8 {
-    top: 18rem;
-  }
-  .image9 {
-    top: 22rem;
-  }
-  .image10 {
-    top: 26rem;
-  }
-  .image11 {
-    top: 30rem;
-  }
-
-  .image4 {
-    left: 70%;
-    top: 0;
-  }
-  .image6 {
-    left: 45%;
-    top: 18rem;
-  }
-  .image3 {
-    left: 48%;
-    top: 12rem;
-  }
-  .image6 {
-    left: 50%;
-    top: 18rem;
-  }
-  .image1 {
-    top: 0rem;
-  }
-  .image2 {
-    left: 32%;
-    top: 15rem;
-  }
-  .image5 {
-    width: 90% !important;
-    top: 4rem;
-  }
+.buttons_all {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
 }
 
 .slideContent {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 8rem;
 }
+
 .imageNumbering {
   position: absolute;
-  top: 15%;
-  right: 15%;
+  top: 0%;
+  right: 5%;
   font-family: var(--font-poppins);
   font-size: 20px;
   font-weight: 400;
@@ -762,32 +104,272 @@
 .imageNumbering span {
   color: #cc7d45;
 }
-@media (max-width: 390px) {
-  .imagex,
-  .imagex1,
-  .imagex2,
-  .imagex3 {
-    display: block;
-    margin-left: 4rem;
-    margin-right: auto;
-    max-width: 100%;
-    height: 280px;
-  }
-  .slideControlButtons {
-    transform: translate(1rem, 1rem);
+
+@media (max-width: 1440px) {
+  .main_carousel {
+    position: relative;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .imageNumbering {
-    top: 17%;
-    right: 13%;
+    top: 0%;
+    right: 3%;
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .imageNumbering {
-    display: none;
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .slideControlButtons {
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+  }
+
+  .moodboard_text {
+    width: 70%;
+  }
+
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 600px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1300px) {
+  .moodboard_text {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .slideContent {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 990px) {
+  .moodboard_text {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .slideContent {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 849px) {
+  .slideContent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .slide1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moodboard_text {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 849px) {
+  .slideContent {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .moodboard_text {
+    width: 100%;
+    font-size: 18px;
+  }
+  .slide1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 450px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slideControlButtons.expanded {
+    width: 16rem !important; /* Expanded width */
+  }
+
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 420px;
+    object-fit: contain;
+  }
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+  .slideControlButtons {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+  .main_carousel {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 849px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0rem;
+  }
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+}
+@media (max-width: 760px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media (max-width: 650px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+}
+
+@media (max-width: 590px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .slideControlButtons.expanded {
+    width: 14.5rem !important; /* Expanded width */
+  }
+
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 500px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .slideControlButtons {
+    gap: 0.5rem;
+    padding: 0.6rem 0.6rem;
+  }
+
+  .main_carousel {
+    position: relative;
+    height: auto;
+  }
+}
+@media (max-width: 460px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 370px;
+  }
+}
+
+@media (max-width: 390px) {
+  .imagex {
+    display: block;
+    max-width: 100%;
+    height: 330px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 849px) {
+  .slide1 {
+    width: 100%;
+    gap:1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .CenterTextInner {
+    color: #cc7d45;
+    font-family: "Dream Avenue";
+    font-size: 12vw;
+  }
+  .slide1 {
+    width: 100%;
+    gap:1rem;
+    /* padding-left: 0.8rem;
+    padding-right: 0.8rem; */
   }
 }

@@ -92,7 +92,7 @@
   }
   .forth_Section_container{
     flex-direction: column-reverse;
-    padding-top: 3rem;
+    padding-top: 1rem;
     height: auto;
   }
 }
@@ -100,7 +100,7 @@
 @media(min-width:200px) and (max-width:600px){
   .forth_Section_container{
     flex-direction: column-reverse;
-    padding-top: 4rem;
+    padding-top: 0rem;
   }
 
 }
