@@ -19,6 +19,33 @@
 .slide2 {
 }
 
+
+
+.strong_air{
+color:rgb(103, 113, 118);
+}
+
+.strong_water{
+color:rgb(163, 146, 128);
+}
+.strong_fire{
+color:rgb(209, 130, 17);
+}
+
+.strong_space{
+color:rgb(164, 163, 164);
+}
+.strong_earth{
+color:#ae7b56
+}
+
+
+
+
+
+
+
+
 .CenterTextInner {
   color: #cc7d45;
   font-family: "Dream Avenue";

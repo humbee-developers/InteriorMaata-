@@ -138,16 +138,16 @@ const Page = () => {
                 </motion.div>
 
                 <div className={styles.moodboard_text}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong className={styles.strong_earth}>ROOTED IN NATURE </strong> 
+                   Reconnect with the grounding force of Earth, where natural
+                  textures and earthy tones create a warm, welcoming
+                  environment. The Earth moodboard showcases rich browns, lush
+                  greens, and neutral shades that echo the beauty of the natural
+                  world. Imagine wooden furniture, stone accents, and lush
+                  greenery blending seamlessly to form a sanctuary that feels
+                  both grounded and nurturing. This design fosters a deep sense
+                  of peace and belonging, bringing the beauty of the outdoors
+                  inside.
                 </div>
                 <div className={styles.buttons_all}>
                   <div
@@ -233,16 +233,15 @@ const Page = () => {
                 </motion.div>
 
                 <div className={styles.moodboard_text}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong className={styles.strong_fire}>IGNITE YOUR PASSION </strong> 
+                   Feel the warmth and energy of Fire as it illuminates your
+                  space with vibrant intensity. The Fire moodboard is a
+                  celebration of bold reds, rich oranges, and glowing ambers,
+                  balanced with dark, grounding tones. Think of warm, textured
+                  fabrics, rustic metals, and the soft flicker of candlelight.
+                  This design evokes a sense of passion and coziness, perfect
+                  for creating intimate, inviting spaces that spark conversation
+                  and connection.
                 </div>
                 <div className={styles.buttons_all}>
                   <div
@@ -327,16 +326,15 @@ const Page = () => {
                 </motion.div>
 
                 <div className={styles.moodboard_text}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong className={styles.strong_air} >BREATH OF SERENITY </strong> 
+                   Step into the ethereal world of Air, where lightness and
+                  fluidity reign supreme. Our Air moodboard captures the essence
+                  of breezy tranquility with a palette of soft whites, gentle
+                  blues, and muted pastels. Imagine airy fabrics, delicate
+                  drapery, and open spaces that breathe life into your home.
+                  Elements like sheer curtains, light wooden accents, and
+                  minimalistic decor create a serene atmosphere that feels as
+                  refreshing as a gentle summer breeze.
                 </div>
                 <div className={styles.buttons_all}>
                   <div
@@ -421,16 +419,15 @@ const Page = () => {
                 </motion.div>
 
                 <div className={styles.moodboard_text}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong className={styles.strong_water}>FLOW OF TRANQUILITY </strong> 
+                   Dive into the calming embrace of Water, where fluidity and
+                  depth bring a sense of peace and relaxation. Our Water
+                  moodboard features soothing hues of aqua, deep blues, and
+                  seafoam greens, complemented by flowing lines and reflective
+                  surfaces. Picture the gentle ripple of a water feature, the
+                  cool touch of marble, and the shimmer of glass accents, all
+                  coming together to create a tranquil oasis that soothes your
+                  soul.
                 </div>
                 <div className={styles.buttons_all}>
                   <div
@@ -515,16 +512,15 @@ const Page = () => {
                 </motion.div>
 
                 <div className={styles.moodboard_text}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong className={styles.strong_space}>INFINITE INSPIRATION </strong> 
+                   Explore the boundless possibilities of Space, where
+                  imagination knows no limits. Our Space moodboard is a journey
+                  through the cosmos, featuring deep, starry blacks, twinkling
+                  silvers, and cosmic purples. Envision sleek, modern furniture,
+                  reflective surfaces, and geometric patterns that mirror the
+                  mysteries of the universe. This design element invites you to
+                  dream big and create a home that feels both futuristic and
+                  timeless.
                 </div>
                 <div className={styles.buttons_all}>
                   <div
