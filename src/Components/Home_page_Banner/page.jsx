@@ -170,6 +170,30 @@ const Animation = ({ loadImage, counter }) => {
     setIsVisible(false);
   };
 
+
+
+//  code for video show and hide 
+useEffect(() => {
+  // Function to handle scroll direction and video visibility
+  const handleScroll = () => {
+    const video = document.querySelector(`.${styles.videoBg}`);
+    if (window.scrollY > 0) {
+      // Check if window has scrolled down
+      video.style.visibility = "hidden";
+    } else {
+      video.style.visibility = "visible";
+    }
+  };
+
+  // Add scroll event listener
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+  
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -178,6 +202,9 @@ const Animation = ({ loadImage, counter }) => {
         setIsVisible(true);
       }
     };
+
+
+    
 
     window.addEventListener("scroll", handleScroll);
 
@@ -193,6 +220,7 @@ const Animation = ({ loadImage, counter }) => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     upsideDown: { opacity: 0, y: 180, transition: { duration: 0.3 } }
   };
+
 
   return (
     <section>
@@ -261,6 +289,18 @@ const Animation = ({ loadImage, counter }) => {
           </div>
         )}
       </div>
+
+
+      <video
+        className={styles.videoBg}
+        width="750"
+        height="500"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="./video/testing.mp4" type="video/mp4" />
+      </video>
 
       <MusicPlayer />
       {scrollPercentage >= 45 && (
