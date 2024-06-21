@@ -64,7 +64,7 @@ const MusicPlayer = ({ audioFile }) => {
 
   return (
     <div>
-      <audio loop autoPlay={true} ref={audioRef} src={"https://interiormaata.humbeestudio.xyz/assets/audio/3dbackgroundmusic.mp3"} type="audio/mp3" />
+      <audio loop autoPlay={true} ref={audioRef} src={"https://interiormaataassets.humbeestudio.xyz/mainsiteassets/sound/3dbackgroundmusic.mp3"} type="audio/mp3" />
       {isVisible && ( 
         <button className={`${styles.playPause} ${isPlaying ? styles.playing : ''}`} onClick={togglePlay}>
           <Image className={styles.waves} src={playPause} alt="playPause" />
