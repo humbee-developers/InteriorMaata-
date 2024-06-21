@@ -290,7 +290,6 @@ useEffect(() => {
         )}
       </div>
 
-
       <video
         className={styles.videoBg}
         width="750"

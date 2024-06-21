@@ -170,6 +170,40 @@ const Animation = ({ loadImage, counter }) => {
     setIsVisible(false);
   };
 
+
+
+  //  code for video show and hide 
+useEffect(() => {
+  // Function to handle scroll direction and video visibility
+  const handleScroll = () => {
+    const video = document.querySelector(`.${styles.videoBg}`);
+    if (window.scrollY > 0) {
+      // Check if window has scrolled down
+      video.style.visibility = "hidden";
+    } else {
+      video.style.visibility = "visible";
+    }
+  };
+
+  // Add scroll event listener
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -261,6 +295,23 @@ const Animation = ({ loadImage, counter }) => {
           </div>
         )}
       </div>
+
+{/* just add the second video new one link here >> source is in public folder  */}
+
+      {/* <video
+        className={styles.videoBg}
+        width="750"
+        height="500"
+        autoPlay
+        loop
+        muted
+      >
+        <source src="./video/videonew1.mp4" type="video/mp4" />
+      </video> */}
+
+
+
+
 
       <MusicPlayer />
       {scrollPercentage >= 45 && (
