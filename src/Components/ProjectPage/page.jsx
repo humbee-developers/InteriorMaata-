@@ -23,7 +23,9 @@ const Projects = () => {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts")
+    fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts/?per_page=20")
+    // fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts") by default it will only show 10 projects
+    // fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts/?per_page=X") for showing 1 project 
       .then((res) => res.json())
       .then((data) => setProjectsData(data));
   }, []);

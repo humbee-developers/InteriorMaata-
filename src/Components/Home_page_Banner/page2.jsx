@@ -32,7 +32,7 @@ const Animation = ({ loadImage, counter }) => {
     contextRef.current = context;
 
     const setCanvasSize = () => {
-      const originalWidth = 575;
+      const originalWidth = 519;
       const originalHeight = 918;
       const aspectRatio = originalWidth / originalHeight;
       const availableWidth = window.innerWidth;
