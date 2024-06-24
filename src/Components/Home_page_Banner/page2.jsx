@@ -298,7 +298,7 @@ useEffect(() => {
 
 {/* just add the second video new one link here >> source is in public folder  */}
 
-      {/* <video
+       <video
         className={styles.videoBg}
         width="750"
         height="500"
@@ -306,8 +306,8 @@ useEffect(() => {
         loop
         muted
       >
-        <source src="./video/videonew1.mp4" type="video/mp4" />
-      </video> */}
+        <source src="./video/final_frame_video.mp4" type="video/mp4" />
+      </video>
 
 
 
