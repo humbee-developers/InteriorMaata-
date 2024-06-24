@@ -306,7 +306,7 @@ useEffect(() => {
         loop
         muted
       >
-        <source src="./video/final_frame_video.mp4" type="video/mp4" />
+        <source src="./video/mobile_video.mp4" type="video/mp4" />
       </video>
 
 
