@@ -117,7 +117,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Space planning
+                          Consultation and Needs Assessment
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -127,7 +127,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Layout design
+                          Space Planning and Layout Design
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -137,7 +137,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Furniture and decor selection
+                          Concept Development and Design
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -147,7 +147,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Lighting design
+                          Furniture and Decor Selection
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -157,7 +157,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Material selection
+                          Custom Furniture and Built-ins
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -167,7 +167,7 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Procurement
+                          Lighting Design
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
@@ -177,7 +177,17 @@ const Page = () => {
                             styles.Services_Content_residential_list_text
                           }
                         >
-                          Project management and execution
+                          Color Consultation and Finishing
+                        </p>
+                      </div>
+                      <div className={styles.Services_Content_list_inner}>
+                        <Image src={Services_interior_svg} />
+                        <p
+                          className={
+                            styles.Services_Content_residential_list_text
+                          }
+                        >
+                          Project Management
                         </p>
                       </div>
                     </div>
@@ -344,6 +354,7 @@ const Page = () => {
                         and satisfaction.
                       </p>
                     </div>
+
                     <div>
                       <div className={styles.Services_Content_residential_list}>
                         <div className={styles.Services_Content_list_inner}>
@@ -353,7 +364,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Space planning
+                            Acoustic Design
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -363,7 +374,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Layout design
+                            Consultation and Needs Assessment
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -373,7 +384,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Furniture and decor selection
+                            Space Planning and Layout Design
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -383,7 +394,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Lighting design
+                            Concept Development and Design
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -393,7 +404,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Material selection
+                            Lighting Design
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -403,7 +414,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Procurement
+                            Sustainable Design Solutions
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
@@ -413,7 +424,7 @@ const Page = () => {
                               styles.Services_Content_residential_list_text
                             }
                           >
-                            Project management and execution
+                            Project Management
                           </p>
                         </div>
                       </div>
