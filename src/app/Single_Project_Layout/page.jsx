@@ -258,7 +258,7 @@ const Project_Header = () => {
             )}
           </div>
 
-          <div className={styles.interior_material_specs_content} ref={refX}>
+          {/* <div className={styles.interior_material_specs_content} ref={refX}>
             <motion.div
               className={styles.interior_material_specs_text}
               variants={sentence}
@@ -275,7 +275,7 @@ const Project_Header = () => {
                 </motion.span>
               ))}
             </motion.div>
-          </div>
+          </div> */}
 
           <div className={styles.Interior_second_text_content}>
             <div className={styles.Interior_second_text_content_first}>
@@ -304,9 +304,11 @@ const Project_Header = () => {
           <div className={styles.interior_last_room_Section}>
             <Link href={item.acf.video} target="_blank">
               <Image
-                src={Interior_last_room}
+                src={item.acf.thumbnail}
                 alt="none"
                 className={styles.interior_last_room_img}
+                width={1000}
+                height={700}
               />
               <div className={styles.interior_last_room_overlay}>
                 <div className={styles.interior_last_room_overlay_svgs}>

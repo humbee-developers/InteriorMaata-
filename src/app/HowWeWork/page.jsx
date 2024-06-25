@@ -5,7 +5,7 @@ import HowWeWorkHeader from "@/Components/HowWeWorkHeader/page";
 import HowWeWorkTimeline from "@/Components/HowWeWorkTimeline/page";
 import HowWeWorkText from "@/Components/HowWeWorkText/page";
 import TextRevel from "@/Animations/TextRevel/page";
-import ServicesCards from "@/Components/ServicesCards/page";
+// import ServicesCards from "@/Components/ServicesCards/page";
 import Services_Slider from "@/Components/Service_Slider/page";
 import AboutUs_ourDesign from "@/Components/AboutUs_ourDesign/page";
 
@@ -25,7 +25,7 @@ const Page = () => {
       <HowWeWorkTimeline />
       <TextRevel phrase={phrase} />
       <AboutUs_ourDesign />
-      <ServicesCards />
+      {/* <ServicesCards /> */}
       <Services_Slider />
       <HowWeWorkText />
     </>
