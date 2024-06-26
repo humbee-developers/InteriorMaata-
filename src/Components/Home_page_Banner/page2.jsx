@@ -298,7 +298,7 @@ useEffect(() => {
 
 {/* just add the second video new one link here >> source is in public folder  */}
 
-       <video
+       {/* <video
         className={styles.videoBg}
         width="750"
         height="500"
@@ -307,7 +307,7 @@ useEffect(() => {
         muted
       >
         <source src="./video/mobile_video.mp4" type="video/mp4" />
-      </video>
+      </video> */}
 
 
 

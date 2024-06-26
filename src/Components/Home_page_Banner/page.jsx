@@ -290,7 +290,7 @@ useEffect(() => {
         )}
       </div>
 
-      <video
+      {/* <video
         className={styles.videoBg}
         width="750"
         height="500"
@@ -299,7 +299,7 @@ useEffect(() => {
         muted
       >
         <source src="./video/final_frame_video.mp4" type="video/mp4" />
-      </video>
+      </video> */}
 
       <MusicPlayer />
       {scrollPercentage >= 45 && (
