@@ -42,13 +42,15 @@ const Footer = () => {
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div className={styles.justRelative}>
-            <a href="tel:+918866502675" className={styles.phone_no}>
-              +918866502675
-            </a>
-            <br />
-            <a href="tel:+917404040286" className={styles.phone_no}>
+          <a href="tel:+917404040286" className={styles.phone_no}>
               +917404040286
             </a>
+            <br />
+            <a href="tel:0256-4000981" className={styles.phone_no}>
+              0256-4000981
+            </a>
+            
+            
             <Link
               href="https://maps.app.goo.gl/jeRd13E7QPZQiKZi9"
               target="_blank"
