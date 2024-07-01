@@ -70,7 +70,7 @@
   max-width: 100%;
   cursor: pointer;
   object-fit:cover;
-  /* height: auto; */
+  height: auto;
   transition: 0.4s;
 }
 .interior_material_text {
@@ -145,7 +145,7 @@
 .interior_last_room_img {
   width: 100% !important;
   cursor: pointer;
-  height: revert-layer !important;
+  height: auto;
   object-fit: cover;
 }
 .interior_last_room_overlay {
@@ -225,7 +225,7 @@
 @media (min-width: 1500px) {
   .interior_material_img {
     width: 100%;
-    /* height: auto; */
+    height: auto;
   }
   .interior_material_text {
     width: 20%;
