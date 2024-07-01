@@ -3,6 +3,7 @@
 }
 .moodboard_text {
   width: 80%;
+  font-family: var(--font-poppins);
   font-size: 20px;
 }
 
@@ -11,40 +12,28 @@
   display: flex;
   flex-direction: column;
 }
-.slide1_outer{
-  padding-left:1.5rem;
-  padding-right:1.5rem;
+.slide1_outer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.slide2 {
+.strong_air {
+  color: rgb(103, 113, 118);
 }
 
-
-
-.strong_air{
-color:rgb(103, 113, 118);
+.strong_water {
+  color: rgb(163, 146, 128);
+}
+.strong_fire {
+  color: rgb(209, 130, 17);
 }
 
-.strong_water{
-color:rgb(163, 146, 128);
+.strong_space {
+  color: rgb(164, 163, 164);
 }
-.strong_fire{
-color:rgb(209, 130, 17);
+.strong_earth {
+  color: #ae7b56;
 }
-
-.strong_space{
-color:rgb(164, 163, 164);
-}
-.strong_earth{
-color:#ae7b56
-}
-
-
-
-
-
-
-
 
 .CenterTextInner {
   color: #cc7d45;
@@ -331,7 +320,6 @@ color:#ae7b56
   }
 }
 
-
 @media (max-width: 550px) {
   .slideControlButtons.expanded {
     width: 14.5rem !important; /* Expanded width */
@@ -381,7 +369,7 @@ color:#ae7b56
 @media (min-width: 601px) and (max-width: 849px) {
   .slide1 {
     width: 100%;
-    gap:1rem;
+    gap: 1rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
   }
@@ -395,8 +383,6 @@ color:#ae7b56
   }
   .slide1 {
     width: 100%;
-    gap:1rem;
-    /* padding-left: 0.8rem;
-    padding-right: 0.8rem; */
+    gap: 1rem;
   }
 }
