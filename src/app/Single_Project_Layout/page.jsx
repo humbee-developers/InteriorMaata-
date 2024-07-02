@@ -1,12 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Stairs from "@/Animations/Stairs";
 import wrong_logo from "@/images/wrong_logo.png";
-import Interior_last_room from "@/images/Interior_last_room.png";
 import Interior_last_room_Svg from "@/svgs/Interior_Lastroom.svg";
 import styles from "@/app/Single_Project_Layout/Single_project.module.css";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -107,7 +106,10 @@ const Project_Header = () => {
       y: 0,
     },
   };
-  // client_name
+
+  // Helper function to filter out images that are not available
+  const filterImages = (...images) => images.filter((image) => image);
+
   return (
     <Stairs>
       {singleProject?.map((item, index) => (
@@ -125,83 +127,89 @@ const Project_Header = () => {
                     heading={item?.acf?.project_name}
                     justifyContent={"center"}
                   />
-                  {/* <HeadingTextAnimation
-                    heading={" dream home"}
-                    justifyContent={"center"}
-                  /> */}
                 </motion.div>
               </div>
             </div>
           </div>
 
           <div className={styles.First_project_layout_image}>
-            <div className={styles.First_project_layout_image2_innerX}>
-              <Image
-                src={item.acf.heading_image}
-                alt="none"
-                className={styles.Single_project_image1}
-                width={1000}
-                height={700}
-              />
-            </div>
-            <div className={styles.First_project_layout_image2}>
-              <div className={styles.First_project_layout_image2_inner}>
+            {item.acf.heading_image && (
+              <div className={styles.First_project_layout_image2_innerX}>
                 <Image
-                  src={item.acf.image2}
+                  src={item.acf.heading_image}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={600}
+                  height={700}
                 />
               </div>
-              <div className={styles.First_project_layout_image2_inner}>
+            )}
+
+            {filterImages(item.acf.image2, item.acf.image3).length > 0 && (
+              <div className={styles.First_project_layout_image2}>
+                {filterImages(item.acf.image2, item.acf.image3).map(
+                  (imgSrc, imgIndex) => (
+                    <div
+                      className={styles.First_project_layout_image2_inner}
+                      key={imgIndex}
+                    >
+                      <Image
+                        src={imgSrc}
+                        alt="none"
+                        className={styles.Single_project_image1}
+                        width={1000}
+                        height={600}
+                      />
+                    </div>
+                  )
+                )}
+              </div>
+            )}
+
+            {item.acf.image4 && (
+              <div className={styles.First_project_layout_image2_innerX}>
                 <Image
-                  src={item.acf.image3}
+                  src={item.acf.image4}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={600}
+                  height={700}
                 />
               </div>
-            </div>
-            <div className={styles.First_project_layout_image2_innerX}>
-              <Image
-                src={item.acf.image4}
-                alt="none"
-                className={styles.Single_project_image1}
-                width={1000}
-                height={700}
-              />
-            </div>
-            <div className={styles.First_project_layout_image2}>
-              <div className={styles.First_project_layout_image2_inner}>
+            )}
+
+            {filterImages(item.acf.image5, item.acf.image6).length > 0 && (
+              <div className={styles.First_project_layout_image2}>
+                {filterImages(item.acf.image5, item.acf.image6).map(
+                  (imgSrc, imgIndex) => (
+                    <div
+                      className={styles.First_project_layout_image2_inner}
+                      key={imgIndex}
+                    >
+                      <Image
+                        src={imgSrc}
+                        alt="none"
+                        className={styles.Single_project_image1}
+                        width={1000}
+                        height={600}
+                      />
+                    </div>
+                  )
+                )}
+              </div>
+            )}
+
+            {item.acf.image7 && (
+              <div className={styles.First_project_layout_image2_innerX}>
                 <Image
-                  src={item.acf.image5}
+                  src={item.acf.image7}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={600}
+                  height={700}
                 />
               </div>
-              <div className={styles.First_project_layout_image2_inner}>
-                <Image
-                  src={item.acf.image6}
-                  alt="none"
-                  className={styles.Single_project_image1}
-                  width={1000}
-                  height={600}
-                />
-              </div>
-            </div>
-            <div className={styles.First_project_layout_image2_innerX}>
-              <Image
-                src={item.acf.image7}
-                alt="none"
-                className={styles.Single_project_image1}
-                width={1000}
-                height={700}
-              />
-            </div>
+            )}
           </div>
 
           <div className={styles.interior_material_outer}>
@@ -258,25 +266,6 @@ const Project_Header = () => {
             )}
           </div>
 
-          {/* <div className={styles.interior_material_specs_content} ref={refX}>
-            <motion.div
-              className={styles.interior_material_specs_text}
-              variants={sentence}
-              initial="hidden"
-              animate={inViewX ? "visible" : "hidden"}
-            >
-              {item.acf.paragraph.split("").map((char, index) => (
-                <motion.span
-                  className={styles.interior_material_specs_text}
-                  key={char + "-" + index}
-                  variants={letter}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </motion.div>
-          </div> */}
-
           <div className={styles.Interior_second_text_content}>
             <div className={styles.Interior_second_text_content_first}>
               <motion.div
@@ -302,6 +291,7 @@ const Project_Header = () => {
           </div>
 
           <div className={styles.interior_last_room_Section}>
+          {item.acf.thumbnail && item.acf.video && (
             <Link href={item.acf.video} target="_blank">
               <Image
                 src={item.acf.thumbnail}
@@ -319,6 +309,7 @@ const Project_Header = () => {
                 </div>
               </div>
             </Link>
+          )}
           </div>
         </div>
       ))}

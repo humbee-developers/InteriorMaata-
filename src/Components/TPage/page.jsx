@@ -9,7 +9,6 @@ import img2 from "@/images/Teamslider2.png";
 import img3 from "@/images/Teamslider3.png";
 import img4 from "@/images/Teamslider4.png";
 import img5 from "@/images/Teamslider5.png";
-import img7 from "@/images/Team_image7.png";
 import img6 from "@/images/Teamslider6.png";
 import img15 from "@/images/Teamslider7.png";
 import img8 from "@/images/Teamslider8.png";
@@ -58,7 +57,7 @@ const TeamPage = () => {
     img6,
     img15,
     img8,
-    img9,
+   
     img10,
     img11,
     img12,
