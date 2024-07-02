@@ -61,7 +61,45 @@
       padding-top: 9rem;
       padding-bottom: 7rem;
     }
+
+   
   }
+
+
+  @media(min-width:1921px) and (max-width:2600px){
+    .ananya {
+      font-size: 150.669px;
+      width: 90%;
+      line-height: 150px;
+    }
+
+    .aboutUsHeader {
+      padding-top: 17rem;
+      padding-bottom: 9rem;
+    }
+
+
+    .aboutUs_banner_text {
+      font-size: 20px;
+      line-height: 22px;
+    
+    }
+
+    .aboutUs_flex_divider {
+      display: flex;
+      width: 70rem;
+      gap: 2rem;
+      margin: 0 auto;
+      padding-left: 20rem;
+    }
+
+    .aboutUs_banner_imageX{
+      width:350px;
+      height:500px;
+    }
+  }
+
+
   @media screen and (max-width: 1024px) {
     .ananya {
       font-size: 80px;

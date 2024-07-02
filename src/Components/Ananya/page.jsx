@@ -92,7 +92,7 @@ const Page = () => {
                 <Image
                   src={Cover_image}
                   alt="image"
-                  className={styles.aboutUs_banner_image}
+                  className={styles.aboutUs_banner_imageX}
                 />
               </motion.div>
             </div>
