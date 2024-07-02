@@ -294,7 +294,8 @@
 
 @media (min-width: 1921px) and (max-width: 2560px) {
   .footer_last_Section {
-    font-size: 12.3vw;
+    font-size: 15.5vw;
+    line-height: 23rem;
   }
 
   .footer_copyright {

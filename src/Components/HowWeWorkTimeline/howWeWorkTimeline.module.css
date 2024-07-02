@@ -168,6 +168,15 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1921px) and (max-width: 2600px) {
+  .timline1_meet_text_inner,
+.timline1_meet_text_inner2 {
+  font-size: 20px;
+
+}
+}
+
 @media (max-width: 1400px)
 {
   .timeline_container {
