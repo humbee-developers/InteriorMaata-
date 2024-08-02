@@ -2,7 +2,7 @@
   color: #7f7047;
   text-align: center;
   font-family: "Dream Avenue";
-  font-size: 8vw;
+  font-size: 7vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -33,11 +33,18 @@
 }
 
 .First_project_layout_image {
+  display: grid;
+  /* grid-template-rows: auto; */
+  /* grid-template-columns: 30% 40% 27%; */
+  grid-template-columns: 25% 25% 25% 22%;
+  /* grid-auto-rows: auto; */ 
+  grid-gap: 20px;
   text-align: center;
   width: 100%;
   overflow: hidden;
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-bottom: 4rem;
 }
 .Single_project_image1 {
   width: 100%;
@@ -45,15 +52,18 @@
   object-fit: cover;
   transition: 0.4s;
   cursor: pointer;
+  padding-bottom: 1rem;
+  display: block;
+  /* overflow: hidden; */
 }
 .Single_project_image1:hover {
   transform: scale(1.05);
 }
 .First_project_layout_image2 {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 2rem;
   cursor: pointer;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .interior_material_outer {
@@ -164,11 +174,11 @@
 
 .First_project_layout_image2_innerX {
   overflow: hidden;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .First_project_layout_image2_inner {
-  width: 50%;
+  width: 100%;
   cursor: pointer;
   overflow: hidden;
 }
@@ -238,7 +248,7 @@
   }
 
   .first_project_text_header {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .first_project_text_firstcontent {
     width: 100%;
@@ -277,6 +287,9 @@
   .interior_last_room_img {
     height: auto;
   }
+  .First_project_layout_image2 {
+    margin-bottom: 0rem;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
@@ -293,7 +306,7 @@
     font-size: 14px;
   }
   .Interior_second_text_content_first {
-    font-size: 4.5vw;
+    font-size: 7.5vw;
   }
   .interior_last_room_img {
     height: auto;
@@ -353,6 +366,9 @@
     margin-right: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  .First_project_layout_image{
+    grid-template-columns: auto auto auto auto;
   }
 }
 
@@ -430,12 +446,18 @@
     line-height: normal;
     text-transform: uppercase;
   }
+  .First_project_layout_image{
+    grid-template-columns: auto auto;
+  }
 }
 
 @media (max-width: 575px) {
   .First_project_layout_image {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+  .First_project_layout_image{
+    grid-template-columns: auto;
   }
   .interior_last_room_Section {
     padding-left: 2.5rem;

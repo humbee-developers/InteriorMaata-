@@ -20,7 +20,7 @@ const Page = () => {
     triggerOnce: true, // Only trigger once
   });
   return (
-    <div>
+    <div className={styles.MainFlexContainer}>
       <div className={styles.forth_Section_container} ref={ref1}>
         <div className={styles.forth_Section_content}>
           <motion.p
@@ -47,9 +47,9 @@ const Page = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             className={styles.forth_section_third}
           >
-            Design and Execution by
+            Team Interiormaata helps you to translate
             <br />
-            Interior Maata Team
+            your dream vision to reality
           </motion.p>
 
           <motion.div
@@ -58,7 +58,7 @@ const Page = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className={styles.forth_content_button}
           >
-            <Button button_text="Read More" 
+            <Button button_text="Start Now" 
              />
           </motion.div>
         </div>
@@ -104,9 +104,9 @@ const Page = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className={styles.forth_section_third}
           >
-            Design and Execution by
+           Get Design Concepts based on your 
             <br />
-            Interior Maata Team
+            assessment and budget
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -114,7 +114,7 @@ const Page = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className={styles.forth_content_button}
           >
-            <Button3 button_text="Read More" />
+            <Button3 button_text="Start Now" />
           </motion.div>
         </div>
       </div>

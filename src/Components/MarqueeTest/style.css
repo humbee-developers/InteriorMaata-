@@ -2,6 +2,7 @@
   overflow: hidden;
   white-space: nowrap;
   font-family:"Dream Avenue";
+  padding-bottom: 5rem;
 }
 .rollingText {
   font-size: 6vw;
@@ -13,4 +14,7 @@
     .rollingText {
         font-size: 9vw;
       }
+     .wrapperRollingText{
+      padding-bottom: 2rem;
+     } 
 }

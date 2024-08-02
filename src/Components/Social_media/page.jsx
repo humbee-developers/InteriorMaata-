@@ -147,7 +147,12 @@ export default function Home() {
       <Stairs />
       <main className={styles.main}>
         <div className={styles.spacer}>
-          <div className={styles.instagram}>INSTAGRAM</div>
+          {/* <div>sdsdsdsd</div> */}
+          <div className={styles.instagram}>INSTAGRAM
+            <br /><span className={styles.InstaTitle}>Peek into Perfection with Interiormaata</span>
+            </div>
+          
+          
           <div className={styles.data}>
             <div className={styles.dataOuter}>
               <div className={styles.dataHeading}>602</div>

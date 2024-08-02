@@ -17,9 +17,9 @@ const Popup = ({ close }) => {
           <div className={styles.content}>
             <h2>Thank you for your interest!</h2>
             <p>
-            We are creating something cool for you. Get ready to know about what's in store for you 😊
+            We are creating something cool for you. Stay Tuned to know about what's in store for you 😊
             </p>
-            <Button button_text={"Connect"} onClick={close} />
+            <Button button_text={"Connect with us"} onClick={close} />
           </div>
         </div>
       </div>

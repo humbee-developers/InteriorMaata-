@@ -16,12 +16,11 @@ import "@/Components/AboutUs_Carousel2/Inbuilt.css";
 import styles from "@/Components/AboutUs_Carousel2/AboutUS_Carousel2.module.css";
 
 const Page = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
 
-  const toggleWidth = () => {
-    setIsExpanded(!isExpanded);
-    // setIsExpanded(true);
-  };
+  // const toggleWidth = () => {
+  //   setIsExpanded(!isExpanded);
+  // };
 
   const [ref1, inView1] = useInView({
     triggerOnce: false,
@@ -151,50 +150,48 @@ const Page = () => {
                 </div>
                 <div className={styles.buttons_all}>
                   <div
-                    className={`${styles.slideControlButtons} ${
-                      isExpanded ? styles.expanded : ""
-                    }`}
-                    onClick={toggleWidth}
+                    className={styles.slideControlButtons}
+                    // onClick={toggleWidth}
                   >
-                    {isExpanded ? (
+                    
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 0 ? activeButtonClass : ""
+                            currentSlide === 0 
                           }`}
                           style={{ backgroundColor: buttonColors[0] }}
                           onClick={() => goToSlide(0)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 1 ? activeButtonClass : ""
+                            currentSlide === 1 
                           }`}
                           style={{ backgroundColor: buttonColors[1] }}
                           onClick={() => goToSlide(1)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 2 ? activeButtonClass : ""
+                            currentSlide === 2 
                           }`}
                           style={{ backgroundColor: buttonColors[2] }}
                           onClick={() => goToSlide(2)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 3 ? activeButtonClass : ""
+                            currentSlide === 3 
                           }`}
                           style={{ backgroundColor: buttonColors[3] }}
                           onClick={() => goToSlide(3)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 4 ? activeButtonClass : ""
+                            currentSlide === 4
                           }`}
                           style={{ backgroundColor: buttonColors[4] }}
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
-                    ) : (
+                    
                       <button
                         className={`${styles.slideControlButton} ${
                           currentSlide === 0 ? activeButtonClass : ""
@@ -202,7 +199,7 @@ const Page = () => {
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
                       ></button>
-                    )}
+                    
                   </div>
                 </div>
               </div>
@@ -245,12 +242,10 @@ const Page = () => {
                 </div>
                 <div className={styles.buttons_all}>
                   <div
-                    className={`${styles.slideControlButtons} ${
-                      isExpanded ? styles.expanded : ""
-                    }`}
-                    onClick={toggleWidth}
+                    className={styles.slideControlButtons}
+                    // onClick={toggleWidth}
                   >
-                    {isExpanded ? (
+                    
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
@@ -288,7 +283,7 @@ const Page = () => {
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
-                    ) : (
+                    {/* ) : ( */}
                       <button
                         className={`${styles.slideControlButton} ${
                           currentSlide === 0 ? activeButtonClass : ""
@@ -296,7 +291,7 @@ const Page = () => {
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
                       ></button>
-                    )}
+                    {/* )} */}
                   </div>
                 </div>
               </div>
@@ -338,12 +333,10 @@ const Page = () => {
                 </div>
                 <div className={styles.buttons_all}>
                   <div
-                    className={`${styles.slideControlButtons} ${
-                      isExpanded ? styles.expanded : ""
-                    }`}
-                    onClick={toggleWidth}
+                    className={styles.slideControlButtons}
+                    // onClick={toggleWidth}
                   >
-                    {isExpanded ? (
+                  
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
@@ -381,7 +374,7 @@ const Page = () => {
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
-                    ) : (
+                    {/* ) : ( */}
                       <button
                         className={`${styles.slideControlButton} ${
                           currentSlide === 0 ? activeButtonClass : ""
@@ -389,7 +382,7 @@ const Page = () => {
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
                       ></button>
-                    )}
+                    {/* )} */}
                   </div>
                 </div>
               </div>
@@ -431,12 +424,10 @@ const Page = () => {
                 </div>
                 <div className={styles.buttons_all}>
                   <div
-                    className={`${styles.slideControlButtons} ${
-                      isExpanded ? styles.expanded : ""
-                    }`}
-                    onClick={toggleWidth}
+                    className={styles.slideControlButtons}
+                    // onClick={toggleWidth}
                   >
-                    {isExpanded ? (
+                  
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
@@ -474,7 +465,7 @@ const Page = () => {
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
-                    ) : (
+                    {/* ) : ( */}
                       <button
                         className={`${styles.slideControlButton} ${
                           currentSlide === 0 ? activeButtonClass : ""
@@ -482,7 +473,7 @@ const Page = () => {
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
                       ></button>
-                    )}
+                    {/* )} */}
                   </div>
                 </div>
               </div>
@@ -524,12 +515,11 @@ const Page = () => {
                 </div>
                 <div className={styles.buttons_all}>
                   <div
-                    className={`${styles.slideControlButtons} ${
-                      isExpanded ? styles.expanded : ""
-                    }`}
-                    onClick={toggleWidth}
+                    className={styles.slideControlButtons
+                     }
+                    // onClick={toggleWidth}
                   >
-                    {isExpanded ? (
+                    
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
@@ -567,7 +557,7 @@ const Page = () => {
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
-                    ) : (
+                    {/* ) : ( */}
                       <button
                         className={`${styles.slideControlButton} ${
                           currentSlide === 0 ? activeButtonClass : ""
@@ -575,7 +565,7 @@ const Page = () => {
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
                       ></button>
-                    )}
+                    {/* )} */}
                   </div>
                 </div>
               </div>

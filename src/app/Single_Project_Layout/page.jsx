@@ -140,12 +140,19 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={600}
+                />
+                <Image
+                  src={item.acf.heading_image}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={400}
                 />
               </div>
             )}
 
-            {filterImages(item.acf.image2, item.acf.image3).length > 0 && (
+            {/* {filterImages(item.acf.image2, item.acf.image3).length > 0 && (
               <div className={styles.First_project_layout_image2}>
                 {filterImages(item.acf.image2, item.acf.image3).map(
                   (imgSrc, imgIndex) => (
@@ -158,13 +165,13 @@ const Project_Header = () => {
                         alt="none"
                         className={styles.Single_project_image1}
                         width={1000}
-                        height={600}
+                        height={400}
                       />
                     </div>
                   )
                 )}
               </div>
-            )}
+            )} */}
 
             {item.acf.image4 && (
               <div className={styles.First_project_layout_image2_innerX}>
@@ -173,8 +180,22 @@ const Project_Header = () => {
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
-                  height={700}
+                  height={400}
                 />
+                <Image
+                  src={item.acf.image4}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={600}
+                />
+                {/* <Image
+                  src={item.acf.image4}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={600}
+                /> */}
               </div>
             )}
 
@@ -191,7 +212,7 @@ const Project_Header = () => {
                         alt="none"
                         className={styles.Single_project_image1}
                         width={1000}
-                        height={600}
+                        height={500}
                       />
                     </div>
                   )
@@ -208,19 +229,57 @@ const Project_Header = () => {
                   width={1000}
                   height={700}
                 />
+                <Image
+                  src={item.acf.image7}
+                  alt="none"
+                  className={styles.Single_project_image1}
+                  width={1000}
+                  height={300}
+                />
               </div>
             )}
           </div>
 
           <div className={styles.interior_material_outer}>
+          <div className={styles.first_project_text_header}>
+            <motion.div
+              ref={ref}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.9 }}
+            >
+              <HeadingTextAnimation
+                heading={"Material"}
+                justifyContent={"center"}
+              />
+            </motion.div>
+            </div>
             <div className={styles.interior_material_content}>
               {[
-                { img: item.acf.material_image1, name: item.acf.material_name1 },
-                { img: item.acf.material_image2, name: item.acf.material_name2 },
-                { img: item.acf.material_image3, name: item.acf.material_name3 },
-                { img: item.acf.material_image4, name: item.acf.material_name4 },
-                { img: item.acf.material_image5, name: item.acf.material_name5 },
-                { img: item.acf.material_image6, name: item.acf.material_name6 },
+                {
+                  img: item.acf.material_image1,
+                  name: item.acf.material_name1,
+                },
+                {
+                  img: item.acf.material_image2,
+                  name: item.acf.material_name2,
+                },
+                {
+                  img: item.acf.material_image3,
+                  name: item.acf.material_name3,
+                },
+                {
+                  img: item.acf.material_image4,
+                  name: item.acf.material_name4,
+                },
+                {
+                  img: item.acf.material_image5,
+                  name: item.acf.material_name5,
+                },
+                {
+                  img: item.acf.material_image6,
+                  name: item.acf.material_name6,
+                },
               ]
                 .filter((imgObj) => imgObj.img) // Filter out objects without an image
                 .map((imgObj, index) => (
@@ -291,25 +350,25 @@ const Project_Header = () => {
           </div>
 
           <div className={styles.interior_last_room_Section}>
-          {item.acf.thumbnail && item.acf.video && (
-            <Link href={item.acf.video} target="_blank">
-              <Image
-                src={item.acf.thumbnail}
-                alt="none"
-                className={styles.interior_last_room_img}
-                width={1000}
-                height={700}
-              />
-              <div className={styles.interior_last_room_overlay}>
-                <div className={styles.interior_last_room_overlay_svgs}>
-                  <Image
-                    src={Interior_last_room_Svg}
-                    className={styles.inetrior_lastroom_img}
-                  />
+            {item.acf.thumbnail && item.acf.video && (
+              <Link href={item.acf.video} target="_blank">
+                <Image
+                  src={item.acf.thumbnail}
+                  alt="none"
+                  className={styles.interior_last_room_img}
+                  width={1000}
+                  height={700}
+                />
+                <div className={styles.interior_last_room_overlay}>
+                  <div className={styles.interior_last_room_overlay_svgs}>
+                    <Image
+                      src={Interior_last_room_Svg}
+                      className={styles.inetrior_lastroom_img}
+                    />
+                  </div>
                 </div>
-              </div>
-            </Link>
-          )}
+              </Link>
+            )}
           </div>
         </div>
       ))}
