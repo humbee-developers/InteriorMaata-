@@ -111,7 +111,7 @@ const Page = () => {
     ],
   };
 
-  const activeButtonClass = styles.activeButton;
+  // const activeButtonClass = styles.activeButton;
 
   const buttonColors = ["#ae7b56", "#d18211", "#677176", "#a39280", "#a4a3a4"];
 
@@ -192,13 +192,13 @@ const Page = () => {
                         ></button>
                       </>
                     
-                      <button
+                      {/* <button
                         className={`${styles.slideControlButton} ${
-                          currentSlide === 0 ? activeButtonClass : ""
+                          currentSlide === 0
                         }`}
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
-                      ></button>
+                      ></button> */}
                     
                   </div>
                 </div>
@@ -249,48 +249,48 @@ const Page = () => {
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 0 ? activeButtonClass : ""
+                            currentSlide === 0 
                           }`}
                           style={{ backgroundColor: buttonColors[0] }}
                           onClick={() => goToSlide(0)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 1 ? activeButtonClass : ""
+                            currentSlide === 1 
                           }`}
                           style={{ backgroundColor: buttonColors[1] }}
                           onClick={() => goToSlide(1)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 2 ? activeButtonClass : ""
+                            currentSlide === 2 
                           }`}
                           style={{ backgroundColor: buttonColors[2] }}
                           onClick={() => goToSlide(2)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 3 ? activeButtonClass : ""
+                            currentSlide === 3 
                           }`}
                           style={{ backgroundColor: buttonColors[3] }}
                           onClick={() => goToSlide(3)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 4 ? activeButtonClass : ""
+                            currentSlide === 4 
                           }`}
                           style={{ backgroundColor: buttonColors[4] }}
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
                     {/* ) : ( */}
-                      <button
+                      {/* <button
                         className={`${styles.slideControlButton} ${
-                          currentSlide === 0 ? activeButtonClass : ""
+                          currentSlide === 0
                         }`}
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
-                      ></button>
+                      ></button> */}
                     {/* )} */}
                   </div>
                 </div>
@@ -340,48 +340,48 @@ const Page = () => {
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 0 ? activeButtonClass : ""
+                            currentSlide === 0 
                           }`}
                           style={{ backgroundColor: buttonColors[0] }}
                           onClick={() => goToSlide(0)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 1 ? activeButtonClass : ""
+                            currentSlide === 1 
                           }`}
                           style={{ backgroundColor: buttonColors[1] }}
                           onClick={() => goToSlide(1)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 2 ? activeButtonClass : ""
+                            currentSlide === 2 
                           }`}
                           style={{ backgroundColor: buttonColors[2] }}
                           onClick={() => goToSlide(2)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 3 ? activeButtonClass : ""
+                            currentSlide === 3
                           }`}
                           style={{ backgroundColor: buttonColors[3] }}
                           onClick={() => goToSlide(3)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 4 ? activeButtonClass : ""
+                            currentSlide === 4 
                           }`}
                           style={{ backgroundColor: buttonColors[4] }}
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
                     {/* ) : ( */}
-                      <button
+                      {/* <button
                         className={`${styles.slideControlButton} ${
-                          currentSlide === 0 ? activeButtonClass : ""
+                          currentSlide === 0
                         }`}
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
-                      ></button>
+                      ></button> */}
                     {/* )} */}
                   </div>
                 </div>
@@ -431,48 +431,48 @@ const Page = () => {
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 0 ? activeButtonClass : ""
+                            currentSlide === 0 
                           }`}
                           style={{ backgroundColor: buttonColors[0] }}
                           onClick={() => goToSlide(0)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 1 ? activeButtonClass : ""
+                            currentSlide === 1 
                           }`}
                           style={{ backgroundColor: buttonColors[1] }}
                           onClick={() => goToSlide(1)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 2 ? activeButtonClass : ""
+                            currentSlide === 2
                           }`}
                           style={{ backgroundColor: buttonColors[2] }}
                           onClick={() => goToSlide(2)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 3 ? activeButtonClass : ""
+                            currentSlide === 3 
                           }`}
                           style={{ backgroundColor: buttonColors[3] }}
                           onClick={() => goToSlide(3)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 4 ? activeButtonClass : ""
+                            currentSlide === 4
                           }`}
                           style={{ backgroundColor: buttonColors[4] }}
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
                     {/* ) : ( */}
-                      <button
+                      {/* <button
                         className={`${styles.slideControlButton} ${
-                          currentSlide === 0 ? activeButtonClass : ""
+                          currentSlide === 0
                         }`}
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
-                      ></button>
+                      ></button> */}
                     {/* )} */}
                   </div>
                 </div>
@@ -523,48 +523,48 @@ const Page = () => {
                       <>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 0 ? activeButtonClass : ""
+                            currentSlide === 0 
                           }`}
                           style={{ backgroundColor: buttonColors[0] }}
                           onClick={() => goToSlide(0)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 1 ? activeButtonClass : ""
+                            currentSlide === 1
                           }`}
                           style={{ backgroundColor: buttonColors[1] }}
                           onClick={() => goToSlide(1)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 2 ? activeButtonClass : ""
+                            currentSlide === 2 
                           }`}
                           style={{ backgroundColor: buttonColors[2] }}
                           onClick={() => goToSlide(2)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 3 ? activeButtonClass : ""
+                            currentSlide === 3 
                           }`}
                           style={{ backgroundColor: buttonColors[3] }}
                           onClick={() => goToSlide(3)}
                         ></button>
                         <button
                           className={`${styles.slideControlButton} ${
-                            currentSlide === 4 ? activeButtonClass : ""
+                            currentSlide === 4 
                           }`}
                           style={{ backgroundColor: buttonColors[4] }}
                           onClick={() => goToSlide(4)}
                         ></button>
                       </>
                     {/* ) : ( */}
-                      <button
+                      {/* <button
                         className={`${styles.slideControlButton} ${
-                          currentSlide === 0 ? activeButtonClass : ""
+                          currentSlide === 0 
                         }`}
                         style={{ backgroundColor: buttonColors[currentSlide] }}
                         onClick={() => goToSlide(currentSlide)}
-                      ></button>
+                      ></button> */}
                     {/* )} */}
                   </div>
                 </div>
