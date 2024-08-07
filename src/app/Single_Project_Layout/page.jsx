@@ -143,7 +143,7 @@ const Project_Header = () => {
                   height={600}
                 />
                 <Image
-                  src={item.acf.heading_image}
+                  src={item.acf.image2}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
@@ -176,7 +176,7 @@ const Project_Header = () => {
             {item.acf.image4 && (
               <div className={styles.First_project_layout_image2_innerX}>
                 <Image
-                  src={item.acf.image4}
+                  src={item.acf.image3}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}
@@ -230,7 +230,7 @@ const Project_Header = () => {
                   height={700}
                 />
                 <Image
-                  src={item.acf.image7}
+                  src={item.acf.image8}
                   alt="none"
                   className={styles.Single_project_image1}
                   width={1000}

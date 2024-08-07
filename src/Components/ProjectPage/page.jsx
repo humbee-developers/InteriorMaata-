@@ -40,7 +40,7 @@ const Projects = () => {
   useEffect(() => {
     const hash = typeof window !== "undefined" ? window.location.hash : "";
 
-    if (pathname + hash === "/Projects#interior") {
+    if (pathname + hash === "/Projects#residential") {
       setCurrentData(projectsData.filter((data) => data.acf.select_category === "residential"));
     } else if (pathname + hash === "/Projects#architecture") {
       setCurrentData(projectsData.filter((data) => data.acf.select_category === "architecture"));
@@ -61,12 +61,12 @@ const Projects = () => {
       <div className={styles.ProjectSection_header}>
         <div>
           <div className={styles.ProjectSection_headerText}>
-            <div className={`${styles.tabItem} ${tabUrl === "/Projects#interior" && styles.active}`}>
-              <Link href={"/Projects#interior"}>Residential</Link>
+            <div className={`${styles.tabItem} ${tabUrl === "/Projects#residential" && styles.active}`}>
+              <Link href={"/Projects#residential"}>Residential</Link>
               <Image
                 src={StarSvg}
                 alt="star"
-                className={`${styles.svg} ${tabUrl === "/Projects#interior" && styles.active}`}
+                className={`${styles.svg} ${tabUrl === "/Projects#residential" && styles.active}`}
               />
             </div>
             <div className={`${styles.tabItem} ${tabUrl === "/Projects#architecture" && styles.active}`}>
