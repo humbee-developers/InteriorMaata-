@@ -47,7 +47,7 @@ const Page = () => {
             transition={{ duration: 0.4, delay: 0.4 }}
             className={styles.forth_section_third}
           >
-            Team Interiormaata helps you to translate
+            Team Interior maata helps you to translate
             <br />
             your dream vision to reality
           </motion.p>
@@ -58,7 +58,7 @@ const Page = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className={styles.forth_content_button}
           >
-            <Button button_text="Start Now" 
+            <Button button_text="About Us" 
              />
           </motion.div>
         </div>
@@ -114,7 +114,7 @@ const Page = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className={styles.forth_content_button}
           >
-            <Button3 button_text="Start Now" />
+            <Button3 button_text="About us" />
           </motion.div>
         </div>
       </div>

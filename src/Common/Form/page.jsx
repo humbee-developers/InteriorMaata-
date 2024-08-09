@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import From_image from "@/images/Form_image.png";
+import From_image from "@/images/contact-us-img.jpg";
 import Button from "@/Common/Buttons/button4";
 import styles from "@/Common/Form/Form.module.css";
 import { Slide, ToastContainer, toast } from "react-toastify";

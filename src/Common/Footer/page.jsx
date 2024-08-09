@@ -56,7 +56,7 @@ const Footer = () => {
               target="_blank"
             >
               <div className={styles.footer_address}>
-                Karamdham Complex
+                4th floor,<br /> Karamdham Complex
                 <br /> Near Akota Atithi Gruh,
                 <br /> Akota, Vadodara
                 <div className={styles.justTesting}>
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className={styles.footer_copyright}>
           <div className={styles.footerTagline}>
             <p>
-              Copyright &copy; 2024 Interiormaata, All Right Reserved. Designed
+              Copyright &copy; 2024 Interior maata, All Right Reserved. Designed
               & Developed by{" "}
               <Link
                 className={styles.adds}

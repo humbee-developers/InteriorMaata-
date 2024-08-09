@@ -129,7 +129,7 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-                interiormaata
+                interior maata
               </motion.div>
             </motion.div>
           </div>

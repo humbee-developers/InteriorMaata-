@@ -334,7 +334,7 @@ const Project_Header = () => {
                 transition={{ duration: 0.9 }}
               >
                 <HeadingTextAnimation
-                  heading={"interiormaata: an estate agency"}
+                  heading={"interior maata: an estate agency"}
                   justifyContent={"center"}
                 />
                 <HeadingTextAnimation

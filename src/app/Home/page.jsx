@@ -23,7 +23,7 @@ const HomeBanner1 = dynamic(() => import("@/Components/Home_page_Banner/page2"))
 
 
 const Page = ({ lData }) => {
-  const paragraph = 'INTERIORMAATA STUDIO : STEP INTO A REALM WHERE TRADITION DANCE WITH MODERN MINIMALISM, CREATING SPACES THAT RESONATE WITH SOULFUL ELEGANCE';
+  const paragraph = 'INTERIOR MAATA STUDIO : STEP INTO A REALM WHERE TRADITION DANCE WITH MODERN MINIMALISM, CREATING SPACES THAT RESONATE WITH SOULFUL ELEGANCE';
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter,setCounter]= useState  (0);
   const [width, setWidth] = useState(null);

@@ -246,7 +246,7 @@ const TeamPage = () => {
         <div className={styles.teamPage_content4}>
           <div className={styles.teamPage_content4_Text}>
             <p>
-              Step into the world of interiormaata, where design meets
+              Step into the world of interior maata, where design meets
               imagination. Our dedicated team of architects and designers is
               driven by a shared commitment to elevate your spaces to new
               heights of sophistication. With a blend of creativity and

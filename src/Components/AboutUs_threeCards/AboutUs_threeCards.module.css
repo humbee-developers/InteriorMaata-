@@ -36,6 +36,7 @@
 .Landing_image1,
 .Landing_image2,
 .Landing_image3 {
+  overflow: hidden;
   position: relative;
 }
 .about_hover {
@@ -46,9 +47,11 @@
   width: 99%; */
   transform: translate(-50%, -48%);
   transition: opacity 0.7s ease-in-out;
+  overflow: hidden;
 }
 .Landing_image1:hover .about_hover {
   opacity: 1;
+  /* overflow: hidden; */
 }
 .Landing_image1:not(:hover) .about_hover {
   opacity: 0;
@@ -56,6 +59,7 @@
 
 .Landing_image2:hover .about_hover {
   opacity: 1;
+  /* overflow: hidden; */
 }
 
 .Landing_image2:not(:hover) .about_hover {

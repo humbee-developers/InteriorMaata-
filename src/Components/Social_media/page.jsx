@@ -4,7 +4,7 @@ import styles from "@/Components/Social_media/social.module.css";
 import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
 import Link from "next/link";
-import "./social.css"
+import "./social.css";
 import Stairs from "@/Animations/Stairs";
 import Button3 from "@/Common/Buttons/button9";
 import Button4 from "@/Common/Buttons/button10";
@@ -32,19 +32,16 @@ import i10 from "@/images/10.jpg";
 import i11 from "@/images/11.jpg";
 import i12 from "@/images/12.jpg";
 
-import logo1 from "@/svgs/westside.svg"
-import logo2 from "@/svgs/boredMonkey.svg"
-import logo3 from "@/svgs/borosil.svg"
-import logo4 from "@/svgs/flybed.svg"
-import logo5 from "@/svgs/pg.svg"
-import logo6 from "@/svgs/royaletuche.svg"
-import logo7 from "@/svgs/febindia.svg"
-import logo8 from "@/svgs/intel.svg"
-import logo9 from "@/svgs/pepperfry.svg"
-import logo10 from "@/svgs/ica.svg"
-
-
-
+import logo1 from "@/svgs/westside.svg";
+import logo2 from "@/svgs/boredMonkey.svg";
+import logo3 from "@/svgs/borosil.svg";
+import logo4 from "@/svgs/flybed.svg";
+import logo5 from "@/svgs/pg.svg";
+import logo6 from "@/svgs/royaletuche.svg";
+import logo7 from "@/svgs/febindia.svg";
+import logo8 from "@/svgs/intel.svg";
+import logo9 from "@/svgs/pepperfry.svg";
+import logo10 from "@/svgs/ica.svg";
 
 import { useTransform, useScroll, motion } from "framer-motion";
 
@@ -109,17 +106,33 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  const { height , width } = dimension;
+  const { height, width } = dimension;
 
   const y1 = useTransform(scrollYProgress1, [0, 1], [0, height * 2]);
   const y2 = useTransform(scrollYProgress1, [0, 1], [0, height * 3.3]);
   const y3 = useTransform(scrollYProgress1, [0, 1], [0, height * 1.25]);
   const y4 = useTransform(scrollYProgress1, [0, 1], [0, height * 3]);
 
-  const y1_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 2]);
-  const y2_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 3.3]);
-  const y3_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 1.25]);
-  const y4_2 = useTransform(scrollYProgress2, [0, 1], [0, width < 575 ? height * 2 : height * 3]);
+  const y1_2 = useTransform(
+    scrollYProgress2,
+    [0, 1],
+    [0, width < 575 ? height * 2 : height * 2]
+  );
+  const y2_2 = useTransform(
+    scrollYProgress2,
+    [0, 1],
+    [0, width < 575 ? height * 2 : height * 3.3]
+  );
+  const y3_2 = useTransform(
+    scrollYProgress2,
+    [0, 1],
+    [0, width < 575 ? height * 2 : height * 1.25]
+  );
+  const y4_2 = useTransform(
+    scrollYProgress2,
+    [0, 1],
+    [0, width < 575 ? height * 2 : height * 3]
+  );
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -148,11 +161,14 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.spacer}>
           {/* <div>sdsdsdsd</div> */}
-          <div className={styles.instagram}>INSTAGRAM
-            <br /><span className={styles.InstaTitle}>Peek into Perfection with Interiormaata</span>
-            </div>
-          
-          
+          <div className={styles.instagram}>
+            INSTAGRAM
+            <br />
+            <span className={styles.InstaTitle}>
+              Peek into Perfection with Interior maata
+            </span>
+          </div>
+
           <div className={styles.data}>
             <div className={styles.dataOuter}>
               <div className={styles.dataHeading}>602</div>
@@ -174,10 +190,10 @@ export default function Home() {
         </div>
         <div className={styles.outerFirst}>
           <div ref={gallery1} className={styles.gallery}>
-          <Column images={[images[0], images[1], images[2]]} y={y1} />
+            <Column images={[images[0], images[1], images[2]]} y={y1} />
             <Column videos={[videos[0], videos[1], videos[2]]} y={y2} />
             <Column images={[images[6], images[7], images[8]]} y={y3} />
-            <Column videos={[videos[3], videos[4], videos[5]]} y={y4}  />
+            <Column videos={[videos[3], videos[4], videos[5]]} y={y4} />
           </div>
         </div>
 
@@ -210,23 +226,43 @@ export default function Home() {
             <Column
               images={[image[0], image[1], image[2], image[11]]}
               y={y1_2}
-              links={[youtubeLinks[0], youtubeLinks[1], youtubeLinks[2], youtubeLinks[11]]}
+              links={[
+                youtubeLinks[0],
+                youtubeLinks[1],
+                youtubeLinks[2],
+                youtubeLinks[11],
+              ]}
             />
             <Column
-              images={[image[3], image[4], image[5],image[0]]}
+              images={[image[3], image[4], image[5], image[0]]}
               y={y2_2}
-              links={[youtubeLinks[3], youtubeLinks[4], youtubeLinks[5],youtubeLinks[0]]}
+              links={[
+                youtubeLinks[3],
+                youtubeLinks[4],
+                youtubeLinks[5],
+                youtubeLinks[0],
+              ]}
             />
             <Column
-              images={[image[6], image[7], image[8],image[0]]}
+              images={[image[6], image[7], image[8], image[0]]}
               y={y3_2}
-              links={[youtubeLinks[6], youtubeLinks[7], youtubeLinks[8],youtubeLinks[0]]}
+              links={[
+                youtubeLinks[6],
+                youtubeLinks[7],
+                youtubeLinks[8],
+                youtubeLinks[0],
+              ]}
               className={width < 575 ? styles.hidden : ""}
             />
             <Column
               images={[image[9], image[10], image[11], image[0]]}
               y={y4_2}
-              links={[youtubeLinks[9], youtubeLinks[10], youtubeLinks[11], youtubeLinks[0]]}
+              links={[
+                youtubeLinks[9],
+                youtubeLinks[10],
+                youtubeLinks[11],
+                youtubeLinks[0],
+              ]}
               className={width < 575 ? styles.hidden : ""}
             />
           </div>
@@ -235,39 +271,38 @@ export default function Home() {
         <div className={styles.spacerX} id="brands">
           <div className={styles.instagram1}>
             <p className={styles.center}>BRANDS WE WORKED WITH</p>
-<div className={styles.brands_outer}>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo1} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo2} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo3} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo4} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo5} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo6} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo7} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo8} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo9} alt=""/>
-  </div>
-  <div className={styles.brands_logo_outer}>
-    <Image className={styles.brand_logo} src={logo10} alt=""/>
-  </div>
-</div>
-
+            <div className={styles.brands_outer}>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo1} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo2} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo3} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo4} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo5} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo6} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo7} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo8} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo9} alt="" />
+              </div>
+              <div className={styles.brands_logo_outer}>
+                <Image className={styles.brand_logo} src={logo10} alt="" />
+              </div>
+            </div>
 
             <p>THANK YOU!</p>
             <div className={styles.thanks_post}>

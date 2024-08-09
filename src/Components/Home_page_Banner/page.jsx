@@ -260,7 +260,7 @@ useEffect(() => {
         className={styles.interiormaata}
       >
         <HeadingTextAnimation
-          heading={"interiorमाता"}
+          heading={"interior माता"}
           justifyContent={"center"}
         />
       </motion.div>

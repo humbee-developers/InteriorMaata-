@@ -62,7 +62,7 @@ function Landing_page() {
           <Image src={Home_Layer} alt="none" />
           <Image src={about_image1} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
-            <p className={styles.overlay_text_content}>Interior</p>
+            <p className={styles.overlay_text_content}>Interior<br />Design</p>
             <p className={styles.overlay_text_content1}>Consultancy</p>
           </div>
         </motion.div>
@@ -76,8 +76,8 @@ function Landing_page() {
           <Image src={Home_Layer} alt="none" />
           <Image src={about_image2} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
-            <p className={styles.overlay_text_content}>BEST IN</p>
-            <p className={styles.overlay_text_content1}>CLASS QUALITY</p>
+          <p className={styles.overlay_text_content}>architectural<br />Consultation </p>
+            <p className={styles.overlay_text_content1}>design</p>
           </div>
         </motion.div>
 
@@ -90,8 +90,8 @@ function Landing_page() {
           <Image src={Home_Layer} alt="none" />
           <Image src={about_image3} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
-            <p className={styles.overlay_text_content}>architectural</p>
-            <p className={styles.overlay_text_content1}>design</p>
+            <p className={styles.overlay_text_content}>turn key </p>
+            <p className={styles.overlay_text_content1}>Executions </p>
           </div>
         </motion.div>
       </div>

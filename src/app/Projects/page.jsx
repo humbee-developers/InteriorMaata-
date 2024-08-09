@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Stairs from "@/Animations/Stairs";
 import ProjectPage from "@/Components/ProjectPage/page";
-import Project_Flex from "@/Components/Projects_Flex/page";
+import Project_Flex from "@/Components/Project_brands/page";
 import Project_Slider from "@/Components/Project_Slider/page";
 
 
