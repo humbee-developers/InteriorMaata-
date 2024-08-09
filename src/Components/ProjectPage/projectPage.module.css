@@ -52,7 +52,7 @@
   background-color: beige;
   width: 100%;
   height: auto;
-  aspect-ratio: 5 / 2;
+  /* aspect-ratio: 5 / 2; */
   object-fit: cover;
   cursor: pointer;
 }
@@ -161,7 +161,7 @@
     background-color: beige;
     width: 100%;
     height: auto;
-    aspect-ratio: 5 / 2;
+    /* aspect-ratio: 5 / 2; */
     object-fit: cover;
     cursor: pointer;
   }
@@ -320,7 +320,7 @@
   }
 
   .ProjectSection_image {
-    aspect-ratio: 2 / 2;
+    /* aspect-ratio: 2 / 2; */
   }
 
   .ProjectSection_header {
