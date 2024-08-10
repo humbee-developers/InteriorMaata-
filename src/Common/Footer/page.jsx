@@ -177,7 +177,7 @@ const Footer = () => {
             animate={inView ? "visible" : "hidden"}
             transition={{ duration: 0.9 }}
           >
-            <HeadingTextAnimation heading={"interiorमाता"} />
+            <HeadingTextAnimation heading={"interior माता"} />
           </motion.div>
         </div>
       </div>

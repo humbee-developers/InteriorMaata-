@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 import Home_Layer from "@/svgs/new_border.svg";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import styles from "@/Components/AboutUs_threeCards/AboutUs_threeCards.module.css";
-import about_image1 from "@/images/home_background1.png";
-import about_image2 from "@/images/home_background2.png";
-import about_image3 from "@/images/home_background3.png";
+import about_image1 from "@/images/archimg1.png";
+import about_image2 from "@/images/archimg2.png";
+import about_image3 from "@/images/archimg3.png";
 function Landing_page() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -62,8 +62,8 @@ function Landing_page() {
           <Image src={Home_Layer} alt="none" />
           <Image src={about_image1} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
-            <p className={styles.overlay_text_content}>Interior<br />Design</p>
-            <p className={styles.overlay_text_content1}>Consultancy</p>
+            <p className={styles.overlay_text_content}>Interior</p>
+            <p className={styles.overlay_text_content1}>Design<br />Consultancy</p>
           </div>
         </motion.div>
 
@@ -76,8 +76,8 @@ function Landing_page() {
           <Image src={Home_Layer} alt="none" />
           <Image src={about_image2} alt="none" className={styles.about_hover} />
           <div className={styles.overlay_text}>
-          <p className={styles.overlay_text_content}>architectural<br />Consultation </p>
-            <p className={styles.overlay_text_content1}>design</p>
+          <p className={styles.overlay_text_content}>architectural</p>
+            <p className={styles.overlay_text_content1}>Consultation<br />design</p>
           </div>
         </motion.div>
 
