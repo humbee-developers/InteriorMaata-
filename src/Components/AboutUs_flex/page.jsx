@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import third_Section_image1 from "@/images/AboutUs_flex_image1.jpg";
-import third_Section_image2 from "@/images/Aboutus_flex_image2.png";
+import third_Section_image2 from "@/images/residential_logo.jpg";
 import Button from "@/Common/Buttons/button6";
 import Button3 from "@/Common/Buttons/button7";
 import styles from "@/Components/AboutUs_flex/AboutUsFlex.module.css";
@@ -58,7 +58,7 @@ const Page = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className={styles.forth_content_button}
           >
-            <Button button_text="About Us" 
+            <Button button_text="Explore" 
              />
           </motion.div>
         </div>

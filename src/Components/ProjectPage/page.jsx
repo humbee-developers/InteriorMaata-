@@ -104,7 +104,8 @@ const Projects = () => {
             <div className={styles.project_heading}>
               <span>{data.acf.project_name}</span>
             </div>
-            <div className={styles.ProjectSection_textContent}>
+            <div className={styles.ProjectSection_textContent}
+            data-category={data.acf.select_category}>
               <div className={styles.section_1}>
                 <div className={styles.year}>
                   <span>{data.acf.year}</span>

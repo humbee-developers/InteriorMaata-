@@ -11,7 +11,7 @@ import logo2 from "@/images/brandslogo2.png";
 import logo3 from "@/images/brandslogo13.png";
 import logo4 from "@/images/brandslogo14.png";
 // import logo5 from "@/svgs/pg.svg";
-import logo5 from "@/svgs/royaletuche.svg";
+import logo5 from "@/images/new_logo_rt1.png";
 // import logo7 from "@/svgs/febindia.svg";
 // import logo8 from "@/svgs/intel.svg";
 // import logo9 from "@/svgs/pepperfry.svg";
