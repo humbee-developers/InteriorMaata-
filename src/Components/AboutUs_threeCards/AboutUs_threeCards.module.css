@@ -24,7 +24,7 @@
 .landing_page_second_images {
   /* width: 65%; */
   padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   display: flex;
   justify-content: center;
   gap: 6rem;
@@ -36,7 +36,7 @@
 .Landing_image1,
 .Landing_image2,
 .Landing_image3 {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 .about_hover {
@@ -80,6 +80,28 @@
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* .Landing_image1:hover .overlay_text,
+.Landing_image2:hover .overlay_text,
+.Landing_image3:hover .overlay_text {
+  transform: translate(-50%, 120%); 
+} */
+.Landing_image1:hover .overlay_text{
+  transform: translate(-50%, 150%);
+  cursor: pointer;
+  
+}
+
+.Landing_image2:hover .overlay_text{
+  transform: translate(-50%, 150%);
+  cursor: pointer;
+}
+
+.Landing_image3:hover .overlay_text{
+  transform: translate(-50%, 230%);
+  cursor: pointer;
 }
 
 .overlay_text_content {
