@@ -111,12 +111,12 @@ const Projects = () => {
                   <span>{data.acf.year}</span>
                 </div>
                {/* Conditionally render client name if category is not "architecture" or "commercial" */}
-               {data.acf.select_category !== "architecture" && data.acf.select_category !== "commercial" && (
+{/*                {data.acf.select_category !== "architecture" && data.acf.select_category !== "commercial" && (
                <div>
                     <span>CLIENT | </span>
                     {data.acf.client_name}
                   </div>
-                )}
+                )} */}
                  {data.acf.select_category !== "architecture" && data.acf.select_category !== "commercial" && (
                 <div>
                   <span>PROJECT | </span>
