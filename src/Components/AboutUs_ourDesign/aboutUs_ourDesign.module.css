@@ -18,7 +18,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .seventh_Section_content_text1 {
@@ -29,7 +29,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.3px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .table_Section {
