@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Lenis from "@studio-freight/lenis"; // Import Lenis
 import MusicPlayer from "@/Components/musicPlayer/page";
 import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
@@ -24,7 +25,29 @@ const Animation = ({ loadImage, counter }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   console.log(loadingCounter);
+  // useEffect(() => {
+  //   const lenis = new Lenis({
+  //     lerp: 0.07, // Increase for more smoothness (0 - 1)
+  //     smooth: true, // Ensure smooth scrolling is enabled
+  //     direction: 'vertical', // Scrolling direction, use 'horizontal' for horizontal scroll
+  //     gestureDirection: 'vertical', // Direction for touch gestures
+  //     mouseMultiplier: 1, // Adjust how sensitive the scroll reacts to the mouse
+  //     smoothTouch: true, // Enable smooth scroll for touch devices
+  //     touchMultiplier: 2, // Increase this value for a smoother effect on touch devices
+  //   });
 
+  //   // RAF (Request Animation Frame) loop for Lenis
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+
+  //   requestAnimationFrame(raf);
+
+  //   return () => {
+  //     lenis.destroy(); // Clean up Lenis instance on unmount
+  //   };
+  // }, []);
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -32,19 +55,21 @@ const Animation = ({ loadImage, counter }) => {
     contextRef.current = context;
 
     const setCanvasSize = () => {
-      const originalWidth = 1632;
-      const originalHeight = 918;
-      const aspectRatio = originalWidth / originalHeight;
+      // const originalWidth = 1632;
+      // const originalHeight = 918;
+      // const aspectRatio = originalWidth / originalHeight;
+      // const availableWidth = window.innerWidth;
+      const aspectRatio = 1632 / 918;
       const availableWidth = window.innerWidth;
 
       if (availableWidth < 200) {
-        canvas.width = originalWidth / 2;
-        canvas.height = originalHeight / 2;
+        canvas.width = 1632 / 2;
+        canvas.height = 918 / 2;
         canvas.style.width = "1301px";
         canvas.style.height = "100vh";
       } else {
-        canvas.width = originalWidth;
-        canvas.height = originalHeight;
+        canvas.width = 1632;
+        canvas.height = 918;
         canvas.style.width = "100%";
         canvas.style.height = "100vh";
       }
@@ -93,33 +118,38 @@ const Animation = ({ loadImage, counter }) => {
 
     const animationTimeline = gsap.timeline({
       onUpdate: render,
-      onComplete: () => setAnimationEnded(true),
+      // onComplete: () => setAnimationEnded(true),
       scrollTrigger: {
         trigger: section,
         pin: true,
-        scrub: true, // Increase scrub value for smoother transitions effect it will take 2 seconds to scroll use true for default effect
+        scrub: false, // Increase scrub value for smoother transitions effect it will take 2 seconds to scroll use true for default effect
   //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
   // effects: true, // looks for data-speed and data-lag attributes on elements
   // smoothTouch: 100,
-        end: "+=1400%",
+        end: "+=1420%",
+        onUpdate: (self) => {
+          const progress = self.progress;
+          airpodsRef.current.frame = Math.floor(progress * (frameCount - 1));
+          render();
+        },
       },
     });
-
-    animationTimeline.to(airpodsRef.current, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-      duration: 1,
-    });
-
     imagesRef.current[0].onload = render;
+    // animationTimeline.to(airpodsRef.current, {
+    //   frame: frameCount - 1,
+    //   snap: "frame",
+    //   ease: "none",
+    //   duration: 1,
+    // });
+
+    // imagesRef.current[0].onload = render;
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(
         imagesRef.current[airpodsRef.current.frame],
         0,
-        0,
+        0,  
         canvas.width,
         canvas.height
       );
