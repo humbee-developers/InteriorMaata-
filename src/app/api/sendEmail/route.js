@@ -21,17 +21,17 @@ export async function POST(request) {
       port: 587,
       secure: false,
       auth: {
-        user: "jaykalariya.humbee@gmail.com",
-        pass: "wecdoqzwxfcifkss",
+        user: "consultancy@interiormaata.com",
+        pass: "zkicelfmbdiusoro",
       },
     });
     const logoPath = path.resolve("public", "interiormaata_logo.png");
     console.log("Logo Path:", logoPath);
 
     const mailOption = {
-      from: "jaykalariya.humbee@gmail.com",
-      to: "jaykalariya.humbee@gmail.com",
-      subject: "Send Email Tutorial",
+      from: "consultancy@interiormaata.com",
+      to: "consultancy@interiormaata.com",
+      subject: "New Inquiry From Interiormaata Website",
       html: `
       <div style="border: 1px dashed #ccc; padding: 20px;">
       <img src="cid:logo" alt="Logo" style="max-width: 100%;" />
