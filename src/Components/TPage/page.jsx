@@ -257,7 +257,7 @@ const TeamPage = () => {
 
         <div className={styles.image_content5}>
           {/* <Image src={img7} alt={"img"} /> */}
-          <video 
+          <video className={styles.VideoSection}
           loop
         autoPlay
         muted>

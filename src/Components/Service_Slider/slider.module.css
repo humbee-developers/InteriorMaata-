@@ -198,6 +198,9 @@
   .Services_Content_list_inner {
     padding-bottom: 1rem;
   }
+  .Services_second_Content_inner {
+   height: 759px;
+  }
 }
 @media (max-width: 320px) {
   .Services_Content_residential,
@@ -215,4 +218,7 @@
   .Services_Content_list_inner {
     padding-bottom: 1rem;
   }
+  .Services_second_Content_inner {
+    height: 759px;
+   }
 }

@@ -256,6 +256,7 @@
   
     .instagram1 {
       padding: 0 0 30px;
+      font-size: 70px;
     }
   
     .thanks_instapost {
@@ -404,11 +405,12 @@
     .instagram1 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 40px;
       color: #cc7d45;
       font-family: "Dream Avenue";
       align-items: center;
-      height: 200vh;
+      height: auto;
+      gap: 0rem;
       padding: 0 0 0px;
     }
     .data {
@@ -462,11 +464,12 @@
     .instagram1 {
       display: flex;
       justify-content: center;
-      font-size: 50px;
+      font-size: 35px;
       color: #cc7d45;
       font-family: "Dream Avenue";
       align-items: center;
-      height: 130vh;
+      height: auto;
+      gap: 0rem;
       padding: 0 0 0px;
     }
     .dataOuter {

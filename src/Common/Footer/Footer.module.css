@@ -498,7 +498,7 @@
 @media (max-width: 374px) {
   .footer_Second {
     gap: 2rem;
-    padding-top: 2rem;
+    padding-top: 0rem;
   }
   .Footer_Section {
     padding-left: 2rem;
@@ -528,7 +528,11 @@
     padding-bottom: 2rem;
   }
   .footer_address {
-    font-size: 28px;
+    font-size: 22px;
+  }
+  .footer_address{
+    align-items: start;
+    flex-direction: column;
   }
   .footer_copyright {
     font-size: 15px;
