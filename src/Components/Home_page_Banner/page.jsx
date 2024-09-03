@@ -25,6 +25,7 @@ const Animation = ({ loadImage, counter }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   console.log(loadingCounter);
+  
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.11, // Increase for more smoothness (0 - 1)
