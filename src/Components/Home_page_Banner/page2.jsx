@@ -129,7 +129,7 @@ const Animation = ({ loadImage, counter }) => {
       window.removeEventListener("resize", setCanvasSize);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [loadingCounter]);
+  }, []);
 
   console.log(loadImage(loading));
 
