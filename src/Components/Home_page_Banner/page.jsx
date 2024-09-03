@@ -190,7 +190,7 @@ const Animation = ({ loadImage, counter }) => {
   }, []);
 
   const loadingProgress = (loadingCounter / 250) * 100;
-  console.log(counter(loadingProgress));
+  // console.log(counter(loadingProgress));
   const scrollDownByTenPercent = () => {
     const tenPercentOfHeight = window.innerHeight * 1.7;
     window.scrollBy({
@@ -203,45 +203,45 @@ const Animation = ({ loadImage, counter }) => {
 
 
 //  code for video show and hide 
-useEffect(() => {
-  // Function to handle scroll direction and video visibility
-  const handleScroll = () => {
-    const video = document.querySelector(`.${styles.videoBg}`);
-    if (window.scrollY > 0) {
-      // Check if window has scrolled down
-      video.style.visibility = "hidden";
-    } else {
-      video.style.visibility = "visible";
-    }
-  };
+// useEffect(() => {
+//   // Function to handle scroll direction and video visibility
+//   const handleScroll = () => {
+//     const video = document.querySelector(`.${styles.videoBg}`);
+//     if (window.scrollY > 0) {
+//       // Check if window has scrolled down
+//       video.style.visibility = "hidden";
+//     } else {
+//       video.style.visibility = "visible";
+//     }
+//   };
 
-  // Add scroll event listener
-  window.addEventListener("scroll", handleScroll);
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+//   // Add scroll event listener
+//   window.addEventListener("scroll", handleScroll);
+//   return () => {
+//     window.removeEventListener("scroll", handleScroll);
+//   };
+// }, []);
 
   
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setIsVisible(false);
+  //     } else {
+  //       setIsVisible(true);
+  //     }
+  //   };
 
 
     
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const [buttonRef, buttonInView] = useInView();
 
