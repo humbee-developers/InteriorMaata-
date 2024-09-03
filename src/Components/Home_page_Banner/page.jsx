@@ -225,24 +225,24 @@ const Animation = ({ loadImage, counter }) => {
 
   
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setIsVisible(false);
-  //     } else {
-  //       setIsVisible(true);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
 
 
     
 
-  //   window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [buttonRef, buttonInView] = useInView();
 
