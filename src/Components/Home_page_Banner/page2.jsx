@@ -92,7 +92,13 @@ const Animation = ({ loadImage, counter }) => {
     console.log("Counter", loadingCounter);
 
     const animationTimeline = gsap.timeline({
-      onUpdate: render,
+      onUpdate: () => {
+        render();
+        const progress = animationTimeline.progress();
+        const frame = Math.floor(progress * (frameCount - 1));
+        airpodsRef.current.frame = frame;
+        console.log(`Scroll Progress: ${progress}, Frame: ${frame}`);
+      },
       onComplete: () => setAnimationEnded(true),
       scrollTrigger: {
         trigger: section,
@@ -101,7 +107,7 @@ const Animation = ({ loadImage, counter }) => {
   //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
   // effects: true, // looks for data-speed and data-lag attributes on elements
   // smoothTouch: 100,
-        end: "+=1400%",
+        end: "+=1200%",
       },
     });
 

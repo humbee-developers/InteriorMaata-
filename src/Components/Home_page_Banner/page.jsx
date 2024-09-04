@@ -28,7 +28,7 @@ const Animation = ({ loadImage, counter }) => {
   
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.11, // Increase for more smoothness (0 - 1)
+      lerp: 0.14, // Increase for more smoothness (0 - 1)
       smooth: true, // Ensure smooth scrolling is enabled
       direction: 'vertical', // Scrolling direction, use 'horizontal' for horizontal scroll
       gestureDirection: 'vertical', // Direction for touch gestures
@@ -118,7 +118,14 @@ const Animation = ({ loadImage, counter }) => {
     console.log("Counter", loadingCounter);
 
     const animationTimeline = gsap.timeline({
-      onUpdate: render,
+      
+      onUpdate: () => {
+        render();
+        const progress = animationTimeline.progress();
+        const frame = Math.floor(progress * (frameCount - 1));
+        airpodsRef.current.frame = frame;
+        console.log(`Scroll Progress: ${progress}, Frame: ${frame}`);
+      },
       // onComplete: () => setAnimationEnded(true),
       scrollTrigger: {
         trigger: section,
@@ -127,10 +134,11 @@ const Animation = ({ loadImage, counter }) => {
   //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
   // effects: true, // looks for data-speed and data-lag attributes on elements
   // smoothTouch: 100,
-        end: "+=1400%",
+        end: "+=1200%",
         onUpdate: (self) => {
           const progress = self.progress;
           airpodsRef.current.frame = Math.floor(progress * (frameCount - 1));
+          console.log(`Scroll Progress: ${progress}, Frame: ${airpodsRef.current.frame}`);
           render();
         },
       },
