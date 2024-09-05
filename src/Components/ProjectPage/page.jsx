@@ -27,7 +27,12 @@ const Projects = () => {
     // fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts") by default it will only show 10 projects
     // fetch("https://interiormaataassets.humbeestudio.xyz/wp-json/acf/v3/posts/?per_page=X") for showing 1 project 
       .then((res) => res.json())
-      .then((data) => setProjectsData(data));
+      // .then((data) => setProjectsData(data));
+      .then((data) => {
+        // Sort projectsData by year in descending order
+        const sortedData = data.sort((a, b) => b.acf.year - a.acf.year);
+        setProjectsData(sortedData);
+      });
   }, []);
 
   const handlePageChange = (event, value) => {
