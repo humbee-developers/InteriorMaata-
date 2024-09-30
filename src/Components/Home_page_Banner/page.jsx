@@ -25,13 +25,13 @@ const Animation = ({ loadImage, counter }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   console.log(loadingCounter);
-  
+
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.14, // Increase for more smoothness (0 - 1)
+      lerp: 0, // Increase for more smoothness (0 - 1)
       smooth: true, // Ensure smooth scrolling is enabled
-      direction: 'vertical', // Scrolling direction, use 'horizontal' for horizontal scroll
-      gestureDirection: 'vertical', // Direction for touch gestures
+      direction: "vertical", // Scrolling direction, use 'horizontal' for horizontal scroll
+      gestureDirection: "vertical", // Direction for touch gestures
       mouseMultiplier: 1, // Adjust how sensitive the scroll reacts to the mouse
       smoothTouch: true, // Enable smooth scroll for touch devices
       touchMultiplier: 2, // Increase this value for a smoother effect on touch devices
@@ -78,9 +78,9 @@ const Animation = ({ loadImage, counter }) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
     // https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop/0001.webp
-    const frameCount = 290;
+    const frameCount = 750;
     const currentFrame = (index) =>
-      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop/${(
+      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop1/${(
         index + 1
       )
         .toString()
@@ -118,7 +118,6 @@ const Animation = ({ loadImage, counter }) => {
     console.log("Counter", loadingCounter);
 
     const animationTimeline = gsap.timeline({
-      
       onUpdate: () => {
         render();
         const progress = animationTimeline.progress();
@@ -131,14 +130,16 @@ const Animation = ({ loadImage, counter }) => {
         trigger: section,
         pin: true,
         scrub: false, // Increase scrub value for smoother transitions effect it will take 2 seconds to scroll use true for default effect
-  //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
-  // effects: true, // looks for data-speed and data-lag attributes on elements
-  // smoothTouch: 100,
+        //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+        // effects: true, // looks for data-speed and data-lag attributes on elements
+        // smoothTouch: 100,
         end: "+=1200%",
         onUpdate: (self) => {
           const progress = self.progress;
           airpodsRef.current.frame = Math.floor(progress * (frameCount - 1));
-          console.log(`Scroll Progress: ${progress}, Frame: ${airpodsRef.current.frame}`);
+          console.log(
+            `Scroll Progress: ${progress}, Frame: ${airpodsRef.current.frame}`
+          );
           render();
         },
       },
@@ -158,7 +159,7 @@ const Animation = ({ loadImage, counter }) => {
       context.drawImage(
         imagesRef.current[airpodsRef.current.frame],
         0,
-        0,  
+        0,
         canvas.width,
         canvas.height
       );
@@ -209,29 +210,25 @@ const Animation = ({ loadImage, counter }) => {
     setIsVisible(false);
   };
 
+  //  code for video show and hide
+  // useEffect(() => {
+  //   // Function to handle scroll direction and video visibility
+  //   const handleScroll = () => {
+  //     const video = document.querySelector(`.${styles.videoBg}`);
+  //     if (window.scrollY > 0) {
+  //       // Check if window has scrolled down
+  //       video.style.visibility = "hidden";
+  //     } else {
+  //       video.style.visibility = "visible";
+  //     }
+  //   };
 
-
-//  code for video show and hide 
-// useEffect(() => {
-//   // Function to handle scroll direction and video visibility
-//   const handleScroll = () => {
-//     const video = document.querySelector(`.${styles.videoBg}`);
-//     if (window.scrollY > 0) {
-//       // Check if window has scrolled down
-//       video.style.visibility = "hidden";
-//     } else {
-//       video.style.visibility = "visible";
-//     }
-//   };
-
-//   // Add scroll event listener
-//   window.addEventListener("scroll", handleScroll);
-//   return () => {
-//     window.removeEventListener("scroll", handleScroll);
-//   };
-// }, []);
-
-  
+  //   // Add scroll event listener
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -241,9 +238,6 @@ const Animation = ({ loadImage, counter }) => {
         setIsVisible(true);
       }
     };
-
-
-    
 
     window.addEventListener("scroll", handleScroll);
 
@@ -257,9 +251,8 @@ const Animation = ({ loadImage, counter }) => {
   const buttonVariants = {
     hidden: { opacity: 0, y: 120 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-    upsideDown: { opacity: 0, y: 180, transition: { duration: 0.3 } }
+    upsideDown: { opacity: 0, y: 180, transition: { duration: 0.3 } },
   };
-
 
   return (
     <section>
@@ -306,10 +299,7 @@ const Animation = ({ loadImage, counter }) => {
 
       <div class="scroll-down-wrap no-border">
         {isVisible && (
-          <div
-            className="section-down-arrow"
-            onClick={scrollDownByTenPercent}
-          >
+          <div className="section-down-arrow" onClick={scrollDownByTenPercent}>
             <svg
               class="nectar-scroll-icon"
               viewBox="0 0 30 45"

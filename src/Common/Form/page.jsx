@@ -94,6 +94,8 @@ const Page = () => {
       { name: "2BHK", code: "2BHK" },
       { name: "3BHK", code: "3BHK" },
       { name: "4BHK", code: "4BHK" },
+      { name: "5BHK", code: "5BHK" },
+      { name: "Other", code: "Other" },
     ],
   };
   return (
