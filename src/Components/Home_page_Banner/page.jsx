@@ -79,7 +79,6 @@ const Animation = ({ loadImage, counter }) => {
     window.addEventListener("resize", setCanvasSize);
     // https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop/0001.webp
     const frameCount = 750;
-    const firstBatchCount = 200; // Only load the first 200 frames initially
     const currentFrame = (index) =>
       `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop1/${(
         index + 1
@@ -87,20 +86,17 @@ const Animation = ({ loadImage, counter }) => {
         .toString()
         .padStart(4, "0")}.webp`;
 
-    // let imgL = [];
-    let initialImages = [];
-  let remainingImages = [];
-
-    for (let i = 0; i < firstBatchCount; i++) {
+    let imgL = [];
+    for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
       imagesRef.current.push(img);
-      initialImages.push(img.src);
+      imgL.push(img.src);
     }
 
-    const loadInitialImages  = async () => {
+    const loadImages = async () => {
       try {
-        const loadImagePromises = initialImages.map((imageUrl, index) => {
+        const loadImagePromises = imgL.map((imageUrl, index) => {
           return new Promise((resolve) => {
             const img = new Image();
             img.src = imageUrl;
@@ -117,38 +113,8 @@ const Animation = ({ loadImage, counter }) => {
         console.error("Error loading images:", error);
       }
     };
-    const loadRemainingImages = async () => {
-      for (let i = firstBatchCount; i < frameCount; i++) {
-        let img = new Image();
-        img.src = currentFrame(i);
-        imagesRef.current.push(img);
-        remainingImages.push(img.src);
-      }
-  
-      const loadImagePromises = remainingImages.map((imageUrl) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.src = imageUrl;
-          img.onload = resolve;
-        });
-      });
-
-      try {
-        await Promise.all(loadImagePromises);
-        console.log("All frames loaded");
-      } catch (error) {
-        console.error("Error loading remaining images:", error);
-      }
-    };
-  
-    loadInitialImages().then(() => {
-      // After preloader stops, start loading remaining frames
-      loadRemainingImages();
-    });
-    // loadImages();
-    console.log("Load remaining image ",loadRemainingImages);
-    console.log("Load Image initially" ,loadInitialImages);
-    
+    loadImages();
+    console.log(imgL);
     console.log("Counter", loadingCounter);
 
     const animationTimeline = gsap.timeline({
