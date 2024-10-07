@@ -80,7 +80,7 @@ const Animation = ({ loadImage, counter }) => {
     // https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop/0001.webp
     const frameCount = 750;
     const currentFrame = (index) =>
-      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/desktop2/${(
+      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/Desktop2/${(
         index + 1
       )
         .toString()
