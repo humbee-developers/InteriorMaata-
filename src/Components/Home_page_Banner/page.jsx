@@ -94,25 +94,60 @@ const Animation = ({ loadImage, counter }) => {
       imgL.push(img.src);
     }
 
+    // const loadImages = async () => {
+    //   try {
+    //     const loadImagePromises = imgL.map((imageUrl, index) => {
+    //       return new Promise((resolve) => {
+    //         const img = new Image();
+    //         img.src = imageUrl;
+    //         img.onload = () => {
+    //           setLoadingCounter(index + 1);
+    //           resolve();
+    //         };
+    //       });
+    //     });
+
+    //     await Promise.all(loadImagePromises);
+    //     setLoading(false);
+    //   } catch (error) {
+    //     console.error("Error loading images:", error);
+    //   }
+    // };
     const loadImages = async () => {
-      try {
-        const loadImagePromises = imgL.map((imageUrl, index) => {
-          return new Promise((resolve) => {
+      const batchSize = 10; // Number of images to load at once
+      const totalFrames = frameCount;
+      
+      const loadBatch = (startIndex) => {
+        const endIndex = Math.min(startIndex + batchSize, totalFrames);
+        const loadImagePromises = [];
+    
+        for (let i = startIndex; i < endIndex; i++) {
+          loadImagePromises.push(new Promise((resolve) => {
             const img = new Image();
-            img.src = imageUrl;
+            img.src = currentFrame(i);
             img.onload = () => {
-              setLoadingCounter(index + 1);
+              imagesRef.current[i] = img; // Store the loaded image
+              setLoadingCounter(prev => prev + 1);
               resolve();
             };
-          });
-        });
-
-        await Promise.all(loadImagePromises);
+          }));
+        }
+    
+        return Promise.all(loadImagePromises);
+      };
+    
+      try {
+        for (let i = 0; i < totalFrames; i += batchSize) {
+          await loadBatch(i);
+          // Allow some time between batches to avoid overwhelming the browser
+          await new Promise(resolve => setTimeout(resolve, 50)); // Adjust as necessary
+        }
         setLoading(false);
       } catch (error) {
         console.error("Error loading images:", error);
       }
     };
+    
     loadImages();
     console.log(imgL);
     console.log("Counter", loadingCounter);
