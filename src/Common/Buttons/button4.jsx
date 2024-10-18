@@ -1,32 +1,13 @@
-
-// import { useRouter } from 'next/navigation'
 import React from "react";
-import './Button.css'
+import "./Button.css";
 const Button = (props) => {
-  // const router = useRouter()
   return (
     <div>
-     <button  className="button4" role="button" type="submit"><span className="text">{props.button_text}</span></button>
+      <button className="button4" role="button" type="submit">
+        <span className="text">{props.button_text}</span>
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Button;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

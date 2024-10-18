@@ -39,10 +39,10 @@ const Timeline = () => {
   }, [controls, inView]);
   useEffect(() => {
     AOS.init({
-      easing: 'ease-out-quad',
+      easing: "ease-out-quad",
       duration: 1000,
     });
-  },[])
+  }, []);
   return (
     <div className={styles.timeline_container}>
       <div className={styles.timeline_Section}>
@@ -57,17 +57,17 @@ const Timeline = () => {
           <div className={styles.timeline1_content}>
             <div>
               <div className={styles.timline1_meet_text}>
-              <motion.div
-              ref={ref}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"WE MEET"}
-                justifyContent={"left"}
-              />
-            </motion.div>
+                <motion.div
+                  ref={ref}
+                  initial="hidden"
+                  animate={inView ? "visible" : "hidden"}
+                  transition={{ duration: 0.9 }}
+                >
+                  <HeadingTextAnimation
+                    heading={"WE MEET"}
+                    justifyContent={"left"}
+                  />
+                </motion.div>
               </div>
             </div>
             <div className={styles.timeline1_innertext}>
@@ -79,10 +79,8 @@ const Timeline = () => {
           </div>
         </div>
         <div className={styles.border_line_content}>
-          <div className={styles.border_top}>
-          </div>
-          <div className={styles.border_top_max}>
-          </div>
+          <div className={styles.border_top}></div>
+          <div className={styles.border_top_max}></div>
         </div>
         <div className={styles.timeline_content2}>
           <div data-aos="zoom-in-up" className={styles.timeline_img_section}>
@@ -95,21 +93,21 @@ const Timeline = () => {
           <div className={styles.timeline1_content}>
             <div>
               <div className={styles.timline1_meet_text}>
-              <motion.div
-              ref={ref1}
-              initial="hidden"
-              animate={inView1 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={" DESIGN"}
-                justifyContent={"left"}
-              />
-              <HeadingTextAnimation
-                heading={"THINKING"}
-                justifyContent={"left"}
-              />
-            </motion.div>
+                <motion.div
+                  ref={ref1}
+                  initial="hidden"
+                  animate={inView1 ? "visible" : "hidden"}
+                  transition={{ duration: 0.9 }}
+                >
+                  <HeadingTextAnimation
+                    heading={" DESIGN"}
+                    justifyContent={"left"}
+                  />
+                  <HeadingTextAnimation
+                    heading={"THINKING"}
+                    justifyContent={"left"}
+                  />
+                </motion.div>
               </div>
             </div>
             <div className={styles.timeline1_innertext2}>
@@ -123,10 +121,7 @@ const Timeline = () => {
         </div>
         <div className={styles.border_line_content}>
           <div className={styles.border_top1}></div>
-          <div className={styles.border_top_max}>
-            {/* <Image src={border_line2} alt="none" className={styles.border_max}  /> */}
-          </div>
-          {/* <Image src={border_line2} alt="none" className={styles.linesvg} /> */}
+          <div className={styles.border_top_max}></div>
         </div>
         <div className={styles.timeline_content1}>
           <div data-aos="zoom-in-up" className={styles.timeline_img_section}>
@@ -139,21 +134,21 @@ const Timeline = () => {
           <div className={styles.timeline1_content1}>
             <div className={styles.timline1_meet_text_content}>
               <div className={styles.timline1_meet_text1}>
-              <motion.div
-              ref={ref2}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"WE MEET AGAIN , NOW WE HAVE"}
-                justifyContent={"left"}
-              />
-              <HeadingTextAnimation
-                heading={"THE DESIGN & QUOTATION"}
-                justifyContent={"left"}
-              />
-            </motion.div>
+                <motion.div
+                  ref={ref2}
+                  initial="hidden"
+                  animate={inView2 ? "visible" : "hidden"}
+                  transition={{ duration: 0.9 }}
+                >
+                  <HeadingTextAnimation
+                    heading={"WE MEET AGAIN , NOW WE HAVE"}
+                    justifyContent={"left"}
+                  />
+                  <HeadingTextAnimation
+                    heading={"THE DESIGN & QUOTATION"}
+                    justifyContent={"left"}
+                  />
+                </motion.div>
               </div>
             </div>
             <div className={styles.timeline1_innertext_design}>
@@ -167,10 +162,7 @@ const Timeline = () => {
         </div>
         <div className={styles.border_line_content}>
           <div className={styles.border_top}></div>
-          <div className={styles.border_top_max}>
-            {/* <Image src={border_line2} alt="none" className={styles.border_max} /> */}
-          </div>
-          {/* <Image src={border_line} alt="none" className={styles.linesvg} /> */}
+          <div className={styles.border_top_max}></div>
         </div>
         <div className={styles.timeline_content2}>
           <div data-aos="zoom-in-up" className={styles.timeline_img_section}>
@@ -183,21 +175,21 @@ const Timeline = () => {
           <div className={styles.timeline1_content}>
             <div>
               <div className={styles.timline1_meet_text}>
-              <motion.div
-              ref={ref3}
-              initial="hidden"
-              animate={inView3 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={" THE"}
-                justifyContent={"left"}
-              />
-              <HeadingTextAnimation
-                heading={"EXECUTION"}
-                justifyContent={"left"}
-              />
-            </motion.div>
+                <motion.div
+                  ref={ref3}
+                  initial="hidden"
+                  animate={inView3 ? "visible" : "hidden"}
+                  transition={{ duration: 0.9 }}
+                >
+                  <HeadingTextAnimation
+                    heading={" THE"}
+                    justifyContent={"left"}
+                  />
+                  <HeadingTextAnimation
+                    heading={"EXECUTION"}
+                    justifyContent={"left"}
+                  />
+                </motion.div>
               </div>
             </div>
             <div className={styles.timeline1_innertext4}>
@@ -211,10 +203,7 @@ const Timeline = () => {
         </div>
         <div className={styles.border_line_content}>
           <div className={styles.border_top1}></div>
-          <div className={styles.border_top_max}>
-            {/* <Image src={border_line2} alt="none" className={styles.border_max} /> */}
-          </div>
-          {/* <Image src={border_line2} alt="none" className={styles.linesvg} /> */}
+          <div className={styles.border_top_max}></div>
         </div>
         <div className={styles.timeline_content1}>
           <div data-aos="zoom-in-up" className={styles.timeline_img_section}>
@@ -227,21 +216,21 @@ const Timeline = () => {
           <div className={styles.timeline1_content}>
             <div>
               <div className={styles.timline1_meet_text}>
-              <motion.div
-              ref={ref4}
-              initial="hidden"
-              animate={inView4 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"THE FINAL "}
-                justifyContent={"left"}
-              />
-              <HeadingTextAnimation
-                heading={"REVEAL"}
-                justifyContent={"left"}
-              />
-            </motion.div>
+                <motion.div
+                  ref={ref4}
+                  initial="hidden"
+                  animate={inView4 ? "visible" : "hidden"}
+                  transition={{ duration: 0.9 }}
+                >
+                  <HeadingTextAnimation
+                    heading={"THE FINAL "}
+                    justifyContent={"left"}
+                  />
+                  <HeadingTextAnimation
+                    heading={"REVEAL"}
+                    justifyContent={"left"}
+                  />
+                </motion.div>
               </div>
             </div>
             <div className={styles.timeline1_innertext5}>

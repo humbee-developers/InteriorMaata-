@@ -1,13 +1,8 @@
-
-
-
 .hidden {
   display: none !important;
 }
-
-
 @media (max-width: 550px) {
-    .hide-on-small {
-      display: none !important;
-    }
+  .hide-on-small {
+    display: none !important;
   }
+}

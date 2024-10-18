@@ -85,6 +85,7 @@ const Page = () => {
           <Image
             src={Project_Image}
             className={styles.Project_Flex_Image_project}
+            alt="none"
           />
         </div>
       </div>

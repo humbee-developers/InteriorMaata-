@@ -7,7 +7,6 @@ import image2 from "@/images/consultancyProjectImage2.png";
 import image3 from "@/images/consultancyProjectImage3.png";
 import image4 from "@/images/consultancyProjectImage4.png";
 import image5 from "@/images/consultancyProjectImage5.png";
-
 import styles from "@/Components/ConsultancyCarousal/ConsultancyCarousal.module.css";
 import "./ConsultancyCarousal.css"
 import "swiper/css";

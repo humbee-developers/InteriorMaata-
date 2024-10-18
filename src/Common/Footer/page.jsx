@@ -42,21 +42,21 @@ const Footer = () => {
       <div className={styles.Footer_Section}>
         <div className={styles.Footer_Content}>
           <div className={styles.justRelative}>
-          <a href="tel:+917404040286" className={styles.phone_no}>
+            <a href="tel:+917404040286" className={styles.phone_no}>
               +917404040286
             </a>
             <br />
             <a href="tel:0256-4000981" className={styles.phone_no}>
               0256-4000981
             </a>
-            
-            
+
             <Link
               href="https://maps.app.goo.gl/jeRd13E7QPZQiKZi9"
               target="_blank"
             >
               <div className={styles.footer_address}>
-                4th floor,<br /> Karamdham Complex
+                4th floor,
+                <br /> Karamdham Complex
                 <br /> Near Akota Atithi Gruh,
                 <br /> Akota, Vadodara
                 <div className={styles.justTesting}>

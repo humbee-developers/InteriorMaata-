@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
-import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import Custom_Image from "@/images/consultancy_cardImage1.png";    
 import first_img from "@/images/Custom_Image1.png"  
@@ -38,6 +37,7 @@ const Page = () => {
                 <Image
                   src={Custom_Image}
                   className={styles.Services_header_img}
+                  alt="none"
                 />
               </div>
               <div className={styles.Services_header_img1_description}>
@@ -54,6 +54,7 @@ const Page = () => {
                 <Image
                   src={first_img}
                   className={styles.Services_header_img}
+                  alt="none"
                 />
               </div>
               <div className={styles.Services_header_img1_description}>
@@ -69,6 +70,7 @@ const Page = () => {
                 <Image
                   src={first_img1}
                   className={styles.Services_header_img}
+                  alt="none"
                 />
               </div>
               <div className={styles.Services_header_img1_description}>
@@ -85,6 +87,7 @@ const Page = () => {
                 <Image
                   src={first_img2}
                   className={styles.Services_header_img}
+                  alt="none"
                 />
               </div>
               <div className={styles.Services_header_img1_description}>
@@ -99,42 +102,6 @@ const Page = () => {
             </div>
           </div>
         </div>
-   {/* <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-          className={styles.Consultancy_page_second_content}
-        >
-          <HeadingTextAnimation
-            heading={" Get your home designed in the "}
-            justifyContent={"left"}
-            className={styles.Consultancy_page_second_content_text}
-          />
-          <HeadingTextAnimation
-            heading={" comfort of your home without  "}
-            justifyContent={"left"}
-            className={styles.Consultancy_page_second_content_text}
-          />
-
-          <HeadingTextAnimation
-            heading={"any hassle. Our team of excellent "}
-            justifyContent={"left"}
-            className={styles.Consultancy_page_second_content_text}
-          />
-
-          <HeadingTextAnimation
-            heading={" designers will guide you in designing"}
-            justifyContent={"left"}
-            className={styles.Consultancy_page_second_content_text}
-          />
-
-          <HeadingTextAnimation
-            heading={"  your home exactly the way you want."}
-            justifyContent={"left"}
-            className={styles.Consultancy_page_second_content_text}
-          />
-        </motion.div> */}
       </div>
     </div>
   );

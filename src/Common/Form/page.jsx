@@ -179,7 +179,6 @@ const Page = () => {
                     className={`dropdown_city ${
                       selectedCategory ? "half-width" : ""
                     }`}
-                    
                   />
                 </div>
                 {selectedCategory &&
@@ -194,11 +193,9 @@ const Page = () => {
                         className="dropdown_city half-width"
                         // required
                       />
-                      
                     </div>
-                    
                   )}
-                  
+
                 {selectedCategory &&
                   selectedCategory.code === "Architecture" && (
                     <div className={styles.form_group111}>
@@ -314,12 +311,7 @@ const Page = () => {
         </div>
         <div className={styles.contact_us_image}>
           <div className={styles.FormImage_outer}>
-            <Image
-              src={From_image}
-              alt=""
-              srcSet=""
-              className={styles.contact_img}
-            />
+            <Image src={From_image} alt="none" className={styles.contact_img} />
           </div>
         </div>
       </div>

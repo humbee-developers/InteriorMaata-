@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
-
 import styles from "@/Components/Aboutus_Popup/hoverpopup.module.css";
 
 export default function ProjectsPopup({ content, handleNavLink }) {

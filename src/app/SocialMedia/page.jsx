@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import SocialMedia from "@/Components/Social_media/page";
 const page = () => {
-  
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;

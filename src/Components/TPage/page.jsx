@@ -12,7 +12,6 @@ import img5 from "@/images/Teamslider5.png";
 import img6 from "@/images/Teamslider6.png";
 import img15 from "@/images/Teamslider7.png";
 import img8 from "@/images/Teamslider8.png";
-import img9 from "@/images/Teamslider9.png";
 import img10 from "@/images/Teamslider10.png";
 import img11 from "@/images/Teamslider11.png";
 import img12 from "@/images/Teamslider12.png";
@@ -57,7 +56,7 @@ const TeamPage = () => {
     img6,
     img15,
     img8,
-   
+
     img10,
     img11,
     img12,
@@ -106,68 +105,68 @@ const TeamPage = () => {
         </div>
 
         <div className={styles.first}>
-        <div
-          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
-        >
-          <div className={styles.teamPage_content3_Text}>
-            <motion.div
-              ref={ref1}
-              initial="hidden"
-              animate={inView1 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"UNITED BY PASSION, DRIVEN BY"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"EXCELLENCE: GET TO KNOW"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation heading={""} justifyContent={"center"} />
-              <HeadingTextAnimation
-                heading={"THE FACES BEHIND OUR SUCCESS"}
-                justifyContent={"center"}
-              />
-            </motion.div>
+          <div
+            className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+          >
+            <div className={styles.teamPage_content3_Text}>
+              <motion.div
+                ref={ref1}
+                initial="hidden"
+                animate={inView1 ? "visible" : "hidden"}
+                transition={{ duration: 0.9 }}
+              >
+                <HeadingTextAnimation
+                  heading={"UNITED BY PASSION, DRIVEN BY"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"EXCELLENCE: GET TO KNOW"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation heading={""} justifyContent={"center"} />
+                <HeadingTextAnimation
+                  heading={"THE FACES BEHIND OUR SUCCESS"}
+                  justifyContent={"center"}
+                />
+              </motion.div>
+            </div>
           </div>
-        </div>
         </div>
 
         <div className={styles.first_first}>
-        <div
-          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}
-        >
-          <div className={styles.teamPage_content3_Text1}>
-            <motion.div
-              ref={ref2}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"UNITED BY PASSION,"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"DRIVEN BY THE"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={" EXCELLENCE GET TO"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={" KNOW HE FACES "}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"BEHIND OUR SUCCESS"}
-                justifyContent={"center"}
-              />
-            </motion.div>
+          <div
+            className={`${styles.teamPage_content3} ${styles.teamPage_content3Second}`}
+          >
+            <div className={styles.teamPage_content3_Text1}>
+              <motion.div
+                ref={ref2}
+                initial="hidden"
+                animate={inView2 ? "visible" : "hidden"}
+                transition={{ duration: 0.9 }}
+              >
+                <HeadingTextAnimation
+                  heading={"UNITED BY PASSION,"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"DRIVEN BY THE"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={" EXCELLENCE GET TO"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={" KNOW HE FACES "}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"BEHIND OUR SUCCESS"}
+                  justifyContent={"center"}
+                />
+              </motion.div>
+            </div>
           </div>
-        </div>
         </div>
 
         <div className={styles.teamPage_content4}>
@@ -176,72 +175,72 @@ const TeamPage = () => {
               And When It Stops, It’s Not Over - It’s In You Now, In Your Head,
               Your Heart, And Spirit. You Have To Tell Someone, Right Now, ‘you
               Must See This’. You Share It, And They Get It. They’re In It With
-              You, And It’s In Them Too. You Shared The Wonder You Know 
-              Feeling? That’s What We’re After, Every Time We Make A Film.{""}The
+              You, And It’s In Them Too. You Shared The Wonder You Know Feeling?
+              That’s What We’re After, Every Time We Make A Film.{""}The
             </p>
           </div>
         </div>
         <TeamCards />
 
         <div className={styles.second}>
-        <div
-          className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
-        >
-          <div className={styles.teamPage_content3_Text}>
-            <motion.div
-              ref={ref3}
-              initial="hidden"
-              animate={inView3 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"WE BELIEVE IN WONDERFUL"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"WORK COMES FROM "}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"CREATIVE GENEROSITY"}
-                justifyContent={"center"}
-              />
-            </motion.div>
+          <div
+            className={`${styles.teamPage_content3} ${styles.teamPage_content3First}`}
+          >
+            <div className={styles.teamPage_content3_Text}>
+              <motion.div
+                ref={ref3}
+                initial="hidden"
+                animate={inView3 ? "visible" : "hidden"}
+                transition={{ duration: 0.9 }}
+              >
+                <HeadingTextAnimation
+                  heading={"WE BELIEVE IN WONDERFUL"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"WORK COMES FROM "}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"CREATIVE GENEROSITY"}
+                  justifyContent={"center"}
+                />
+              </motion.div>
+            </div>
           </div>
-        </div>
         </div>
 
-       <div className={styles.second_second}>
-       <div
-          className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}
-        >
-          <div className={styles.teamPage_content3_Text1}>
-            <motion.div
-              ref={ref4}
-              initial="hidden"
-              animate={inView4 ? "visible" : "hidden"}
-              transition={{ duration: 0.9 }}
-            >
-              <HeadingTextAnimation
-                heading={"  WE BELIEVE IN"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"EXCEPTIONAL WORK"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"IS BORN FROM"}
-                justifyContent={"center"}
-              />
-              <HeadingTextAnimation
-                heading={"CREATIVE GENEROSITY"}
-                justifyContent={"center"}
-              />
-            </motion.div>
+        <div className={styles.second_second}>
+          <div
+            className={`${styles.teamPage_content3} ${styles.teamPage_content3Second} ${styles.teamPage_spacing2}`}
+          >
+            <div className={styles.teamPage_content3_Text1}>
+              <motion.div
+                ref={ref4}
+                initial="hidden"
+                animate={inView4 ? "visible" : "hidden"}
+                transition={{ duration: 0.9 }}
+              >
+                <HeadingTextAnimation
+                  heading={"  WE BELIEVE IN"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"EXCEPTIONAL WORK"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"IS BORN FROM"}
+                  justifyContent={"center"}
+                />
+                <HeadingTextAnimation
+                  heading={"CREATIVE GENEROSITY"}
+                  justifyContent={"center"}
+                />
+              </motion.div>
+            </div>
           </div>
         </div>
-       </div>
 
         <div className={styles.teamPage_content4}>
           <div className={styles.teamPage_content4_Text}>
@@ -256,13 +255,9 @@ const TeamPage = () => {
         </div>
 
         <div className={styles.image_content5}>
-          {/* <Image src={img7} alt={"img"} /> */}
-          <video className={styles.VideoSection}
-          loop
-        autoPlay
-        muted>
-      <source src="./video/videoreel.mp4" type="video/mp4" />
-    </video>
+          <video className={styles.VideoSection} loop autoPlay muted>
+            <source src="./video/videoreel.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </>

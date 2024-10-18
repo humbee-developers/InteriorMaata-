@@ -126,7 +126,6 @@ input:-webkit-autofill:active {
   font-family: var(--font-poppins);
   height: 50px;
   background: transparent;
-  /* font-weight: 200; */
   width: 100%;
   padding: 10px 0px;
   font-size: 18px;
@@ -138,7 +137,6 @@ svg {
   color: white;
 }
 .p-dropdown-item {
-  /* color: white; */
   padding-left: 8px;
   transition: all 0.2 ease;
   font-family: var(--font-poppins);

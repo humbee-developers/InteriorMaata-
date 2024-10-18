@@ -1,14 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
-
 import styles from "@/Components/Projects_Popup/projectsPopup.module.css"
 
 export default function ProjectsPopup({ content, handleNavLink }) {
   const router = useRouter();
-
   if (!content) return null;
-
   const handleClick = (e, href) => {
     e.preventDefault();
     handleNavLink();

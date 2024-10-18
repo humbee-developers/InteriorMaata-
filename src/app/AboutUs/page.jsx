@@ -11,7 +11,6 @@ const page = () => {
   return (
     <div>
       <Stairs/>
-     
     </div>
   );
 };

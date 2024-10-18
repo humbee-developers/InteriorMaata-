@@ -90,7 +90,6 @@
   display: flex;
   justify-content: space-around;
   gap: 2rem;
-  /* margin-right: 1rem; */
 }
 .phone_no {
   color: #cc7d45;
@@ -228,7 +227,6 @@
     display: flex;
     justify-content: space-around;
     gap: 4rem;
-    /* margin-right: 1rem; */
   }
 
   .Footer_Section {
@@ -333,7 +331,6 @@
 
   .Footer_Section {
     padding-top: 3rem;
-    /* padding-bottom: 2rem; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -352,17 +349,12 @@
 
   .Footer_Section {
     padding-top: 3rem;
-    /* padding-bottom: 2rem; */
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
 @media (max-width: 991px) {
-  /* .footer_last_Section {
-    font-size: 100px;
-  } */
-
   .Footer_Section {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -379,9 +371,6 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  /* .footer_last_Section {
-    font-size: 80px;
-  } */
   .Footer_Content {
     border-top: none;
     flex-direction: column;
@@ -390,7 +379,6 @@
     padding-bottom: 3rem;
   }
   .footer_Second {
-    /* padding-top: 3rem; */
     justify-content: flex-start;
     margin-right: 0rem;
   }
@@ -440,12 +428,6 @@
   }
 }
 
-/* @media (min-width: 300px) and (max-width: 575px) {
-  .justTesting {
-    transform: translate(-35%, -17%);
-  }
-} */
-
 @media (min-width: 425px) and (max-width: 575px) {
   .Footer_Section {
     padding-left: 2rem;
@@ -465,9 +447,6 @@
   .footer_website {
     font-size: 19px;
   }
-  /* .justTesting {
-    transform: translate(-35%, -17%);
-  } */
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
@@ -483,11 +462,7 @@
     line-height: 3rem;
     width: 100%;
     justify-content: flex-end;
-    /* display: flex; */
   }
-  /* .justTesting {
-    transform: translate(-35%, -17%);
-  } */
 }
 @media(max-width:400px){
   .justTesting {
@@ -509,7 +484,6 @@
     line-height: 3rem;
     width: 100%;
     justify-content: end;
-    /* display: flex; */
   }
   .footer_website {
     font-size: 16px;
@@ -520,9 +494,6 @@
   .footer_Search {
     font-size: 15px;
   }
-  /* .footer_last_Section {
-    font-size: 10vw;
-  } */
   .Footer_Content {
     gap: 2rem;
     padding-bottom: 2rem;
@@ -554,7 +525,6 @@
     font-size: 28px;
     width: 100%;
     justify-content: end;
-    /* display: flex; */
   }
   .footer_copyright {
     font-size: 14px;

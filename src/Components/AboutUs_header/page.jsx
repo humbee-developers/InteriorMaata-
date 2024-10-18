@@ -3,10 +3,6 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
-// import Button from "@/Common/Buttons/button";
-import Image from "next/image";
-// import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
-import Cover_image from "@/images/newHome.png"
 import styles from "@/Components/AboutUs_header/AboutUs_header.module.css";
 
 const Page = () => {
@@ -101,11 +97,6 @@ const Page = () => {
                 initial="hidden"
                 animate={controls}
               >
-                {/* <Image
-                  src={Cover_image}
-                  alt="image"
-                  className={styles.aboutUs_banner_image}
-                /> */}
               </motion.div>
             </div>
             <motion.div

@@ -1,6 +1,5 @@
 .Services_Header_Outer {
   display: flex;
-  /* padding-top: 10rem; */
   justify-content: center;
   align-items: stretch;
   gap: 8rem;
@@ -37,7 +36,7 @@
 .service_silver_text {
   color: #fff;
   text-align: center;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 31px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +45,7 @@
 }
 .service_Package_text {
   color: #fff;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   font-size: 31px;
   font-style: normal;
   font-weight: 400;
@@ -63,7 +62,7 @@
 }
 .Services_header_info {
   color: #000;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -73,7 +72,7 @@
 .Services_header_price_range {
   padding-top: 1rem;
   color: #cc7d45;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -83,7 +82,7 @@
 .Services_header_price {
   padding-top: 1rem;
   color: #cc7d45;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -100,7 +99,7 @@
   border: none;
   cursor: pointer;
   color: #fff;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +111,6 @@
 @media (min-width: 1600px) and (max-width: 1920px) {
   .Services_Header_Outer {
     display: flex;
-    /* padding-top: 15rem; */
     justify-content: center;
     align-items: stretch;
     gap: 8rem;
@@ -153,17 +151,12 @@
 }
 
 @media screen and (max-width: 425px) {
-
   .Services_header_info__range {
     margin-top: auto;
     display: flex;
-    align-items:center;
-    flex-direction:column;
+    align-items: center;
+    flex-direction: column;
   }
-
-
-
-
 
   .Services_Header_Outer,
   .Services_header_img1_description {
@@ -188,7 +181,6 @@
     margin-top: 0rem;
     display: flex;
     justify-content: center;
-    
   }
   .Services_header_price {
     padding-top: 0.3rem;

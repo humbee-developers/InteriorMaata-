@@ -29,7 +29,7 @@
   border: 1px solid #cc7d45;
   background-color: transparent;
   color: #cc7d45;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-weight: 400;
   cursor: pointer;
@@ -39,7 +39,7 @@
   transition: all 0.3s ease-in-out;
   padding: 0.9rem 4rem;
 }
-.btn1.activeBtn{
+.btn1.activeBtn {
   background-color: #cc7d45;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -50,7 +50,7 @@
   background-color: transparent;
   color: #7f7047;
   font-size: 22px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-weight: 400;
   cursor: pointer;
   letter-spacing: 0.44px;
@@ -59,7 +59,7 @@
   transition: all 0.3s ease-in-out;
   word-wrap: break-word;
 }
-.btn2.activeBtn{
+.btn2.activeBtn {
   background-color: #7f7047;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -71,14 +71,14 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   font-size: 22px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-weight: 400;
   letter-spacing: 0.44px;
   padding: 0.9rem 4rem;
   text-transform: capitalize;
   word-wrap: break-word;
 }
-.btn3.activeBtn{
+.btn3.activeBtn {
   background-color: #8d4c1e;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -87,7 +87,7 @@
 .contentSection {
   padding: 2rem 4rem 4rem;
   display: flex;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   justify-content: space-around;
 }
 
@@ -122,7 +122,7 @@
   color: #cc7d45;
   background-color: transparent;
   width: fit-content;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 12px;
   cursor: pointer;
   font-style: normal;
@@ -189,7 +189,7 @@
   color: #7f7047;
   background-color: transparent;
   width: fit-content;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 12px;
   cursor: pointer;
   font-style: normal;
@@ -255,7 +255,7 @@
   color: #8d4c1e;
   background-color: transparent;
   width: fit-content;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 12px;
   cursor: pointer;
   font-style: normal;
@@ -345,7 +345,7 @@
   .contentSection {
     padding: 2rem 4rem 6rem;
     display: flex;
-     font-family: var(--font-poppins);
+    font-family: var(--font-poppins);
     justify-content: space-around;
   }
   .onlineConsultancy_Innersection {

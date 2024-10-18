@@ -173,7 +173,6 @@
 @media screen and (max-width: 1024px) {
   .seventh_Section_container {
     padding: 0rem 5rem 4rem 5rem;
-    /* flex-direction: column; */
     text-align: center;
   }
   .seventh_Section_content_text {

@@ -34,7 +34,7 @@
     padding-right: 10rem;
   }
 }
-@media (min-width:1025px) and  (max-width: 1380px) {
+@media (min-width: 1025px) and (max-width: 1380px) {
   .Project_Flex_Content {
     justify-content: space-around;
     align-items: center;
@@ -73,7 +73,6 @@
   }
 }
 @media (max-width: 576px) {
-
   .Project_Flex_Image_project {
     display: block;
     max-width: 100%;
@@ -85,7 +84,6 @@
     padding-top: 0rem;
     padding-bottom: 3rem;
   }
-
 
   .Project_Flex_Desc {
     width: 100%;
@@ -100,7 +98,7 @@
   .Project_Flex_Desc_inner_space {
     padding-top: 1rem;
   }
-  .Project_Flex_Desc_inner2{
+  .Project_Flex_Desc_inner2 {
     display: none;
   }
 }

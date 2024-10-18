@@ -1,21 +1,21 @@
 import React from "react";
-import './button9.css'
-import Image from 'next/image';
+import "./button9.css";
+import Image from "next/image";
 import instaSvg from "@/svgs/instasvg.svg";
 
 const Button = (props) => {
   const handleClick = () => {
-    window.open('https://www.instagram.com/interiormaata/', '_blank');
+    window.open("https://www.instagram.com/interiormaata/", "_blank");
   };
 
   return (
     <div>
-       <button onClick={handleClick} className="button2" role="button">
-        <Image className='zIndex' src={instaSvg} alt='none' />
+      <button onClick={handleClick} className="button2" role="button">
+        <Image className="zIndex" src={instaSvg} alt="none" />
         <span className="text">{props.button_text}</span>
       </button>
     </div>
   );
-}
+};
 
 export default Button;

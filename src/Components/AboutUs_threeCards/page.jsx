@@ -3,7 +3,6 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Home_Layer from "@/svgs/new_border.svg";
-import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import styles from "@/Components/AboutUs_threeCards/AboutUs_threeCards.module.css";
 import about_image1 from "@/images/archimg1.png";
 import about_image2 from "@/images/archimg2.png";
@@ -22,36 +21,6 @@ function Landing_page() {
 
   return (
     <div className={styles.landing_page_second_container} ref={ref}>
-      {/* <div className={styles.landing_page_second_content}>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          transition={{ duration: 0.9 }}
-        >
-          <HeadingTextAnimation
-            heading={"Interiormaata Studio : Step into a realm"}
-            justifyContent={"center"}
-            className={styles.landing_page_second_content_text}
-          />
-          <HeadingTextAnimation
-            heading={"where tradition dance with modern"}
-            justifyContent={"center"}
-            className={styles.landing_page_second_content_text}
-          />
-          <HeadingTextAnimation
-            heading={"minimalism, creating spaces that"}
-            justifyContent={"center"}
-            className={styles.landing_page_second_content_text}
-          />
-           <HeadingTextAnimation
-            heading={" resonate with soulful elegance"}
-            justifyContent={"center"}
-            className={styles.landing_page_second_content_text}
-          />
-        </motion.div>
-      </div> */}
-
       <div className={styles.landing_page_second_images}>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

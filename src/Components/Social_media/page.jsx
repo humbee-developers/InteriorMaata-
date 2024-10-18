@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import styles from "@/Components/Social_media/social.module.css";
 import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
-import Link from "next/link";
 import "./social.css";
 import Stairs from "@/Animations/Stairs";
 import Button3 from "@/Common/Buttons/button9";
@@ -160,7 +159,6 @@ export default function Home() {
       <Stairs />
       <main className={styles.main}>
         <div className={styles.spacer}>
-          {/* <div>sdsdsdsd</div> */}
           <div className={styles.instagram}>
             INSTAGRAM
             <br />
@@ -218,9 +216,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/*  */}
-
         <div className={styles.outerFirst}>
           <div ref={gallery2} className={styles.gallery}>
             <Column
@@ -273,34 +268,34 @@ export default function Home() {
             <p className={styles.center}>BRANDS WE WORKED WITH</p>
             <div className={styles.brands_outer}>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo1} alt="" />
+                <Image className={styles.brand_logo} src={logo1} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo2} alt="" />
+                <Image className={styles.brand_logo} src={logo2} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo3} alt="" />
+                <Image className={styles.brand_logo} src={logo3} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo4} alt="" />
+                <Image className={styles.brand_logo} src={logo4} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo5} alt="" />
+                <Image className={styles.brand_logo} src={logo5} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo6} alt="" />
+                <Image className={styles.brand_logo} src={logo6} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo7} alt="" />
+                <Image className={styles.brand_logo} src={logo7} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo8} alt="" />
+                <Image className={styles.brand_logo} src={logo8} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo9} alt="" />
+                <Image className={styles.brand_logo} src={logo9} alt="none" />
               </div>
               <div className={styles.brands_logo_outer}>
-                <Image className={styles.brand_logo} src={logo10} alt="" />
+                <Image className={styles.brand_logo} src={logo10} alt="none" />
               </div>
             </div>
 
@@ -341,13 +336,6 @@ const Column = ({ images = [], videos = [], links = [], y }) => {
         <div key={i} className={styles.imageContainer2}>
           {links[i] ? (
             <a href={links[i]} target="_blank" rel="noopener noreferrer">
-              {/* <Image 
-           
-                className={styles.IamImage}
-                src={`/image/${src}`}
-                alt='image'
-                fill
-              /> */}
               <Image className={styles.IamImage} src={src} alt="image" fill />
             </a>
           ) : (

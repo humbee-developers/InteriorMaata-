@@ -1,31 +1,31 @@
 .scroll-to-top {
-    background-color: transparent !important;
-    border-radius: 50% !important;
-    border: 1px solid #CC7D45 !important;
-    right: 27px !important;
-    bottom: 24px !important;
-    position: fixed;
-    z-index: 2;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    box-shadow: none !important;
-    border: none;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  border: 1px solid #cc7d45 !important;
+  right: 27px !important;
+  bottom: 24px !important;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  box-shadow: none !important;
+  border: none;
 }
-svg{
-    fill: #CC7D45 !important;
-    width: 23px !important;
+svg {
+  fill: #cc7d45 !important;
+  width: 23px !important;
 }
 
 .scroll-to-top:hover {
-    background-color:#CC7D45 !important;
+  background-color: #cc7d45 !important;
 }
 
 .scroll-to-top svg {
-    fill: #CC7D45 !important;
-    width: 23px !important;
+  fill: #cc7d45 !important;
+  width: 23px !important;
 }
 
 .scroll-to-top:hover svg {
-    fill: #ffffff!important;
+  fill: #ffffff !important;
 }

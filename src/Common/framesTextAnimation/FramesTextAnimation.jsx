@@ -1,6 +1,6 @@
-import FramesTextAnimation from "@/Common/framesTextAnimation/Animation"
+import FramesTextAnimation from "@/Common/framesTextAnimation/Animation";
 
-const TextAnimation = ({ heading, fontSize, justifyContent , className }) => {
+const TextAnimation = ({ heading, fontSize, justifyContent, className }) => {
   return (
     <div
       className="animatedText"
@@ -10,7 +10,7 @@ const TextAnimation = ({ heading, fontSize, justifyContent , className }) => {
         text={heading ? heading : ""}
         fontSize={fontSize ? fontSize : ""}
         justifyContent={justifyContent ? justifyContent : ""}
-       className={className ? className : ""}
+        className={className ? className : ""}
       />
     </div>
   );

@@ -75,7 +75,7 @@ const Page = () => {
         className={styles.Contact_Us_img_outer}
         ref={ref1}
       >
-        <Image src={Contact_us_person_img} />
+        <Image src={Contact_us_person_img} alt="none" />
         
       </motion.div>
       <div className={styles.Contact_us_person_text}>

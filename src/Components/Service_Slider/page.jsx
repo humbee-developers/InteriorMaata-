@@ -111,7 +111,7 @@ const Page = () => {
                   <div>
                     <div className={styles.Services_Content_residential_list}>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg} alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -121,7 +121,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg} alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -131,7 +131,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg} alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -141,7 +141,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg} alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -151,7 +151,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg}  alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -161,7 +161,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg}  alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -171,7 +171,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg} alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -181,7 +181,7 @@ const Page = () => {
                         </p>
                       </div>
                       <div className={styles.Services_Content_list_inner}>
-                        <Image src={Services_interior_svg} />
+                        <Image src={Services_interior_svg}  alt="none"/>
                         <p
                           className={
                             styles.Services_Content_residential_list_text
@@ -238,7 +238,7 @@ const Page = () => {
                     <div>
                       <div className={styles.Services_Content_residential_list}>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -248,7 +248,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -258,7 +258,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -268,7 +268,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -278,7 +278,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -288,7 +288,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -298,7 +298,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -358,7 +358,7 @@ const Page = () => {
                     <div>
                       <div className={styles.Services_Content_residential_list}>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -368,7 +368,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -378,7 +378,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -388,7 +388,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -398,7 +398,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -408,7 +408,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg}  alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text
@@ -418,7 +418,7 @@ const Page = () => {
                           </p>
                         </div>
                         <div className={styles.Services_Content_list_inner}>
-                          <Image src={Services_interior_svg} />
+                          <Image src={Services_interior_svg} alt="none"/>
                           <p
                             className={
                               styles.Services_Content_residential_list_text

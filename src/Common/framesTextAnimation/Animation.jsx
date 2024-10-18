@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-// import styles from "@/Common/AnimatedText/headingAnimation.module.css"
 const TextWord = ({ text, fontSize, justifyContent , className}) => {
   const container = {
     hidden: { opacity: 0 },

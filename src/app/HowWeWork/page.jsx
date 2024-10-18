@@ -16,7 +16,8 @@ const Page = () => {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
-  const phrase = 'Get Your Home Designed In The Comfort Of Your Home Without Any Hassle. Our Team Of Excellent Designers Will Guide You In Designing Your Home Exactly The Way You Want.';
+  const phrase =
+    "Get Your Home Designed In The Comfort Of Your Home Without Any Hassle. Our Team Of Excellent Designers Will Guide You In Designing Your Home Exactly The Way You Want.";
 
   return (
     <>

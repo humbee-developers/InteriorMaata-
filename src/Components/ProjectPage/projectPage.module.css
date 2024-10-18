@@ -52,7 +52,6 @@
   background-color: beige;
   width: 100%;
   height: auto;
-  /* aspect-ratio: 5 / 2; */
   object-fit: cover;
   cursor: pointer;
 }
@@ -65,7 +64,6 @@
   cursor: pointer;
   right: 0;
   height: auto;
-  /* aspect-ratio: 5 / 2; */
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
@@ -83,7 +81,7 @@
   color: #cc7d45;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 0 5rem 0; 
+  padding: 0rem 0 5rem 0;
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -93,7 +91,7 @@
 /* For architecture and commercial categories */
 .ProjectSection_textContent[data-category="architecture"],
 .ProjectSection_textContent[data-category="commercial"] {
-  justify-content: flex-start; /* or left */
+  justify-content: flex-start;
 }
 
 /* For residential category */
@@ -150,7 +148,6 @@
     font-weight: 400;
   }
 
-
   .overlay {
     position: absolute;
     top: 0;
@@ -159,7 +156,6 @@
     cursor: pointer;
     right: 0;
     height: auto;
-    /* aspect-ratio: 5 / 2; */
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
@@ -170,12 +166,10 @@
     background-color: beige;
     width: 100%;
     height: auto;
-    /* aspect-ratio: 5 / 2; */
     object-fit: cover;
     cursor: pointer;
     display: block;
   }
-  
 
   .svg {
     padding: 0 1rem;
@@ -204,7 +198,11 @@
     padding: 2px 0;
   }
 }
-
+@media screen and (max-width: 1350px){
+  .ProjectSection_headerText {
+    font-size: 50px;
+  }
+}
 /* ------------------------------1024----------------------------- */
 @media screen and (max-width: 1230px) {
   .ProjectSection_header {
@@ -216,10 +214,11 @@
     padding-top: 8rem;
   }
   .ProjectSection_headerText {
-    padding: 0;
+    padding: 0 30px;
     font-size: 40px;
     font-weight: 400;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -270,12 +269,12 @@
   }
 
   .ProjectSection_headerText {
-    padding: 0;
+    padding: 0 30px;
     font-size: 30px;
     font-weight: 400;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    
   }
 
   .svg {
@@ -312,7 +311,6 @@
   .project_heading {
     font-size: 28px !important;
   }
- 
 }
 @media screen and (max-width: 600px) {
   .ProjectSection_headerText {
@@ -325,14 +323,6 @@
 }
 /* ---------------------------575-------------------- */
 @media screen and (max-width: 575px) {
-  .overlay {
-    /* aspect-ratio: 2 / 2; */
-  }
-
-  .ProjectSection_image {
-    /* aspect-ratio: 2 / 2; */
-  }
-
   .ProjectSection_header {
     padding-bottom: 2.5rem;
     display: block;
@@ -433,7 +423,6 @@
 @media screen and (max-width: 280px) {
   .ProjectSection_headerText {
     padding: 0 20px;
-    /* font-size: 5vw; */
     font-weight: 400;
     display: flex;
     justify-content: center;

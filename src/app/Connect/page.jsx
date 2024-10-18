@@ -1,7 +1,7 @@
-"use client"
-import React ,{useEffect , useRef} from 'react'
-import Stairs from "@/Animations/Stairs"
-import ContactUsImage from "@/Components/ContactUs_Image/page"
+"use client";
+import React, { useEffect, useRef } from "react";
+import Stairs from "@/Animations/Stairs";
+import ContactUsImage from "@/Components/ContactUs_Image/page";
 import Lenis from "@studio-freight/lenis";
 const Page = () => {
   const lenisRef = useRef(null);
@@ -10,7 +10,7 @@ const Page = () => {
     // Initialize Lenis with options similar to Locomotive Scroll
     const lenis = new Lenis({
       duration: 1.2, // Duration of the scroll animation
-      easing: (t) => 1 - Math.pow(1 - t, 3), 
+      easing: (t) => 1 - Math.pow(1 - t, 3),
       // easing: (t) => Math.min(1 - Math.pow(2, -10 * t)), // Easing function for a smooth scroll
       smooth: true,
       direction: "vertical",
@@ -35,11 +35,10 @@ const Page = () => {
   }, []);
   return (
     <>
-      <Stairs/>
-        <ContactUsImage />
-     
+      <Stairs />
+      <ContactUsImage />
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

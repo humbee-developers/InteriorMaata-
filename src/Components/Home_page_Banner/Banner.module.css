@@ -2,11 +2,11 @@
   height: 100vh;
   object-fit: cover;
   /* position: fixed; */
-    max-width: 100vw;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    max-height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  max-height: 100vh;
   width: 100%;
   object-position: center;
 }
@@ -29,27 +29,22 @@
 }
 
 /* button X */
-.buttonOuter{
+.buttonOuter {
   position: sticky;
   bottom: 10rem;
   display: flex;
-  justify-content:center;
-
-
+  justify-content: center;
 }
-
-
-
 
 .buttonX {
   appearance: none;
-  background-color: #cc7d45;;
+  background-color: #cc7d45;
   box-sizing: border-box;
   color: #ffffff;
   border: none;
   cursor: pointer;
   display: inline-block;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0;
@@ -101,7 +96,7 @@
 }
 
 .buttonX:hover {
-  border:none;
+  border: none;
   color: rgb(174, 123, 86);
 }
 
@@ -140,7 +135,7 @@
 .LivingRoom {
   position: absolute;
   font-size: 60px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #451721;
   left: 5rem;
   bottom: -137rem;
@@ -150,7 +145,7 @@
   position: absolute;
   width: 25%;
   font-size: 21px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #ffffff;
   right: 6rem;
   bottom: -163rem;
@@ -159,7 +154,7 @@
 .bedRoom {
   position: absolute;
   font-size: 60px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #451721;
   left: 5rem;
   bottom: -322rem;
@@ -168,7 +163,7 @@
   position: absolute;
   width: 25%;
   font-size: 21px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #ffffff;
   right: 5rem;
   bottom: -341rem;
@@ -176,7 +171,7 @@
 .outDoor {
   position: absolute;
   font-size: 60px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #451721;
   right: 5rem;
   bottom: -538rem;
@@ -186,7 +181,7 @@
   position: absolute;
   width: 30%;
   font-size: 21px;
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
   color: #ffffff;
   left: 6rem;
   bottom: -518rem;
@@ -198,7 +193,7 @@
   /* line-height: 70px; */
   text-transform: capitalize;
   z-index: 1;
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
   color: #ffffff;
   bottom: 15rem;
 }
@@ -284,7 +279,6 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .text1 {
     position: absolute;
@@ -302,7 +296,6 @@
   }
 }
 
-
 @media (min-width: 500px) and (max-width: 767px) {
   .text1 {
     position: absolute;
@@ -319,34 +312,26 @@
   }
 }
 
-
 @media (min-width: 200px) and (max-width: 499px) {
   .text1 {
     position: absolute;
     left: 3rem;
     font-size: 6.5vw;
-    bottom: 22rem;
+    bottom: 38rem;
   }
 
   .interiormaata {
     position: absolute;
     left: 3rem;
     font-size: 6.5vw;
-    bottom: 20rem;
+    bottom: 36rem;
   }
 
-  .buttonOuter{
+  .buttonOuter {
     position: sticky;
     bottom: 12rem;
-  
   }
 }
-
-
-
-
-
-
 
 @media (min-width: 200px) and (max-width: 500px) {
   .buttonX {
@@ -377,5 +362,4 @@
   .outDoor {
     display: none;
   }
-
 }

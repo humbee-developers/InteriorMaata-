@@ -364,6 +364,7 @@ const Project_Header = () => {
                     <Image
                       src={Interior_last_room_Svg}
                       className={styles.inetrior_lastroom_img}
+                      alt="none"
                     />
                   </div>
                 </div>
