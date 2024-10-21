@@ -69,32 +69,44 @@ const Animation = ({ loadImage, counter }) => {
     }
 
     const loadImages = async () => {
-      const imgPromises = Array.from({ length: frameCount }, (_, index) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.src = currentFrame(index);
-          img.onload = () => {
-            imagesRef.current[index] = img;
-            setLoadingCounter((prev) => prev + 1);
-            resolve();
-          };
+      try {
+        const loadImagePromises = imgL.map((imageUrl, index) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+              setLoadingCounter(index + 1);
+              resolve();
+            };
+          });
         });
-      });
 
-      await Promise.all(imgPromises);
-      setLoading(false);
+        await Promise.all(loadImagePromises);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+      }
     };
     loadImages();
-    // console.log(imgL);
+    console.log(imgL);
     console.log("Counter", loadingCounter);
 
     const animationTimeline = gsap.timeline({
-      onUpdate: render,
+      onUpdate: () => {
+        render();
+        const progress = animationTimeline.progress();
+        const frame = Math.floor(progress * (frameCount - 1));
+        airpodsRef.current.frame = frame;
+        console.log(`Scroll Progress: ${progress}, Frame: ${frame}`);
+      },
       onComplete: () => setAnimationEnded(true),
       scrollTrigger: {
-        trigger: sectionRef.current,
+        trigger: section,
         pin: true,
-        scrub: true,
+        scrub: true, // Increase scrub value for smoother transitions effect it will take 2 seconds to scroll use true for default effect
+  //       smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+  // effects: true, // looks for data-speed and data-lag attributes on elements
+  // smoothTouch: 100,
         end: "+=1200%",
       },
     });
@@ -103,17 +115,20 @@ const Animation = ({ loadImage, counter }) => {
       frame: frameCount - 1,
       snap: "frame",
       ease: "none",
+      duration: 1,
     });
 
     imagesRef.current[0].onload = render;
 
     function render() {
-      const frame = Math.floor(animationTimeline.progress() * (frameCount - 1));
-      airpodsRef.current.frame = frame;
       context.clearRect(0, 0, canvas.width, canvas.height);
-      if (imagesRef.current[frame]) {
-        context.drawImage(imagesRef.current[frame], 0, 0, canvas.width, canvas.height);
-      }
+      context.drawImage(
+        imagesRef.current[airpodsRef.current.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
     }
 
     return () => {
@@ -195,27 +210,20 @@ const Animation = ({ loadImage, counter }) => {
 
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setIsVisible(false);
-  //     } else {
-  //       setIsVisible(true);
-  //     }
-  //   };
-
-    // window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-      // window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY === 0);
+      if (window.scrollY > 0) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const [buttonRef, buttonInView] = useInView();
