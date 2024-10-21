@@ -7,7 +7,6 @@ import styles from "@/Common/Form/Form.module.css";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./immx.css";
-
 import { Dropdown } from "primereact/dropdown";
 
 const Page = () => {
@@ -111,14 +110,14 @@ const Page = () => {
                   className={styles.form_field}
                   placeholder="Full Name*"
                   name="Name"
-                  id="Name"
+                  id="fullName"
                   value={fullName}
                   onChange={(e) => {
                     setfullName(e.target.value);
                   }}
                   required
                 />
-                <label htmlFor="Name" className={styles.form_label}>
+                <label htmlFor="fullName" className={styles.form_label}>
                   Full Name*
                 </label>
               </div>
@@ -129,7 +128,7 @@ const Page = () => {
                     className={styles.form_field}
                     placeholder="Email *"
                     name="Email"
-                    id="Email"
+                    id="email"
                     value={Emaildata}
                     onChange={(e) => {
                       setEmaildata(e.target.value);
@@ -139,18 +138,18 @@ const Page = () => {
                   {/* {!validateEmail(Email) && (
                   <span style={{ color: "red" }}>Invalid email address</span>
                 )} */}
-                  <label htmlFor="Email" className={styles.form_label}>
+                  <label htmlFor="email" className={styles.form_label}>
                     Email*
                   </label>
                 </div>
 
                 <div className={styles.form_groupp}>
                   <input
-                    type="number"
+                    type="tel"
                     className={styles.form_field}
                     placeholder="Phone No *"
                     name="Phone"
-                    id="Phone"
+                    id="phone"
                     value={Phonedata}
                     onChange={(e) => {
                       setPhonedata(e.target.value);
@@ -162,7 +161,7 @@ const Page = () => {
                       Phone number must be 10 digits
                     </span>
                   )}
-                  <label htmlFor="Phone" className={styles.form_label}>
+                  <label htmlFor="phone" className={styles.form_label}>
                     Phone No*
                   </label>
                 </div>
@@ -204,14 +203,14 @@ const Page = () => {
                         className={styles.form_field}
                         placeholder="Enter Area"
                         name="Text"
-                        id="Text"
+                        id="area"
                         value={TextName}
                         onChange={(e) => {
                           setTextName(e.target.value);
                         }}
                         required
                       />
-                      <label htmlFor="Name" className={styles.form_label}>
+                      <label htmlFor="area" className={styles.form_label}>
                         Enter Area
                       </label>
                     </div>
@@ -224,14 +223,14 @@ const Page = () => {
                       className={styles.form_field}
                       placeholder="Enter Sq.ft"
                       name="Text"
-                      id="Text"
+                      id="sqft"
                       value={SqftName}
                       onChange={(e) => {
                         setSqftName(e.target.value);
                       }}
                       required
                     />
-                    <label htmlFor="Name" className={styles.form_label}>
+                    <label htmlFor="sqft" className={styles.form_label}>
                       Enter Sq.ft
                     </label>
                   </div>
@@ -244,14 +243,14 @@ const Page = () => {
                   className={styles.form_field_address}
                   placeholder="Address"
                   name="Address"
-                  id="Address"
+                  id="addresses"
                   value={Addressdata}
                   onChange={(e) => {
                     setAddressdata(e.target.value);
                   }}
                   required
                 ></textarea>
-                <label htmlFor="Address" className={styles.form_label}>
+                <label htmlFor="addresses" className={styles.form_label}>
                   Address*
                 </label>
               </div>
@@ -262,14 +261,14 @@ const Page = () => {
                   className={styles.form_field_address}
                   placeholder="Brief description of your Project"
                   name="Description"
-                  id="Description"
+                  id="description"
                   value={Descriptiondata}
                   onChange={(e) => {
                     setDescriptiondata(e.target.value);
                   }}
                   required
                 ></textarea>
-                <label htmlFor="Address" className={styles.form_label}>
+                <label htmlFor="description" className={styles.form_label}>
                   Brief description of your Project
                 </label>
               </div>

@@ -92,7 +92,8 @@ const Page = () => {
                   src={Cover_image}
                   alt="image"
                   className={styles.aboutUs_banner_imageX}
-                  priority
+                  // priority
+                  loading="lazy" // Add this attribute
                 />
               </motion.div>
             </div>

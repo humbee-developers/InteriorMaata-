@@ -57,15 +57,14 @@ input[type="number"] {
 html,
 body {
   max-width: 100vw;
-  background-image: url("../images/02-min.jpg"); 
+  background-image: url("../images/02-min.jpg");
   background-size: 100% 100%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   /* scroll-behavior: smooth; */
   /* background-attachment: fixed; */
   /* background-repeat:no-repeat;
   background-position: center;
   background-size: cover; */
-
 }
 
 a {
@@ -85,38 +84,45 @@ select:-webkit-autofill {
 
 @font-face {
   font-family: "Roseritta";
+  font-display: swap;
   src: local("Roseritta"), url("../fonts/Roseritta.otf") format("truetype");
   font-weight: normal;
 }
 @font-face {
-   font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
+  font-display: swap;
   src: local("NeueMontreal-Regular"),
     url("../fonts/NeueMontreal-Regular.otf") format("truetype");
 }
 @font-face {
   font-family: "NeueMontreal-Light";
+  font-display: swap;
   src: local("NeueMontreal-Light"),
     url("../fonts/NeueMontreal-Light.otf") format("truetype");
 }
 @font-face {
   font-family: "NeueMontreal-Bold";
+  font-display: swap;
   src: local("NeueMontreal-Bold"),
     url("../fonts/NeueMontreal-Bold.otf") format("truetype");
 }
 @font-face {
   font-family: "Saturday Lovin";
+  font-display: swap;
   src: local("Saturday Lovin"),
     url("../fonts/Saturday\ Lovin.otf") format("truetype");
 }
 
 @font-face {
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
+  font-display: swap;
   src: local("Dream Avenue"),
     url("../fonts/Dream\ Avenue.ttf") format("truetype");
 }
 
 @font-face {
-  font-family:"Dream Avenue";
+  font-family: "Dream Avenue";
+  font-display: swap;
   src: local("Dream Avenue"),
     url("../fonts/Dream\ Avenue\ .otf") format("truetype");
 }
