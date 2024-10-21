@@ -105,7 +105,7 @@ const Page = () => {
               <motion.div className={styles.aboutUs_banner_text}>
                 {text}
               </motion.div>
-
+                {/* for better optimisation removed it */}
               {/* {text.split("").map((char, index) => (
                 <motion.span
                   className={styles.aboutUs_banner_text}
