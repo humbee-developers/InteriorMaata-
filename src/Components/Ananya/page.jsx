@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
+import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Cover_image from "@/images/AboutUs_Ananya_image.png";
-import styles from "@/Components/Ananya/ananya.module.css"
+import styles from "@/Components/Ananya/ananya.module.css";
 const Page = () => {
   const text =
     "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.";
@@ -33,7 +33,7 @@ const Page = () => {
       y: 0,
       transition: {
         duration: 1,
-        delay:1.3,
+        delay: 1.3,
         ease: "easeOut",
       },
     },
@@ -63,23 +63,23 @@ const Page = () => {
     <div>
       <div className={styles.aboutUsHeader_outer}>
         <div className={styles.aboutUsHeader} ref={ref}>
-        <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        transition={{ duration: 0.9 }}
-         >
-        <HeadingTextAnimation
-          heading={"ananya"}
-          justifyContent={"center"}
-          className={styles.ananya}
-        />
-        <HeadingTextAnimation
-          heading={"Bhattacharjee"}
-          justifyContent={"center"}
-          className={styles.ananya}
-        />
-        </motion.div>
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            transition={{ duration: 0.9 }}
+          >
+            <HeadingTextAnimation
+              heading={"ananya"}
+              justifyContent={"center"}
+              className={styles.ananya}
+            />
+            <HeadingTextAnimation
+              heading={"Bhattacharjee"}
+              justifyContent={"center"}
+              className={styles.ananya}
+            />
+          </motion.div>
           <div className={styles.aboutUs_flex_divider}>
             <div className={styles.aboutUs_banner_image_outer}>
               <motion.div
@@ -102,7 +102,11 @@ const Page = () => {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              {text.split("").map((char, index) => (
+              <motion.div className={styles.aboutUs_banner_text}>
+                {text}
+              </motion.div>
+
+              {/* {text.split("").map((char, index) => (
                 <motion.span
                   className={styles.aboutUs_banner_text}
                   key={char + "-" + index}
@@ -110,7 +114,7 @@ const Page = () => {
                 >
                   {char}
                 </motion.span>
-              ))}
+              ))} */}
               <motion.div
                 className={styles.aboutUs_buttonOuter}
                 variants={buttonAnimation}
@@ -127,11 +131,3 @@ const Page = () => {
   );
 };
 export default Page;
-
-
-
-
-
-
-
-
