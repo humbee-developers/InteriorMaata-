@@ -70,7 +70,7 @@ const Page = ({ lData }) => {
         </>
       )}
 
-      <div className="bg">
+      <div className="bg_Image">
         {/* <AboutUs_header /> */}
         <KnowAboutUsHeader />
         <NewRevel paragraph={paragraph} />
