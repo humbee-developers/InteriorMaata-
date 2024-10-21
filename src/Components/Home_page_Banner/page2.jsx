@@ -54,7 +54,7 @@ const Animation = ({ loadImage, counter }) => {
     // https://interiormaataassets.humbeestudio.xyz/mainsiteassets/mobile/0001.webp
     const frameCount = 720;
     const currentFrame = (index) =>
-      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/FramesMobile/${(
+      `https://interiormaataassets.humbeestudio.xyz/mainsiteassets/MobileFrames/${(
         index + 1
       )
         .toString()
