@@ -92,6 +92,7 @@ const Page = () => {
                   src={Cover_image}
                   alt="image"
                   className={styles.aboutUs_banner_imageX}
+                  priority
                 />
               </motion.div>
             </div>
