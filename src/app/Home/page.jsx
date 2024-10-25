@@ -25,6 +25,7 @@ const Page = ({ lData }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isCounter, setCounter] = useState(0);
   const [width, setWidth] = useState(null);
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -70,7 +71,7 @@ const Page = ({ lData }) => {
         </>
       )}
 
-      <div className="bg_Image">
+      <div className="bg_Image" as="preload" priority="true">
         {/* <AboutUs_header /> */}
         <KnowAboutUsHeader />
         <NewRevel paragraph={paragraph} />

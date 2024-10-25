@@ -1,5 +1,5 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
-import React, { useRef } from 'react';
+import React, { useRef, memo } from 'react';
 import styles from "@/Animations/newRevel/newrevel.module.css"
 
 export default function Paragraph({paragraph}) {
@@ -27,7 +27,7 @@ export default function Paragraph({paragraph}) {
   )
 }
 
-const Word = ({children, progress, range}) => {
+const Word = memo(({children, progress, range}) => {
   const amount = range[1] - range[0]
   const step = amount / children.length
   return (
@@ -41,14 +41,16 @@ const Word = ({children, progress, range}) => {
       }
     </span>
   )
-}
+});
 
-const Char = ({children, progress, range}) => {
+const Char = memo(({children, progress, range}) => {
   const opacity = useTransform(progress, range, [0,1])
   return (
+    <>
     <span>
       <span className={styles.shadow}>{children}</span>
       <motion.span style={{opacity: opacity}}>{children}</motion.span>
     </span>
+    </>
   )
-}
+});

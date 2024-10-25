@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { motion, useAnimation } from "framer-motion";
 import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import { useInView } from "react-intersection-observer";
@@ -7,8 +7,11 @@ import Image from "next/image";
 import Cover_image from "@/images/AboutUs_Ananya_cover_image.png";
 import styles from "@/Components/AboutusAnanya/aboutusAnanya.module.css";
 const Page = () => {
-  const text =
-    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.";
+  const text =useMemo(() =>
+    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.",
+  []);
+
+
   const sentence = {
     hidden: { opacity: 0 },
     visible: {
@@ -90,6 +93,7 @@ const Page = () => {
               >
                 <Image
                   src={Cover_image}
+                  priority="true"
                   alt="image"
                   className={styles.aboutUs_banner_image}
                 />

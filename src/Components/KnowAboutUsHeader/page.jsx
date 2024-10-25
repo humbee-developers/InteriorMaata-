@@ -112,6 +112,10 @@ const Page = () => {
                         src={project1}
                         alt="image"
                         className={styles.aboutUs_banner_image}
+                        width={480}
+                        height={400}
+                        // priority
+                        loading="lazy"
                       />
                     </div>
                   </SwiperSlide>
@@ -121,6 +125,10 @@ const Page = () => {
                         src={project2}
                         alt="image"
                         className={styles.aboutUs_banner_image}
+                        width={480}
+                        height={400}
+                        // priority
+                        loading="lazy"
                       />
                     </div>
                   </SwiperSlide>
@@ -130,6 +138,10 @@ const Page = () => {
                         src={project3}
                         alt="image"
                         className={styles.aboutUs_banner_image}
+                        width={480}
+                        height={400}
+                        // priority
+                        loading="lazy"
                       />
                     </div>
                   </SwiperSlide>
@@ -139,6 +151,10 @@ const Page = () => {
                         src={project4}
                         alt="image"
                         className={styles.aboutUs_banner_image}
+                        width={480}
+                        height={400}
+                        loading="lazy"
+                        // priority
                       />
                     </div>
                   </SwiperSlide>

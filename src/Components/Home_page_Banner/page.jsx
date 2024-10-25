@@ -93,26 +93,54 @@ const Animation = ({ loadImage, counter }) => {
       imagesRef.current.push(img);
       imgL.push(img.src);
     }
+// old code
+    // const loadImages = async () => {
+    //   try {
+    //     const loadImagePromises = imgL.map((imageUrl, index) => {
+    //       return new Promise((resolve) => {
+    //         const img = new Image();
+    //         img.src = imageUrl;
+    //         img.onload = () => {
+    //           setLoadingCounter(index + 1);
+    //           resolve();
+    //         };
+    //       });
+    //     });
 
+    //     await Promise.all(loadImagePromises);
+    //     setLoading(false);
+    //   } catch (error) {
+    //     console.error("Error loading images:", error);
+    //   }
+    // };
+// new code
     const loadImages = async () => {
-      try {
-        const loadImagePromises = imgL.map((imageUrl, index) => {
-          return new Promise((resolve) => {
+      const loadBatch = async (startIndex) => {
+        const batchSize = 10;
+        const promises = [];
+    
+        for (let i = startIndex; i < Math.min(startIndex + batchSize, frameCount); i++) {
+          promises.push(new Promise((resolve) => {
             const img = new Image();
-            img.src = imageUrl;
+            img.src = currentFrame(i);
             img.onload = () => {
-              setLoadingCounter(index + 1);
+              imagesRef.current[i] = img;
               resolve();
             };
-          });
-        });
-
-        await Promise.all(loadImagePromises);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error loading images:", error);
+          }));
+        }
+    
+        await Promise.all(promises);
+        setLoadingCounter((prev) => prev + batchSize);
+      };
+    
+      for (let i = 0; i < frameCount; i += 10) {
+        await loadBatch(i);
       }
+    
+      setLoading(false);
     };
+    
     // const loadImages = async () => {
     //   const batchSize = 10; // Number of images to load at once
     //   const totalFrames = frameCount;

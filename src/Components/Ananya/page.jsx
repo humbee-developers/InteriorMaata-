@@ -4,12 +4,15 @@ import { motion, useAnimation } from "framer-motion";
 import HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import Cover_image from "@/images/AboutUs_Ananya_image.png";
+// import Cover_image from "@/images/AboutUs_Ananya_image.png";
+import Cover_image from "../../../public/image/AboutUs_Ananya_image.png";
 import styles from "@/Components/Ananya/ananya.module.css";
 const Page = () => {
-  const text =
-    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.";
-  const sentence = {
+  const text =useMemo(() =>
+  // const text =
+    "Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor.",
+    []);
+    const sentence = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -70,15 +73,15 @@ const Page = () => {
             transition={{ duration: 0.9 }}
           >
             <HeadingTextAnimation
-              heading={"ananya"}
+              heading={"ananya Bhattacharjee"}
               justifyContent={"center"}
               className={styles.ananya}
             />
-            <HeadingTextAnimation
+            {/* <HeadingTextAnimation
               heading={"Bhattacharjee"}
               justifyContent={"center"}
               className={styles.ananya}
-            />
+            /> */}
           </motion.div>
           <div className={styles.aboutUs_flex_divider}>
             <div className={styles.aboutUs_banner_image_outer}>
@@ -93,6 +96,8 @@ const Page = () => {
                   alt="image"
                   className={styles.aboutUs_banner_imageX}
                   // priority
+                  width={276}
+                  height={400}
                   loading="lazy" // Add this attribute
                 />
               </motion.div>

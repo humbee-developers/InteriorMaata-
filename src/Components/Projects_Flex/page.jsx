@@ -6,12 +6,15 @@ import { useInView } from "react-intersection-observer";
 import styles from "@/Components//Projects_Flex/Projectflex.module.css";
 
 const Page = () => {
-  const text =
-    " Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her  Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor";
+  const text =useMemo(() =>
+  // const text =
+    " Ananya ( Known as interior maata ) is an Interior designer with 9 years of experience in Residential and Commercial projects from Kolkata, Mumbai, Gujarat, and Nepal. She is well known for her  Youtube videos and holds a strong aesthetic for Minimal, Sustainable home dećor",
+    []);
 
-  const text1 =
-    "Her Design style contains a mix of Minimal Modern design and Indian traditional , which is named TRAD-MO. According to her, TRAD-MO is the millennial's design, where a person can get the comfort of modern minimal design with some Indian touch in it. Ananya believes in design thinking every project and her projects include a personal touch from her team which only can be framed by them.";
-
+    const text1 =useMemo(() =>
+  // const text1 =
+    "Her Design style contains a mix of Minimal Modern design and Indian traditional , which is named TRAD-MO. According to her, TRAD-MO is the millennial's design, where a person can get the comfort of modern minimal design with some Indian touch in it. Ananya believes in design thinking every project and her projects include a personal touch from her team which only can be framed by them.",
+    []);
   const controls = useAnimation();
   const controls1 = useAnimation();
 
