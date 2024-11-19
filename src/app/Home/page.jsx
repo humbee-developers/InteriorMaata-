@@ -73,7 +73,7 @@ const Page = ({ lData }) => {
 
       <div className="bg_Image" as="preload" priority="true">
         {/* <AboutUs_header /> */}
-        <KnowAboutUsHeader />
+{/*         <KnowAboutUsHeader /> */}
         <NewRevel paragraph={paragraph} />
         <AboutUs_threeCards />
         <MarqueeTest />
